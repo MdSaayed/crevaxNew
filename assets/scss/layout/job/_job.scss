@@ -1,0 +1,46 @@
+ #job-details{
+    .container{
+        .job-details-area {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);  
+            gap: 2rem;  
+
+            .content-wrapper {
+                .top-spacing-4 {
+                    margin-top: 1rem; 
+                  }
+                .top-spacing-16 {
+                    margin-top: 4rem; 
+                }
+                  
+                @media (min-width: 1024px) {  
+                  grid-column: span 2; 
+                }
+              }
+            .form-wrapper{
+                .contact-form {
+                    margin-left: auto;
+                    margin-right: auto;  
+                    width: 100%; 
+                    margin-top: 4rem; 
+
+                    .input-wrapper {
+                        display: flex;
+                        flex-direction: column; /* flex-col */
+                        margin-bottom: 1rem; /* mb-4 */
+                      }
+                      
+                      
+                  } 
+                    
+            }
+              
+            //responsive   
+            @media (min-width: 1024px) {  
+              gap: 3.5rem;   
+              grid-template-columns: repeat(3, 1fr); 
+            }
+          }
+          
+    }
+ }

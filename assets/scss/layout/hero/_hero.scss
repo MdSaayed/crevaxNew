@@ -1,0 +1,83 @@
+#ub-hero-section-home {
+    .hero__container {
+        padding-top: 0;
+        padding-bottom: 0; 
+
+        .hero__content-area {
+            border-radius: 1.5rem;
+
+            .hero__content {
+                border-radius: 1.5rem;
+                height: 100% !important;
+                min-height: 700px !important;
+                padding: 7rem 1.5rem;
+
+                .hero__subtitle-group{
+                    background-color:$soft-lilac ;
+                }
+
+                .hero__button-group {
+                    @extend .button-group;
+
+                    .hero__button--primary {
+                        @extend .btn-primary;
+                    }
+                    .hero__button--secondary {
+                        @extend .btn-secondary;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    min-height: 800px;
+                }
+            }
+        }
+
+        .hero__image-wrapper {
+            margin-top: -5rem;
+            padding: 0;
+
+            .hero__img {
+                width: 100%;
+            }
+
+            @media (min-width: 768px) {
+                padding: 1.5rem;
+            }
+
+            @media (min-width: 450px) {
+                 margin-top: -15rem;
+            }
+ 
+            @media (min-width: 450px) {
+                 margin-top: -11rem;
+            }
+ 
+            @media (min-width: 615px) {
+                 margin-top: -18rem;
+            }
+            @media (min-width: 673px) {
+                 margin-top: -22rem;
+            }
+            @media (min-width: 714px) {
+                 margin-top: -19rem;
+            }
+ 
+            @media (min-width: 769px) {
+                 margin-top: -13rem;
+            }
+ 
+            @media (min-width: 783px) {
+                 margin-top: -17rem;
+            }
+ 
+            @media (min-width: 794px) {
+                 margin-top: -22rem;
+            }
+            @media (min-width: 1024px) {
+                 margin-top: -24rem;
+            }
+         
+        } 
+    }
+}

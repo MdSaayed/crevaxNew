@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrevaX</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- maincss -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/scss/main.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- AOS animation  css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!--  AOS JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+
+</head>
+<body>
+    <!-- header start here -->
+    <header id="ub-header-area">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="header-logo">
+                     <a href="index.html">
+                        <img src="./assets/img/logo/Logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="main-nav">
+                    <nav>
+                        <ul class="nav-menu">
+                            <!-- Main navigation links -->
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                            <li><a href="feature.html">Features</a></li>
+                            <li class="has-dropdown">
+                                <a href="#">All Pages</a>
+                                <ul class="dropdown sub-menu">
+                                    <li><a href="careers-2.html">Careers</a></li>
+                                    <li ><a href="contact.html">Contact</a></li>
+                                    <li class="has-dropdown"><a href="integrations.html">Integrations</a>
+                                        <ul class="dropdown">
+                                            <li><a href="integrations-details.html">Integrations Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-dropdown"><a href="pricing.html">Pricing</a>
+                                        <ul class="dropdown">
+                                            <li><a href="pricing-details.html">Pricing Details</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <li class="has-dropdown"><a href="blog.html">Blog</a>
+                                        <ul class="dropdown">
+                                            <li><a href="blog-single.html">Blog Single</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <li class="has-dropdown"><a href="feature.html">Feature</a>
+                                        <ul class="dropdown">
+                                            <li><a href="feature-single.html">Feature Single</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <li class="has-dropdown"><a href="team.html">Team</a>
+                                        <ul class="dropdown">
+                                            <li><a href="team-details.html">Team Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="terms-and-condition.html">Terms & Condition</a></li>
+                                     <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                    <li><a href="licenses.html">Licenses</a></li>
+                                    <li><a href="404.html">404</a></li>
+                                    <li><a href="sign-in.html">Sign In</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Cart (0)</a></li>
+                        </ul>
+                        <!-- Close button for menu -->
+                        <i class="fa-solid fa-xmark menu-close-btn"></i>
+                    </nav>
+                    
+                </div>
+                <div class="header-btn-area">
+                    <a href="./sign-in.html" class="login-btn">Login</a>
+                    <button class="btn-primary">Get started</button>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end here -->
+
+    <main>
+        <!-- Contact Form Start -->
+        <section id="contact-area" class="contact-section">
+            <div class="container">
+                <div class="section-heading-area">
+                    <h2 class="section-title">Contact us today</h2>
+                </div>
+                <form id="contact-form" class="contact-form" method="post">
+                    <div class="input-wrapper">
+                        <label for="first-name" class="form-label">First Name</label>
+                        <input type="text" id="first-name" class="form-input" name="first_name" placeholder="Enter your first name"  required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="last-name" class="form-label">Last Name</label>
+                        <input type="text" id="last-name" class="form-input" name="last_name" placeholder="Enter your last name"  required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" class="form-input" name="email" placeholder="Enter your email"  required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" class="form-textarea" name="message" rows="5"  placeholder="Type your message" required></textarea>
+                    </div>
+                    <div class="btn-wrapper">
+                        <button type="submit" class="btn-submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- Contact Form End -->
+     </main>
+
+    <!-- footer start here -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content-area">
+                <div class="newslatter">
+                    <div class="footer-heading-wrapper">
+                        <h3 class="">Join Our Newslatter</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="subscribe-form">
+                        <form action="">
+                            <div class="input-wrapper">
+                                <input class="" type="email" placeholder="Enter your email">
+                                <input class="btn" type="submit" value="Subscribe">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="links">
+                    <div class="fooer-col-one">
+                        <div class="footer-logo-wrapper">
+                             <a href="index.html">
+                                <img src="./assets/img/logo/Logo.png" alt="Logo">
+                            </a>
+                        </div>
+                        <ul class="">
+                            <li class="">
+                                <div class="icon-wrapper">
+                                    <img class="" src="./assets/icons/calling.svg" alt="Phone Icon"> 
+                                </div>
+                                <div class="text-wrapper">
+                                    <h4 class="">Phone</h3>
+                                    <a href="tel:+22484502520">+22 484 5025 20</a>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="icon-wrapper">
+                                    <img class="" src="./assets/icons/email.svg" alt="Email Icon">
+                                </div>
+                                <div class="text-wrapper">
+                                    <h4 class="">Email</h3>
+                                    <a href="mailto:info@airloom.com">info@airloom.com</a>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="icon-wrapper">
+                                    <img class="" src="./assets/icons/sms-tracking.svg" alt="Address Icon"> 
+                                </div>
+                                <div class="text-wrapper">
+                                    <h4 class="">Address</h3>
+                                    <a href="https://www.google.com/maps?q=Kurigram,+Dhaka,+Bangladesh" target="_blank" rel="noopener noreferrer">
+                                        Kurigram, Dhaka, Bangladesh
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>  
+                    </div>
+                    <div class="fooer-col-two">
+                        <h3  class="">Main Page</h3>
+                        <ul class="grid-container">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="feature.html">features</a></li>
+                            <li><a href="feature-single.html">features Single</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="blog-single.html">Blog details</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="team-details.html">Team details</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                            <li><a href="">Careers details</a></li>
+                            <li><a href="integrations.html">Integrations</a></li>
+                            <li><a href="integrations-details.html">Integrations details</a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="fooer-col-three">
+                        <h3 class="">Utility Page</h3>
+                        <ul class="">
+                            <li><a href="">Style Guide</a></li>
+                            <li><a href="">Password Protected</a></li>
+                            <li><a href="404.html">404 Not Found</a></li>
+                            <li><a href="">Licenses</a></li>
+                            <li><a href="">Changelog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright-text">
+                    <div>
+                        <p class="">
+                            Copyright © <span class="company-name">CrevaX</span> 
+                            <span class="divider">|</span>
+                            Designed by <a href="www.uibazar.com" class="">UiBazar</a> 
+                            and Powered by <a href="www.wordpress.org" class="">WordPress</a>
+                          </p>
+                    </div>
+                    <div>
+                        <ul class="social-liks">
+                            <li><a href=""> <img src="./assets/icons/X.svg" alt=""></a></li>
+                            <li><a href=""> <img src="./assets/icons/LinkedIn.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </footer>
+    <!-- footer end here -->
+  
+
+    <!-- js  -->
+     <script src="./assets/js/srcipts.js"></script>
+</body>
+</html>

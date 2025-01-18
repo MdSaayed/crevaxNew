@@ -1,0 +1,119 @@
+#ub-faq {
+    overflow-x: hidden;
+
+    .faq__grid {
+        display: grid;
+        gap: 5rem;
+        grid-template-columns: repeat(1, 1fr);
+
+        @media (min-width: 1024px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .faq__heading {
+        grid-column: span 1;
+
+        .faq__subtitle-area {
+            @extend .hero__subtitle-area;
+            justify-content: flex-start; // Use full property for clarity
+        }
+
+        .faq__subtitle-group {
+            @extend .hero__subtitle-group;
+        }
+
+        .faq__sub-title {
+            font-size: 1rem;
+            text-transform: uppercase;
+            color: $primary-color;
+            margin-bottom: 0.5rem;
+        }
+
+        .faq__title {
+            @extend .section-title;
+            text-align: left;
+        }
+    }
+
+    .faq__list {
+        grid-column: span 2;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-left: 0;
+
+        @media (min-width: 1024px) {
+            grid-template-columns: repeat(3, 1fr);
+            padding-left: 4rem;
+        }
+    }
+
+    .faq__item {
+        background-color: $soft-lilac;
+        border: 1px solid $light-purple;
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+
+        &.active {
+            background-color: $light-lavender;
+        }
+
+        .faq__question {
+            width: 100%;
+            border: none;
+            background: transparent;
+            position: relative;
+            font-size: 1.25rem;
+            font-weight: 500;
+            text-align: left;
+            cursor: pointer;
+            padding: 0;
+
+            &::after {
+                content: "\f067";
+                font-family: "Font Awesome 6 Free";
+                color: $primary-color;
+                font-weight: 900;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%) rotate(0deg);
+                transition: transform 0.3s ease-in-out;
+            }
+
+            &.active::after {
+                content: "\f068";
+                transform: translateY(-50%) rotate(180deg);
+            }
+
+            .faq__question-text {
+                font-size: 1.25rem;  
+                font-weight: 500;
+                line-height: 1.75;
+                color: $dark-neutral;
+            }
+        }
+
+        .faq__answer {
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            font-size: 1rem;
+            transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+
+            &.active {
+                max-height: 200px;
+                opacity: 1;
+            }
+
+            p {
+                margin-top: 1rem;
+                font-size: 1.125rem;
+                font-weight: normal;
+                line-height: 1.5;
+                color: $gray-medium;
+            }
+        }
+    }
+}

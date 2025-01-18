@@ -1,0 +1,79 @@
+#ub-team{
+  .container{
+    .section-heading {
+      margin-bottom: 5rem; 
+    }
+    
+    .team-members-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); /* grid-cols-1 */
+      gap: 1.5rem; /* gap-6 */
+
+      @media (min-width: 768px) { /* md breakpoint */
+        grid-template-columns: repeat(2, 1fr); /* md:grid-cols-2 */
+        gap: 2rem; /* md:gap-8 */
+      }
+
+      @media (min-width: 1024px) { /* lg breakpoint */
+        grid-template-columns: repeat(3, 1fr); /* lg:grid-cols-3 */
+        gap: 3rem; /* lg:gap-12 */
+      }
+
+      @media (min-width: 1280px) { /* xl breakpoint */
+        grid-template-columns: repeat(4, 1fr); /* xl:grid-cols-4 */
+      }
+    } 
+  }
+}
+
+// team details page 
+#ub-team-details{
+      .details-area {
+        display: grid; 
+        grid-template-columns: repeat(1, 1fr);  
+        gap: 3rem; 
+        padding: 2rem; 
+        border: 1px solid $blue-gray;
+        border-radius: 30px;
+
+          @media (min-width: 1024px) {  
+            grid-template-columns: repeat(3, 1fr); 
+            padding: 3rem; 
+            padding-right: 12rem; 
+          }
+      
+          @media (min-width: 768px) { 
+            padding: 3rem; 
+          }
+
+          .content {
+            .section-title{
+              text-align:left;
+            }
+
+            .section-desc {
+              margin-top: 1rem;
+            }
+
+            .list-item {
+              margin-top: 2.5rem;
+              list-style-type: disc;  
+              padding-left: 20px;    
+
+              li{
+                @extend .section-desc; 
+                margin-bottom: 0.5rem;  
+                &::marker {
+                  color: $blue-gray;       
+                }
+              }
+            }
+            
+
+            @media (min-width: 1024px) {  
+              grid-column: span 2;  
+            }
+          }     
+          
+    }
+}

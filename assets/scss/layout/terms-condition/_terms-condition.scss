@@ -1,0 +1,36 @@
+#terms-condition{
+    background-color: $mint-white;
+    .content-area{
+        max-width: 680px;
+        margin: 0 auto;
+        .section-header{
+            margin-bottom: 2.5rem;
+            .section-title{
+                margin-bottom: 1rem;
+                font-size: 3.2rem;
+                line-height: 70px;
+            }
+            .section-desc{
+                font-size: 18px;
+            }
+        }
+        .terms {
+            margin-left: 5px;
+            li{
+                margin-top: 5px;  
+          }
+        }
+        .privacy-policy-footer{
+            margin-top: 20px;
+            p{
+                color: $soft-gray;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 27px;
+            }
+            .privacy-policy-update{
+                margin: 20px 0;
+            }
+        }
+    }
+}

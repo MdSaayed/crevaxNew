@@ -1,0 +1,344 @@
+#ub-pricing{
+    &.pricing-sec-padding {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      
+        @media (min-width: 768px) {
+          padding-left: 2rem;
+          padding-right: 2rem;
+        }
+      }
+      
+    .section-heading {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        margin-bottom: 3.5rem;
+        .section-title{
+            margin-bottom: 1.5rem;  
+            max-width: 556px;  
+        }
+        .section-desc {
+            text-align: center;  
+            max-width: 556px; 
+        }
+
+        @media (min-width: 1024px) { 
+            grid-column: span 1;
+        }
+    }
+    
+    
+    .pricing-cards{ 
+        display: grid;  
+        grid-template-columns: 1fr;  
+        gap: 1.5rem; 
+        margin-top: 4rem;
+
+        .card{
+            background-color:$soft-lilac;
+            border: 1px solid rgba(64, 64, 64, 0.12);   
+            padding: 2.5rem; 
+            border-radius: 1rem;
+
+            &:hover{
+                background-color: $green-deep;
+                transition: 0.5s ease;     
+                h3,p,span {
+                    color: $light-neutral !important;  
+                }
+                .fa-check{
+                    color: #FAFDFB; 
+                }
+                .buy-now-btn{
+                    background-color:$soft-lilac;
+                }
+            }
+
+            h3 {
+                font-weight: 600;  
+                font-size: 1.25rem;  
+                line-height:30px;
+                text-align: center; 
+                color: $soft-gray;
+            }
+            p {
+                text-align: center; 
+                margin-top: 1rem; 
+                color: $soft-gray;
+                line-height:24px;
+            }
+            
+            .price-wrapper {
+                margin-top: 1.5rem; 
+                margin-bottom: 1.5rem;
+
+                .price{
+                    color: $dark-neutral;
+                    font-size: 2.25rem; 
+                    font-weight: 500;  
+                    text-align: center; 
+                    display: block;  
+                }
+            }
+
+            .features-wrapper{
+                margin-top:2.5rem;
+                li {
+                    margin-bottom: 0.75rem;
+                    text-align:center;
+
+                    i{
+                        width: 21px;  
+                        height: 21px;
+                    } 
+                    .features{
+                        color: $dark-blue-gray;
+                        margin-left: 0.5rem; 
+                    }
+                      
+                  }
+                  
+            }
+
+            .btn-wrapper {
+                margin-top: 4rem;
+                
+                .buy-now-btn{
+                    display: block;
+                    text-decoration: none;
+                    font-size:16;
+                    font-weight:500;
+                    line-height: 24px;
+                    background-color: $soft-green-gray;
+                    color:$dark-gray;
+                    padding: 8px 5px;
+                    border-radius: 32px;
+                    text-align: center;
+                    width:100%;
+                }
+              }
+              
+
+        }
+
+        
+        @media (min-width: 768px) {  
+            grid-template-columns: repeat(2, 1fr);  
+        }
+    
+        @media (min-width: 1024px) {  
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 2rem; 
+        }
+    }
+
+    #card2{
+        display:none;
+    }
+}
+
+
+// Pricing Page
+#hero-pricing {
+    .container{
+        padding-top:0;
+        padding-bottom:0;
+
+        .content-area {
+            background-color: #d5ebf2;
+            z-index: -10;
+            border-radius:1.5rem;
+
+            .content {
+                min-height: 700px;  
+                padding-top: 7rem;   
+                padding-left: 1.5rem;  
+                padding-right: 1.5rem;  
+
+                .section-title {
+                    font-size: 3rem;  
+                    font-weight: 500;  
+                    line-height: 57px;
+                    margin-top: 1.25rem;  
+                }
+                .section-desc {
+                    margin-top: 1.5rem; 
+                    text-align: center;
+                }
+                  
+                  
+              }
+              
+        }
+    }
+
+    // Responsive breakpoint for 565px
+    @media (min-width: 566px) {
+        margin-bottom: -24rem;
+    }
+    @media (max-width: 565px) {
+        margin-bottom: -20rem;
+    }
+    @media (max-width: 520px) {
+        margin-bottom: -16rem;
+    }
+    @media (max-width: 420px) {
+        margin-bottom: -13rem;
+    }
+    @media (max-width: 310px) {
+        margin-bottom: -13rem;
+    }
+}
+
+// pricing table
+#pricing-table {
+    overflow-x: scroll;
+    scrollbar-color: #aef5c7 transparent; // For Firefox
+    scrollbar-width: thin; // For Firefox
+
+    /* For Webkit Browsers (Chrome, Edge, Safari) */
+    &::-webkit-scrollbar {
+        height: 8px; /* Horizontal scrollbar height */
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #aef5c7; /* Light mint green */
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-track {
+        background: transparent; /* Optional track color */
+    }
+
+    table {
+        font-size: 0.875rem;
+        width: 100%;
+
+        tr {
+            font-weight: 400;
+            text-align: left;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+
+            &:nth-child(odd) {
+                background-color:$soft-lilac;
+            }
+
+            &:nth-child(even) {
+                background-color: $white;
+            }
+        }
+
+        td {
+            padding: 0.75rem;
+
+            &:first-child {
+                width: 35%; 
+            }
+
+            &:not(:first-child) {
+                text-align: center;
+                width: calc(65% / 3);  
+            }
+        }
+        @media screen and (max-width: 767px) {
+            min-width: 767px;
+        }       
+    }
+}
+
+#pricing-details{
+    .pricing-details-area{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);  
+        gap: 1.5rem;  
+        
+        .content{
+            .section-title {
+                margin-top:0;
+                text-align:left;
+            }
+            .section-desc{
+                color: $soft-gray;
+            }
+            .list-disc {
+                margin-top: 0.5rem;
+                list-style-type: disc;
+                list-style-type: disc;  
+                padding-left: 20px;    
+                margin-bottom: 2rem;
+
+                li::marker {
+                  color: $blue-gray;      
+                }
+                .section-desc {
+                    margin-bottom: 0.5rem;
+                }
+            }
+              .section-separator{
+                padding: 1.5rem 0;
+                border-top: 1px solid $light-mint-green;
+                .feature-sub-title{
+                    color: $dark-gray;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 28px;
+                }
+                .section-desc {
+                margin-top: 0.5rem; 
+                }
+    
+            }  
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: column;  
+
+            .pricing-switcher{
+                margin-bottom:2rem;
+            }
+          
+            @media (min-width: 1024px) {  
+              align-items: flex-end;  
+              justify-content: flex-start; 
+            }
+          }
+          
+      
+       
+
+        @media (min-width: 1024px) {  
+            grid-template-columns: repeat(2, 1fr);  
+        }      
+    }
+    .pricing-cards{
+        border: 1px solid $light-mint-green;
+        border-radius: 10px;
+        padding: 2rem 1rem;
+        .price{
+            font-size: 2.5rem;
+            font-weight: 500;
+            line-height: 48px;
+            color: $dark-neutral;
+            span{
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+        .product-desc{
+            margin: 20px 0px;
+            color:$soft-gray;
+            font-weight: 400;
+            font-size: 16px;
+        }
+        .btn{
+            @include btn; 
+            display: block;
+            text-align: center; 
+        }
+    }
+}
+
+  
+  

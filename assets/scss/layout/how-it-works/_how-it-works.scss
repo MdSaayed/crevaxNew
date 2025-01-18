@@ -1,0 +1,84 @@
+#ub-how-it-works {
+    .how-it-works__content-area{
+        background-color: $light-lavender;
+        padding: 4rem 2rem;
+        border-radius: 2rem;
+
+        .how-it-works__header {
+            margin-bottom: 30px;
+            
+            .how-it-works__subtitle-area{
+                @extend .hero__subtitle-area;
+
+                .how-it-works__subtitle-group{
+                    @extend .hero__subtitle-group;
+                }
+            }
+            .how-it-works__title{
+                @extend .section-title;
+            }
+            .how-it-works__desc{
+                @extend .section-desc;
+            }
+        }
+
+        .how-it-works__content {
+            display: grid;
+            grid-template-columns: 1fr;  
+            gap: 2rem;  
+            margin-top: 5rem;
+
+            .how-it-works__step {
+                padding: 2.5rem 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: $white;
+                border-radius: 16px;
+                box-shadow: 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+
+                .how-it-works__step-icon{
+                    background-color: $purple-haze;
+                    padding:14px ;
+                    border-radius: 50%;
+                    width: 32px;
+                    height: 32px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                }
+
+                .how-it-works__step-title {
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height:28px;
+                    color: $text-primary;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+
+                .how-it-works__step-description {
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: normal;
+                    color: $dark-slate-gray;
+                    margin-top: 16px;
+                    text-align: center;
+                }
+            }
+
+            @media (min-width: 768px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media (min-width: 1024px) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            @media (min-width: 1265px) {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+#latest-post{
+    .blog-filter{
+        a{            
+            color: $dark-gray;
+            padding: 8px 20px;
+            border-radius: 32px;
+        }
+        .active{
+            background-color: $primary-color; 
+            font-weight: 500;
+            color: $white;
+        }
+    }
+    .blog-card{
+        .thumbnail{
+            border-radius: 32px;
+            img{
+                width: 100%;
+            }
+        }
+        background-color: $white;
+        .blog-content{
+            .blog-cat{
+                span{
+                    background-color:$soft-lilac;
+                    font-weight: 500;
+                    color: $dark-gray;
+                    display: block; 
+                }
+            }
+            .blog-date{
+                p{
+                    background-color:$soft-lilac;
+                    font-weight: 500;
+                    color: $dark-gray; 
+                }
+            }
+            .blog-title{
+                color: $dark-neutral;
+                font-weight: 500;
+                font-size: 20px;
+            }
+        }
+       
+    }
+}

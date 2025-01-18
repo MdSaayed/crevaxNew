@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop Nav Menu</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+            * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar Wrapper */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        .logo span {
+            font-size: 20px;
+            font-weight: bold;
+            color: #4A148C;
+        }
+
+        /* Desktop Menu */
+        .menu {
+            display: none;
+        }
+
+        .menu ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .menu .dropdown,
+        .menu .dropdown-sub {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            z-index: 999;
+        }
+
+        .menu li:hover > .dropdown {
+            display: block;
+        }
+
+        .menu .dropdown li:hover > .dropdown-sub {
+            display: block;
+            left: 100%;
+            top: 0;
+        }
+
+        .menu .dropdown a,
+        .menu .dropdown-sub a {
+            padding: 10px 20px;
+            display: block;
+        }
+
+  </style>
+</head>
+<body>
+       <!-- Navbar -->
+       <div class="navbar">
+        <div class="logo">
+            <img src="https://via.placeholder.com/30" alt="Logo">
+            <span>Bazarly</span>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="has-dropdown">
+                    <a href="#">Features</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Feature 1</a></li>
+                        <li class="has-dropdown">
+                            <a href="#">Feature 2</a>
+                            <ul class="dropdown-sub">
+                                <li><a href="#">Sub Feature 1</a></li>
+                                <li><a href="#">Sub Feature 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Feature 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">All pages</a></li>
+                <li><a href="#">Cart(0)</a></li>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#" class="get-started">Get Started</a></li>
+            </ul>
+        </div>
+        <div class="menu-toggle">☰</div>
+    </div>
+
+</body>
+</html>

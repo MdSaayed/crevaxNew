@@ -1,0 +1,167 @@
+// careers page one
+#ub-stats-section{
+    .container{
+        padding-top:0;
+        padding-bottom:0;
+
+        .section-heading-area{
+            .section-title{
+                font-size: 2.5rem;
+                line-height: 48px; 
+                text-align: center;
+            }
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);  
+            gap: 1rem;  
+            margin-top: 3rem; 
+            margin-bottom: 3rem;  
+
+            .stat-card {
+                border-radius: 0.375rem;  
+                padding: 2rem 1.5rem; 
+                    h3{
+                        font-size: 16;
+                        line-height:24px;
+                        color:$dark-gray;
+                        text-align:center;
+
+                        @media (min-width: 640px) {  
+                            text-align:left;  
+                          }
+                        
+                    }
+                    p{
+                        font-size: 2.25rem;
+                        line-height: 48px;
+                        font-weight:500;
+                        color:$dark-neutral;
+                        text-align:center;
+
+                        @media (min-width: 640px) {  
+                            text-align:left;  
+                          }
+                        
+                    }
+              }
+              
+          
+            @media (min-width: 640px) {  
+              grid-template-columns: repeat(2, 1fr);  
+            }
+          
+            @media (min-width: 768px) { 
+              grid-template-columns: repeat(2, 1fr);  
+              gap: 3rem; 
+            }
+          
+            @media (min-width: 1024px) {  
+              grid-template-columns: repeat(4, 1fr);  
+            }
+          }
+          
+    }
+} 
+
+#careers-hero-section{
+    .hero-content-area{
+        .content{
+            .heading-desc {
+                text-align: center;  
+                margin-top: 1.5rem; 
+                line-height: 27px;  
+              }
+            .btn-wrapper {
+                display: flex;
+                gap: 1rem; 
+                justify-content: center;  
+                margin-top: 2rem; 
+                margin-bottom: 2rem;  
+            }
+        }
+        
+        .img-box {
+            margin-top: 5rem;  
+        }
+          
+    }
+}
+
+// careers page 2
+#job-details{
+    .job-details-area{
+        .section-title{
+            font-size: 2.3rem;
+            margin-bottom: 15px;
+        }
+        .job-responsibilities ul, .qualifications ul{
+            list-style-type: disc;  
+            padding-left: 20px;    
+            margin-bottom: 2rem;
+            li::marker {
+              color: $soft-gray;      
+            }
+            li{
+                color: $soft-gray;
+                line-height: 24px;
+            }
+        }
+        .contact-form{
+            border: 1px solid #E1EBFF;
+            border-radius: 20px;
+            padding: 1.3rem;
+            label {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 28px;
+                color: $dark-neutral;
+                margin-bottom: 10px;
+            }
+    
+            input {
+                padding: 10px 14px;
+                border-radius: 5px;
+                border: 1px solid #F3F7FF;
+                &::placeholder{
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: $soft-gray;
+                }
+    
+                &:focus {
+                    outline: 2px solid $primary-color; // Focus outline color
+                }
+            }
+    
+            textarea {
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid #F3F7FF;
+    
+                &:focus {
+                    outline: 2px solid $primary-color; // Focus outline color
+                }
+            }
+           
+            .btn-submit{
+                @include btn();
+                margin-top: 20px;
+                display: block;
+                width: 100%;
+            }
+            @media (max-width: 1024px) { 
+                padding: 4rem 2rem;
+            }
+    
+            @media (max-width: 768px) {
+                padding: 4rem 1rem; 
+            }
+        }
+
+        @media (min-width: 1300px) {
+            grid-template-columns: repeat(3, 1fr);
+          }
+    }
+}  
