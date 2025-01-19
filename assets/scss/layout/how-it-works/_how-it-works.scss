@@ -13,6 +13,9 @@
                 .how-it-works__subtitle-group{
                     @extend .hero__subtitle-group;
                 }
+                .how-it-works__subtitle{
+                    @extend .hero__subtitle;
+                }
             }
             .how-it-works__title{
                 @extend .section-title;

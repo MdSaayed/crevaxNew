@@ -173,21 +173,25 @@
                 line-height: 21px;
                 color: $muted-sage;
                  
-            .footer__link{
-                color: $primary-color;
+                .footer__link{
+                    color: $primary-color;
+                }
+
+                @media (max-width: 1024px) {
+                    text-align: center;
+                }
             }
+
             .footer__social-list{
                 display: flex;
                 align-items: center;
-                gap: 16px;
+                gap: 1rem;
             }
-
+            
             @media (max-width: 1024px) {
                 justify-content: center;
                 align-items: center;
             }
-            
-        }
         }
     }
 }

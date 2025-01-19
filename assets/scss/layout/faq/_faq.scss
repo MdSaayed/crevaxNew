@@ -69,6 +69,7 @@
             text-align: left;
             cursor: pointer;
             padding: 0;
+            padding-right: 25px;
 
             &::after {
                 content: "\f067";
@@ -114,6 +115,14 @@
                 line-height: 1.5;
                 color: $gray-medium;
             }
+        }
+
+        @media (max-width: 768px) {
+            padding: 1rem;
+        }
+
+        @media (max-width: 640px) {
+            padding: 1rem;
         }
     }
 }

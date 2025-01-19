@@ -23,6 +23,9 @@
         .features__subtitle-group {
             @extend .hero__subtitle-group;
         }
+        .features__subtitle{
+            @extend .hero__subtitle;
+        }
 
         .features__title {
             @extend .section-title;
