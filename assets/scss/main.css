@@ -144,7 +144,7 @@ a {
   margin-bottom: 2rem;
 }
 
-.section-title, #ub-features .features_container .features__title, #ub-faq .faq__heading .faq__title, #ub-cta .cta__area .cta__title, #ub-blog .blog__heading .blog__title, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__title {
+.section-title, #ub-features .features_container .features__title, #ub-faq .faq__heading .faq__title, #ub-cta .cta__area .cta__title, #ub-blog .blog__heading .blog__title, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__title, #ub-pricing .pricing__header .pricing__title {
   font-size: 3rem;
   font-weight: 500;
   line-height: 57px;
@@ -155,13 +155,13 @@ a {
 }
 
 @media (max-width: 768px) {
-  .section-title, #ub-features .features_container .features__title, #ub-faq .faq__heading .faq__title, #ub-cta .cta__area .cta__title, #ub-blog .blog__heading .blog__title, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__title {
+  .section-title, #ub-features .features_container .features__title, #ub-faq .faq__heading .faq__title, #ub-cta .cta__area .cta__title, #ub-blog .blog__heading .blog__title, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__title, #ub-pricing .pricing__header .pricing__title {
     font-size: 2.8rem !important;
     line-height: 48px !important;
   }
 }
 
-.section-desc, .hero__description, #ub-features .features_container .features__desc, #ub-blog .blog__heading .blog__desc, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__desc {
+.section-desc, .hero__description, #ub-features .features_container .features__desc, #ub-blog .blog__heading .blog__desc, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__desc, #ub-pricing .pricing__header .pricing__desc {
   margin-top: 1rem;
   font-size: 18px;
   line-height: 27px;
@@ -187,7 +187,7 @@ a {
   }
 }
 
-.hero__subtitle-area, .hero__subtitle-group, #ub-features .features_container .features__subtitle-group, #ub-faq .faq__heading .faq__subtitle-group, #ub-blog .blog__heading .blog__subtitle-area .blog__subtitle-group, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area .how-it-works__subtitle-group, #ub-features .features_container .features__subtitle-area, #ub-faq .faq__heading .faq__subtitle-area, #ub-blog .blog__heading .blog__subtitle-area, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area {
+.hero__subtitle-area, .hero__subtitle-group, #ub-features .features_container .features__subtitle-group, #ub-faq .faq__heading .faq__subtitle-group, #ub-blog .blog__heading .blog__subtitle-area .blog__subtitle-group, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area .how-it-works__subtitle-group, #ub-pricing .pricing__header .pricing__subtitle-area .pricing__subtitle-group, #ub-features .features_container .features__subtitle-area, #ub-faq .faq__heading .faq__subtitle-area, #ub-blog .blog__heading .blog__subtitle-area, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area, #ub-pricing .pricing__header .pricing__subtitle-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,7 +199,7 @@ a {
           align-items: center;
 }
 
-.hero__subtitle-group, #ub-features .features_container .features__subtitle-group, #ub-faq .faq__heading .faq__subtitle-group, #ub-blog .blog__heading .blog__subtitle-area .blog__subtitle-group, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area .how-it-works__subtitle-group {
+.hero__subtitle-group, #ub-features .features_container .features__subtitle-group, #ub-faq .faq__heading .faq__subtitle-group, #ub-blog .blog__heading .blog__subtitle-area .blog__subtitle-group, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area .how-it-works__subtitle-group, #ub-pricing .pricing__header .pricing__subtitle-area .pricing__subtitle-group {
   background: #F4EBFF;
   border: 1px solid #E9EAEB;
   padding: 4px 16px;
@@ -207,7 +207,7 @@ a {
   gap: 5px;
 }
 
-.hero__subtitle, #ub-features .features_container .features__subtitle, #ub-blog .blog__heading .blog__subtitle-area .blog__subtitle-group .blog__subtitle, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area .how-it-works__subtitle {
+.hero__subtitle, #ub-features .features_container .features__subtitle, #ub-blog .blog__heading .blog__subtitle-area .blog__subtitle-group .blog__subtitle, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area .how-it-works__subtitle, #ub-pricing .pricing__header .pricing__subtitle-area .pricing__subtitle-group .pricing__subtitle {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -308,6 +308,71 @@ a {
   text-decoration: none;
 }
 
+body {
+  font-family: "GeneralSans", sans-serif;
+  font-weight: normal;
+}
+
+.pricing__switcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pricing__switcher .pricing__switcher-wrapper {
+  background-color: #F4EBFF;
+  padding: 0.5rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  border-radius: 9999px;
+}
+
+.pricing__switcher .pricing__switcher-wrapper .pricing__switcher-btn {
+  border: none;
+  background: none;
+  color: #404040;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
+  padding: 8px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.pricing__switcher .pricing__switcher-wrapper .pricing__switcher-btn.pricing__switcher-btn--active {
+  background-color: #7F56D9;
+  color: #FCFAFF;
+  font-weight: 500;
+}
+
+.pricing__switcher .pricing__switcher-wrapper .pricing__switcher-btn:hover {
+  background-color: #7F56D9;
+  color: #FCFAFF;
+  font-weight: 500;
+}
+
+@media (max-width: 310px) {
+  .pricing__switcher .pricing__switcher-wrapper .pricing__switcher-btn {
+    padding: 4px 12px;
+  }
+}
+
 .container {
   max-width: 1440px !important;
   margin: 0 auto;
@@ -344,6 +409,66 @@ body {
   font-weight: normal;
 }
 
+.pricing__switcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pricing__switcher .pricing__switcher-wrapper {
+  background-color: #F4EBFF;
+  padding: 0.5rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  border-radius: 9999px;
+}
+
+.pricing__switcher .pricing__switcher-wrapper .pricing__switcher-btn {
+  border: none;
+  background: none;
+  color: #404040;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
+  padding: 8px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.pricing__switcher .pricing__switcher-wrapper .pricing__switcher-btn.pricing__switcher-btn--active {
+  background-color: #7F56D9;
+  color: #FCFAFF;
+  font-weight: 500;
+}
+
+.pricing__switcher .pricing__switcher-wrapper .pricing__switcher-btn:hover {
+  background-color: #7F56D9;
+  color: #FCFAFF;
+  font-weight: 500;
+}
+
+@media (max-width: 310px) {
+  .pricing__switcher .pricing__switcher-wrapper .pricing__switcher-btn {
+    padding: 4px 12px;
+  }
+}
+
 #ub-hero-section-home .hero__container {
   padding-top: 0;
   padding-bottom: 0;
@@ -360,7 +485,7 @@ body {
   padding: 7rem 1.5rem;
 }
 
-#ub-hero-section-home .hero__container .hero__content-area .hero__content .hero__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-features .features_container .features__subtitle-group, #ub-features .features_container #ub-hero-section-home .hero__container .hero__content-area .hero__content .features__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-faq .faq__heading .faq__subtitle-group, #ub-faq .faq__heading #ub-hero-section-home .hero__container .hero__content-area .hero__content .faq__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-blog .blog__heading .blog__subtitle-area .blog__subtitle-group, #ub-blog .blog__heading .blog__subtitle-area #ub-hero-section-home .hero__container .hero__content-area .hero__content .blog__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area .how-it-works__subtitle-group, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area #ub-hero-section-home .hero__container .hero__content-area .hero__content .how-it-works__subtitle-group {
+#ub-hero-section-home .hero__container .hero__content-area .hero__content .hero__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-features .features_container .features__subtitle-group, #ub-features .features_container #ub-hero-section-home .hero__container .hero__content-area .hero__content .features__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-faq .faq__heading .faq__subtitle-group, #ub-faq .faq__heading #ub-hero-section-home .hero__container .hero__content-area .hero__content .faq__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-blog .blog__heading .blog__subtitle-area .blog__subtitle-group, #ub-blog .blog__heading .blog__subtitle-area #ub-hero-section-home .hero__container .hero__content-area .hero__content .blog__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area .how-it-works__subtitle-group, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area #ub-hero-section-home .hero__container .hero__content-area .hero__content .how-it-works__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-pricing .pricing__header .pricing__subtitle-area .pricing__subtitle-group, #ub-pricing .pricing__header .pricing__subtitle-area #ub-hero-section-home .hero__container .hero__content-area .hero__content .pricing__subtitle-group {
   background-color: #FCFAFF;
 }
 
@@ -709,6 +834,8 @@ body {
   border: 1px solid #E9D7FE;
   border-radius: 0.5rem;
   padding: 1.5rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 #ub-faq .faq__item.active {
@@ -893,7 +1020,7 @@ body {
 #ub-blog .blog__cards .blog-card {
   padding: 24px 16px;
   border-radius: 16px;
-  border: 1px solid #EDEDED;
+  border: 1px solid #FAFAFA;
 }
 
 #ub-blog .blog__cards .blog-card .blog-card__image-wrapper {
@@ -1082,6 +1209,121 @@ body {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
   }
+}
+
+#ub-pricing .pricing__cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+#ub-pricing .pricing__cards .pricing__card {
+  background-color: #2C1C5F;
+  border: 1px solid rgba(64, 64, 64, 0.12);
+  padding: 2.5rem;
+  border-radius: 1rem;
+}
+
+#ub-pricing .pricing__cards .pricing__card:hover {
+  background-color: #F9F5FF;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+#ub-pricing .pricing__cards .pricing__card:hover h3, #ub-pricing .pricing__cards .pricing__card:hover p, #ub-pricing .pricing__cards .pricing__card:hover span {
+  color: #FAFAFA !important;
+}
+
+#ub-pricing .pricing__cards .pricing__card:hover .fa-check {
+  color: #FAFDFB;
+}
+
+#ub-pricing .pricing__cards .pricing__card:hover .buy-now-btn {
+  background-color: #FCFAFF;
+}
+
+#ub-pricing .pricing__cards .pricing__card h3 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 30px;
+  text-align: center;
+}
+
+#ub-pricing .pricing__cards .pricing__card p {
+  text-align: center;
+  margin-top: 1rem;
+  line-height: 24px;
+}
+
+#ub-pricing .pricing__cards .pricing__card .pricing__price-wrapper {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#ub-pricing .pricing__cards .pricing__card .pricing__price-wrapper .pricing__price {
+  color: #171717;
+  font-size: 2.25rem;
+  font-weight: 500;
+  text-align: center;
+  display: block;
+}
+
+#ub-pricing .pricing__cards .pricing__card .pricing__features-wrapper {
+  margin-top: 2.5rem;
+}
+
+#ub-pricing .pricing__cards .pricing__card .pricing__features-wrapper .pricing__feature {
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+#ub-pricing .pricing__cards .pricing__card .pricing__features-wrapper .pricing__feature i {
+  width: 21px;
+  height: 21px;
+}
+
+#ub-pricing .pricing__cards .pricing__card .pricing__features-wrapper .pricing__feature .features {
+  margin-left: 0.5rem;
+}
+
+#ub-pricing .pricing__cards .pricing__card .pricing__button-wrapper {
+  margin-top: 4rem;
+}
+
+#ub-pricing .pricing__cards .pricing__card .pricing__button-wrapper .pricing__button {
+  display: block;
+  text-decoration: none;
+  font-size: 16;
+  font-weight: 500;
+  line-height: 24px;
+  background-color: #E9D7FE;
+  color: #404040;
+  padding: 8px 5px;
+  border-radius: 32px;
+  text-align: center;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  #ub-pricing .pricing__cards {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  #ub-pricing .pricing__cards {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+#ub-pricing #card2 {
+  display: none;
 }
 
 #footer .footer__content {

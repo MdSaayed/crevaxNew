@@ -67,20 +67,18 @@ faqQuestions.forEach(item => {
 
 
 // pricing swither
-document.querySelectorAll('.switcher-btn').forEach(button => {
+document.querySelectorAll('.pricing__switcher-btn').forEach(button => {
     button.addEventListener('click', () => {
-        // Remove 'active' class from all buttons
-        document.querySelectorAll('.switcher-btn').forEach(btn => btn.classList.remove('active'));
-        
-        // Hide all pricing cards
-        document.querySelectorAll('.pricing-cards').forEach(card => card.style.display = "none");
-        
-        // Add 'active' class to the clicked button
-        button.classList.add('active');
-        
-        // Show the target card by setting its display style to "grid"
-        const targetId = button.getAttribute('data-target');
-        document.getElementById(targetId).style.display = "grid";
+        document.querySelectorAll('.pricing__switcher-btn').forEach(btn => 
+            btn.classList.remove('pricing__switcher-btn--active')
+        );
+        button.classList.add('pricing__switcher-btn--active');
+
+        document.querySelectorAll('.pricing__cards').forEach(card => 
+            card.classList.add('pricing__cards--hidden')
+        );
+        const targetClass = button.getAttribute('data-target');
+        document.querySelector(`.${targetClass}`).classList.remove('pricing__cards--hidden');
     });
 });
 

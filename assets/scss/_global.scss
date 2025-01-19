@@ -2,3 +2,49 @@ body {
 	font-family: $font-family-body;
     font-weight: normal;   
 } 
+
+// pricing switcher
+.pricing__switcher {
+    display: flex;  
+    align-items: center;  
+    justify-content: center; 
+
+    .pricing__switcher-wrapper{
+        background-color: $purple-haze;
+        padding: 0.5rem;  
+        display: inline-flex;  
+        align-items: center;  
+        justify-content: center;  
+        gap: 1rem;  
+        border-radius: 9999px;    
+
+        .pricing__switcher-btn {
+            border: none;
+            background: none;
+            color: $dark-gray;
+            font-weight:normal;
+            font-size:18px;
+            line-height:27px;
+            transition: color 0.3s, background-color 0.3s; 
+            padding: 8px 15px;
+            border-radius: 50px;
+            cursor: pointer;
+    
+            &.pricing__switcher-btn--active {
+                background-color: $primary-color; 
+                color:$soft-lilac;
+                font-weight:500;   
+            }
+    
+            &:hover {
+                background-color:$primary-color;
+                color:$soft-lilac;
+                font-weight:500;
+            }
+            @media (max-width: 310px) {
+                    padding: 4px 12px;
+            }
+        }
+    }
+    
+}

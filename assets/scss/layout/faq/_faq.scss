@@ -54,6 +54,7 @@
         border: 1px solid $light-purple;
         border-radius: 0.5rem;
         padding: 1.5rem;
+        transition: 0.3s ease-in-out;
 
         &.active {
             background-color: $light-lavender;
