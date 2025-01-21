@@ -203,7 +203,7 @@ a {
   gap: 5px;
 }
 
-.hero__subtitle, #ub-features .features_container .features__subtitle, #ub-blog .blog__heading .blog__subtitle-area .blog__subtitle-group .blog__subtitle, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area .how-it-works__subtitle, #ub-pricing .pricing__header .pricing__subtitle-area .pricing__subtitle-group .pricing__subtitle, #ub-integrations .integrations__header .integrations__subtitle-area .integrations__subtitle-group .integrations__subtitle {
+.hero__subtitle, #ub-features .features_container .features__subtitle, #ub-blog .blog__heading .blog__subtitle-area .blog__subtitle-group .blog__subtitle, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area .how-it-works__subtitle, #ub-pricing .pricing__header .pricing__subtitle-area .pricing__subtitle-group .pricing__subtitle, #ub-testimonial .testimonial__subtitle, #ub-integrations .integrations__header .integrations__subtitle-area .integrations__subtitle-group .integrations__subtitle {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -628,10 +628,6 @@ body {
   padding: 7rem 1.5rem;
 }
 
-#ub-features {
-  background-color: #fff;
-}
-
 #ub-features .features_container {
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -654,6 +650,7 @@ body {
   background: #FCFAFF;
   padding: 1.5rem;
   border-radius: 1.5rem;
+  background-color: #fff;
 }
 
 #ub-features .features_container .features__area .features__item .features__item-title {

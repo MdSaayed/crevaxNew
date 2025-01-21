@@ -8,6 +8,10 @@
       display: inline-flex;
       margin: 0 auto;
     }
+
+    .testimonial__subtitle{
+      @extend .hero__subtitle;  
+    }
   
     .testimonial__title {
       @extend .section-title;

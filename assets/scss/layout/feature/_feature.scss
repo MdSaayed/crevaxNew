@@ -10,7 +10,6 @@
 }
 
 #ub-features {
-    background-color: $white;
 
     .features_container {
         padding-top: 7rem;
@@ -46,6 +45,7 @@
                 background: $soft-lilac;
                 padding: 1.5rem;
                 border-radius: 1.5rem;
+                background-color: $white;
 
                 .features__item-title {
                     font-size: 2.5rem;
