@@ -69,18 +69,24 @@ faqQuestions.forEach(item => {
 // pricing swither
 document.querySelectorAll('.pricing__switcher-btn').forEach(button => {
     button.addEventListener('click', () => {
+        // Remove active class from all buttons
         document.querySelectorAll('.pricing__switcher-btn').forEach(btn => 
             btn.classList.remove('pricing__switcher-btn--active')
         );
+        // Add active class to the clicked button
         button.classList.add('pricing__switcher-btn--active');
 
+        // Hide all pricing cards
         document.querySelectorAll('.pricing__cards').forEach(card => 
             card.classList.add('pricing__cards--hidden')
         );
+        // Show the target pricing cards
         const targetClass = button.getAttribute('data-target');
         document.querySelector(`.${targetClass}`).classList.remove('pricing__cards--hidden');
     });
 });
+
+
 
 
 
@@ -339,4 +345,28 @@ emailInput.addEventListener('input', () => {
 
 
 
+// swiper slider  for logo =====================================
+const swiperLeft = new Swiper(".integrations-logos__slider-left", {
+    slidesPerView: 'auto',  
+    spaceBetween: 40,  
+    loop: true, 
+    speed: 3000,  
+    allowTouchMove: false,  
+    autoplay: {
+        delay: 1,  
+        disableOnInteraction: false, 
+    }
+});
+const swiperRight = new Swiper(".integrations-logos__slider-right", {
+    slidesPerView: 'auto', // Automatically adjust the number of slides visible
+    spaceBetween: 40, // Space between slides
+    loop: true, // Enable infinite loop
+    speed: 3000, // Speed of the transition (in milliseconds)
+    allowTouchMove: false, // Disable user interaction
+    autoplay: {
+        delay: 1, // Delay between slides (in milliseconds)
+        disableOnInteraction: false, // Continue autoplay even if user interacts
+        reverseDirection: true, // Scroll from right to left
+    }
+});
 

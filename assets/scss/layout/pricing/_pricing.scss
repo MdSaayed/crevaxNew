@@ -1,130 +1,137 @@
-#ub-pricing{
-  .pricing__header{
-    .pricing__subtitle-area{
+#ub-pricing {
+    .pricing__header {
+      margin-bottom: 3rem;
+  
+      .pricing__subtitle-area {
         @extend .hero__subtitle-area;
-        .pricing__subtitle-group{
-            @extend .hero__subtitle-group;
-            .pricing__subtitle{
-                @extend .hero__subtitle;
-            }
+  
+        .pricing__subtitle-group {
+          @extend .hero__subtitle-group;
+  
+          .pricing__subtitle {
+            @extend .hero__subtitle;
+          }
         }
-    }
-    .pricing__title{
+      }
+  
+      .pricing__title {
         @extend .section-title;
-    }
-    .pricing__desc{
+      }
+  
+      .pricing__desc {
         @extend .section-desc;
+      }
+    }
+  
+    .pricing__cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-top: 4rem;
+  
+      .pricing__card {
+        background-color: $light-lavender;
+        border: 1px solid rgba(64, 64, 64, 0.12);
+        padding: 2.5rem;
+        border-radius: 1rem;
+  
+        &:hover {
+          background-color: $dark-purple;
+          transition: 0.5s ease;
+  
+          .pricing__price {
+            color: $light-gray !important;
+          }
+  
+          .pricing__plan-title,
+          .pricing__plan-description,
+          .pricing__features-list li,
+          .fa-check {
+            color: $white !important;
+          }
+  
+          .pricing__button {
+            background-color: $soft-lilac;
+          }
+        }
+  
+        .pricing__plan-title {
+          font-weight: 500;
+          font-size: 1rem;
+          line-height: 24px;
+          text-align: center;
+        }
+  
+        .pricing__plan-description {
+          font-size: 1rem;
+          text-align: center;
+          margin-top: 1rem;
+          color: $dark-slate-gray;
+          line-height: 24px;
+        }
+  
+        .pricing__price-wrapper {
+          margin-top: 1.5rem;
+          margin-bottom: 1.5rem;
+  
+          .pricing__price {
+            color: $dark-neutral;
+            font-size: 2.25rem;
+            font-weight: 500;
+            text-align: center;
+            display: block;
+          }
+        }
+  
+        .pricing__features-list {
+          margin-top: 2.5rem;
+
+          li {
+            margin-bottom: 0.75rem;
+            text-align: center;
+            color: $dark-slate-gray;
+  
+            i {
+              width: 21px;
+              height: 21px;
+              color: $soft-purple;
+              margin-right: 0.5rem;
+            }
+          }
+        }
+  
+            
+        .pricing__button {
+            margin-top: 4rem;
+            display: block;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 24px;
+            background-color: $light-purple;
+            color: $dark-gray;
+            padding: 8px 5px;
+            border-radius: 32px;
+            text-align: center;
+            width: 100%;
+            }
+      }
+  
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+  
+      @media (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+      }
+    }
+  
+    .pricing__cards--hidden {
+      display: none;
     }
   }
-
-    
-    .pricing__cards{ 
-        display: grid;  
-        grid-template-columns: 1fr;  
-        gap: 1.5rem; 
-        margin-top: 4rem;
-
-        .pricing__card{
-            background-color:$dark-purple;
-            border: 1px solid rgba(64, 64, 64, 0.12);   
-            padding: 2.5rem; 
-            border-radius: 1rem;
-
-            &:hover{
-                background-color: $light-lavender;
-                transition: 0.5s ease;     
-                h3,p,span {
-                    color: $light-gray !important;  
-                }
-                .fa-check{
-                    color: #FAFDFB; 
-                }
-                .buy-now-btn{
-                    background-color:$soft-lilac; 
-                }
-            }
-
-            h3 {
-                font-weight: 600;  
-                font-size: 1.25rem;  
-                line-height:30px;
-                text-align: center;  
-            }
-            p {
-                text-align: center; 
-                margin-top: 1rem; 
-                // color: $soft-gray;
-                line-height:24px;
-            }
-            
-            .pricing__price-wrapper {
-                margin-top: 1.5rem; 
-                margin-bottom: 1.5rem;
-
-                .pricing__price{
-                    color: $dark-neutral;
-                    font-size: 2.25rem; 
-                    font-weight: 500;  
-                    text-align: center; 
-                    display: block;  
-                }
-            }
-
-            .pricing__features-wrapper{
-                margin-top:2.5rem;
-                .pricing__feature {
-                    margin-bottom: 0.75rem;
-                    text-align:center;
-
-                    i{
-                        width: 21px;  
-                        height: 21px;
-                    } 
-                    .features{
-                        // color: $dark-blue-gray;
-                        margin-left: 0.5rem; 
-                    }
-                      
-                  }
-                  
-            }
-
-            .pricing__button-wrapper {
-                margin-top: 4rem;
-                
-                .pricing__button{
-                    display: block;
-                    text-decoration: none;
-                    font-size:16;
-                    font-weight:500;
-                    line-height: 24px;
-                    background-color: $light-purple;
-                    color:$dark-gray;
-                    padding: 8px 5px;
-                    border-radius: 32px;
-                    text-align: center;
-                    width:100%;
-                }
-              }
-              
-
-        }
-
-        
-        @media (min-width: 768px) {  
-            grid-template-columns: repeat(2, 1fr);  
-        }
-    
-        @media (min-width: 1024px) {  
-            grid-template-columns: repeat(3, 1fr); 
-            gap: 2rem; 
-        }
-    }
-
-    #card2{
-        display:none;
-    }
-}
+  
 
 
 // Pricing Page

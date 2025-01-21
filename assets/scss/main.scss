@@ -3,11 +3,12 @@
 @import "./fonts";
 @import "./mixin";    
 @import "./extend";
-@import "./reset";
 @import "./global";
+@import "./reset";
 @import "./components/container/container";
 @import "./global";  
 @import "./layout/hero/hero";          
+@import "./layout/animation/animation";          
 @import "./layout/brands/brands";          
 @import "./layout/feature/feature";          
 @import "./layout/faq/faq";          
@@ -15,7 +16,8 @@
 @import "./layout/blogs/blogs";  
 @import "./layout/how-it-works/how-it-works";  
 @import "./layout/pricing/pricing";   
-@import "./layout/footer/footer";         
-                  
+@import "./layout/integrations/integrations";    
+@import "./layout/footer/footer";      
+                   
   
   
