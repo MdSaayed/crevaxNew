@@ -188,85 +188,90 @@
 
 
 // home page section     
-#ub-integrations{
-    .integrations__header {
-    
-        .integrations__subtitle-area {
-          @extend .hero__subtitle-area;
-    
-          .integrations__subtitle-group {
-            @extend .hero__subtitle-group;
-    
-            .integrations__subtitle {
-              @extend .hero__subtitle; 
-            }
-          }
-        }
-    
-        .integrations__title {
-          @extend .section-title;
-        }
-    
-        .integrations__desc {
-          @extend .section-desc;
+#ub-integrations {
+  .integrations__header {
+    .integrations__subtitle-area {
+      @extend .hero__subtitle-area;
+
+      .integrations__subtitle-group {
+        @extend .hero__subtitle-group;
+
+        .integrations__subtitle {
+          @extend .hero__subtitle;
         }
       }
-      .integrations-logos {
-        max-width: 1024px;
-        overflow: hidden;  
-        position: relative;
-        margin: 0 auto;
-        margin-top: 4rem;
-        position: relative;
+    }
 
-        .integrations-logos__slider-right{
-          margin-top: 2.5rem;
+    .integrations__title {
+      @extend .section-title;
+    }
+
+    .integrations__desc {
+      @extend .section-desc;
+    }
+  }
+
+  .integrations-logos {
+    max-width: 1024px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 4rem;
+
+    .integrations-logos__slider-right {
+      margin-top: 2.5rem;
+    }
+
+    .swiper-wrapper {
+      width: 80px !important;
+      height: 80px !important;
+      transition-timing-function: linear !important;
+
+      .integrations-logos__slider-item {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .integrations-logos__logo {
+          width: 100%;
+          object-fit: contain;
         }
+      }
+    }
+  }
 
-        .swiper-wrapper {
-          width: 80px !important;
-          height: 80px !important;
-          transition-timing-function: linear !important;
+  .integrations-logos::after,
+  .integrations-logos::before {
+    position: absolute;
+    content: " ";
+    bottom: 0;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    background: $soft-lilac;
+    filter: blur(56.8px);
+    z-index: 99;
+  }
 
-          .integrations-logos__slider-item {
-            width: 80px; 
-            height: 80px;  
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-            .integrations-logos__logo {
-              width: 100%;
-              object-fit: contain;  
-          }
-        }
-      }    
+  .integrations-logos::after {
+    left: -170px;
+    @media (max-width: 768px) {
+      width: 140px;
+      height: 140px;
+      left: -70px;
     }
- 
-    .integrations-logos::after {
-        position: absolute;
-        content: " ";
-        bottom: 0;
-        left: -170px;
-        width: 340px;
-        height: 340px;
-        border-radius: 50%;
-        background: $soft-lilac;
-        filter: blur(56.8px);
-        z-index: 99; 
+  }
+
+  .integrations-logos::before {
+    right: -170px;
+    @media (max-width: 768px) {
+      width: 140px;
+      height: 140px;
+      right: -70px;
     }
-    .integrations-logos::before {
-        position: absolute;
-        content: " ";
-        bottom: 0;
-        right: -170px;
-        width: 340px;
-        height: 340px;
-        border-radius: 50%;
-        background: $soft-lilac;
-        filter: blur(56.8px);
-        z-index: 99; 
-    }
+  }
 }
 
 

@@ -1333,7 +1333,6 @@ body {
   position: relative;
   margin: 0 auto;
   margin-top: 4rem;
-  position: relative;
 }
 
 #ub-integrations .integrations-logos .integrations-logos__slider-right {
@@ -1367,11 +1366,11 @@ body {
      object-fit: contain;
 }
 
-#ub-integrations .integrations-logos::after {
+#ub-integrations .integrations-logos::after,
+#ub-integrations .integrations-logos::before {
   position: absolute;
   content: " ";
   bottom: 0;
-  left: -170px;
   width: 340px;
   height: 340px;
   border-radius: 50%;
@@ -1381,18 +1380,28 @@ body {
   z-index: 99;
 }
 
+#ub-integrations .integrations-logos::after {
+  left: -170px;
+}
+
+@media (max-width: 768px) {
+  #ub-integrations .integrations-logos::after {
+    width: 140px;
+    height: 140px;
+    left: -70px;
+  }
+}
+
 #ub-integrations .integrations-logos::before {
-  position: absolute;
-  content: " ";
-  bottom: 0;
   right: -170px;
-  width: 340px;
-  height: 340px;
-  border-radius: 50%;
-  background: #FCFAFF;
-  -webkit-filter: blur(56.8px);
-          filter: blur(56.8px);
-  z-index: 99;
+}
+
+@media (max-width: 768px) {
+  #ub-integrations .integrations-logos::before {
+    width: 140px;
+    height: 140px;
+    right: -70px;
+  }
 }
 
 #footer .footer__content {
