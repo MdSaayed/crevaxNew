@@ -991,8 +991,8 @@ body {
   color: #404040;
 }
 #ub-blog-details .blog-details__container .blog-details__header .blog-details__title {
-  font-size: 2.5rem;
-  line-height: 1.2;
+  font-size: 2.5rem !important;
+  line-height: 1.2 !important;
 }
 #ub-blog-details .blog-details__container .blog-details__thumbnail {
   padding: 1.5rem;

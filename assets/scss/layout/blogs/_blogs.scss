@@ -152,8 +152,8 @@
 
             .blog-details__title{
                 @extend .section-title;
-                font-size: 2.5rem;
-                line-height:  1.2;
+                font-size: 2.5rem !important;
+                line-height:  1.2 !important;
             }
 
             .blog-details__desc {
