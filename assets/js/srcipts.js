@@ -174,40 +174,37 @@ tabButtons.forEach(button => {
 
 
 // ===================menu=========================================
-document.addEventListener('DOMContentLoaded', () => {
-    // Selectors
-    const menuButton = document.querySelector('.fa-bars'); // Menu button
-    const closeButton = document.querySelector('.menu-close-btn'); // Close button
-    const navMenu = document.querySelector('nav'); // Navigation menu
 
-    // Open Menu
-    if (menuButton && navMenu) {
-        menuButton.addEventListener('click', () => {
-            navMenu.classList.add('active'); // Add 'active' class
-            document.body.style.overflow = 'hidden'; // Prevent scrolling
-        });
-    } else {
-        console.error('Menu button or navigation menu not found!');
-    }
+// Mobile Menu Toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const navWrapper = document.querySelector('.nav-wrapper');
+const closeBtn = document.querySelector('.mobile-menu__close-icon');
+const body = document.body;
 
-    // Close Menu
-    if (closeButton && navMenu) {
-        closeButton.addEventListener('click', () => {
-            navMenu.classList.remove('active'); // Remove 'active' class
-            document.body.style.overflow = 'auto'; // Enable scrolling
-        });
-    } else {
-        console.error('Close button or navigation menu not found!');
-    }
-
-    // Hide menu on screen resize for larger screens
-    window.addEventListener('resize', () => {
-        if (window.innerWidth > 992) {
-            navMenu.classList.remove('active'); // Hide menu
-            document.body.style.overflow = 'auto'; // Enable scrolling
-        }
-    });
+menuToggle.addEventListener('click', () => {
+    navWrapper.classList.add('active');
+    body.classList.add('menu-open'); // Add class to disable scrolling and apply overlay
 });
+
+closeBtn.addEventListener('click', () => {
+    navWrapper.classList.remove('active');
+    body.classList.remove('menu-open'); // Remove class to re-enable scrolling and remove overlay
+});
+
+// Toggle Dropdowns in Mobile Menu
+const menuItems = document.querySelectorAll('.mobile-menu li > a');
+menuItems.forEach((item) => {
+    item.addEventListener('click', (e) => {
+        const parentLi = e.target.parentElement;
+        const dropdown = parentLi.querySelector('ul.dropdown');
+        if (dropdown) {
+            e.preventDefault();
+            dropdown.classList.toggle('active');
+            parentLi.classList.toggle('active'); 
+        }
+    }); 
+});
+
 
 
 // Close Mobile Menu if clicked outside

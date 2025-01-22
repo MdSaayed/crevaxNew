@@ -28,6 +28,89 @@
 </head>
 <body>
 
+    <header class="header">
+        <div class="header__container">
+            <nav class="header__navigation">
+                <div class="header__branding">
+                    <a href="#">
+                        <img src="./assets/img/logo/logo.svg" alt="Logo">
+                    </a>
+                </div>
+                <div class="header__menu">
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Services</a>
+                            <ul class="menu__submenu">
+                                <li class="menu__item"><a href="#" class="menu__link">Web Design</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">SEO</a></li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Digital Marketing</a>
+                                    <ul class="menu__submenu">
+                                        <li class="menu__item"><a href="#" class="menu__link">Social Media</a></li>
+                                        <li class="menu__item"><a href="#" class="menu__link">Email Marketing</a></li>
+                                        <li class="menu__item"><a href="#" class="menu__link">PPC Ads</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"><a href="#" class="menu__link">About</a></li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Blog</a>
+                            <ul class="menu__submenu">
+                                <li class="menu__item"><a href="#" class="menu__link">Tech News</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Tutorials</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="header__actions">
+                    <a href="#" class="header__button header__button--login">Login</a>
+                    <a href="#" class="header__button header__button--get-started">Get Started</a>
+                    <div class="menu-toggle">☰</div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="nav-wrapper">
+        <div class="mobile-menu">
+            <div class="mobile-menu__header">
+                <div class="mobile-menu__logo-wrapper">
+                    <img class="mobile-menu__logo" src="./assets/img/logo/Logo.png" alt="Logo">
+                </div>
+                <div class="mobile-menu__close-btn">
+                    <span class="mobile-menu__close-icon">×</span>
+                </div>
+            </div>
+            <ul class="mobile-menu__list">
+                <li><a href="#">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li class="has-dropdown"> <a href="#">Features</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Feature 1</a></li>
+                        <li class="has-dropdown">
+                            <a href="#">Feature 2</a>
+                            <ul class="dropdown">
+                                <li><a href="#">Sub Feature 1</a></li>
+                                <li><a href="#">Sub Feature 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Feature 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">All pages</a></li>
+                <li><a href="#">Cart(0)</a></li>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#" class="get-started">Get Started</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
     <main>
         <!-- hero start here -->
         <section id="ub-hero-section-home" class="ub-hero">

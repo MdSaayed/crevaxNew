@@ -468,6 +468,212 @@ body {
   font-weight: 500;
 }
 
+.menu-toggle {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  background: #4A148C;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.nav-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  background: white;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 999;
+  overflow-y: auto;
+}
+.nav-wrapper.active {
+  transform: translateX(0);
+}
+.nav-wrapper .mobile-menu__header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-wrapper .mobile-menu__header .mobile-menu__close-icon {
+  font-size: 34px;
+  color: gray;
+  cursor: pointer;
+}
+.nav-wrapper .mobile-menu__list {
+  padding: 20px;
+  list-style: none;
+}
+.nav-wrapper .mobile-menu__list li {
+  margin-bottom: 15px;
+  position: relative;
+}
+.nav-wrapper .mobile-menu__list li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  display: block;
+  width: 100%;
+}
+.nav-wrapper .mobile-menu__list li.has-dropdown::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+.nav-wrapper .mobile-menu__list li.has-dropdown.active::after {
+  transform: rotate(90deg);
+}
+.nav-wrapper .mobile-menu__list li .dropdown {
+  display: none;
+  margin-left: 15px;
+  margin-top: 15px;
+  border-left: 1px solid gray;
+  padding-left: 15px;
+}
+.nav-wrapper .mobile-menu__list li .dropdown.active {
+  display: block;
+}
+
+.mobile-menu__close-icon {
+  font-size: 34px;
+  color: gray;
+  cursor: pointer;
+}
+
+.header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+.header__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  height: 50px;
+  width: auto;
+}
+
+.header__menu {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .header__menu {
+    display: block;
+  }
+}
+
+.menu {
+  display: inline-flex;
+  gap: 20px;
+}
+.menu__item {
+  position: relative;
+}
+.menu__link {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 10px 15px;
+  display: block;
+}
+.menu__link:hover {
+  color: #0073e6;
+}
+.menu__submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  min-width: 200px;
+  z-index: 1000;
+}
+.menu__submenu .menu__submenu {
+  top: 0;
+  left: 100%;
+}
+.menu__submenu .menu__link {
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+.menu__submenu .menu__link:hover {
+  background-color: #f5f5f5;
+}
+.menu__item:hover > .menu__submenu {
+  display: block;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header__button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.header__button--login {
+  color: #333333;
+  border: 1px solid #cccccc;
+}
+.header__button--login:hover {
+  background-color: #f5f5f5;
+}
+.header__button--get-started {
+  background-color: #0073e6;
+  color: #ffffff;
+  border: none;
+}
+.header__button--get-started:hover {
+  background-color: #005bb5;
+}
+
+body.menu-open {
+  overflow: hidden;
+  position: relative;
+}
+
+body.menu-open::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #181D27;
+  opacity: 0.6;
+}
+
 #ub-hero-section-home .hero__container {
   padding-top: 0;
   padding-bottom: 0;
@@ -765,7 +971,7 @@ body {
 #ub-faq .faq__item .faq__question::after {
   content: "\f067";
   font-family: "Font Awesome 6 Free";
-  color: #7F56D9;
+  color: #4A148C;
   font-weight: 900;
   position: absolute;
   right: 0;
@@ -846,7 +1052,7 @@ body {
   line-height: 24px;
   color: #171717;
   background-color: #F5FAF7;
-  border: 1px solid #7F56D9;
+  border: 1px solid #4A148C;
   padding: 8px 15px;
   border-radius: 50px;
   cursor: pointer;
@@ -854,8 +1060,8 @@ body {
 }
 #ub-cta .cta__area .cta__btn-group .cta__btn:hover {
   color: #fff;
-  background-color: #7F56D9;
-  border: 1px solid #7F56D9;
+  background-color: #4A148C;
+  border: 1px solid #4A148C;
   transition: 0.5s ease;
 }
 #ub-cta .cta__area .cta__background-right,
@@ -1066,7 +1272,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 #ub-latest-posts .latest-posts__header .latest-posts__filter-list .latest-posts__filter-btn:hover, #ub-latest-posts .latest-posts__header .latest-posts__filter-list .latest-posts__filter-btn--active {
-  background-color: #7F56D9;
+  background-color: #4A148C;
   color: #fff;
 }
 @media (max-width: 1024px) {
@@ -1637,7 +1843,7 @@ body {
   padding-right: 1rem;
 }
 #footer .footer__content .footer__newsletter .footer__input-wrapper input:focus {
-  border: 1px solid #7F56D9;
+  border: 1px solid #4A148C;
   outline: none;
 }
 #footer .footer__content .footer__newsletter .footer__input-wrapper input[type=email] {
@@ -1648,17 +1854,17 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #F5FAF7;
-  background-color: #7F56D9;
-  border: 1px solid #7F56D9;
+  background-color: #4A148C;
+  border: 1px solid #4A148C;
   padding: 8px 15px;
   border-radius: 50px;
   cursor: pointer;
   font-weight: 500;
 }
 #footer .footer__content .footer__newsletter .footer__input-wrapper .btn:hover {
-  color: #7F56D9;
+  color: #4A148C;
   background-color: transparent;
-  border: 1px solid #7F56D9;
+  border: 1px solid #4A148C;
   transition: 0.5s ease;
 }
 #footer .footer__content .footer__newsletter .footer__input-wrapper .footer__newsletter-des {
@@ -1757,7 +1963,7 @@ body {
   color: #717680;
 }
 #footer .footer__content .footer__copyright .footer__copyright-text .footer__link {
-  color: #7F56D9;
+  color: #4A148C;
 }
 @media (max-width: 1024px) {
   #footer .footer__content .footer__copyright .footer__copyright-text {
