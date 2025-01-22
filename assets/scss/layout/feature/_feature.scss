@@ -193,7 +193,9 @@
                     color: $dark-grayish-green;  
                     font-size: 1rem;
                     font-weight: 400;
-                    line-height: 24px;       
+                    line-height: 24px;   
+                    font-size: 1.12rem;
+                    line-height: 1.6;    
                 } 
                 .feature-details__list--dash {
                      @extend .list-dash;

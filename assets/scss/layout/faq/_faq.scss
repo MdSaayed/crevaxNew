@@ -1,5 +1,9 @@
 #ub-faq {
     overflow-x: hidden;
+    .faq__container{
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
 
     .faq__grid {
         display: grid;
