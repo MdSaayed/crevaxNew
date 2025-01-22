@@ -23,11 +23,8 @@
             @extend .hero__subtitle-group;
         }
 
-        .faq__sub-title {
-            font-size: 1rem;
-            text-transform: uppercase;
-            color: $primary-color;
-            margin-bottom: 0.5rem;
+        .faq__subtitle {
+            @extend .hero__subtitle;
         }
 
         .faq__title {

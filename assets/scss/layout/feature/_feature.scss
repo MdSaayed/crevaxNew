@@ -1,13 +1,65 @@
 
-#hero-section-features{
-    .hero-content-area {
-        .content{
-            height: auto;
-            padding: 7rem 1.5rem;
+#feature-hero {
+    .feature-hero__container {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 
+    .feature-hero__content {
+        min-height: 500px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2.5rem;
+        .feature-hero__subtitle-area{
+            @extend .hero__subtitle-area;
+        }
+
+        .feature-hero__subtitle-group {
+            @extend .hero__subtitle-group;
+            background-color: $soft-lilac;
+        }
+
+        .feature-hero__title {
+            @extend .section-title;
+        }
+
+        .feature-hero__desc {
+            @extend .section-desc;
+        }
+
+        .feature-hero__button-group {
+            @extend .button-group;
+            margin-top: 2rem;
+
+            .feature-hero__button--primary {
+                @include btn(
+                    $bgColor: $text-primary, 
+                    $hoverBgColor: $background-light-green, 
+                    $color: $light-color, 
+                    $hoverColor: $text-primary, 
+                    $border: $background-light-green, 
+                    $hoverBorder: $background-light-green
+                );
+            }
+
+            .feature-hero__button--secondary {
+                @include btn(
+                    $bgColor: $background-light-green, 
+                    $hoverBgColor: $text-primary, 
+                    $color: $text-primary, 
+                    $hoverColor: $light-color, 
+                    $border: $background-light-green, 
+                    $hoverBorder: $text-primary
+                );
+            }
         }
     }
 }
+
 
 #ub-features {
 
@@ -33,7 +85,7 @@
 
         .features__desc {
             @extend .section-desc;
-        }
+        } 
 
         .features__area {
             display: grid;
@@ -87,52 +139,71 @@
 
 // feature details
 #ub-feature-details{
-    .container {
+    .feature-details__container {
         padding-top: 7rem; 
         padding-bottom: 7rem; 
     
-        .section-heading{
-            .heading-desc {
-                text-align: center;  
-                margin-top: 1.5rem; 
-                line-height: 27px;  
-              }
+        .feature-details__header{
+            .feature-details__title{
+                @extend .section-title;
+            }
+            .feature-details__subtitle-area{
+                @extend .hero__subtitle-area;
+            }
+            .feature-details__subtitle-group{
+                @extend .hero__subtitle-group;
+            }
+            .feature-details__subtitle{
+                @extend .hero__subtitle;
+            }
+            .feature-details__desc {
+               @extend .section-desc; 
+            }
               
         }
-        .features-area {
-            margin-top: 4rem;  
-            .thumbnail {
-                padding: 1.5rem; 
-                border-radius: 1.5rem;  
-                img{
-                    width:100%;
-                }
-              }
+ 
+        .feature-details__thumbnail {
+            padding: 1.5rem; 
+            border-radius: 1.5rem; 
+            margin-top: 2.5rem;
+
+            .feature-details__image{
+                width:100%;
+            }
+        }
               
-          }
           
-        .feature-content{
+        .feature-details__content{
             display: flex;
             flex-direction: column;  
             gap: 1.5rem; 
 
-            .wrapper {
+            .feature-details__content-wrapper {
                 display: flex;
                 flex-direction: column;  
                 gap: 1.5rem; 
 
-                h3 {
-                    color:$dark-neutral;           
+                .feature-details__content-title {
+                    color:$text-primary;           
                     font-weight: 500;  
                     font-size: 1.875rem; 
                   }
                   
-                p{
-                    color: $dark-gray;         
+                .feature-details__content-text,.feature-details__list--dash,.feature-details__list--bulet{
+                    color: $dark-grayish-green;  
+                    font-size: 1rem;
+                    font-weight: 400;
+                    line-height: 24px;       
                 } 
+                .feature-details__list--dash {
+                     @extend .list-dash;
+                  }
+                .feature-details__list--bulet {
+                     @extend .list-bulet;
+                  } 
               }
 
-            @media (min-width: 768px) {  
+            @media (min-width: 768px) {   
                 padding-left: 6rem; 
                 padding-right: 6rem; 
             }
