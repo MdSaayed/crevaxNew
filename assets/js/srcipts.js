@@ -175,55 +175,75 @@ tabButtons.forEach(button => {
 
 // ===================menu=========================================
 
-// Mobile Menu Toggle
-const menuToggle = document.querySelector('.menu-toggle');
-const navWrapper = document.querySelector('.nav-wrapper');
-const closeBtn = document.querySelector('.mobile-menu__close-icon');
+// Toggle mobile menu
+const menuToggle = document.querySelector('.header__menu-toggle');
+const mobileNav = document.querySelector('.mobile-nav');
+const closeBtn = document.querySelector('.mobile-nav__close-btn');
 const body = document.body;
 
+// Function to close all dropdowns
+const closeAllDropdowns = () => {
+  document.querySelectorAll('.mobile-nav__item--has-dropdown').forEach(item => {
+    item.classList.remove('active'); // Close all dropdowns
+  });
+};
+
 menuToggle.addEventListener('click', () => {
-    navWrapper.classList.add('active');
-    body.classList.add('menu-open'); // Add class to disable scrolling and apply overlay
+  mobileNav.classList.add('active'); // Slide in the menu
+  body.classList.add('menu-open'); // Add overlay and disable scrolling
 });
 
 closeBtn.addEventListener('click', () => {
-    navWrapper.classList.remove('active');
-    body.classList.remove('menu-open'); // Remove class to re-enable scrolling and remove overlay
+  mobileNav.classList.remove('active'); // Slide out the menu
+  body.classList.remove('menu-open'); // Remove overlay and enable scrolling
+  closeAllDropdowns(); // Close all dropdowns
 });
 
-// Toggle Dropdowns in Mobile Menu
-const menuItems = document.querySelectorAll('.mobile-menu li > a');
-menuItems.forEach((item) => {
-    item.addEventListener('click', (e) => {
-        const parentLi = e.target.parentElement;
-        const dropdown = parentLi.querySelector('ul.dropdown');
-        if (dropdown) {
-            e.preventDefault();
-            dropdown.classList.toggle('active');
-            parentLi.classList.toggle('active'); 
-        }
-    }); 
-});
-
-
-
-// Close Mobile Menu if clicked outside
-document.addEventListener('DOMContentLoaded', () => {
-  const navMenu = document.getElementById('nav-menu'); // Replace with actual ID
-  const body = document.body;
-
-  if (!navMenu) {
-      return; // Stop execution if elements are missing
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+  if (
+    !mobileNav.contains(e.target) && // Click is outside the menu
+    !menuToggle.contains(e.target) && // Click is not on the toggle button
+    mobileNav.classList.contains('active')  
+  ) {
+    mobileNav.classList.remove('active');  
+    body.classList.remove('menu-open');  
+    closeAllDropdowns();  
   }
+});
 
-  // Close menu on outside click
-  document.addEventListener('click', (event) => {
-      if (!navMenu.contains(event.target)) {
-          navMenu.classList.remove('active');
-          body.style.overflow = 'auto';
-      }
+// Dropdown functionality
+document.querySelectorAll('.mobile-nav__item--has-dropdown').forEach(item => {
+  const link = item.querySelector('.mobile-nav__link');
+  link.addEventListener('click', (e) => {
+    e.preventDefault(); 
+    e.stopPropagation();  
+    item.classList.toggle('active');
+    const parentItem = item.closest('.mobile-nav__item--has-dropdown');
+    if (parentItem) {
+      parentItem.querySelectorAll('.mobile-nav__item--has-dropdown').forEach(otherItem => {
+        if (otherItem !== item) {
+          otherItem.classList.remove('active');
+        }
+      });
+    } else {
+      document.querySelectorAll('.mobile-nav__item--has-dropdown').forEach(otherItem => {
+        if (otherItem !== item) {
+          otherItem.classList.remove('active');
+        }
+      });
+    }
   });
 });
+
+// Prevent clicks on non-dropdown links from closing the dropdown
+document.querySelectorAll('.mobile-nav__item:not(.mobile-nav__item--has-dropdown) .mobile-nav__link').forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.stopPropagation(); // Stop event from bubbling to parent dropdown items
+  });
+});
+
+
 
 // ==========================ANIMATION=======================
 AOS.init({

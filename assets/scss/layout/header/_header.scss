@@ -1,253 +1,238 @@
-// Variables
-$primary-color: #4A148C;
-$shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-$mobile-menu-width: 300px;
-$transition-duration: 0.3s;
+// ===========================mobile menu============================
 
-// Mobile Menu Toggle
-.menu-toggle {
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-    background: $primary-color;
-    color: white;
-    border-radius: 50%;
-    cursor: pointer;
+.mobile-nav {
+  background-color:$white;
+  border: 1px solid #ddd;
+  width: 300px;
+  height: 100vh; // Full height
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);  
+  transition: transform 0.3s ease-in-out;  
+  z-index: 1000;  
 
-    @media (min-width:1024px) {
-      display: none;
-    }
-}
-
-// Mobile Navigation
-.nav-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: $mobile-menu-width;
-    background: white;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
-    height: 100vh;
-    transform: translateX(-100%);
-    transition: transform $transition-duration ease-in-out;
-    z-index: 999;
-    overflow-y: auto;
-
-    &.active {
-        transform: translateX(0);
-    }
-
-    .mobile-menu {
-        &__header {
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-            padding: 10px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            .mobile-menu__close-icon {
-                font-size: 34px;
-                color: gray;
-                cursor: pointer;
-            }
-        }
-
-        &__list {
-            padding: 20px;
-            list-style: none;
-
-            li {
-                margin-bottom: 15px;
-                position: relative;
-
-                a {
-                    text-decoration: none;
-                    color: #333;
-                    font-size: 18px;
-                    display: block;
-                    width: 100%;
-                }
-
-                &.has-dropdown {
-                    &::after {
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        content: "\f054";
-                        font-family: "Font Awesome 5 Free";
-                        font-weight: 900;
-                        margin-left: 8px;
-                        transition: transform $transition-duration ease;
-                    }
-
-                    &.active::after {
-                        transform: rotate(90deg);
-                    }
-                }
-
-                .dropdown {
-                    display: none;
-                    margin-left: 15px;
-                    margin-top: 15px;
-                    border-left: 1px solid gray;
-                    padding-left: 15px;
-
-                    &.active {
-                        display: block;
-                    }
-                }
-            }
-        }
-    }
-}
-
-.mobile-menu__close-icon {
-    font-size: 34px;
-    color: gray;
-    cursor: pointer;
-}
-
-
-
-
-// =============================desktop menu
-
-// Header block
-.header {
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 10px 0;
-
-  &__container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
+  &.active {
+    transform: translateX(0); 
   }
 
-  &__navigation {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
   }
 
   &__logo {
-      height: 50px;
-      width: auto;
+    height: 30px;
   }
-}
 
-// Menu block
-.header__menu{
-  display: none;
-
-  @media (min-width:1024px) {
-    display: block;
+  &__close-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
   }
-}
 
-.menu {
-  display: inline-flex;
-  gap: 20px;
+  &__menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 
-  &__item {
-      position: relative;
+    > .mobile-nav__item {
+      border-bottom: 1px solid #ddd; // Border for main menu items
+    }
   }
 
   &__link {
-      color: #333333;
-      font-size: 16px;
-      font-weight: 500;
-      transition: color 0.3s ease;
-      padding: 10px 15px;
-      display: block;
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    position: relative;
 
-      &:hover {
-          color: #0073e6;
-      }
+    &:hover {
+      background-color: #eee;
+    }
   }
 
-  // Dropdown menu block
   &__submenu {
+    list-style: none;
+    padding-left: 20px;
+    margin: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+
+    .mobile-nav__item {
+      border-bottom: none; // Remove border for submenu items
+    }
+  }
+
+  &__item--has-dropdown {
+    > .mobile-nav__link::after {
+      content: "\f054"; // Font Awesome arrow icon
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      position: absolute;
+      right: 10px;
+      font-size: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    &.active {
+      > .mobile-nav__link::after {
+        transform: rotate(90deg); // Rotate icon 90 degrees
+      }
+
+      > .mobile-nav__submenu {
+        max-height: 500px; // Adjust based on your content
+        transition: max-height 0.5s ease-in;
+      }
+    }
+  }
+}
+
+// desktop overlay
+body.menu-open {
+  overflow: hidden;   
+
+  &::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($text-primary, 0.5);  
+    z-index: 999; 
+  }
+}
+
+
+// ========================== Desktop Menu ==========================
+.header {
+  height: 7.5rem;
+  display: flex;
+  align-items: center;
+
+  &__container {
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 100%;
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border: 1px solid $purple-haze;
+    border-radius: 1rem;
+    background-color: $white;
+  }
+
+  &__menu {
+    display: none;
+
+
+    @media (min-width: 1024px) {
+      display: block;
+    }
+  }
+
+  &__menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: $text-primary;
+        font-size: 24px;
+        cursor: pointer;
+
+        @media (min-width: 1024px) {
+          display: none;
+        }
+      }
+
+  .menu {
+    display: flex;
+    gap: 1.5rem;
+
+    &__item {
+      position: relative;
+
+      &:hover > .menu__submenu {
+        display: block;
+      }
+
+      a {
+        color: $gray-medium;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 10px 0;
+        line-height: 2;
+        text-decoration: none;
+        transition: color $transition-duration ease;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+
+    &__submenu {
       display: none;
       position: absolute;
       top: 100%;
       left: 0;
-      background-color: #ffffff;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background: $white;
       border-radius: 5px;
       min-width: 200px;
       z-index: 1000;
 
       .menu__submenu {
-          top: 0;
-          left: 100%;
+        top: 0;
+        left: 100%;
       }
 
-      .menu__link {
-          padding: 10px 20px;
-          white-space: nowrap;
+      a {
+        padding: 10px;
+        line-height: 1.2;
+        white-space: nowrap;
+        display: block;
 
-          &:hover {
-              background-color: #f5f5f5;
-          }
+        &:hover {
+          color: $light-color;
+          background-color: $deep-violet;
+        }
       }
+    }
   }
 
-  &__item:hover > &__submenu {
-      display: block;
-  }
-}
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 
-// Header actions block
-.header__actions {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
+    .header__button {
 
-.header__button {
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 14px;
-  font-weight: 500;
-  transition: all 0.3s ease;
+      &--login {
+        color: $gray-medium;
+        font-size: 1rem;
+        font-weight: normal;
+        line-height: 1.5;
 
-  &--login {
-      color: #333333;
-      border: 1px solid #cccccc;
-
-      &:hover {
-          background-color: #f5f5f5;
+        &:hover {
+          color: $primary-color;
+        }
       }
-  }
 
-  &--get-started {
-      background-color: #0073e6;
-      color: #ffffff;
-      border: none;
-
-      &:hover {
-          background-color: #005bb5;
+      &--get-started {
+        @include btn($bgColor:transparent , $hoverBgColor: $primary-color, $color:$primary-color, $hoverColor:$light-color, $border:$primary-color ,$hoverBorder:$primary-color);
       }
+    }
   }
-}
-
-
-
-
-// body color opacity and scrolling controll when open menu
-body.menu-open {
-  overflow: hidden;  
-  position: relative;  
-}
-
-body.menu-open::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color:$text-primary;
-  opacity: 0.6;
-}
+} 
