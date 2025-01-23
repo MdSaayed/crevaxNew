@@ -2,9 +2,8 @@
 
 .mobile-nav {
   background-color:$white;
-  border: 1px solid #ddd;
   width: 300px;
-  height: 100vh; // Full height
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -21,8 +20,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #333;
-    color: #fff;
+    background-color: $soft-lilac;
   }
 
   &__logo {
@@ -32,7 +30,7 @@
   &__close-btn {
     background: none;
     border: none;
-    color: #fff;
+    color: $text-primary;
     font-size: 24px;
     cursor: pointer;
   }
@@ -43,20 +41,16 @@
     margin: 0;
 
     > .mobile-nav__item {
-      border-bottom: 1px solid #ddd; // Border for main menu items
+      border-bottom: 1px solid $light-gray;  
     }
   }
 
   &__link {
     display: block;
     padding: 10px;
-    color: #333;
+    color: $text-primary;
     text-decoration: none;
     position: relative;
-
-    &:hover {
-      background-color: #eee;
-    }
   }
 
   &__submenu {
@@ -68,16 +62,18 @@
     transition: max-height 0.3s ease-out;
 
     .mobile-nav__item {
-      border-bottom: none; // Remove border for submenu items
+      border-bottom: none;  
     }
   }
 
   &__item--has-dropdown {
     > .mobile-nav__link::after {
-      content: "\f054"; // Font Awesome arrow icon
+      content: "\f054";  
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
       position: absolute;
+      top: 50%;  
+      transform: translateY(-50%); 
       right: 10px;
       font-size: 12px;
       transition: transform 0.3s ease;
@@ -85,13 +81,32 @@
 
     &.active {
       > .mobile-nav__link::after {
-        transform: rotate(90deg); // Rotate icon 90 degrees
+        transform: rotate(90deg);  
       }
 
       > .mobile-nav__submenu {
-        max-height: 500px; // Adjust based on your content
+        max-height: 500px;  
         transition: max-height 0.5s ease-in;
       }
+    }
+  }
+
+  &__button-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 0 10px;
+    gap: 0.5rem;
+
+    .mobile-nav__button--login{
+      @include btn($bgColor:transparent , $hoverBgColor: $primary-color, $color:$primary-color, $hoverColor:$light-color, $border:$primary-color ,$hoverBorder:$primary-color); 
+      display: block;
+      text-align: center;
+    }
+    .mobile-nav__button--get-started{
+      @include btn; 
+      display: block;
+      text-align: center;
     }
   }
 }
@@ -191,6 +206,7 @@ body.menu-open {
       background: $white;
       border-radius: 5px;
       min-width: 200px;
+      box-shadow: 0 -2px 8px $shadow-color, 0 4px 8px $shadow-color;
       z-index: 1000;
 
       .menu__submenu {
@@ -218,21 +234,28 @@ body.menu-open {
     gap: 1.5rem;
 
     .header__button {
-
       &--login {
         color: $gray-medium;
         font-size: 1rem;
         font-weight: normal;
         line-height: 1.5;
-
+    
         &:hover {
           color: $primary-color;
         }
-      }
+    
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }  
 
       &--get-started {
-        @include btn($bgColor:transparent , $hoverBgColor: $primary-color, $color:$primary-color, $hoverColor:$light-color, $border:$primary-color ,$hoverBorder:$primary-color);
+        @include btn($bgColor:transparent , $hoverBgColor: $primary-color, $color:$primary-color, $hoverColor:$light-color, $border:$primary-color ,$hoverBorder:$primary-color); 
+
+        @media (max-width: 768px) {
+          display: none; 
+        }
       }
     }
   }
-} 
+}
