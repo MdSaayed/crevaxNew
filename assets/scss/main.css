@@ -128,7 +128,7 @@ a {
   margin-bottom: 2rem;
 }
 
-.section-title, #ub-integrations .integrations__header .integrations__title, #ub-testimonial .testimonial__title, #ub-pricing .pricing__header .pricing__title, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__title, #ub-latest-posts .latest-posts__header .latest-posts__section-title, #ub-blog-details .blog-details__container .blog-details__header .blog-details__title, #ub-blog .blog__heading .blog__title, #ub-cta .cta__area .cta__title, #ub-faq .faq__heading .faq__title, #ub-feature-details .feature-details__container .feature-details__header .feature-details__title, #ub-features .features_container .features__title, #feature-hero .feature-hero__content .feature-hero__title {
+.section-title, #ub-team .team__container .team__title, #ub-integrations .integrations__header .integrations__title, #ub-testimonial .testimonial__title, #ub-pricing .pricing__header .pricing__title, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__title, #ub-latest-posts .latest-posts__header .latest-posts__section-title, #ub-blog-details .blog-details__container .blog-details__header .blog-details__title, #ub-blog .blog__heading .blog__title, #ub-cta .cta__area .cta__title, #ub-faq .faq__heading .faq__title, #ub-feature-details .feature-details__container .feature-details__header .feature-details__title, #ub-features .features_container .features__title, #feature-hero .feature-hero__content .feature-hero__title {
   font-size: 3rem;
   font-weight: 500;
   line-height: 57px;
@@ -140,7 +140,7 @@ a {
   margin: 1.5rem auto;
 }
 @media (max-width: 768px) {
-  .section-title, #ub-integrations .integrations__header .integrations__title, #ub-testimonial .testimonial__title, #ub-pricing .pricing__header .pricing__title, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__title, #ub-latest-posts .latest-posts__header .latest-posts__section-title, #ub-blog-details .blog-details__container .blog-details__header .blog-details__title, #ub-blog .blog__heading .blog__title, #ub-cta .cta__area .cta__title, #ub-faq .faq__heading .faq__title, #ub-feature-details .feature-details__container .feature-details__header .feature-details__title, #ub-features .features_container .features__title, #feature-hero .feature-hero__content .feature-hero__title {
+  .section-title, #ub-team .team__container .team__title, #ub-integrations .integrations__header .integrations__title, #ub-testimonial .testimonial__title, #ub-pricing .pricing__header .pricing__title, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__title, #ub-latest-posts .latest-posts__header .latest-posts__section-title, #ub-blog-details .blog-details__container .blog-details__header .blog-details__title, #ub-blog .blog__heading .blog__title, #ub-cta .cta__area .cta__title, #ub-faq .faq__heading .faq__title, #ub-feature-details .feature-details__container .feature-details__header .feature-details__title, #ub-features .features_container .features__title, #feature-hero .feature-hero__content .feature-hero__title {
     font-size: 2.8rem !important;
     line-height: 48px !important;
   }
@@ -1853,6 +1853,99 @@ body.menu-open::before {
   #ub-feature-details .feature-details__container {
     padding-left: 7rem;
     padding-right: 7rem;
+  }
+}
+
+#ub-team .team__container .team__title {
+  margin-bottom: 5rem;
+  max-width: 37rem;
+}
+#ub-team .team__container .team__members {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 3rem;
+}
+#ub-team .team__container .team__members .team__member {
+  border-radius: 12px;
+  overflow: hidden;
+}
+#ub-team .team__container .team__members .team__member .team__member-info {
+  padding-bottom: 4px;
+  border-bottom: 1px solid #6941C6;
+}
+#ub-team .team__container .team__members .team__member .team__member-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 320px;
+  width: 100%;
+  background-color: #7F56D9;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+#ub-team .team__container .team__members .team__member .team__member-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#ub-team .team__container .team__members .team__member .team__member-details {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin: -20px 12px 12px;
+  box-shadow: 0px 6px 15px -10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+#ub-team .team__container .team__members .team__member .team__member-details .team__member-name {
+  color: #171717;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 4px;
+}
+#ub-team .team__container .team__members .team__member .team__member-details .team__member-role {
+  font-size: 14px;
+  font-weight: 400;
+  color: #404040;
+  text-align: center;
+  line-height: 1.5;
+}
+#ub-team .team__container .team__members .team__member .team__member-social {
+  margin-top: 21px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+#ub-team .team__container .team__members .team__member .team__member-social .team__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7F56D9;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+}
+@media (min-width: 768px) {
+  #ub-team .team__container .team__members {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  #ub-team .team__container .team__members {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+}
+@media (min-width: 1280px) {
+  #ub-team .team__container .team__members {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
