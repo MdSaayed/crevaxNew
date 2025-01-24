@@ -542,8 +542,9 @@ body {
   transform: rotate(90deg);
 }
 .mobile-nav__item--has-dropdown.active > .mobile-nav__submenu {
-  max-height: 500px;
+  max-height: 1000px;
   transition: max-height 0.5s ease-in;
+  overflow-y: scroll;
 }
 .mobile-nav__button-wrapper {
   display: flex;
