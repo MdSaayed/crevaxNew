@@ -49,4 +49,15 @@
         align-items: center;
         margin-left: 1rem;
     }
+
+    @media (max-width: 768px) {
+        &__card-title{
+            text-align: center;
+        }
+
+        &__card-value {
+            justify-content: center;
+        }
+    }
+
 }

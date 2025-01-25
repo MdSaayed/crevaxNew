@@ -2159,6 +2159,14 @@ body.menu-open::before {
   align-items: center;
   margin-left: 1rem;
 }
+@media (max-width: 768px) {
+  .stats__card-title {
+    text-align: center;
+  }
+  .stats__card-value {
+    justify-content: center;
+  }
+}
 
 .about-hero__container {
   padding-top: 0;

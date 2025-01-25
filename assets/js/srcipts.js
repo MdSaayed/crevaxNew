@@ -102,62 +102,51 @@ filterButtons.forEach(button => {
   
 // Countdown Section ================================================
 function startCounter() {
-    const counters = document.querySelectorAll('#ub-stats .stats__animated-text');
-  
-    counters.forEach(counter => {
+  const counters = document.querySelectorAll('#ub-stats .stats__animated-text');
+
+  counters.forEach(counter => {
       const target = +counter.getAttribute('data-target'); // Get the target number
       let count = 0;
       const duration = 2000; // Animation duration in milliseconds
       const startTime = performance.now(); // Get the start time for smooth animation
-  
-      const updateCounter = (currentTime) => {
-        const elapsedTime = currentTime - startTime; // Calculate elapsed time
-        const progress = Math.min(elapsedTime / duration, 1); // Ensure progress doesn't exceed 1
-        count = Math.floor(progress * target); // Calculate the current count
-  
-        counter.textContent = count.toLocaleString(); // Update the counter text with formatted number
-  
-        if (progress < 1) {
-          requestAnimationFrame(updateCounter); // Continue the animation
-        } else {
-          counter.textContent = target.toLocaleString(); // Ensure it ends at the target
-        }
-      };
-  
-      requestAnimationFrame(updateCounter); // Start the animation
-    });
-  }
-  
-  // Trigger the counter animation when the section comes into view
-  const statsSection = document.getElementById('ub-stats');
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          startCounter(); // Start the counter when the section is visible
-          observer.unobserve(statsSection); // Stop observing after triggering
-        }
-      });
-    },
-    { threshold: 0.5 }  
-  );
-  
-  observer.observe(statsSection);  
 
+      const updateCounter = (currentTime) => {
+          const elapsedTime = currentTime - startTime; // Calculate elapsed time
+          const progress = Math.min(elapsedTime / duration, 1); // Ensure progress doesn't exceed 1
+          count = Math.floor(progress * target); // Calculate the current count
+
+          counter.textContent = count.toLocaleString(); // Update the counter text with formatted number
+
+          if (progress < 1) {
+              requestAnimationFrame(updateCounter); // Continue the animation
+          } else {
+              counter.textContent = target.toLocaleString(); // Ensure it ends at the target
+          }
+      };
+
+      requestAnimationFrame(updateCounter); // Start the animation
+  });
+}
+
+// Trigger the counter animation when the section comes into view
 document.addEventListener('DOMContentLoaded', () => {
-    const section = document.querySelector('#stats-section');
-    if (section) {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                if (entries[0].isIntersecting) {
-                    startCounter();
-                    observer.disconnect(); // Run only once
-                }
-            },
-            { threshold: 0.5 } // Trigger when 50% visible
-        );
-        observer.observe(section);
-    } 
+  const statsSection = document.getElementById('ub-stats');
+
+  if (statsSection) {
+      const observer = new IntersectionObserver(
+          (entries) => {
+              if (entries[0].isIntersecting) {
+                  startCounter(); // Start the counter when the section is visible
+                  observer.disconnect(); // Stop observing after triggering
+              }
+          },
+          { threshold: 0.5 } // Trigger when 50% visible
+      );
+
+      observer.observe(statsSection); // Start observing the stats section
+  } else {
+      console.error('Element with id "ub-stats" not found in the DOM.');
+  }
 });
 
   
