@@ -52,7 +52,7 @@ body {
     
 }
 
-.list-bulet  {
+.list-bulet ,.team-details__list {
     list-style: none;
     padding-left: 0;
     margin: 0;
@@ -94,4 +94,4 @@ body {
         font-weight: 500;
       }
     }
-  }
+  } 

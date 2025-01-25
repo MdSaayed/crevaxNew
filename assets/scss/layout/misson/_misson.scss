@@ -1,92 +1,53 @@
-#ub-mission{
-    .container{
-        padding-top:0;
+#ub-mission {
+  .container {
+      .mission-vision__content {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          gap: 2rem;
+          margin-top: 3rem;
 
-        .about-image {
-            display: flex;  
-            flex-direction: column;  
+          .mission-vision__card {
+              border-radius: 12px;
+              background-color: $deep-violet;
+              padding: 1.5rem;
 
-            .image-wrapper {
-              width: 100%;  
+              .mission-vision__card-title {
+                //   color:$dark-neutral;
+                  color: $white;
+                  font-size: 2.5rem;
+                  text-align: left;
+                  font-weight: 500;
+                  margin-bottom: 1rem;
+                  line-height: 1.2;
+              }
 
-              &.large {
-                @media (min-width: 768px) {  
-                  width: 66.6667%;  
-                }
+              .mission-vision__card-desc {
+                  color: $white;
+                //   color: $dark-gray;
+                  font-size: 1.125rem;
+                  text-align: left;
+                  line-height: 1.5;
               }
-          
-              &.small {
-                @media (min-width: 768px) {  
-                  width: 33.3333%;  
-                }
+
+              @media (min-width: 1024px) {
+                  &--span-3 {
+                      grid-column: span 3;
+                  }
+
+                  &--span-2 {
+                      grid-column: span 2;
+                  }
               }
-          
-              img {
-                width: 100%;  
-                height: 100%;  
-                object-fit: cover;
-              }
-          
-              
-            }
-            
-          
-            @media (min-width: 768px) {  
-              flex-direction: row; 
-            }
-          
-            gap: 1.25rem; 
           }
 
-          .our-mission {
-            display: grid;  
-            grid-template-columns: repeat(1, 1fr); 
-            gap: 1.25rem;  
-            margin-top: 3rem;  
-
-            .card {
-              border-radius: 12px; 
-              background-color: $light-normal;
-              padding: 1.5rem; 
-
-              .card-title {
-                font-size: 2.25rem; 
-                text-align: left;
-                font-weight: 500; 
-                margin-bottom: 1rem;  
-              }
-
-              .card-desc {
-                text-align: left;
-                line-height: 1.625;
-                color: $dark-gray;
-                font-size: 18px;
-              }
-              
-              
-            
-              @media (min-width: 1024px) { 
-                &.col-span-3 {
-                  grid-column: span 3; 
-                }
-                &.col-span-2 {
-                  grid-column: span 2;   
-                }
-              }
-            }
-            
-          
-            @media (min-width: 768px) {  
-              grid-template-columns: repeat(2, 1fr); 
-            }
-          
-            @media (min-width: 1024px) { 
-              grid-template-columns: repeat(5, 1fr);  
-            }
+          @media (min-width: 768px) {
+              grid-template-columns: repeat(2, 1fr);
           }
-          
-          
-    }
-}
 
- 
+          @media (min-width: 1024px) {
+              grid-template-columns: repeat(5, 1fr);
+              gap: 1.5rem;
+          }
+      }
+  }
+}  

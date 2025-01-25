@@ -1,35 +1,32 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Select all divs with the data-bg-img attribute
     const bgDivs = document.querySelectorAll('[data-bg-img]');
-    
-    // Iterate over each div and set the background image
     bgDivs.forEach(div => {
         const bgImg = div.getAttribute('data-bg-img');
         
         if (bgImg) {
-            // Set both the background image and gradient
             div.style.background = `url(${bgImg})`;
-            div.style.backgroundSize = 'cover'; // Ensure both layers cover the div
-            div.style.backgroundPosition = 'center'; // Center the image
-            div.style.zIndex = '999'; // Optional: Adjust the stacking order
+            div.style.backgroundSize = 'cover';  
+            div.style.backgroundPosition = 'center';  
+            div.style.zIndex = '999';  
         }
     });
 });
 
 
 
+// FAQ section ==================================================================
 const faqQuestions = document.querySelectorAll('.faq__question');
 
 // Set the first item active by default
 const firstAnswer = document.querySelector('.faq__answer.active');
 if (firstAnswer) {
-    firstAnswer.style.maxHeight = firstAnswer.scrollHeight + 'px'; // Set height dynamically
+    firstAnswer.style.maxHeight = firstAnswer.scrollHeight + 'px';  
 }
 
 // Add click event listeners for toggle
 faqQuestions.forEach(item => {
     item.addEventListener('click', () => {
-        const faqItem = item.closest('.faq__item'); // Get the parent .faq__item
+        const faqItem = item.closest('.faq__item');  
         const answer = faqItem.querySelector('.faq__answer');
 
         // Close other answers and remove active class from other questions
@@ -42,22 +39,22 @@ faqQuestions.forEach(item => {
 
         document.querySelectorAll('.faq__question').forEach(question => {
             if (question !== item) {
-                question.classList.remove('active'); // Remove active class from other questions
-                question.closest('.faq__item').classList.remove('active'); // Remove active class from parent item
+                question.classList.remove('active'); 
+                question.closest('.faq__item').classList.remove('active'); 
             }
         });
 
         // Toggle the current answer and parent item
         if (answer.classList.contains('active')) {
-            answer.style.maxHeight = '0'; // Collapse
+            answer.style.maxHeight = '0'; 
             answer.classList.remove('active');
-            item.classList.remove('active'); // Remove active class from question
-            faqItem.classList.remove('active'); // Remove active class from item
+            item.classList.remove('active'); 
+            faqItem.classList.remove('active');  
         } else {
-            answer.style.maxHeight = answer.scrollHeight + 'px'; // Expand
+            answer.style.maxHeight = answer.scrollHeight + 'px';  
             answer.classList.add('active');
-            item.classList.add('active'); // Add active class to question
-            faqItem.classList.add('active'); // Add active class to item
+            item.classList.add('active');  
+            faqItem.classList.add('active'); 
         }
     });
 });
@@ -66,7 +63,7 @@ faqQuestions.forEach(item => {
 
 
 
-// pricing swither
+// pricing swither =============================================================
 document.querySelectorAll('.pricing__switcher-btn').forEach(button => {
     button.addEventListener('click', () => {
         // Remove active class from all buttons
@@ -91,7 +88,7 @@ document.querySelectorAll('.pricing__switcher-btn').forEach(button => {
 
 
 
-// Select all filter buttons
+// Select all filter buttons====================================================
 const filterButtons = document.querySelectorAll('.filter-btn');
 filterButtons.forEach(button => {
   button.addEventListener('click', function(event) {
@@ -103,28 +100,49 @@ filterButtons.forEach(button => {
 });
 
   
-// coundown section
+// Countdown Section ================================================
 function startCounter() {
-  const counters = document.querySelectorAll('#stats-section .animated-text');
-
-  counters.forEach(counter => {
-      const target = +counter.getAttribute('data-target');
+    const counters = document.querySelectorAll('#ub-stats .stats__animated-text');
+  
+    counters.forEach(counter => {
+      const target = +counter.getAttribute('data-target'); // Get the target number
       let count = 0;
-      const increment = target / 100; // Adjust speed (100 steps)
-
-      const updateCounter = () => {
-          if (count < target) {
-              count += increment;
-              counter.textContent = Math.ceil(count);
-              requestAnimationFrame(updateCounter); // Smooth animation
-          } else {
-              counter.textContent = target; // Ensure it ends at the target
-          }
+      const duration = 2000; // Animation duration in milliseconds
+      const startTime = performance.now(); // Get the start time for smooth animation
+  
+      const updateCounter = (currentTime) => {
+        const elapsedTime = currentTime - startTime; // Calculate elapsed time
+        const progress = Math.min(elapsedTime / duration, 1); // Ensure progress doesn't exceed 1
+        count = Math.floor(progress * target); // Calculate the current count
+  
+        counter.textContent = count.toLocaleString(); // Update the counter text with formatted number
+  
+        if (progress < 1) {
+          requestAnimationFrame(updateCounter); // Continue the animation
+        } else {
+          counter.textContent = target.toLocaleString(); // Ensure it ends at the target
+        }
       };
-      updateCounter();
-  });
-}
-
+  
+      requestAnimationFrame(updateCounter); // Start the animation
+    });
+  }
+  
+  // Trigger the counter animation when the section comes into view
+  const statsSection = document.getElementById('ub-stats');
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          startCounter(); // Start the counter when the section is visible
+          observer.unobserve(statsSection); // Stop observing after triggering
+        }
+      });
+    },
+    { threshold: 0.5 }  
+  );
+  
+  observer.observe(statsSection);  
 
 document.addEventListener('DOMContentLoaded', () => {
     const section = document.querySelector('#stats-section');
@@ -146,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// signin page tab
+// signin page tab===========================================================
 const tabButtons = document.querySelectorAll('.tab-button');
 const forms = document.querySelectorAll('.auth-form');
 

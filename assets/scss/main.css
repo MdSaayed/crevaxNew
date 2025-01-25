@@ -128,7 +128,7 @@ a {
   margin-bottom: 2rem;
 }
 
-.section-title, #ub-team .team__container .team__title, #ub-integrations .integrations__header .integrations__title, #ub-testimonial .testimonial__title, #ub-pricing .pricing__header .pricing__title, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__title, #ub-latest-posts .latest-posts__header .latest-posts__section-title, #ub-blog-details .blog-details__container .blog-details__header .blog-details__title, #ub-blog .blog__heading .blog__title, #ub-cta .cta__area .cta__title, #ub-faq .faq__heading .faq__title, #ub-feature-details .feature-details__container .feature-details__header .feature-details__title, #ub-features .features_container .features__title, #feature-hero .feature-hero__content .feature-hero__title {
+.section-title, .about-hero__title, .team-details__title, #ub-team .team__container .team__title, #ub-integrations .integrations__header .integrations__title, #ub-testimonial .testimonial__title, #ub-pricing .pricing__header .pricing__title, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__title, #ub-latest-posts .latest-posts__header .latest-posts__section-title, #ub-blog-details .blog-details__container .blog-details__header .blog-details__title, #ub-blog .blog__heading .blog__title, #ub-cta .cta__area .cta__title, #ub-faq .faq__heading .faq__title, #ub-feature-details .feature-details__container .feature-details__header .feature-details__title, #ub-features .features_container .features__title, #feature-hero .feature-hero__content .feature-hero__title {
   font-size: 3rem;
   font-weight: 500;
   line-height: 57px;
@@ -140,13 +140,13 @@ a {
   margin: 1.5rem auto;
 }
 @media (max-width: 768px) {
-  .section-title, #ub-team .team__container .team__title, #ub-integrations .integrations__header .integrations__title, #ub-testimonial .testimonial__title, #ub-pricing .pricing__header .pricing__title, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__title, #ub-latest-posts .latest-posts__header .latest-posts__section-title, #ub-blog-details .blog-details__container .blog-details__header .blog-details__title, #ub-blog .blog__heading .blog__title, #ub-cta .cta__area .cta__title, #ub-faq .faq__heading .faq__title, #ub-feature-details .feature-details__container .feature-details__header .feature-details__title, #ub-features .features_container .features__title, #feature-hero .feature-hero__content .feature-hero__title {
+  .section-title, .about-hero__title, .team-details__title, #ub-team .team__container .team__title, #ub-integrations .integrations__header .integrations__title, #ub-testimonial .testimonial__title, #ub-pricing .pricing__header .pricing__title, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__title, #ub-latest-posts .latest-posts__header .latest-posts__section-title, #ub-blog-details .blog-details__container .blog-details__header .blog-details__title, #ub-blog .blog__heading .blog__title, #ub-cta .cta__area .cta__title, #ub-faq .faq__heading .faq__title, #ub-feature-details .feature-details__container .feature-details__header .feature-details__title, #ub-features .features_container .features__title, #feature-hero .feature-hero__content .feature-hero__title {
     font-size: 2.8rem !important;
     line-height: 48px !important;
   }
 }
 
-.section-desc, #ub-integrations .integrations__header .integrations__desc, #ub-testimonial .testimonial__desc, #ub-pricing .pricing__header .pricing__desc, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__desc, #ub-blog-details .blog-details__container .blog-details__header .blog-details__desc, #ub-blog .blog__heading .blog__desc, #ub-feature-details .feature-details__container .feature-details__header .feature-details__desc, #ub-features .features_container .features__desc, #feature-hero .feature-hero__content .feature-hero__desc, .hero__description {
+.section-desc, .about-hero__desc, .team-details__desc, #ub-integrations .integrations__header .integrations__desc, #ub-testimonial .testimonial__desc, #ub-pricing .pricing__header .pricing__desc, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__desc, #ub-blog-details .blog-details__container .blog-details__header .blog-details__desc, #ub-blog .blog__heading .blog__desc, #ub-feature-details .feature-details__container .feature-details__header .feature-details__desc, #ub-features .features_container .features__desc, #feature-hero .feature-hero__content .feature-hero__desc, .hero__description {
   margin-top: 1rem;
   font-size: 18px;
   line-height: 27px;
@@ -175,13 +175,13 @@ a {
   }
 }
 
-.hero__subtitle-area, #ub-integrations .integrations__header .integrations__subtitle-area, #ub-testimonial .testimonial__subtitle-area, #ub-pricing .pricing__header .pricing__subtitle-area, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area, #ub-blog .blog__heading .blog__subtitle-area, #ub-faq .faq__heading .faq__subtitle-area, #ub-feature-details .feature-details__container .feature-details__header .feature-details__subtitle-area, #ub-features .features_container .features__subtitle-area, #feature-hero .feature-hero__content .feature-hero__subtitle-area, .hero__subtitle-group, #ub-integrations .integrations__header .integrations__subtitle-area .integrations__subtitle-group, #ub-testimonial .testimonial__subtitle-group, #ub-pricing .pricing__header .pricing__subtitle-area .pricing__subtitle-group, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area .how-it-works__subtitle-group, #ub-blog .blog__heading .blog__subtitle-area .blog__subtitle-group, #ub-faq .faq__heading .faq__subtitle-group, #ub-feature-details .feature-details__container .feature-details__header .feature-details__subtitle-group, #ub-features .features_container .features__subtitle-group, #feature-hero .feature-hero__content .feature-hero__subtitle-group {
+.hero__subtitle-area, .about-hero__subtitle-area, #ub-integrations .integrations__header .integrations__subtitle-area, #ub-testimonial .testimonial__subtitle-area, #ub-pricing .pricing__header .pricing__subtitle-area, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area, #ub-blog .blog__heading .blog__subtitle-area, #ub-faq .faq__heading .faq__subtitle-area, #ub-feature-details .feature-details__container .feature-details__header .feature-details__subtitle-area, #ub-features .features_container .features__subtitle-area, #feature-hero .feature-hero__content .feature-hero__subtitle-area, .hero__subtitle-group, .about-hero__subtitle-group, #ub-integrations .integrations__header .integrations__subtitle-area .integrations__subtitle-group, #ub-testimonial .testimonial__subtitle-group, #ub-pricing .pricing__header .pricing__subtitle-area .pricing__subtitle-group, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area .how-it-works__subtitle-group, #ub-blog .blog__heading .blog__subtitle-area .blog__subtitle-group, #ub-faq .faq__heading .faq__subtitle-group, #ub-feature-details .feature-details__container .feature-details__header .feature-details__subtitle-group, #ub-features .features_container .features__subtitle-group, #feature-hero .feature-hero__content .feature-hero__subtitle-group {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.hero__subtitle-group, #ub-integrations .integrations__header .integrations__subtitle-area .integrations__subtitle-group, #ub-testimonial .testimonial__subtitle-group, #ub-pricing .pricing__header .pricing__subtitle-area .pricing__subtitle-group, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area .how-it-works__subtitle-group, #ub-blog .blog__heading .blog__subtitle-area .blog__subtitle-group, #ub-faq .faq__heading .faq__subtitle-group, #ub-feature-details .feature-details__container .feature-details__header .feature-details__subtitle-group, #ub-features .features_container .features__subtitle-group, #feature-hero .feature-hero__content .feature-hero__subtitle-group {
+.hero__subtitle-group, .about-hero__subtitle-group, #ub-integrations .integrations__header .integrations__subtitle-area .integrations__subtitle-group, #ub-testimonial .testimonial__subtitle-group, #ub-pricing .pricing__header .pricing__subtitle-area .pricing__subtitle-group, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area .how-it-works__subtitle-group, #ub-blog .blog__heading .blog__subtitle-area .blog__subtitle-group, #ub-faq .faq__heading .faq__subtitle-group, #ub-feature-details .feature-details__container .feature-details__header .feature-details__subtitle-group, #ub-features .features_container .features__subtitle-group, #feature-hero .feature-hero__content .feature-hero__subtitle-group {
   background: #F4EBFF;
   border: 1px solid #E9EAEB;
   padding: 4px 16px;
@@ -189,7 +189,7 @@ a {
   gap: 5px;
 }
 
-.hero__subtitle, #ub-integrations .integrations__header .integrations__subtitle-area .integrations__subtitle-group .integrations__subtitle, #ub-testimonial .testimonial__subtitle, #ub-pricing .pricing__header .pricing__subtitle-area .pricing__subtitle-group .pricing__subtitle, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area .how-it-works__subtitle, #ub-blog .blog__heading .blog__subtitle-area .blog__subtitle-group .blog__subtitle, #ub-faq .faq__heading .faq__subtitle, #ub-feature-details .feature-details__container .feature-details__header .feature-details__subtitle, #ub-features .features_container .features__subtitle {
+.hero__subtitle, .about-hero__subtitle, #ub-integrations .integrations__header .integrations__subtitle-area .integrations__subtitle-group .integrations__subtitle, #ub-testimonial .testimonial__subtitle, #ub-pricing .pricing__header .pricing__subtitle-area .pricing__subtitle-group .pricing__subtitle, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area .how-it-works__subtitle, #ub-blog .blog__heading .blog__subtitle-area .blog__subtitle-group .blog__subtitle, #ub-faq .faq__heading .faq__subtitle, #ub-feature-details .feature-details__container .feature-details__header .feature-details__subtitle, #ub-features .features_container .features__subtitle {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -262,17 +262,17 @@ body {
   }
 }
 
-.list-bulet, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet {
+.list-bulet, .team-details__list, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
-.list-bulet li, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li {
+.list-bulet li, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li, .team-details__list li {
   position: relative;
   padding-left: 20px;
   margin-left: 5px;
 }
-.list-bulet li::before, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li::before {
+.list-bulet li::before, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li::before, .team-details__list li::before {
   content: "•";
   position: absolute;
   left: 0;
@@ -428,17 +428,17 @@ body {
   }
 }
 
-.list-bulet, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet {
+.list-bulet, .team-details__list, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
-.list-bulet li, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li {
+.list-bulet li, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li, .team-details__list li {
   position: relative;
   padding-left: 20px;
   margin-left: 5px;
 }
-.list-bulet li::before, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li::before {
+.list-bulet li::before, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li::before, .team-details__list li::before {
   content: "•";
   position: absolute;
   left: 0;
@@ -749,7 +749,7 @@ body.menu-open::before {
   min-height: 600px;
   padding: 7rem 1.5rem;
 }
-#ub-hero-section-home .hero__container .hero__content-area .hero__content .hero__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-integrations .integrations__header .integrations__subtitle-area .integrations__subtitle-group, #ub-integrations .integrations__header .integrations__subtitle-area #ub-hero-section-home .hero__container .hero__content-area .hero__content .integrations__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-testimonial .testimonial__subtitle-group, #ub-testimonial #ub-hero-section-home .hero__container .hero__content-area .hero__content .testimonial__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-pricing .pricing__header .pricing__subtitle-area .pricing__subtitle-group, #ub-pricing .pricing__header .pricing__subtitle-area #ub-hero-section-home .hero__container .hero__content-area .hero__content .pricing__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area .how-it-works__subtitle-group, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area #ub-hero-section-home .hero__container .hero__content-area .hero__content .how-it-works__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-blog .blog__heading .blog__subtitle-area .blog__subtitle-group, #ub-blog .blog__heading .blog__subtitle-area #ub-hero-section-home .hero__container .hero__content-area .hero__content .blog__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-faq .faq__heading .faq__subtitle-group, #ub-faq .faq__heading #ub-hero-section-home .hero__container .hero__content-area .hero__content .faq__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-feature-details .feature-details__container .feature-details__header .feature-details__subtitle-group, #ub-feature-details .feature-details__container .feature-details__header #ub-hero-section-home .hero__container .hero__content-area .hero__content .feature-details__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-features .features_container .features__subtitle-group, #ub-features .features_container #ub-hero-section-home .hero__container .hero__content-area .hero__content .features__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #feature-hero .feature-hero__content .feature-hero__subtitle-group, #feature-hero .feature-hero__content #ub-hero-section-home .hero__container .hero__content-area .hero__content .feature-hero__subtitle-group {
+#ub-hero-section-home .hero__container .hero__content-area .hero__content .hero__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content .about-hero__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-integrations .integrations__header .integrations__subtitle-area .integrations__subtitle-group, #ub-integrations .integrations__header .integrations__subtitle-area #ub-hero-section-home .hero__container .hero__content-area .hero__content .integrations__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-testimonial .testimonial__subtitle-group, #ub-testimonial #ub-hero-section-home .hero__container .hero__content-area .hero__content .testimonial__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-pricing .pricing__header .pricing__subtitle-area .pricing__subtitle-group, #ub-pricing .pricing__header .pricing__subtitle-area #ub-hero-section-home .hero__container .hero__content-area .hero__content .pricing__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area .how-it-works__subtitle-group, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area #ub-hero-section-home .hero__container .hero__content-area .hero__content .how-it-works__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-blog .blog__heading .blog__subtitle-area .blog__subtitle-group, #ub-blog .blog__heading .blog__subtitle-area #ub-hero-section-home .hero__container .hero__content-area .hero__content .blog__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-faq .faq__heading .faq__subtitle-group, #ub-faq .faq__heading #ub-hero-section-home .hero__container .hero__content-area .hero__content .faq__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-feature-details .feature-details__container .feature-details__header .feature-details__subtitle-group, #ub-feature-details .feature-details__container .feature-details__header #ub-hero-section-home .hero__container .hero__content-area .hero__content .feature-details__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-features .features_container .features__subtitle-group, #ub-features .features_container #ub-hero-section-home .hero__container .hero__content-area .hero__content .features__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #feature-hero .feature-hero__content .feature-hero__subtitle-group, #feature-hero .feature-hero__content #ub-hero-section-home .hero__container .hero__content-area .hero__content .feature-hero__subtitle-group {
   background-color: #FCFAFF;
   margin-bottom: 1rem;
 }
@@ -1946,6 +1946,253 @@ body.menu-open::before {
 @media (min-width: 1280px) {
   #ub-team .team__container .team__members {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.team-details__container {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.team-details__content-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: 1px solid #E9EAEB;
+}
+@media (min-width: 768px) {
+  .team-details__content-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .team-details__content-grid {
+    grid-template-columns: 2fr 1fr;
+    gap: 5rem;
+    padding: 3rem;
+  }
+}
+.team-details__content {
+  order: 2;
+}
+@media (min-width: 1024px) {
+  .team-details__content {
+    order: 1;
+  }
+}
+.team-details__member {
+  order: 1;
+}
+@media (min-width: 1024px) {
+  .team-details__member {
+    order: 2;
+  }
+}
+.team-details__title {
+  text-align: left;
+  margin-left: 0;
+}
+.team-details__desc {
+  text-align: left;
+  margin-left: 0;
+}
+.team-details__list {
+  margin-top: 2.5rem;
+}
+.team-details__list-item {
+  color: #404040;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.team-details__list-item::before {
+  color: #2C1C5F;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.team-details__member {
+  overflow: hidden;
+}
+.team-details__member-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 320px;
+  width: 100%;
+  background-color: #7F56D9;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+.team-details__member-details {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin: -20px 12px 12px;
+  box-shadow: 0px 6px 15px -10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+.team-details__member-info {
+  padding-bottom: 4px;
+  border-bottom: 1px solid #6941C6;
+}
+.team-details__member-name {
+  color: #171717;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 4px;
+}
+.team-details__member-role {
+  font-size: 14px;
+  font-weight: 400;
+  color: #404040;
+  text-align: center;
+  line-height: 1.5;
+}
+.team-details__member-social {
+  margin-top: 21px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.team-details__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7F56D9;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+}
+
+#ub-mission .container .mission-vision__content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+#ub-mission .container .mission-vision__content .mission-vision__card {
+  border-radius: 12px;
+  background-color: #6941C6;
+  padding: 1.5rem;
+}
+#ub-mission .container .mission-vision__content .mission-vision__card .mission-vision__card-title {
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: left;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+#ub-mission .container .mission-vision__content .mission-vision__card .mission-vision__card-desc {
+  color: #fff;
+  font-size: 1.125rem;
+  text-align: left;
+  line-height: 1.5;
+}
+@media (min-width: 1024px) {
+  #ub-mission .container .mission-vision__content .mission-vision__card--span-3 {
+    grid-column: span 3;
+  }
+  #ub-mission .container .mission-vision__content .mission-vision__card--span-2 {
+    grid-column: span 2;
+  }
+}
+@media (min-width: 768px) {
+  #ub-mission .container .mission-vision__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  #ub-mission .container .mission-vision__content {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+.stats__container {
+  padding-top: 2.5rem;
+}
+.stats__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.25rem;
+}
+.stats__card {
+  border-radius: 12px;
+  padding: 2rem 1rem;
+  text-align: left;
+  border: 1px solid #F4EBFF;
+  border-radius: 1rem;
+}
+.stats__card--bg-white {
+  background-color: #fff;
+}
+.stats__card-title {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  color: #404040;
+}
+.stats__card-value {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #171717;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+}
+.stats__animated-text {
+  display: inline-block;
+}
+.stats__plus-sign {
+  font-size: 1.5rem;
+  margin-left: 0.25rem;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.about-hero__container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.about-hero__wrapper {
+  padding: 7rem 1rem 15rem;
+  border-radius: 1.125rem;
+}
+.about-hero__title {
+  margin-top: 1.5rem;
+}
+.about-hero__image {
+  padding: 0 1rem;
+  margin-top: -11rem;
+}
+.about-hero__image img {
+  width: 100%;
+  height: auto;
+  border-radius: 1.125rem;
+}
+@media (max-width: 768px) {
+  .about-hero__container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-hero__subtitle-group {
+    justify-content: center;
+  }
+  .about-hero__wrapper {
+    padding-bottom: 12rem;
+  }
+  .about-hero__image {
+    margin-top: -8rem;
   }
 }
 
