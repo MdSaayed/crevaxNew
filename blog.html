@@ -1,32 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bazarly</title>
-      
-        <!-- maincss -->
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="stylesheet" href="./assets/scss/main.css">
-        <!-- font awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- google font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazarly</title>
     
-        <!-- AOS animation  css-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-        <!--  AOS JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    
-        <!-- swiper js -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    
-    </head>
+    <!-- maincss -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/scss/main.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- AOS animation  css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!--  AOS JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</head>
 <body>
+        <!-- header start here -->
+        <header class="header">
+            <div class="header__container container">
+            <nav class="header__navigation">
+                <div class="header__branding">
+                <a href="#" class="header__logo">
+                    <img src="./assets/img/logo/logo.svg" alt="Website Logo">
+                </a>
+                </div>
+                <div class="header__menu">
+                <ul class="menu">
+                    <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+                    <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
+                    <li class="menu__item"><a href="feature.html" class="menu__link">Features</a></li>
+                    <li class="menu__item menu__item--has-dropdown">
+                    <a href="about.html" class="menu__link" aria-haspopup="true" aria-expanded="false">All Pages</a>
+                    <ul class="menu__submenu">
+                        <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
+                        <li class="menu__item"><a href="blog-single.html" class="menu__link">Blog Details</a></li>
+                        <li class="menu__item"><a href="careers.html" class="menu__link">Careers</a></li>
+                        <li class="menu__item"><a href="careers-2.html" class="menu__link">Careers Details</a></li>
+                        <li class="menu__item"><a href="feature-single.html" class="menu__link">Features Details</a></li>
+                        <li class="menu__item"><a href="integrations.html" class="menu__link">Integrations</a></li>
+                        <li class="menu__item"><a href="integrations-details.html" class="menu__link">Integrations Details</a></li>
+                        <li class="menu__item"><a href="pricing.html" class="menu__link">Pricing Details</a></li>
+                        <li class="menu__item"><a href="pricing-details.html" class="menu__link">Pricing Details</a></li>
+                        <li class="menu__item"><a href="team-details.html" class="menu__link">Team Details</a></li>
+                        <li class="menu__item"><a href="privacy-policy.html" class="menu__link">Privacy & Policy</a></li>
+                        <li class="menu__item"><a href="licenses.html" class="menu__link">Licenses</a></li>
+                        <li class="menu__item"><a href="terms-and-condition.html" class="menu__link">Terms & Condition</a></li>
+                    </ul>
+                    </li>
+                    <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li> 
+                </ul>
+                </div>
+                <div class="header__actions">
+                <a href="sign-in.html" class="header__button header__button--login">Login</a>
+                <a href="#" class="header__button header__button--get-started">Get Started</a>
+                <button class="header__menu-toggle" aria-label="Toggle Menu">☰</button>
+                </div>
+            </nav>
+            </div>
+        </header>
+        <!-- header end here -->
+        
+        <!-- mobile start navigation -->
+        <div class="mobile-nav">
+            <div class="mobile-nav__header">
+                <div class="mobile-nav__branding">
+                <img src="./assets/img/logo/logo.svg" alt="Mobile Logo" class="mobile-nav__logo">
+                </div>
+                <button class="mobile-nav__close-btn" aria-label="Close Menu">×</button>
+            </div>
+            <ul class="mobile-nav__menu">
+                <li class="mobile-nav__item"><a href="index.html" class="mobile-nav__link">Home</a></li>
+                <li class="mobile-nav__item"><a href="./about.html" class="mobile-nav__link">About</a></li>
+                <li class="mobile-nav__item mobile-nav__item--has-dropdown">
+                    <a href="#" class="mobile-nav__link" aria-haspopup="true" aria-expanded="false">All Pages</a>
+                        <ul class="mobile-nav__submenu">
+                            <li class="mobile-nav__item"><a href="./blog.html" class="mobile-nav__link">Blog</a></li>
+                            <li class="mobile-nav__item"><a href="./blog-single.html" class="mobile-nav__link">Blog Details</a></li>
+                            <li class="mobile-nav__item"><a href="careers.html" class="mobile-nav__link">Careers</a></li>
+                            <li class="mobile-nav__item"><a href="careers-2.html" class="mobile-nav__link">Careers Details</a></li>
+                            <li class="mobile-nav__item"><a href="feature.html" class="mobile-nav__link">Features</a></li>
+                            <li class="mobile-nav__item"><a href="feature-single.html" class="mobile-nav__link">Features Details</a></li>
+                            <li class="mobile-nav__item"><a href="integrations.html" class="mobile-nav__link">Integrations</a></li>
+                            <li class="mobile-nav__item"><a href="integrations-details.html" class="mobile-nav__link">Integrations Details</a></li>
+                            <li class="mobile-nav__item"><a href="team-details.html" class="mobile-nav__link">Team Details</a></li>
+                            <li class="mobile-nav__item"><a href="pricing.html" class="mobile-nav__link">Pricing</a></li>
+                            <li class="mobile-nav__item"><a href="pricing-details.html" class="mobile-nav__link">Pricing Details</a></li>
+                            <li class="mobile-nav__item"><a href="privacy-policy.html" class="mobile-nav__link">Privacy & Policy</a></li>
+                            <li class="mobile-nav__item"><a href="licenses.html" class="mobile-nav__link">Licenses</a></li>
+                            <li class="mobile-nav__item"><a href="terms-and-condition.html" class="mobile-nav__link">Terms & Condition</a></li>
+                        </ul>
+                    </li>
+                </li>
+                <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Contact</a></li>
+            </ul>
+            <div class="mobile-nav__button-wrapper">
+                <a href="sign-in.html" class="mobile-nav__button mobile-nav__button--login">Login</a>
+                <a href="#" class="mobile-nav__button mobile-nav__button--get-started">Get Started</a>
+            </div>
+        </div>
+        <!-- mobile end navigation -->
 
 
     <main>
