@@ -379,18 +379,42 @@ const swiperLeft = new Swiper(".integrations-logos__slider-left", {
     autoplay: {
         delay: 1,  
         disableOnInteraction: false, 
+    },
+    breakpoints: {
+        1024: { 
+            spaceBetween: 40,  
+        },
+        768: {  
+            spaceBetween: 30,  
+        },
+        480: { 
+            spaceBetween: 20,  
+        }
     }
+
 });
 const swiperRight = new Swiper(".integrations-logos__slider-right", {
-    slidesPerView: 'auto', // Automatically adjust the number of slides visible
-    spaceBetween: 40, // Space between slides
-    loop: true, // Enable infinite loop
-    speed: 3000, // Speed of the transition (in milliseconds)
-    allowTouchMove: false, // Disable user interaction
+    slidesPerView: 'auto',  
+    spaceBetween: 40,  
+    loop: true,  
+    speed: 3000, 
+    allowTouchMove: false, 
     autoplay: {
-        delay: 1, // Delay between slides (in milliseconds)
-        disableOnInteraction: false, // Continue autoplay even if user interacts
-        reverseDirection: true, // Scroll from right to left
+        delay: 1,  
+        disableOnInteraction: false,  
+        reverseDirection: true,  
+    },
+    breakpoints: {
+        1024: {  
+            spaceBetween: 40,  
+        },
+        768: {   
+            spaceBetween: 30,  
+        },
+        480: {  
+            spaceBetween: 20,  
+        }
     }
+
 });
 

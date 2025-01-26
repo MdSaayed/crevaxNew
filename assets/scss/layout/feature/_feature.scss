@@ -1,5 +1,5 @@
 
-#feature-hero {
+#ub-feature-hero {
     .feature-hero__container {
         padding-top: 0;
         padding-bottom: 0;
@@ -8,7 +8,7 @@
     .feature-hero__content {
         min-height: 500px;
         margin: 0 auto;
-        padding: 0 2rem;
+        padding: 4rem 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -57,10 +57,14 @@
                 );
             }
         }
+
+        @media (min-width: 768px) { 
+            padding: 2rem 2rem;   
+        }
     }
 }
 
-
+// feature section
 #ub-features {
 
     .features_container {
@@ -137,7 +141,6 @@
         }
     }
 }
-
 
 // feature details
 #ub-feature-details{
