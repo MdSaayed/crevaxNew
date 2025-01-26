@@ -1,3 +1,4 @@
+// set backgrond image dynamacaly=========================================
 document.addEventListener('DOMContentLoaded', function() {
     const bgDivs = document.querySelectorAll('[data-bg-img]');
     bgDivs.forEach(div => {
@@ -66,18 +67,15 @@ faqQuestions.forEach(item => {
 // pricing swither =============================================================
 document.querySelectorAll('.pricing__switcher-btn').forEach(button => {
     button.addEventListener('click', () => {
-        // Remove active class from all buttons
+        
         document.querySelectorAll('.pricing__switcher-btn').forEach(btn => 
             btn.classList.remove('pricing__switcher-btn--active')
         );
-        // Add active class to the clicked button
         button.classList.add('pricing__switcher-btn--active');
 
-        // Hide all pricing cards
         document.querySelectorAll('.pricing__cards').forEach(card => 
             card.classList.add('pricing__cards--hidden')
         );
-        // Show the target pricing cards
         const targetClass = button.getAttribute('data-target');
         document.querySelector(`.${targetClass}`).classList.remove('pricing__cards--hidden');
     });
@@ -94,7 +92,6 @@ filterButtons.forEach(button => {
   button.addEventListener('click', function(event) {
     event.preventDefault();
     filterButtons.forEach(btn => btn.classList.remove('active'));
-    // Add the 'active' class to the clicked button
     button.classList.add('active');
   });
 });
@@ -137,13 +134,13 @@ document.addEventListener('DOMContentLoaded', () => {
           (entries) => {
               if (entries[0].isIntersecting) {
                   startCounter(); // Start the counter when the section is visible
-                  observer.disconnect(); // Stop observing after triggering
+                  observer.disconnect();  
               }
           },
-          { threshold: 0.5 } // Trigger when 50% visible
+          { threshold: 0.5 } 
       );
 
-      observer.observe(statsSection); // Start observing the stats section
+      observer.observe(statsSection);  
   } else {
       console.error('Element with id "ub-stats" not found in the DOM.');
   }
@@ -161,17 +158,9 @@ const forms = document.querySelectorAll('.auth-form');
 tabButtons.forEach(button => {
     button.addEventListener('click', function (event) {
         event.preventDefault();
-
-        // Remove 'active' class from all tab buttons
         tabButtons.forEach(btn => btn.classList.remove('active'));
-
-        // Add 'active' class to the clicked button
         button.classList.add('active');
-
-        // Get the target form ID from the data-target attribute
         const targetForm = button.getAttribute('data-target');
-
-        // Show the target form and hide others
         forms.forEach(form => {
             form.classList.toggle('active', form.id === targetForm);
         });
@@ -191,26 +180,26 @@ const body = document.body;
 // Function to close all dropdowns
 const closeAllDropdowns = () => {
   document.querySelectorAll('.mobile-nav__item--has-dropdown').forEach(item => {
-    item.classList.remove('active'); // Close all dropdowns
+    item.classList.remove('active');  
   });
 };
 
 menuToggle.addEventListener('click', () => {
-  mobileNav.classList.add('active'); // Slide in the menu
-  body.classList.add('menu-open'); // Add overlay and disable scrolling
+  mobileNav.classList.add('active');  
+  body.classList.add('menu-open');  
 });
 
 closeBtn.addEventListener('click', () => {
-  mobileNav.classList.remove('active'); // Slide out the menu
-  body.classList.remove('menu-open'); // Remove overlay and enable scrolling
-  closeAllDropdowns(); // Close all dropdowns
+  mobileNav.classList.remove('active');  
+  body.classList.remove('menu-open');  
+  closeAllDropdowns();  
 });
 
 // Close menu when clicking outside
 document.addEventListener('click', (e) => {
   if (
-    !mobileNav.contains(e.target) && // Click is outside the menu
-    !menuToggle.contains(e.target) && // Click is not on the toggle button
+    !mobileNav.contains(e.target) &&  
+    !menuToggle.contains(e.target) && 
     mobileNav.classList.contains('active')  
   ) {
     mobileNav.classList.remove('active');  
