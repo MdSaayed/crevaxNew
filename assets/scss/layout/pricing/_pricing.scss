@@ -1,4 +1,7 @@
 #ub-pricing {
+    &.pricing--padded{
+      padding: 0 1rem;
+    }
     .pricing__header {
       margin-bottom: 3rem;
   
@@ -135,112 +138,127 @@
 
 
 // Pricing Page
-// #hero-pricing {
-//     .container{
-//         padding-top:0;
-//         padding-bottom:0;
+.pricing-hero {
+    &__container{
+        padding-top:0;
+        padding-bottom:0;
+    }
 
-//         .content-area {
-//             background-color: #d5ebf2;
-//             z-index: -10;
-//             border-radius:1.5rem;
+    &__content{
+        min-height: 700px;  
+        padding-top: 7rem;   
+        padding-left: 1.5rem;  
+        padding-right: 1.5rem;  
+        border-radius: 1.5rem; 
+    }
 
-//             .content {
-//                 min-height: 700px;  
-//                 padding-top: 7rem;   
-//                 padding-left: 1.5rem;  
-//                 padding-right: 1.5rem;  
+    &__subtitle-area{
+      @extend .hero__subtitle-area;
+    }
 
-//                 .section-title {
-//                     font-size: 3rem;  
-//                     font-weight: 500;  
-//                     line-height: 57px;
-//                     margin-top: 1.25rem;  
-//                 }
-//                 .section-desc {
-//                     margin-top: 1.5rem; 
-//                     text-align: center;
-//                 }
-                  
-                  
-//               }
-              
-//         }
-//     }
+    &__subtitle-group{
+      @extend .hero__subtitle-group;
+      background: $soft-lilac;
+    }
 
-//     // Responsive breakpoint for 565px
-//     @media (min-width: 566px) {
-//         margin-bottom: -24rem;
-//     }
-//     @media (max-width: 565px) {
-//         margin-bottom: -20rem;
-//     }
-//     @media (max-width: 520px) {
-//         margin-bottom: -16rem;
-//     }
-//     @media (max-width: 420px) {
-//         margin-bottom: -13rem;
-//     }
-//     @media (max-width: 310px) {
-//         margin-bottom: -13rem;
-//     }
-// }
+    &__pricing-hero__subtitle{
+      @extend .hero__subtitle;
+    }
 
-// pricing table
-// #pricing-table {
-//     overflow-x: scroll;
-//     scrollbar-color: #aef5c7 transparent; // For Firefox
-//     scrollbar-width: thin; // For Firefox
+    &__title{
+      @extend .section-title;
+      max-width: 560px;
+    }
 
-//     /* For Webkit Browsers (Chrome, Edge, Safari) */
-//     &::-webkit-scrollbar {
-//         height: 8px; /* Horizontal scrollbar height */
-//     }
-//     &::-webkit-scrollbar-thumb {
-//         background-color: #aef5c7; /* Light mint green */
-//         border-radius: 10px;
-//     }
-//     &::-webkit-scrollbar-track {
-//         background: transparent; /* Optional track color */
-//     }
+    &__desc{
+      @extend .section-desc;
+      max-width: 500px;
+    }
 
-//     table {
-//         font-size: 0.875rem;
-//         width: 100%;
 
-//         tr {
-//             font-weight: 400;
-//             text-align: left;
-//             font-size: 16px;
-//             display: flex;
-//             align-items: center;
+    @media (max-width: 454px) {
+        margin-bottom: -24rem;
+    }
+    @media (min-width: 455px) {
+        margin-bottom: -30rem;
+    }
+}
 
-//             &:nth-child(odd) {
-//                 background-color:$soft-lilac;
-//             }
+/* Pricing Table Styles */
+#ub-pricing-table {
+  overflow-x: auto;
+  scrollbar-color: #aef5c7 transparent;
+  scrollbar-width: thin;
 
-//             &:nth-child(even) {
-//                 background-color: $white;
-//             }
-//         }
+  &::-webkit-scrollbar {
+      height: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+      background-color: var(--light-purple, #d8c4fc);
+      border-radius: 10px;
+  }
+  &::-webkit-scrollbar-track {
+      background: transparent;
+  }
 
-//         td {
-//             padding: 0.75rem;
+  .pricing-table__title {
+      font-size: 2rem;
+      line-height: 1.5;
+      color: var(--dark-neutral, #333);
+      font-weight: 500;
+      margin-bottom: 1.125rem;
+  }
 
-//             &:first-child {
-//                 width: 35%; 
-//             }
+  .pricing-table__content {
+      font-size: 0.875rem;
+      width: 100%;
 
-//             &:not(:first-child) {
-//                 text-align: center;
-//                 width: calc(65% / 3);  
-//             }
-//         }
-//         @media screen and (max-width: 767px) {
-//             min-width: 767px;
-//         }       
-//     }
-// }
+      .pricing-table__row {
+          font-weight: 400;
+          text-align: left;
+          font-size: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          &:nth-child(odd) {
+              background-color: var(--light-purple, #f3e8ff);
+          }
+
+          &:nth-child(even) {
+              background-color: var(--white, #fff);
+          }
+
+          td:last-child {
+              margin-right: 5rem;
+          }
+      }
+
+      .pricing-table__feature {
+          padding: 0.75rem;
+          color: var(--dark-gray, #666);
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 1.5;
+
+          &:first-child {
+              width: 35%;
+          }
+
+          &:not(:first-child) {
+              text-align: center;
+              width: calc(65% / 3);
+          }
+      }
+  }
+
+  @media screen and (max-width: 767px) {
+      .pricing-table__content {
+          min-width: 767px;
+      }
+  }
+}
+
 
 // #pricing-details{
 //     .pricing-details-area{

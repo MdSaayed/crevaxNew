@@ -22,6 +22,7 @@
             }
             .how-it-works__desc{
                 @extend .section-desc;
+                max-width: 555px; 
             }
         }
 

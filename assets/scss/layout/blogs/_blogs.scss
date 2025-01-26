@@ -1,5 +1,5 @@
 #ub-blog{
-    .blog__heading{
+    .blog__header{
         .blog__subtitle-area{
             @extend .hero__subtitle-area;
             .blog__subtitle-group{
@@ -11,9 +11,11 @@
         }
         .blog__title{
             @extend .section-title;
+            max-width: 640px;
         }
         .blog__desc{
             @extend .section-desc;
+            max-width: 480px;
         }
     }
 
