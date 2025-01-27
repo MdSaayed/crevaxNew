@@ -128,7 +128,7 @@ a {
   margin-bottom: 2rem;
 }
 
-.section-title, #ub-license .license__container .license__header .license__title, .about-hero__title, .team-details__title, #ub-team .team__container .team__title, #ub-integrations .integrations__header .integrations__title, #ub-testimonial .testimonial__title, .pricing-hero__title, #ub-pricing .pricing__header .pricing__title, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__title, #ub-latest-posts .latest-posts__header .latest-posts__section-title, #ub-blog-details .blog-details__container .blog-details__header .blog-details__title, #ub-blog .blog__header .blog__title, #ub-cta .cta__area .cta__title, #ub-faq .faq__heading .faq__title, #ub-feature-details .feature-details__container .feature-details__header .feature-details__title, #ub-features .features_container .features__title, #ub-feature-hero .feature-hero__content .feature-hero__title {
+.section-title, #ub-contact .contact__title, #ub-license .license__container .license__header .license__title, .about-hero__title, .team-details__title, #ub-team .team__container .team__title, #ub-integrations .integrations__header .integrations__title, #ub-testimonial .testimonial__title, .pricing-hero__title, #ub-pricing .pricing__header .pricing__title, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__title, #ub-latest-posts .latest-posts__header .latest-posts__section-title, #ub-blog-details .blog-details__container .blog-details__header .blog-details__title, #ub-blog .blog__header .blog__title, #ub-cta .cta__area .cta__title, #ub-faq .faq__heading .faq__title, #ub-feature-details .feature-details__container .feature-details__header .feature-details__title, #ub-features .features_container .features__title, #ub-feature-hero .feature-hero__content .feature-hero__title {
   font-size: 3rem;
   font-weight: 500;
   line-height: 57px;
@@ -140,7 +140,7 @@ a {
   margin: 1.5rem auto;
 }
 @media (max-width: 768px) {
-  .section-title, #ub-license .license__container .license__header .license__title, .about-hero__title, .team-details__title, #ub-team .team__container .team__title, #ub-integrations .integrations__header .integrations__title, #ub-testimonial .testimonial__title, .pricing-hero__title, #ub-pricing .pricing__header .pricing__title, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__title, #ub-latest-posts .latest-posts__header .latest-posts__section-title, #ub-blog-details .blog-details__container .blog-details__header .blog-details__title, #ub-blog .blog__header .blog__title, #ub-cta .cta__area .cta__title, #ub-faq .faq__heading .faq__title, #ub-feature-details .feature-details__container .feature-details__header .feature-details__title, #ub-features .features_container .features__title, #ub-feature-hero .feature-hero__content .feature-hero__title {
+  .section-title, #ub-contact .contact__title, #ub-license .license__container .license__header .license__title, .about-hero__title, .team-details__title, #ub-team .team__container .team__title, #ub-integrations .integrations__header .integrations__title, #ub-testimonial .testimonial__title, .pricing-hero__title, #ub-pricing .pricing__header .pricing__title, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__title, #ub-latest-posts .latest-posts__header .latest-posts__section-title, #ub-blog-details .blog-details__container .blog-details__header .blog-details__title, #ub-blog .blog__header .blog__title, #ub-cta .cta__area .cta__title, #ub-faq .faq__heading .faq__title, #ub-feature-details .feature-details__container .feature-details__header .feature-details__title, #ub-features .features_container .features__title, #ub-feature-hero .feature-hero__content .feature-hero__title {
     font-size: 2.8rem !important;
     line-height: 48px !important;
   }
@@ -2551,6 +2551,106 @@ body.menu-open::before {
   font-weight: normal;
   margin-bottom: 2.5rem;
   line-height: 1.5;
+}
+
+#ub-contact {
+  background-color: #E9D7FE;
+  max-width: 800px;
+  padding: 3rem;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-top: 4rem;
+}
+#ub-contact .contact__title {
+  font-size: 3rem;
+  margin-bottom: 3.5rem;
+}
+#ub-contact .contact__input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+#ub-contact .contact__label {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #171717;
+  margin-bottom: 10px;
+}
+#ub-contact .contact__input {
+  padding: 12px 14px;
+  border-radius: 5px;
+  border: none;
+  font-family: "GeneralSans", sans-serif;
+}
+#ub-contact .contact__input::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #737373;
+  font-family: "GeneralSans", sans-serif;
+}
+#ub-contact .contact__input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #737373;
+  font-family: "GeneralSans", sans-serif;
+}
+#ub-contact .contact__input:focus {
+  outline: 2px solid #7F56D9;
+}
+#ub-contact .contact__textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+#ub-contact .contact__textarea::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #737373;
+  font-family: "GeneralSans", sans-serif;
+}
+#ub-contact .contact__textarea::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #737373;
+  font-family: "GeneralSans", sans-serif;
+}
+#ub-contact .contact__textarea:focus {
+  outline: 2px solid #7F56D9;
+}
+#ub-contact .contact__btn {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F5FAF7;
+  background-color: #7F56D9;
+  border: 1px solid #7F56D9;
+  padding: 8px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+#ub-contact .contact__btn:hover {
+  color: #7F56D9;
+  background-color: transparent;
+  border: 1px solid #7F56D9;
+  transition: 0.5s ease;
+}
+@media (max-width: 1024px) {
+  #ub-contact {
+    padding: 4rem 2rem;
+  }
+}
+@media (max-width: 768px) {
+  #ub-contact {
+    padding: 4rem 1rem;
+  }
 }
 
 #footer .footer__content {

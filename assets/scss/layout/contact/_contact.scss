@@ -1,61 +1,80 @@
-#contact-area {
-    .contact-form {
-        background-color: $light-normal;
-        max-width: 800px;
-        padding: 3rem;
-        border-radius: 20px; 
-        margin-left: auto;
-        margin-right: auto; 
-        width: 100%; 
-        margin-top: 4rem;  
-        
-        .input-wrapper {
-            display: flex;
-            flex-direction: column; 
-            margin-bottom: 1rem; 
-        
-            label {
-                font-weight: 500;
-                font-size: 20px;
-                line-height: 28px;
-                color: $dark-neutral;
-                margin-bottom: 10px;
-            }
-            
-            input {
-                padding: 10px 14px;
-                border-radius: 5px;
-                &::placeholder{
-                    font-size: 16px;
-                    font-weight: 400;
-                    line-height: 24px;
-                    color: $soft-gray;
-                }
-                
-                &:focus {
-                    outline: 2px solid $primary-color; // Focus outline color
-                }
-            }
-            
-            textarea {
-                padding: 10px;
-                border-radius: 5px;
-                
-                &:focus {
-                    outline: 2px solid $primary-color; // Focus outline color
-                }
-            } 
-        } 
-        .btn-submit{
-            @include btn();
-            margin-top: 20px;
+#ub-contact {
+    background-color: $light-purple;
+    max-width: 800px;
+    padding: 3rem;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 4rem;
+
+    .contact__title{
+        @extend .section-title;
+        font-size: 3rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .contact__input-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .contact__label {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        color: $dark-neutral;
+        margin-bottom: 10px;
+    }
+
+    .contact__input {
+        padding: 12px 14px;
+        border-radius: 5px; 
+        border: none;
+        font-family: $font-family-body;
+
+        &::placeholder {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: $gray-medium;
+            font-family: $font-family-body;
         }
-        @media (max-width: 1024px) { 
-            padding: 4rem 2rem;
+
+        &:focus {
+            outline: 2px solid $primary-color;
         }
-        
-        @media (max-width: 768px) {
-            padding: 4rem 1rem; 
+    }
+
+    .contact__textarea {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+
+        &::placeholder {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: $gray-medium;
+            font-family: $font-family-body;
         }
+
+        &:focus {
+            outline: 2px solid $primary-color;
+        }
+    }
+
+    .contact__btn {
+        @include btn();
+        margin-top: 20px;
+    }
+
+    @media (max-width: 1024px) {
+        padding: 4rem 2rem;
+    }
+
+    @media (max-width: 768px) {
+        padding: 4rem 1rem;
     }
 }
