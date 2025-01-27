@@ -146,7 +146,7 @@ a {
   }
 }
 
-.section-desc, #ub-privacy-policy .privacy-policy__desc, #ub-license .license__container .license__header .license__desc, .about-hero__desc, .team-details__desc, #ub-integrations .integrations__header .integrations__desc, #ub-testimonial .testimonial__desc, .pricing-hero__desc, #ub-pricing .pricing__header .pricing__desc, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__desc, #ub-blog-details .blog-details__container .blog-details__header .blog-details__desc, #ub-blog .blog__header .blog__desc, #ub-feature-details .feature-details__container .feature-details__header .feature-details__desc, #ub-features .features_container .features__desc, #ub-feature-hero .feature-hero__content .feature-hero__desc, .hero__description {
+.section-desc, #ub-terms .terms__desc, #ub-privacy-policy .privacy-policy__desc, #ub-license .license__container .license__header .license__desc, .about-hero__desc, .team-details__desc, #ub-integrations .integrations__header .integrations__desc, #ub-testimonial .testimonial__desc, .pricing-hero__desc, #ub-pricing .pricing__header .pricing__desc, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__desc, #ub-blog-details .blog-details__container .blog-details__header .blog-details__desc, #ub-blog .blog__header .blog__desc, #ub-feature-details .feature-details__container .feature-details__header .feature-details__desc, #ub-features .features_container .features__desc, #ub-feature-hero .feature-hero__content .feature-hero__desc, .hero__description {
   margin-top: 1rem;
   font-size: 18px;
   line-height: 27px;
@@ -157,7 +157,7 @@ a {
   margin: 0 auto;
 }
 
-.hero__title, #ub-privacy-policy .privacy-policy__title {
+.hero__title, #ub-terms .terms__title, #ub-privacy-policy .privacy-policy__title {
   font-size: 3.5rem;
   font-weight: 500;
   line-height: 72px;
@@ -169,7 +169,7 @@ a {
   margin: 0 auto;
 }
 @media (max-width: 768px) {
-  .hero__title, #ub-privacy-policy .privacy-policy__title {
+  .hero__title, #ub-terms .terms__title, #ub-privacy-policy .privacy-policy__title {
     font-size: 3rem !important;
     line-height: 60px !important;
   }
@@ -262,17 +262,17 @@ body {
   }
 }
 
-.list-bulet, #ub-privacy-policy .privacy-policy__list, .team-details__list, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet {
+.list-bulet, #ub-terms .terms__list, #ub-privacy-policy .privacy-policy__list, .team-details__list, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
-.list-bulet li, #ub-privacy-policy .privacy-policy__list li, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li, .team-details__list li {
+.list-bulet li, #ub-terms .terms__list li, #ub-privacy-policy .privacy-policy__list li, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li, .team-details__list li {
   position: relative;
   padding-left: 20px;
   margin-left: 5px;
 }
-.list-bulet li::before, #ub-privacy-policy .privacy-policy__list li::before, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li::before, .team-details__list li::before {
+.list-bulet li::before, #ub-terms .terms__list li::before, #ub-privacy-policy .privacy-policy__list li::before, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li::before, .team-details__list li::before {
   content: "•";
   position: absolute;
   left: 0;
@@ -428,17 +428,17 @@ body {
   }
 }
 
-.list-bulet, #ub-privacy-policy .privacy-policy__list, .team-details__list, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet {
+.list-bulet, #ub-terms .terms__list, #ub-privacy-policy .privacy-policy__list, .team-details__list, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
-.list-bulet li, #ub-privacy-policy .privacy-policy__list li, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li, .team-details__list li {
+.list-bulet li, #ub-terms .terms__list li, #ub-privacy-policy .privacy-policy__list li, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li, .team-details__list li {
   position: relative;
   padding-left: 20px;
   margin-left: 5px;
 }
-.list-bulet li::before, #ub-privacy-policy .privacy-policy__list li::before, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li::before, .team-details__list li::before {
+.list-bulet li::before, #ub-terms .terms__list li::before, #ub-privacy-policy .privacy-policy__list li::before, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li::before, .team-details__list li::before {
   content: "•";
   position: absolute;
   left: 0;
@@ -2517,6 +2517,39 @@ body.menu-open::before {
 #ub-privacy-policy .privacy-policy__note {
   font-size: 1rem;
   font-weight: normal;
+  line-height: 1.5;
+}
+
+#ub-terms .terms__content-area {
+  max-width: 680px;
+  margin: 0 auto;
+}
+#ub-terms .terms__header {
+  margin-bottom: 2.5rem;
+}
+#ub-terms .terms__title {
+  margin-bottom: 1rem;
+  margin-left: 0;
+  text-align: left;
+}
+#ub-terms .terms__desc {
+  margin-left: 0;
+  text-align: left;
+}
+#ub-terms .terms__item {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #404040;
+  line-height: 1.5;
+}
+#ub-terms .terms__footer {
+  margin-top: 3rem;
+  color: #737373;
+}
+#ub-terms .terms__last-update {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 2.5rem;
   line-height: 1.5;
 }
 
