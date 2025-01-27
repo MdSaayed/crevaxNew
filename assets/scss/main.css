@@ -128,7 +128,7 @@ a {
   margin-bottom: 2rem;
 }
 
-.section-title, .about-hero__title, .team-details__title, #ub-team .team__container .team__title, #ub-integrations .integrations__header .integrations__title, #ub-testimonial .testimonial__title, .pricing-hero__title, #ub-pricing .pricing__header .pricing__title, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__title, #ub-latest-posts .latest-posts__header .latest-posts__section-title, #ub-blog-details .blog-details__container .blog-details__header .blog-details__title, #ub-blog .blog__header .blog__title, #ub-cta .cta__area .cta__title, #ub-faq .faq__heading .faq__title, #ub-feature-details .feature-details__container .feature-details__header .feature-details__title, #ub-features .features_container .features__title, #ub-feature-hero .feature-hero__content .feature-hero__title {
+.section-title, #ub-license .license__container .license__header .license__title, .about-hero__title, .team-details__title, #ub-team .team__container .team__title, #ub-integrations .integrations__header .integrations__title, #ub-testimonial .testimonial__title, .pricing-hero__title, #ub-pricing .pricing__header .pricing__title, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__title, #ub-latest-posts .latest-posts__header .latest-posts__section-title, #ub-blog-details .blog-details__container .blog-details__header .blog-details__title, #ub-blog .blog__header .blog__title, #ub-cta .cta__area .cta__title, #ub-faq .faq__heading .faq__title, #ub-feature-details .feature-details__container .feature-details__header .feature-details__title, #ub-features .features_container .features__title, #ub-feature-hero .feature-hero__content .feature-hero__title {
   font-size: 3rem;
   font-weight: 500;
   line-height: 57px;
@@ -140,13 +140,13 @@ a {
   margin: 1.5rem auto;
 }
 @media (max-width: 768px) {
-  .section-title, .about-hero__title, .team-details__title, #ub-team .team__container .team__title, #ub-integrations .integrations__header .integrations__title, #ub-testimonial .testimonial__title, .pricing-hero__title, #ub-pricing .pricing__header .pricing__title, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__title, #ub-latest-posts .latest-posts__header .latest-posts__section-title, #ub-blog-details .blog-details__container .blog-details__header .blog-details__title, #ub-blog .blog__header .blog__title, #ub-cta .cta__area .cta__title, #ub-faq .faq__heading .faq__title, #ub-feature-details .feature-details__container .feature-details__header .feature-details__title, #ub-features .features_container .features__title, #ub-feature-hero .feature-hero__content .feature-hero__title {
+  .section-title, #ub-license .license__container .license__header .license__title, .about-hero__title, .team-details__title, #ub-team .team__container .team__title, #ub-integrations .integrations__header .integrations__title, #ub-testimonial .testimonial__title, .pricing-hero__title, #ub-pricing .pricing__header .pricing__title, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__title, #ub-latest-posts .latest-posts__header .latest-posts__section-title, #ub-blog-details .blog-details__container .blog-details__header .blog-details__title, #ub-blog .blog__header .blog__title, #ub-cta .cta__area .cta__title, #ub-faq .faq__heading .faq__title, #ub-feature-details .feature-details__container .feature-details__header .feature-details__title, #ub-features .features_container .features__title, #ub-feature-hero .feature-hero__content .feature-hero__title {
     font-size: 2.8rem !important;
     line-height: 48px !important;
   }
 }
 
-.section-desc, .about-hero__desc, .team-details__desc, #ub-integrations .integrations__header .integrations__desc, #ub-testimonial .testimonial__desc, .pricing-hero__desc, #ub-pricing .pricing__header .pricing__desc, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__desc, #ub-blog-details .blog-details__container .blog-details__header .blog-details__desc, #ub-blog .blog__header .blog__desc, #ub-feature-details .feature-details__container .feature-details__header .feature-details__desc, #ub-features .features_container .features__desc, #ub-feature-hero .feature-hero__content .feature-hero__desc, .hero__description {
+.section-desc, #ub-license .license__container .license__header .license__desc, .about-hero__desc, .team-details__desc, #ub-integrations .integrations__header .integrations__desc, #ub-testimonial .testimonial__desc, .pricing-hero__desc, #ub-pricing .pricing__header .pricing__desc, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__desc, #ub-blog-details .blog-details__container .blog-details__header .blog-details__desc, #ub-blog .blog__header .blog__desc, #ub-feature-details .feature-details__container .feature-details__header .feature-details__desc, #ub-features .features_container .features__desc, #ub-feature-hero .feature-hero__content .feature-hero__desc, .hero__description {
   margin-top: 1rem;
   font-size: 18px;
   line-height: 27px;
@@ -2329,6 +2329,158 @@ body.menu-open::before {
   .about-hero__image {
     margin-top: -8rem;
   }
+}
+
+/* ========================
+   License Section Styles
+======================== */
+#ub-license {
+  font-family: "Inter", sans-serif;
+}
+#ub-license .license__container .license__header {
+  max-width: 1000px;
+  text-align: left;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(97, 85, 200, 0.3215686275);
+  padding-bottom: 4rem;
+}
+#ub-license .license__container .license__header .license__title {
+  color: #171717;
+  margin-bottom: 10px;
+  text-align: left;
+  margin-left: 0;
+}
+#ub-license .license__container .license__header .license__desc {
+  text-align: left;
+  margin-left: 0;
+}
+#ub-license .license__container .license__illustration {
+  padding: 4rem 0;
+}
+#ub-license .license__container .license__illustration .license__illustration-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+#ub-license .license__container .license__illustration .license__illustration-item .license__illustration-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+#ub-license .license__container .license__illustration .license__illustration-item .license__illustration-caption {
+  font-size: 1.5rem;
+  color: #171717;
+  font-weight: 500;
+}
+#ub-license .license__container .license__illustration .license__illustration-item .license__illustration-caption .license__illustration-credit {
+  font-size: 18px;
+  color: #404040;
+  font-weight: normal;
+}
+@media (max-width: 946px) {
+  #ub-license .license__container .license__illustration .license__illustration-item {
+    flex-direction: column;
+  }
+}
+#ub-license .license__container .license__typography {
+  margin-bottom: 40px;
+}
+#ub-license .license__container .license__typography .license__typography-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #171717;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+#ub-license .license__container .license__typography .license__typography-info {
+  font-size: 18px;
+  color: #404040;
+  font-weight: normal;
+  line-height: 1.5;
+}
+#ub-license .license__container .license__typography .license__typography-info .license__typography-link {
+  color: #7F56D9;
+  text-decoration: underline;
+}
+#ub-license .license__container .license__typography .license__typography-info .license__typography-link:hover {
+  color: #602ece;
+}
+#ub-license .license__container .license__typography .license__typography-download {
+  color: #7F56D9;
+  font-weight: 500;
+  margin-top: 10px;
+  display: inline-block;
+}
+#ub-license .license__container .license__typography .license__typography-download:hover {
+  text-decoration: underline;
+}
+#ub-license .license__container .license__iconography {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  border-bottom: 1px solid rgba(97, 85, 200, 0.3215686275);
+  padding: 5rem 0;
+}
+#ub-license .license__container .license__iconography .license__iconography-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #171717;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+#ub-license .license__container .license__iconography .license__iconography-info {
+  font-size: 18px;
+  color: #404040;
+  font-weight: normal;
+  line-height: 1.5;
+}
+#ub-license .license__container .license__iconography .license__iconography-info .license__iconography-link {
+  color: #7F56D9;
+  text-decoration: underline;
+}
+#ub-license .license__container .license__iconography .license__iconography-info .license__iconography-link:hover {
+  color: #602ece;
+}
+#ub-license .license__container .license__iconography .license__iconography-image {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 946px) {
+  #ub-license .license__container .license__iconography {
+    flex-direction: column;
+  }
+}
+#ub-license .license__container .license__photography .license__photography-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #171717;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+#ub-license .license__container .license__photography .license__photography-list {
+  margin-bottom: 10px;
+  color: #404040;
+  font-size: 18px;
+  font-weight: normal;
+}
+#ub-license .license__container .license__photography .license__photography-list .license__photography-link {
+  color: #7F56D9;
+  text-decoration: underline;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  display: inline-block;
+}
+#ub-license .license__container .license__photography .license__photography-list .license__photography-link:hover {
+  color: #602ece;
+}
+#ub-license .license__container .license__photography .license__photography-note {
+  font-size: 18px;
+  color: #404040;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-top: 3rem;
 }
 
 #footer .footer__content {

@@ -2,49 +2,52 @@
    License Section Styles
 ======================== */
 
-.license-section {
-    background-color: $mint-white;    
+#ub-license {
+    // background-color: $mint-white;    
     font-family: 'Inter', sans-serif;
 
-    .license-container {
-        @extend .container;
-        .license-header { 
+    .license__container {
+        .license__header { 
             max-width: 1000px;
             text-align: left;
             margin: 0 auto;
             border-bottom: 1px solid #6155C852;
             padding-bottom:4rem;
 
-            .license-title {
+            .license__title {
                 @extend .section-title;
                 color: $dark-neutral;
                 margin-bottom: 10px;
+                text-align: left;
+                margin-left: 0;
             }
 
-            .license-description {
+            .license__desc{
                 @extend .section-desc;
+                text-align: left;
+                margin-left: 0;
             }
         }
 
         // Illustration Section
-        .license-illustration {
+        .license__illustration {
            padding: 4rem 0;
-            .illustration-item {
+            .license__illustration-item{
                 display: flex;
                 justify-content: space-between;
                 gap:2rem;
-                .illustration-image {
+                .license__illustration-image{
                     max-width: 100%;
                     height: auto;
                     border-radius: 8px;
                 }
 
-                .illustration-caption {
+                .license__illustration-caption{
                     font-size: 1.5rem;
                     color: $dark-neutral;
                     font-weight: 500;
 
-                    .illustration-credit {
+                    .license__illustration-credit {
                         font-size: 18px;
                         color: $dark-gray;
                         font-weight: normal;
@@ -57,23 +60,24 @@
         }
 
         // Typography Section
-        .license-typography {
+        .license__typography{
             margin-bottom: 40px;
 
-            .typography-heading {
+            .license__typography-title {
                 font-size: 1.5rem;
                 font-weight: 500;
                 color: $dark-neutral;
                 line-height:30px;
-                margin-bottom: 10px;
+                margin-bottom: 10px; 
             }
 
-            .typography-info {
+            .license__typography-info{
                 font-size: 18px;
                 color: $dark-gray;
                 font-weight: normal;
+                line-height: 1.5;
 
-                .typography-link {
+                .license__typography-link{
                     color: $primary-color;
                     text-decoration: underline;
 
@@ -82,19 +86,21 @@
                     }
                 }
 
-                .typography-download {
-                    color: $primary-color;
-                    font-weight: 500;
+            }
+            .license__typography-download {
+                color: $primary-color;
+                font-weight: 500;
+                margin-top: 10px;
+                display: inline-block;
 
-                    &:hover {
-                        text-decoration: underline;
-                    }
+                &:hover {
+                    text-decoration: underline; 
                 }
             }
         }
 
         // Iconography Section
-        .license-iconography {
+        .license__iconography{
             margin-bottom: 40px;
             display: flex;
             justify-content:space-between;
@@ -102,7 +108,7 @@
             border-bottom: 1px solid #6155C852;
             padding:5rem 0;
 
-            .iconography-heading {
+            .license__iconography-title {
                 font-size: 1.5rem;
                 font-weight: 500;
                 color: $dark-neutral;
@@ -110,12 +116,13 @@
                 margin-bottom: 10px;
             }
 
-            .iconography-info {
+            .license__iconography-info {
                 font-size: 18px;
                 color: $dark-gray;
                 font-weight: normal;
+                line-height: 1.5;
 
-                .iconography-link {
+                .license__iconography-link{
                     color: $primary-color;
                     text-decoration: underline;
 
@@ -125,7 +132,7 @@
                 }
             }
 
-            .iconography-image {
+            .license__iconography-image {
                 max-width: 100%;
                 border-radius: 8px;
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -136,8 +143,8 @@
         }
 
         // Photography Section
-        .license-photography {
-            .photography-heading {
+        .license__photography {
+            .license__photography-title {
                 font-size: 1.5rem;
                 font-weight: 500;
                 color: $dark-neutral;
@@ -145,15 +152,18 @@
                 margin-bottom: 10px;
             }
 
-            .photography-list {
+            .license__photography-list {
                 margin-bottom: 10px;
                 color:$dark-gray;
                 font-size: 18px;
                 font-weight: normal;
 
-                .photography-link {
+                .license__photography-link {
                     color: $primary-color;
                     text-decoration: underline;
+                    margin-bottom: 10px;
+                    line-height: 1.5;
+                    display: inline-block;
 
                     &:hover {
                         color: darken($primary-color, 10%);
@@ -161,10 +171,12 @@
                 }
             }
 
-            .photography-note {
+            .license__photography-note{
                 font-size: 18px;
                 color: $dark-gray;
                 font-weight: normal;
+                line-height: 1.5;
+                margin-top: 3rem;
             }
         }
     }
