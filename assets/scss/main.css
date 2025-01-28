@@ -1760,6 +1760,54 @@ body.menu-open::before {
   }
 }
 
+#ub-integrations .integrations__container {
+  padding-top: 0;
+}
+#ub-integrations .integrations__container .integrations__card-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+#ub-integrations .integrations__container .integrations__card-grid .integrations__card {
+  background-color: #9E77ED;
+  padding: 32px;
+  border-radius: 20px;
+}
+#ub-integrations .integrations__container .integrations__card-grid .integrations__card .integrations__icon-wrapper {
+  margin-bottom: 1rem;
+  color: #012C16;
+}
+#ub-integrations .integrations__container .integrations__card-grid .integrations__card .integrations__card-title {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 48px;
+  color: #171717;
+  margin: 18px 0;
+}
+#ub-integrations .integrations__container .integrations__card-grid .integrations__card .integrations__card-desc {
+  color: #404040;
+  font-weight: normal;
+  font-size: 18;
+  line-height: 27px;
+  margin-top: -4px;
+}
+@media (max-width: 768px) {
+  #ub-integrations .integrations__container .integrations__card-grid .integrations__card {
+    padding: 24px;
+  }
+}
+@media (min-width: 640px) {
+  #ub-integrations .integrations__container .integrations__card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  #ub-integrations .integrations__container .integrations__card-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
 #ub-integrations .integrations-logos {
   max-width: 1024px;
   overflow: hidden;
@@ -2702,6 +2750,114 @@ body.menu-open::before {
   background-color: #181D27;
   border: 1px solid #181D27;
   transition: 0.5s ease;
+}
+
+#ub-integrations .integrations__container {
+  padding-top: 0;
+}
+#ub-integrations .integrations__container .integrations__card-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+#ub-integrations .integrations__container .integrations__card-grid .integrations__card {
+  background-color: #9E77ED;
+  padding: 32px;
+  border-radius: 20px;
+}
+#ub-integrations .integrations__container .integrations__card-grid .integrations__card .integrations__icon-wrapper {
+  margin-bottom: 1rem;
+  color: #012C16;
+}
+#ub-integrations .integrations__container .integrations__card-grid .integrations__card .integrations__card-title {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 48px;
+  color: #171717;
+  margin: 18px 0;
+}
+#ub-integrations .integrations__container .integrations__card-grid .integrations__card .integrations__card-desc {
+  color: #404040;
+  font-weight: normal;
+  font-size: 18;
+  line-height: 27px;
+  margin-top: -4px;
+}
+@media (max-width: 768px) {
+  #ub-integrations .integrations__container .integrations__card-grid .integrations__card {
+    padding: 24px;
+  }
+}
+@media (min-width: 640px) {
+  #ub-integrations .integrations__container .integrations__card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  #ub-integrations .integrations__container .integrations__card-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+#ub-integrations .integrations-logos {
+  max-width: 1024px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+#ub-integrations .integrations-logos .integrations-logos__slider-right {
+  margin-top: 2.5rem;
+}
+#ub-integrations .integrations-logos .swiper-wrapper {
+  width: 80px !important;
+  height: 80px !important;
+  transition-timing-function: linear !important;
+}
+#ub-integrations .integrations-logos .swiper-wrapper .integrations-logos__slider-item {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#ub-integrations .integrations-logos .swiper-wrapper .integrations-logos__slider-item .integrations-logos__logo {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#ub-integrations .integrations-logos::after,
+#ub-integrations .integrations-logos::before {
+  position: absolute;
+  content: " ";
+  bottom: 0;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background: #FCFAFF;
+  filter: blur(56.8px);
+  z-index: 99;
+}
+#ub-integrations .integrations-logos::after {
+  left: -170px;
+}
+@media (max-width: 768px) {
+  #ub-integrations .integrations-logos::after {
+    width: 140px;
+    height: 140px;
+    left: -100px;
+  }
+}
+#ub-integrations .integrations-logos::before {
+  right: -170px;
+}
+@media (max-width: 768px) {
+  #ub-integrations .integrations-logos::before {
+    width: 140px;
+    height: 140px;
+    right: -100px;
+  }
 }
 
 #footer .footer__content {

@@ -18,55 +18,55 @@
 // }
 
 
-// #integrations{
-//     .container{
-//         padding-top:0;
+#ub-integrations{
+    .integrations__container{
+        padding-top:0;
 
-//         .integration-card-area{
-//             display: grid;
-//             grid-template-columns: repeat(1, 1fr);  
-//             gap: 1.5rem;  
+        .integrations__card-grid{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);  
+            gap: 1.5rem;  
    
-//             .integration-card{
-//                 background-color: $light-normal;      
-//                 padding: 32px;
-//                 border-radius: 20px;
+            .integrations__card{
+                background-color: $soft-purple;      
+                padding: 32px;
+                border-radius: 20px;
 
-//                 .icon-wrapper {
-//                     margin-bottom: 1rem;  
-//                     color: #012C16;  
-//                   }
+                .integrations__icon-wrapper {
+                    margin-bottom: 1rem;  
+                    color: #012C16;  
+                  }
                   
-//                 h3{
-//                     font-weight: 500;
-//                     font-size: 2rem;
-//                     line-height: 48px;
-//                     color: $dark-neutral;
-//                     margin: 18px 0;
-//                 }
-//                 p{
-//                     color: $dark-gray;
-//                     font-weight: normal;
-//                     font-size: 18;
-//                     line-height: 27px;
-//                     margin-top: -4px;
-//                 }
-//                 @media (max-width: 768px) { 
-//                     padding: 24px;
-//                 }
-//             }
+                  .integrations__card-title{
+                    font-weight: 500;
+                    font-size: 2rem;
+                    line-height: 48px;
+                    color: $dark-neutral;
+                    margin: 18px 0;
+                }
+                .integrations__card-desc{
+                    color: $dark-gray;
+                    font-weight: normal;
+                    font-size: 18;
+                    line-height: 27px;
+                    margin-top: -4px;
+                }
+                @media (max-width: 768px) { 
+                    padding: 24px;
+                }
+            }
 
-//             @media (min-width: 640px) {  
-//                 grid-template-columns: repeat(2, 1fr);  
-//               }
+            @media (min-width: 640px) {  
+                grid-template-columns: repeat(2, 1fr);  
+              }
             
-//             @media (min-width: 1024px) {  
-//             grid-template-columns: repeat(3, 1fr);  
-//             gap: 2rem; 
-//             }
-//         }
-//     }
-// }
+            @media (min-width: 1024px) {  
+            grid-template-columns: repeat(3, 1fr);  
+            gap: 2rem; 
+            }
+        }
+    }
+}
 
 
 // details page here
