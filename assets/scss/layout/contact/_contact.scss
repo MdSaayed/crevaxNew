@@ -1,15 +1,16 @@
 #ub-contact {
-    background-color: $light-purple;
-    max-width: 800px;
-    padding: 3rem;
-    border-radius: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    margin-top: 4rem;
+    .contact__content{
+        background-color: $light-purple;
+        max-width: 800px;
+        padding: 3rem;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4rem;
+    } 
 
     .contact__title{
-        @extend .section-title;
+        @extend .section-title; 
         font-size: 3rem;
         margin-bottom: 3.5rem;
     }
@@ -24,7 +25,7 @@
         font-weight: 500;
         font-size: 20px;
         line-height: 28px;
-        color: $dark-neutral;
+        color: $dark-neutral; 
         margin-bottom: 10px;
     }
 
@@ -68,13 +69,5 @@
     .contact__btn {
         @include btn();
         margin-top: 20px;
-    }
-
-    @media (max-width: 1024px) {
-        padding: 4rem 2rem;
-    }
-
-    @media (max-width: 768px) {
-        padding: 4rem 1rem;
     }
 }

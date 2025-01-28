@@ -2553,14 +2553,13 @@ body.menu-open::before {
   line-height: 1.5;
 }
 
-#ub-contact {
+#ub-contact .contact__content {
   background-color: #E9D7FE;
   max-width: 800px;
   padding: 3rem;
   border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
   margin-top: 4rem;
 }
 #ub-contact .contact__title {
@@ -2641,16 +2640,6 @@ body.menu-open::before {
   background-color: transparent;
   border: 1px solid #7F56D9;
   transition: 0.5s ease;
-}
-@media (max-width: 1024px) {
-  #ub-contact {
-    padding: 4rem 2rem;
-  }
-}
-@media (max-width: 768px) {
-  #ub-contact {
-    padding: 4rem 1rem;
-  }
 }
 
 #footer .footer__content {
