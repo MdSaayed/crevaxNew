@@ -157,7 +157,7 @@ a {
   margin: 0 auto;
 }
 
-.hero__title, #ub-terms .terms__title, #ub-privacy-policy .privacy-policy__title {
+.hero__title, #ub-terms .terms__title, #ub-privacy-policy .privacy-policy__title, #ub-pricing-details .pricing-details__title {
   font-size: 3.5rem;
   font-weight: 500;
   line-height: 72px;
@@ -169,7 +169,7 @@ a {
   margin: 0 auto;
 }
 @media (max-width: 768px) {
-  .hero__title, #ub-terms .terms__title, #ub-privacy-policy .privacy-policy__title {
+  .hero__title, #ub-terms .terms__title, #ub-privacy-policy .privacy-policy__title, #ub-pricing-details .pricing-details__title {
     font-size: 3rem !important;
     line-height: 60px !important;
   }
@@ -262,17 +262,17 @@ body {
   }
 }
 
-.list-bulet, #job-details .job__content .job__list, #ub-terms .terms__list, #ub-privacy-policy .privacy-policy__list, .team-details__list, #integrations-details .integration__content .integration__list, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet {
+.list-bulet, #job-details .job__content .job__list, #ub-terms .terms__list, #ub-privacy-policy .privacy-policy__list, .team-details__list, #integrations-details .integration__content .integration__list, #ub-pricing-details .pricing-details__list, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
-.list-bulet li, #job-details .job__content .job__list li, #ub-terms .terms__list li, #ub-privacy-policy .privacy-policy__list li, #integrations-details .integration__content .integration__list li, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li, .team-details__list li {
+.list-bulet li, #job-details .job__content .job__list li, #ub-terms .terms__list li, #ub-privacy-policy .privacy-policy__list li, #integrations-details .integration__content .integration__list li, #ub-pricing-details .pricing-details__list li, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li, .team-details__list li {
   position: relative;
   padding-left: 20px;
   margin-left: 5px;
 }
-.list-bulet li::before, #job-details .job__content .job__list li::before, #ub-terms .terms__list li::before, #ub-privacy-policy .privacy-policy__list li::before, #integrations-details .integration__content .integration__list li::before, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li::before, .team-details__list li::before {
+.list-bulet li::before, #job-details .job__content .job__list li::before, #ub-terms .terms__list li::before, #ub-privacy-policy .privacy-policy__list li::before, #integrations-details .integration__content .integration__list li::before, #ub-pricing-details .pricing-details__list li::before, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li::before, .team-details__list li::before {
   content: "•";
   position: absolute;
   left: 0;
@@ -428,17 +428,17 @@ body {
   }
 }
 
-.list-bulet, #job-details .job__content .job__list, #ub-terms .terms__list, #ub-privacy-policy .privacy-policy__list, .team-details__list, #integrations-details .integration__content .integration__list, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet {
+.list-bulet, #job-details .job__content .job__list, #ub-terms .terms__list, #ub-privacy-policy .privacy-policy__list, .team-details__list, #integrations-details .integration__content .integration__list, #ub-pricing-details .pricing-details__list, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
-.list-bulet li, #job-details .job__content .job__list li, #ub-terms .terms__list li, #ub-privacy-policy .privacy-policy__list li, #integrations-details .integration__content .integration__list li, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li, .team-details__list li {
+.list-bulet li, #job-details .job__content .job__list li, #ub-terms .terms__list li, #ub-privacy-policy .privacy-policy__list li, #integrations-details .integration__content .integration__list li, #ub-pricing-details .pricing-details__list li, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li, .team-details__list li {
   position: relative;
   padding-left: 20px;
   margin-left: 5px;
 }
-.list-bulet li::before, #job-details .job__content .job__list li::before, #ub-terms .terms__list li::before, #ub-privacy-policy .privacy-policy__list li::before, #integrations-details .integration__content .integration__list li::before, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li::before, .team-details__list li::before {
+.list-bulet li::before, #job-details .job__content .job__list li::before, #ub-terms .terms__list li::before, #ub-privacy-policy .privacy-policy__list li::before, #integrations-details .integration__content .integration__list li::before, #ub-pricing-details .pricing-details__list li::before, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li::before, .team-details__list li::before {
   content: "•";
   position: absolute;
   left: 0;
@@ -1682,6 +1682,156 @@ body.menu-open::before {
   #ub-pricing-table .pricing-table__content {
     min-width: 767px;
   }
+}
+
+#ub-pricing-details .pricing-details__wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 3rem;
+}
+@media (min-width: 1024px) {
+  #ub-pricing-details .pricing-details__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+#ub-pricing-details .pricing-details__content {
+  max-width: 704px;
+}
+#ub-pricing-details .pricing-details__title {
+  margin-top: 0;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+#ub-pricing-details .pricing-details__subtitle {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #404040;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+#ub-pricing-details .pricing-details__desc {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #737373;
+}
+#ub-pricing-details .pricing-details__list {
+  color: #737373;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  line-height: 1.5;
+}
+#ub-pricing-details .pricing-details__list li {
+  margin-bottom: 1rem;
+}
+#ub-pricing-details .pricing-details__section {
+  border-top: 1px solid #F4EBFF;
+  margin-top: 1.5rem;
+  padding: 1rem 0;
+}
+#ub-pricing-details .pricing-details__switcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#ub-pricing-details .pricing-details__switcher .pricing-details__switcher-wrapper {
+  background-color: #F4EBFF;
+  padding: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 9999px;
+}
+#ub-pricing-details .pricing-details__switcher .pricing-details__switcher-wrapper .pricing-details__switcher-btn {
+  border: none;
+  background: none;
+  color: #404040;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  transition: color 0.3s, background-color 0.3s;
+  padding: 8px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+#ub-pricing-details .pricing-details__switcher .pricing-details__switcher-wrapper .pricing-details__switcher-btn.pricing-details__switcher-btn--active {
+  background-color: #7F56D9;
+  color: #FCFAFF;
+  font-weight: 500;
+}
+#ub-pricing-details .pricing-details__switcher .pricing-details__switcher-wrapper .pricing-details__switcher-btn:hover {
+  background-color: #7F56D9;
+  color: #FCFAFF;
+  font-weight: 500;
+}
+@media (max-width: 310px) {
+  #ub-pricing-details .pricing-details__switcher .pricing-details__switcher-wrapper .pricing-details__switcher-btn {
+    padding: 4px 12px;
+  }
+}
+#ub-pricing-details .pricing-details__card {
+  border: 1px solid #F4EBFF;
+  border-radius: 10px;
+  padding: 2rem 1rem;
+  display: block;
+  margin-top: 2rem;
+  max-width: 496px;
+}
+#ub-pricing-details .pricing-details__card--hidden {
+  display: none;
+}
+#ub-pricing-details .pricing-details__card--active {
+  display: block;
+}
+#ub-pricing-details .pricing-details__options {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+}
+@media (max-width: 1024px) {
+  #ub-pricing-details .pricing-details__options {
+    justify-content: start;
+    align-items: start;
+  }
+}
+#ub-pricing-details .pricing-details__card-price {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 48px;
+  color: #171717;
+}
+#ub-pricing-details .pricing-details__card-price span {
+  font-size: 20px;
+  line-height: 28px;
+}
+#ub-pricing-details .pricing-details__card-desc {
+  margin: 20px 0px;
+  color: #737373;
+  font-weight: 400;
+  font-size: 16px;
+}
+#ub-pricing-details .pricing-details__card-btn {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F5FAF7;
+  background-color: #7F56D9;
+  border: 1px solid #7F56D9;
+  padding: 8px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+}
+#ub-pricing-details .pricing-details__card-btn:hover {
+  color: #7F56D9;
+  background-color: transparent;
+  border: 1px solid #7F56D9;
+  transition: 0.5s ease;
 }
 
 #ub-testimonial .testimonial__subtitle-group {

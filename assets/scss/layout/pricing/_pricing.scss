@@ -1,3 +1,4 @@
+// pricing section 
 #ub-pricing {
     &.pricing--padded{
       padding: 0 1rem;
@@ -134,8 +135,6 @@
       display: none;
     }
   }
-  
-
 
 // Pricing Page
 .pricing-hero {
@@ -259,99 +258,167 @@
   }
 }
 
+// pricing details page
+#ub-pricing-details{
+    .pricing-details__wrapper{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);   
+      gap: 3rem;  
 
-// #pricing-details{
-//     .pricing-details-area{
-//         display: grid;
-//         grid-template-columns: repeat(1, 1fr);  
-//         gap: 1.5rem;  
-        
-//         .content{
-//             .section-title {
-//                 margin-top:0;
-//                 text-align:left;
-//             }
-//             .section-desc{
-//                 color: $soft-gray;
-//             }
-//             .list-disc {
-//                 margin-top: 0.5rem;
-//                 list-style-type: disc;
-//                 list-style-type: disc;  
-//                 padding-left: 20px;    
-//                 margin-bottom: 2rem;
+        @media (min-width: 1024px) {  
+          grid-template-columns: repeat(2, 1fr);  
+          gap: 5rem;
+      }      
+    }
 
-//                 li::marker {
-//                   color: $blue-gray;      
-//                 }
-//                 .section-desc {
-//                     margin-bottom: 0.5rem;
-//                 }
-//             }
-//               .section-separator{
-//                 padding: 1.5rem 0;
-//                 border-top: 1px solid $light-mint-green;
-//                 .feature-sub-title{
-//                     color: $dark-gray;
-//                     font-size: 20px;
-//                     font-weight: 500;
-//                     line-height: 28px;
-//                 }
-//                 .section-desc {
-//                 margin-top: 0.5rem; 
-//                 }
+    .pricing-details__content{
+      max-width: 704px;
+    }
+          
+    .pricing-details__title{
+      @extend .hero__title;
+        margin-top:0;
+        text-align:left;
+        margin-bottom: 1rem;
+    }
+
+    .pricing-details__subtitle{
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: $dark-gray;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+
+    .pricing-details__desc{
+      font-size: 1rem;
+      font-weight: normal;
+      line-height: 1.5;
+      color:$gray-medium;
+    }
+
+    .pricing-details__list {
+        @extend .list-bulet;
+
+        color: $gray-medium;  
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 24px;   
+        line-height: 1.5;  
+
+        li{
+          margin-bottom: 1rem;
+        }
+    }
+
+    .pricing-details__section{
+      border-top: 1px solid $purple-haze; 
+      margin-top: 1.5rem;
+      padding: 1rem 0;
+    }
+
+
+    // pricing switcher
+    .pricing-details__switcher {
+        display: flex;  
+        align-items: center;  
+        justify-content: center; 
     
-//             }  
-//         }
+        .pricing-details__switcher-wrapper{
+            background-color: $purple-haze;
+            padding: 0.5rem;  
+            display: inline-flex;  
+            align-items: center;  
+            justify-content: center;  
+            gap: 1rem;  
+            border-radius: 9999px;    
+    
+            .pricing-details__switcher-btn {
+                border: none;
+                background: none;
+                color: $dark-gray;
+                font-weight:normal;
+                font-size:18px;
+                line-height:27px;
+                transition: color 0.3s, background-color 0.3s; 
+                padding: 8px 15px;
+                border-radius: 50px;
+                cursor: pointer;
+        
+                &.pricing-details__switcher-btn--active {
+                    background-color: $primary-color; 
+                    color:$soft-lilac;
+                    font-weight:500;   
+                }
+        
+                &:hover {
+                    background-color:$primary-color;
+                    color:$soft-lilac;
+                    font-weight:500;
+                }
+                @media (max-width: 310px) {
+                        padding: 4px 12px;
+                }
+            }
+        }
+        
+    }
 
-//         .flex-container {
-//             display: flex;
-//             flex-direction: column;  
+    // pricing card
+    .pricing-details__card{
+        border: 1px solid $purple-haze;
+        border-radius: 10px;
+        padding: 2rem 1rem;
+        display: block;
+        margin-top: 2rem;
+        max-width: 496px; 
 
-//             .pricing-switcher{
-//                 margin-bottom:2rem;
-//             }
-          
-//             @media (min-width: 1024px) {  
-//               align-items: flex-end;  
-//               justify-content: flex-start; 
-//             }
-//           }
-          
-      
-       
+        &--hidden{
+          display: none; 
+        }
 
-//         @media (min-width: 1024px) {  
-//             grid-template-columns: repeat(2, 1fr);  
-//         }      
-//     }
-//     .pricing-cards{
-//         border: 1px solid $light-mint-green;
-//         border-radius: 10px;
-//         padding: 2rem 1rem;
-//         .price{
-//             font-size: 2.5rem;
-//             font-weight: 500;
-//             line-height: 48px;
-//             color: $dark-neutral;
-//             span{
-//                 font-size: 20px;
-//                 line-height: 28px;
-//             }
-//         }
-//         .product-desc{
-//             margin: 20px 0px;
-//             color:$soft-gray;
-//             font-weight: 400;
-//             font-size: 16px;
-//         }
-//         .btn{
-//             @include btn; 
-//             display: block;
-//             text-align: center; 
-//         }
-//     }
-// }
+        &--active{
+          display: block; 
+        }
+    }
+    
+    .pricing-details__options {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: end;
+
+        @media (max-width: 1024px) {  
+          justify-content: start;
+          align-items: start;
+      }  
+    }
+
+    .pricing-details__card-price{
+        font-size: 2.5rem; 
+        font-weight: 500;
+        line-height: 48px;
+        color: $dark-neutral;
+
+        span{
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+
+    .pricing-details__card-desc{
+        margin: 20px 0px;
+        color:$gray-medium;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .pricing-details__card-btn{
+        @include btn; 
+        display: block;
+        text-align: center; 
+    }
+}
 
   
   

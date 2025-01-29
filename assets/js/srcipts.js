@@ -64,22 +64,43 @@ faqQuestions.forEach(item => {
 
 
 
-// pricing swither =============================================================
-document.querySelectorAll('.pricing__switcher-btn').forEach(button => {
+// pricing swither pricing section=============================================================
+document.querySelectorAll('.pricing-details__switcher-btn').forEach(button => {
     button.addEventListener('click', () => {
         
-        document.querySelectorAll('.pricing__switcher-btn').forEach(btn => 
-            btn.classList.remove('pricing__switcher-btn--active')
+        document.querySelectorAll('.pricing-details__switcher-btn').forEach(btn => 
+            btn.classList.remove('pricing-details__switcher-btn--active')
         );
-        button.classList.add('pricing__switcher-btn--active');
+        button.classList.add('pricing-details__switcher-btn--active');
 
-        document.querySelectorAll('.pricing__cards').forEach(card => 
-            card.classList.add('pricing__cards--hidden')
+        document.querySelectorAll('.pricing-details__card').forEach(card => 
+            card.classList.add('pricing-details__card--hidden')
         );
         const targetClass = button.getAttribute('data-target');
-        document.querySelector(`.${targetClass}`).classList.remove('pricing__cards--hidden');
+        document.querySelector(`.${targetClass}`).classList.remove('pricing-details__card--hidden');
     });
 });
+
+
+
+
+// pricing swither pricing signle page=============================================================
+document.querySelectorAll('.pricing-details__switcher-btn').forEach(button => {
+    button.addEventListener('click', () => {
+
+        document.querySelectorAll('.pricing-details__switcher-btn').forEach(btn => 
+            btn.classList.remove('pricing-details__switcher-btn--active')
+        );
+        
+        button.classList.add('pricing-details__switcher-btn--active');
+        document.querySelectorAll('.pricing-details__card').forEach(card => 
+            card.classList.add('pricing-details__card--hidden')
+        );
+        const targetClass = button.getAttribute('data-target');
+        document.querySelector(`.pricing-details__card[data-target="${targetClass}"]`).classList.remove('pricing-details__card--hidden');
+    });
+});
+
 
 
 
