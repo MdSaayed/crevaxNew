@@ -1,257 +1,286 @@
-#sign-in,#sign-up{
-    .container{
+#ub-auth{
+    .auth__container{
         padding: 0;
-        .auth-panel{
-            display: grid;
-            grid-template-columns: 1fr; 
-            gap: 3rem;  
-            align-items: center;  
-            padding: 2rem;
-            min-height: 100lvh;
+    }
 
-            .welcome-panel{
-                background-color: $green-deep; 
-                border-radius: 20px;
-                height: 100%;
-                padding: 4rem 3rem;
-                .welcome-content{
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: space-between;
-                    .section-title{
-                        color: $white;
-                        text-align: center;
-                    }
-                    .section-desc{
-                        color:$soft-lilac;
-                        text-align: center;
-                    }
-                    .feature-section{
-                        .section-title{
-                            font-size: 2rem;
-                            line-height: 48px;
-                            font-weight: 500;
-                            color: $light-neutral;
-                            margin-bottom: 12px;
-                        }
-                        .section-desc{
-                            color: $light-neutral;
-                            text-align: center;
-                        }
-                    }
-                    .navigation-dots {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 10px;
-                        margin-top:  3.5rem ;
-                      
-                        .dot {
-                          background-color: $white;
-                          width: 8px;
-                          height: 8px;
-                          border-radius: 50%;
-                          display: block;
-                      
-                          &.active { 
-                            display: block;
-                            width: 24px;
-                            height: 8px;
-                            border-radius: 50px;
-                          }
-                        }
-                      }
-                      
-                }
-                
-            }
-            @media (max-width:768px) {
-                padding: 1rem;
-            }
+    .auth__panel{
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 3rem;  
+        align-items: center;  
+        padding: 2rem;
+        min-height: 100lvh;
 
-            // form panel
-            .form-panel{
-                display: flex;    
-                flex-direction: column;  
-                justify-content: center;
-                padding: 2rem 7rem;
-                position: relative;
-                height: 100vh;
-
-                .brand-header {
-                    margin-bottom: 2rem;  
-                  }
-                  
-                .tab-buttons{
-                    background-color: $light-normal;
-                    border-radius: 8px;
-                    padding: 5px;
-                    display: flex;
-                    justify-content: space-between;
-                    gap: 5px;
-                    margin-bottom: 1.5rem;
-                      
-                    .tab-button{
-                        @extend .btn; 
-                        width: 50%;
-                        border-radius: 8px;
-                        background-color: transparent;
-                        border: none;
-                        color: #9C9AA5;
-                        padding: 6px 8px;
-                        &:hover{
-                            border: none !important;
-                            background-color: $primary-color;
-                            color:$soft-lilac;
-
-                        }
-                        &.active{
-                            background-color: $primary-color;
-                            color:$soft-lilac;
-                        }
-                    }
-                }
-
-                .input-wrapper {
-                    display: flex;         
-                    flex-direction: column;  
-                    margin-bottom: 1rem;    
-                  }
-                
-                .flex-container {
-                    display: flex;            
-                    justify-content: space-between;  
-                    align-items: center;     
-                }
-                  
-
-                #signup-form ,#signin-form{
-                    display: none;
-                    &.active {
-                        display: block; 
-                    }
-                    label {
-                        font-weight: 500;
-                        font-size: 20px;
-                        line-height: 28px;
-                        color: $dark-neutral;
-                        margin-bottom: 10px;
-                    }
-                    input {
-                        padding: 10px 14px;
-                        border-radius: 5px;
-                        outline: 2px solid $primary-color;
-                        background-color: $light-normal;
-                        &::placeholder{
-                            font-size: 16px;
-                            font-weight: 400;
-                            line-height: 24px;
-                            color: $soft-gray;
-                        }
-            
-                        &:focus {
-                            outline: 2px solid $primary-color; 
-                            box-shadow: 0px 2px 4px 2px #465FF11A;
-                        }
-                    }
-                    .forgot-password-link{
-                        font-size: 12px;
-                        line-height: 18px; 
-                    }
-                    textarea {
-                        padding: 10px;
-                        border-radius: 5px;
-            
-                        &:focus {
-                            outline: 2px solid $primary-color; // Focus outline color
-                        }
-                    }
-                    .password-strength {
-                        color: $dark-gray;
-                        font-size: 14px;
-                        line-height: 21px;
-                        list-style: none; 
-                        padding: 0;
-                        &.active{
-                            color: $primary-color;
-                        }
-                    
-                        .strength-item {
-                            position: relative; 
-                            padding-left: 20px; 
-                            &.active{
-                                color: $primary-color;
-                            }
-                            &::before {
-                                content: "\f00c"; 
-                                font-family: 'Font Awesome 6 Free'; 
-                                font-weight: 900;
-                                position: absolute;
-                                left: 0;
-                                top: 0;
-                            }
-                        }
-                    }
-                    .sign-up-btn{
-                        @extend .btn;
-                        width: 100%;
-                        margin-top: 25px;
-                        font-weight: 500;
-                    }
-                    .sign-in-btn {
-                        @include btn($bgColor: "transparent", $hoverBgColor: $primary-color, $color:$primary-color, $hoverColor:$soft-lilac, $border:$primary-color); 
-                        width: 100%;
-                        display: block;
-                        text-align: center;
-                        font-weight: 500;
-                    }
-                    .or-divider {
-                        display: flex;
-                        align-items: center;
-                        text-align: center;
-                        color: #6c757d; 
-                        font-size: 14px;
-                        font-weight: 500;
-                        margin: 20px 20px;  
-                    
-                        &::before,
-                        &::after {
-                            content: "";
-                            flex: 1;
-                            border-top: 1px solid $light-mint-green;  
-                            margin: 0 10px;  
-                        }
-                    }    
-                }
-                .terms-message{
-                    margin-top: 2rem;
-                    font-size: 14px;
-                    font-weight: normal;
-                    line-height: 21px;
-                    text-align: center;
-                    color: $dark-gray;
-                    a{
-                        color:$dark-neutral;
-                    }
-                }
-                @media (max-width: 1024px) { 
-                    padding: 4rem 2rem;
-                }
-        
-                @media (max-width: 768px) {
-                    padding: 4rem 1rem; 
-                }
-                
-            }
-             
-            @media (min-width: 1024px) {  
-                grid-template-columns: repeat(2, 1fr);  
-                gap: 0;  
-            }
-            
+        @media (max-width:768px) {
+            padding: 1rem;
         }
+
+        @media (min-width: 1024px) {  
+            grid-template-columns: repeat(2, 1fr);  
+            gap: 0;  
+        }
+        
+    }
+
+    .auth__welcome{
+        background-color: $deep-violet; 
+        border-radius: 20px;
+        height: 100%;
+        padding: 4rem 3rem;
+
+        .auth__welcome-content{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            .auth__title{
+                color: $white;
+                text-align: center;
+            }
+            .auth__desc{
+                color:$soft-lilac;
+                text-align: center;
+            }
+                .auth__feature-title{
+                    font-size: 2rem;
+                    line-height: 48px;
+                    font-weight: 500;
+                    color: $light-gray-blue;  
+                    margin-bottom: 12px;
+                }
+                .auth__feature-desc{
+                    color: $light-gray-blue;
+                    text-align: center;
+                }
+            
+            .auth__dots {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                margin-top:  3.5rem ;
+              
+                .auth__dot {
+                  background-color: $white;
+                  width: 8px;
+                  height: 8px;
+                  border-radius: 50%;
+                  display: block;
+              
+                  &--active { 
+                    display: block;
+                    width: 24px;
+                    height: 8px;
+                    border-radius: 50px;
+                  }
+                }
+              }
+              
+        }
+        
+    }
+
+    // form panel
+    .auth__form-panel{
+        display: flex;    
+        flex-direction: column;  
+        justify-content: center;
+        padding: 2rem 7rem;
+        position: relative;
+        height: 100vh;
+
+        .auth__brand{
+            margin-bottom: 2rem;  
+            }
+            
+        .auth__tabs{
+            background-color: $deep-violet; 
+            border-radius: 8px;
+            padding: 5px;
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
+            margin-bottom: 1.5rem;
+                
+            .auth__tab{
+                @extend .btn; 
+                width: 50%;
+                border-radius: 8px;
+                background-color: transparent;
+                border: none;
+                color: #9C9AA5;
+                padding: 6px 8px;
+
+                &:hover{
+                    border: none !important;
+                    background-color: $primary-color;
+                    color:$soft-lilac;
+
+                }
+                &--active{
+                    background-color: $primary-color;
+                    color:$soft-lilac;
+                }
+            }
+        }
+
+        .auth__input-group {
+            display: flex;         
+            flex-direction: column;  
+            margin-bottom: 1rem;    
+            }
+        
+        .auth__password-header{
+            display: flex;            
+            justify-content: space-between;  
+            align-items: center;     
+        }
+            
+
+        .auth__form{
+            display: none;
+
+            &--active {
+                display: block; 
+            }
+
+            label {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 28px;
+                color: $dark-neutral;
+                margin-bottom: 10px;
+            }
+
+            input {
+                padding: 10px 14px;
+                border-radius: 5px;
+                outline: 2px solid $primary-color;
+                background-color: $deep-violet;
+                &::placeholder{
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: $light-gray;
+                }
+    
+                &:focus {
+                    outline: 2px solid $primary-color; 
+                    box-shadow: 0px 2px 4px 2px #465FF11A; 
+                }
+            }
+
+            .auth__forgot-password{
+                font-size: 12px;
+                line-height: 18px; 
+            }
+
+            textarea {
+                padding: 10px;
+                border-radius: 5px;
+    
+                &:focus {
+                    outline: 2px solid $primary-color; // Focus outline color
+                }
+            }
+
+            .password-strength {
+                color: $dark-gray;
+                font-size: 14px;
+                line-height: 21px;
+                list-style: none; 
+                padding: 0;
+
+                &.active{
+                    color: $primary-color;
+                }
+            
+                .strength-item {
+                    position: relative; 
+                    padding-left: 20px;  
+                    &.active{
+                        color: $primary-color;
+                    }
+                    &::before {
+                        content: "\f00c"; 
+                        font-family: 'Font Awesome 6 Free'; 
+                        font-weight: 900;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                    }
+                }
+            }
+            .auth__btn{
+                @include btn(
+                    $bgColor: $text-primary,
+                    $hoverBgColor: $background-light-green,
+                    $color: $light-color,
+                    $hoverColor: $text-primary,
+                    $border: $background-light-green,
+                    $hoverBorder: $background-light-green
+                );
+
+                width: 100%;
+                margin-top: 25px;
+                font-weight: 500;
+            }
+
+            .auth__link {
+                @include btn(
+                    $bgColor: $background-light-green,
+                    $hoverBgColor: $text-primary,
+                    $color: $text-primary,
+                    $hoverColor: $light-color,
+                    $border: $background-light-green,
+                    $hoverBorder: $text-primary
+                );
+
+                width: 100%;
+                display: block;
+                text-align: center;
+                font-weight: 500;
+            }
+
+            .auth__divider{
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: #6c757d; 
+                font-size: 14px;
+                font-weight: 500;
+                margin: 20px 20px;  
+            
+                &::before, 
+                &::after {
+                    content: "";  
+                    flex: 1;
+                    border-top: 1px solid $light-gray-blue;  
+                    margin: 0 10px;  
+                }
+            }    
+        }
+
+        .auth__terms{
+            margin-top: 2rem;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 21px;
+            text-align: center;
+            color: $dark-gray;
+            a{
+                color:$dark-neutral;
+            }
+        }
+        @media (max-width: 1024px) { 
+            padding: 4rem 2rem;
+        }
+
+        @media (max-width: 768px) {
+            padding: 4rem 1rem; 
+        }
+        
     }
 }
 
