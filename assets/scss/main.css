@@ -778,15 +778,15 @@ body.menu-open::before {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
-#ub-brands .brands__container .brands__content .brands__heading {
+#ub-brands .brands__heading {
   margin-bottom: 2.5rem;
 }
-#ub-brands .brands__container .brands__content .brands__heading h2 {
+#ub-brands .brands__heading h2 {
   text-align: center;
   font-weight: 500;
   font-size: 1.5rem;
 }
-#ub-brands .brands__container .brands__content .brands__grid {
+#ub-brands .brands__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
@@ -795,24 +795,24 @@ body.menu-open::before {
   justify-content: space-between;
   align-items: center;
 }
-#ub-brands .brands__container .brands__content .brands__grid .brands__logo {
-  display: flex;
-  justify-content: center;
-}
-#ub-brands .brands__container .brands__content .brands__grid .brands__logo img {
-  width: 100%;
-}
 @media (min-width: 768px) {
-  #ub-brands .brands__container .brands__content .brands__grid {
+  #ub-brands .brands__grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
 }
 @media (min-width: 1024px) {
-  #ub-brands .brands__container .brands__content .brands__grid {
+  #ub-brands .brands__grid {
     grid-template-columns: repeat(5, 1fr);
     gap: 3.5rem;
   }
+}
+#ub-brands .brands__logo {
+  display: flex;
+  justify-content: center;
+}
+#ub-brands .brands__logo img {
+  width: 100%;
 }
 
 #ub-feature-hero .feature-hero__container {

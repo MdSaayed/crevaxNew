@@ -2,47 +2,45 @@
     .brands__container {
         padding-top: 4rem;
         padding-bottom: 4rem;
+    }
 
-        .brands__content {
-            .brands__heading {
-                margin-bottom: 2.5rem;
+    .brands__heading {
+        margin-bottom: 2.5rem;
 
-                h2 {
-                    text-align: center;
-                    font-weight: 500;
-                    font-size: 1.5rem;
-                }
-            }
+        h2 {
+            text-align: center;
+            font-weight: 500;
+            font-size: 1.5rem;
+        }
+    }
 
-            .brands__grid {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 1.5rem;
-                justify-content: center;
+    .brands__grid { 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        justify-content: center;
 
-                .brands__logo{
-                    display: flex;
-                    justify-content: center;
-                    
-                    img{
-                        width: 100%;
-                    }
-                }
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
 
-                @media (min-width: 768px) {
-                    grid-template-columns: repeat(3, 1fr);
-                    gap: 2rem;
-                }
+        @media (min-width: 1024px) {
+            grid-template-columns: repeat(5, 1fr);
+            gap: 3.5rem;
+        }
 
-                @media (min-width: 1024px) {
-                    grid-template-columns: repeat(5, 1fr);
-                    gap: 3.5rem;
-                }
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-                flex-wrap: wrap;
-                justify-content: space-between;
-                align-items: center;
-            }
+    .brands__logo{
+        display: flex;
+        justify-content: center;
+        
+        img{
+            width: 100%;
         }
     }
 }
