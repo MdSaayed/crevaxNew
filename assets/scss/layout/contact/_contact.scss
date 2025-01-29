@@ -70,4 +70,10 @@
         @include btn();
         margin-top: 20px;
     }
+
+    @media (max-width: 768px) { 
+        .contact__content{
+            padding:3rem 1rem ;
+        }
+    } 
 }
