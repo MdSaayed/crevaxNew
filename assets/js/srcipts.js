@@ -65,21 +65,23 @@ faqQuestions.forEach(item => {
 
 
 // pricing swither pricing section=============================================================
-document.querySelectorAll('.pricing-details__switcher-btn').forEach(button => {
+document.querySelectorAll('.pricing__switcher-btn').forEach(button => {
     button.addEventListener('click', () => {
         
-        document.querySelectorAll('.pricing-details__switcher-btn').forEach(btn => 
-            btn.classList.remove('pricing-details__switcher-btn--active')
+        document.querySelectorAll('.pricing__switcher-btn').forEach(btn => 
+            btn.classList.remove('pricing__switcher-btn--active')
         );
-        button.classList.add('pricing-details__switcher-btn--active');
 
-        document.querySelectorAll('.pricing-details__card').forEach(card => 
-            card.classList.add('pricing-details__card--hidden')
+        button.classList.add('pricing__switcher-btn--active');
+        document.querySelectorAll('.pricing__cards').forEach(cards => 
+            cards.classList.add('pricing__cards--hidden')
         );
+
         const targetClass = button.getAttribute('data-target');
-        document.querySelector(`.${targetClass}`).classList.remove('pricing-details__card--hidden');
+        document.querySelector(`.pricing__cards[data-target="${targetClass}"]`).classList.remove('pricing__cards--hidden');
     });
 });
+
 
 
 
