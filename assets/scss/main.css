@@ -262,17 +262,17 @@ body {
   }
 }
 
-.list-bulet, #ub-terms .terms__list, #ub-privacy-policy .privacy-policy__list, .team-details__list, #integrations-details .integration__content .integration__list, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet {
+.list-bulet, #job-details .job__content .job__list, #ub-terms .terms__list, #ub-privacy-policy .privacy-policy__list, .team-details__list, #integrations-details .integration__content .integration__list, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
-.list-bulet li, #ub-terms .terms__list li, #ub-privacy-policy .privacy-policy__list li, #integrations-details .integration__content .integration__list li, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li, .team-details__list li {
+.list-bulet li, #job-details .job__content .job__list li, #ub-terms .terms__list li, #ub-privacy-policy .privacy-policy__list li, #integrations-details .integration__content .integration__list li, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li, .team-details__list li {
   position: relative;
   padding-left: 20px;
   margin-left: 5px;
 }
-.list-bulet li::before, #ub-terms .terms__list li::before, #ub-privacy-policy .privacy-policy__list li::before, #integrations-details .integration__content .integration__list li::before, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li::before, .team-details__list li::before {
+.list-bulet li::before, #job-details .job__content .job__list li::before, #ub-terms .terms__list li::before, #ub-privacy-policy .privacy-policy__list li::before, #integrations-details .integration__content .integration__list li::before, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li::before, .team-details__list li::before {
   content: "•";
   position: absolute;
   left: 0;
@@ -428,17 +428,17 @@ body {
   }
 }
 
-.list-bulet, #ub-terms .terms__list, #ub-privacy-policy .privacy-policy__list, .team-details__list, #integrations-details .integration__content .integration__list, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet {
+.list-bulet, #job-details .job__content .job__list, #ub-terms .terms__list, #ub-privacy-policy .privacy-policy__list, .team-details__list, #integrations-details .integration__content .integration__list, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
-.list-bulet li, #ub-terms .terms__list li, #ub-privacy-policy .privacy-policy__list li, #integrations-details .integration__content .integration__list li, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li, .team-details__list li {
+.list-bulet li, #job-details .job__content .job__list li, #ub-terms .terms__list li, #ub-privacy-policy .privacy-policy__list li, #integrations-details .integration__content .integration__list li, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li, .team-details__list li {
   position: relative;
   padding-left: 20px;
   margin-left: 5px;
 }
-.list-bulet li::before, #ub-terms .terms__list li::before, #ub-privacy-policy .privacy-policy__list li::before, #integrations-details .integration__content .integration__list li::before, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li::before, .team-details__list li::before {
+.list-bulet li::before, #job-details .job__content .job__list li::before, #ub-terms .terms__list li::before, #ub-privacy-policy .privacy-policy__list li::before, #integrations-details .integration__content .integration__list li::before, #ub-feature-details .feature-details__container .feature-details__content .feature-details__content-wrapper .feature-details__list--bulet li::before, .team-details__list li::before {
   content: "•";
   position: absolute;
   left: 0;
@@ -962,7 +962,6 @@ body.menu-open::before {
   font-size: 1rem;
   font-weight: 400;
   line-height: 24px;
-  font-size: 1.12rem;
   line-height: 1.6;
 }
 @media (min-width: 768px) {
@@ -2144,7 +2143,6 @@ body.menu-open::before {
   font-size: 1rem;
   font-weight: 400;
   line-height: 24px;
-  font-size: 1.12rem;
   line-height: 1.6;
 }
 @media (min-width: 768px) {
@@ -2884,6 +2882,133 @@ body.menu-open::before {
   background-color: #181D27;
   border: 1px solid #181D27;
   transition: 0.5s ease;
+}
+
+#job-details .job__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+#job-details .job__content .job__title, #job-details .job__content .job__subtitle {
+  color: #171717;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-align: left;
+}
+#job-details .job__content .job__title--spacing, #job-details .job__content .job__subtitle--spacing {
+  margin-top: 5rem;
+}
+#job-details .job__content .job__text {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #404040;
+}
+#job-details .job__content .job__text--spacing {
+  margin-top: 1.5rem;
+}
+#job-details .job__content .job__list {
+  color: #737373;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+#job-details .job__form-wrapper {
+  border: 1px solid #E9EAEB;
+  border-radius: 20px;
+  padding: 1.3rem;
+}
+#job-details .job__form-wrapper .job__form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+#job-details .job__form-wrapper label {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #171717;
+  margin-bottom: 8px;
+}
+#job-details .job__form-wrapper input {
+  padding: 10px 14px;
+  border-radius: 5px;
+  border: 1px solid #EBF5EF;
+}
+#job-details .job__form-wrapper input::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #404040;
+}
+#job-details .job__form-wrapper input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #404040;
+}
+#job-details .job__form-wrapper input:focus {
+  outline: 2px solid #7F56D9;
+}
+#job-details .job__form-wrapper select {
+  padding: 10px 14px;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+  color: #404040;
+}
+#job-details .job__form-wrapper select:focus {
+  outline: none;
+}
+#job-details .job__form-wrapper textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #F3F7FF;
+}
+#job-details .job__form-wrapper textarea:focus {
+  outline: 2px solid #7F56D9;
+}
+#job-details .job__form-wrapper .job__button {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F5FAF7;
+  background-color: #7F56D9;
+  border: 1px solid #7F56D9;
+  padding: 8px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+}
+#job-details .job__form-wrapper .job__button:hover {
+  color: #7F56D9;
+  background-color: transparent;
+  border: 1px solid #7F56D9;
+  transition: 0.5s ease;
+}
+@media (max-width: 1024px) {
+  #job-details .job__form-wrapper {
+    padding: 4rem 2rem;
+  }
+}
+@media (max-width: 768px) {
+  #job-details .job__form-wrapper {
+    padding: 4rem 1rem;
+  }
+}
+@media (min-width: 1300px) {
+  #job-details .job__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+  }
+  #job-details .job__content {
+    grid-column: span 2;
+  }
 }
 
 #ub-hero-integrations .hero-integrations__title {
