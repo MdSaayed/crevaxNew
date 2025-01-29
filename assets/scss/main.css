@@ -3565,24 +3565,24 @@ body.menu-open::before {
 #ub-auth .auth__form-panel .auth__form textarea:focus {
   outline: 2px solid #7F56D9;
 }
-#ub-auth .auth__form-panel .auth__form .password-strength {
+#ub-auth .auth__form-panel .auth__form .auth__strength-list {
   color: #404040;
   font-size: 14px;
   line-height: 21px;
   list-style: none;
   padding: 0;
 }
-#ub-auth .auth__form-panel .auth__form .password-strength.active {
+#ub-auth .auth__form-panel .auth__form .auth__strength-list--active {
   color: #7F56D9;
 }
-#ub-auth .auth__form-panel .auth__form .password-strength .strength-item {
+#ub-auth .auth__form-panel .auth__form .auth__strength-list .auth__strength-item {
   position: relative;
   padding-left: 20px;
 }
-#ub-auth .auth__form-panel .auth__form .password-strength .strength-item.active {
+#ub-auth .auth__form-panel .auth__form .auth__strength-list .auth__strength-item--active {
   color: #7F56D9;
 }
-#ub-auth .auth__form-panel .auth__form .password-strength .strength-item::before {
+#ub-auth .auth__form-panel .auth__form .auth__strength-list .auth__strength-item::before {
   content: "\f00c";
   font-family: "Font Awesome 6 Free";
   font-weight: 900;

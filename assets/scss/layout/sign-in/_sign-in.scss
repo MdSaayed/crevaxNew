@@ -185,23 +185,25 @@
                 }
             }
 
-            .password-strength {
+            .auth__strength-list{
                 color: $dark-gray;
                 font-size: 14px;
                 line-height: 21px;
                 list-style: none; 
                 padding: 0;
 
-                &.active{
+                &--active{
                     color: $primary-color;
                 }
             
-                .strength-item {
+                .auth__strength-item {
                     position: relative; 
                     padding-left: 20px;  
-                    &.active{
+
+                    &--active{
                         color: $primary-color;
                     }
+                    
                     &::before {
                         content: "\f00c"; 
                         font-family: 'Font Awesome 6 Free'; 
