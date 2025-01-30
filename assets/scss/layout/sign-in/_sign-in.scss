@@ -23,62 +23,64 @@
     }
 
     .auth__welcome{
-        background-color: $deep-violet; 
+        background-color: $deep-violet;  
         border-radius: 20px;
         height: 100%;
-        padding: 4rem 3rem;
+        padding: 4rem 3rem;       
+    }
 
-        .auth__welcome-content{
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            .auth__title{
-                color: $white;
-                text-align: center;
-            }
-            .auth__desc{
-                color:$soft-lilac;
-                text-align: center;
-            }
-                .auth__feature-title{
-                    font-size: 2rem;
-                    line-height: 48px;
-                    font-weight: 500;
-                    color: $light-gray-blue;  
-                    margin-bottom: 12px;
-                }
-                .auth__feature-desc{
-                    color: $light-gray-blue;
-                    text-align: center;
-                }
-            
-            .auth__dots {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 10px;
-                margin-top:  3.5rem ;
-              
-                .auth__dot {
-                  background-color: $white;
-                  width: 8px;
-                  height: 8px;
-                  border-radius: 50%;
-                  display: block;
-              
-                  &--active { 
-                    display: block;
-                    width: 24px;
-                    height: 8px;
-                    border-radius: 50px;
-                  }
-                }
-              }
-              
+    .auth__welcome-content{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        .auth__title{
+            color: $white;
+            text-align: center;
+        }
+
+        .auth__desc{
+            color:$soft-lilac;
+            text-align: center;
+        }
+
+        .auth__feature-title{
+            font-size: 2rem;
+            line-height: 48px;
+            font-weight: 500;
+            color: $light-gray-blue;  
+            margin-bottom: 12px;
+        }
+
+        .auth__feature-desc{
+            color: $light-gray-blue;
+            text-align: center;
         }
         
+        .auth__dots {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top:  3.5rem ;
+          
+            .auth__dot {
+              background-color: $white;
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              display: block;
+          
+              &--active { 
+                display: block;
+                width: 24px;
+                height: 8px;
+                border-radius: 50px;
+              }
+            }
+        }
     }
 
     // form panel
@@ -89,39 +91,39 @@
         padding: 2rem 7rem;
         position: relative;
         height: 100vh;
-
+ 
         .auth__brand{
             margin-bottom: 2rem;  
-            }
+        }
             
         .auth__tabs{
-            background-color: $deep-violet; 
+            background-color: $light-purple; 
             border-radius: 8px;
             padding: 5px;
             display: flex;
             justify-content: space-between;
             gap: 5px;
             margin-bottom: 1.5rem;
-                
-            .auth__tab{
-                @extend .btn; 
-                width: 50%;
-                border-radius: 8px;
-                background-color: transparent;
-                border: none;
-                color: #9C9AA5;
-                padding: 6px 8px;
+        }
 
-                &:hover{
-                    border: none !important;
-                    background-color: $primary-color;
-                    color:$soft-lilac;
+        .auth__tab{
+            @extend .btn; 
+            width: 50%;
+            border-radius: 8px;
+            background-color: transparent;
+            border: none;
+            color: $dark-gray;
+            padding: 6px 8px;
 
-                }
-                &--active{
-                    background-color: $primary-color;
-                    color:$soft-lilac;
-                }
+            &:hover{
+                border: none !important;
+                background-color:  $primary-color;
+                color:$soft-lilac;
+
+            }
+            &--active{
+                background-color:  $primary-color;
+                color:$soft-lilac;
             }
         }
 
@@ -129,14 +131,13 @@
             display: flex;         
             flex-direction: column;  
             margin-bottom: 1rem;    
-            }
+        }
         
         .auth__password-header{
             display: flex;            
             justify-content: space-between;  
             align-items: center;     
         }
-            
 
         .auth__form{
             display: none;
@@ -156,17 +157,17 @@
             input {
                 padding: 10px 14px;
                 border-radius: 5px;
-                outline: 2px solid $primary-color;
-                background-color: $deep-violet;
+                outline: 1px solid $light-gray-blue;
+                background-color: $white;
                 &::placeholder{
                     font-size: 16px;
                     font-weight: 400;
                     line-height: 24px;
-                    color: $light-gray;
+                    color: $dark-gray;
                 }
     
                 &:focus {
-                    outline: 2px solid $primary-color; 
+                    outline: 1px solid $primary-color;  
                     box-shadow: 0px 2px 4px 2px #465FF11A; 
                 }
             }
@@ -181,48 +182,12 @@
                 border-radius: 5px;
     
                 &:focus {
-                    outline: 2px solid $primary-color; // Focus outline color
+                    outline: 2px solid $dark-gray; // Focus outline color
                 }
             }
 
-            .auth__strength-list{
-                color: $dark-gray;
-                font-size: 14px;
-                line-height: 21px;
-                list-style: none; 
-                padding: 0;
-
-                &--active{
-                    color: $primary-color;
-                }
-            
-                .auth__strength-item {
-                    position: relative; 
-                    padding-left: 20px;  
-
-                    &--active{
-                        color: $primary-color;
-                    }
-                    
-                    &::before {
-                        content: "\f00c"; 
-                        font-family: 'Font Awesome 6 Free'; 
-                        font-weight: 900;
-                        position: absolute;
-                        left: 0;
-                        top: 0;
-                    }
-                }
-            }
             .auth__btn{
-                @include btn(
-                    $bgColor: $text-primary,
-                    $hoverBgColor: $background-light-green,
-                    $color: $light-color,
-                    $hoverColor: $text-primary,
-                    $border: $background-light-green,
-                    $hoverBorder: $background-light-green
-                );
+                @include btn();
 
                 width: 100%;
                 margin-top: 25px;
@@ -230,15 +195,7 @@
             }
 
             .auth__link {
-                @include btn(
-                    $bgColor: $background-light-green,
-                    $hoverBgColor: $text-primary,
-                    $color: $text-primary,
-                    $hoverColor: $light-color,
-                    $border: $background-light-green,
-                    $hoverBorder: $text-primary
-                );
-
+                @extend .btn-secondary;
                 width: 100%;
                 display: block;
                 text-align: center;
@@ -275,6 +232,7 @@
                 color:$dark-neutral;
             }
         }
+
         @media (max-width: 1024px) { 
             padding: 4rem 2rem;
         }

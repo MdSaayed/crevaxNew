@@ -15,16 +15,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// FAQ section ==================================================================
+// FAQ section ===============================================================================
 const faqQuestions = document.querySelectorAll('.faq__question');
-
-// Set the first item active by default
 const firstAnswer = document.querySelector('.faq__answer.active');
 if (firstAnswer) {
     firstAnswer.style.maxHeight = firstAnswer.scrollHeight + 'px';  
 }
 
-// Add click event listeners for toggle
+// Add click event listeners for toggle========================================================
 faqQuestions.forEach(item => {
     item.addEventListener('click', () => {
         const faqItem = item.closest('.faq__item');  
@@ -61,9 +59,6 @@ faqQuestions.forEach(item => {
 });
 
 
-
-
-
 // pricing swither pricing section=============================================================
 document.querySelectorAll('.pricing__switcher-btn').forEach(button => {
     button.addEventListener('click', () => {
@@ -83,10 +78,7 @@ document.querySelectorAll('.pricing__switcher-btn').forEach(button => {
 });
 
 
-
-
-
-// pricing swither pricing signle page=============================================================
+// pricing swither pricing signle page=========================================================
 document.querySelectorAll('.pricing-details__switcher-btn').forEach(button => {
     button.addEventListener('click', () => {
 
@@ -104,12 +96,7 @@ document.querySelectorAll('.pricing-details__switcher-btn').forEach(button => {
 });
 
 
-
-
-
-
-
-// Select all filter buttons====================================================
+// Select all filter buttons===================================================================
 const filterButtons = document.querySelectorAll('.filter-btn');
 filterButtons.forEach(button => {
   button.addEventListener('click', function(event) {
@@ -120,7 +107,7 @@ filterButtons.forEach(button => {
 });
 
   
-// Countdown Section ================================================
+// Countdown Section ==========================================================================
 function startCounter() {
   const counters = document.querySelectorAll('#ub-stats .stats__animated-text');
 
@@ -173,19 +160,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// signin page tab===========================================================
-const tabButtons = document.querySelectorAll('.tab-button');
-const forms = document.querySelectorAll('.auth-form');
+// signin page tab==============================================================================
+const tabButtons = document.querySelectorAll('.auth__tab');
+const forms = document.querySelectorAll('.auth__form');
 
 // Loop through each tab button
 tabButtons.forEach(button => {
     button.addEventListener('click', function (event) {
         event.preventDefault();
-        tabButtons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
+        tabButtons.forEach(btn => btn.classList.remove('auth__tab--active'));
+        button.classList.add('auth__tab--active');
         const targetForm = button.getAttribute('data-target');
         forms.forEach(form => {
-            form.classList.toggle('active', form.id === targetForm);
+            form.classList.toggle('auth__form--active', form.id === targetForm);
         });
     });
 });
@@ -193,7 +180,6 @@ tabButtons.forEach(button => {
 
 
 // ===================menu=========================================
-
 // Toggle mobile menu
 const menuToggle = document.querySelector('.header__menu-toggle');
 const mobileNav = document.querySelector('.mobile-nav');
@@ -264,7 +250,7 @@ document.querySelectorAll('.mobile-nav__item:not(.mobile-nav__item--has-dropdown
 
 
 
-// ==========================ANIMATION=======================
+// ==========================ANIMATION===============================================
 AOS.init({
 duration: 1000,  
 offset: 200,  
@@ -273,115 +259,9 @@ once: false
 });
 
 
-// =============================form validatation ====================
-document.addEventListener('DOMContentLoaded', () => {
-const form = document.getElementById('signup-form');
-const nameInput = document.getElementById('name');
-const emailInput = document.getElementById('email-signup');
-const passwordInput = document.getElementById('password-signup');
-const strengthStatus = document.getElementById('strength-status');
-const strengthItems = document.querySelectorAll('.strength-item');
-
-if (!form) {
-    return;
-}
-
-form.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    if (!validateName(nameInput.value)) {
-        alert('Please enter a valid name.');
-        return;
-    }
-
-    if (!validateEmail(emailInput.value)) {
-        alert('Please enter a valid email address.');
-        return;
-    }
-
-    if (!validatePasswordStrength(passwordInput.value)) {
-        alert('Password does not meet the requirements.');
-        return;
-    }
-
-    alert('Form submitted successfully!');
-    form.submit();
-});
-
-// Name Validation
-function validateName(name) {
-    return /^[a-zA-Z ]{2,30}$/.test(name);
-}
-
-// Email Validation
-function validateEmail(email) {
-    email = email.trim();
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    return emailRegex.test(email);
-}
-
-// Password Strength Validation
-function validatePasswordStrength(password) {
-    const lengthRequirement = password.length >= 8;
-    const hasNumber = /\d/.test(password);
-    const hasSpecialChar = /[!@#$%^&*]/.test(password);
-    const hasUpperCase = /[A-Z]/.test(password);
-    const hasLowerCase = /[a-z]/.test(password);
-
-    if (password === '') {
-        strengthStatus.textContent = 'Weak';
-        strengthStatus.classList.remove('active');
-        resetStrengthItems();
-        return false;
-    }
-
-    const isStrong = lengthRequirement && hasNumber && hasSpecialChar && hasUpperCase && hasLowerCase;
-
-    strengthStatus.textContent = isStrong ? 'Strong' : 'Weak';
-    strengthStatus.classList.toggle('active', isStrong);
-
-    updateStrengthItems(lengthRequirement, hasNumber, hasSpecialChar, hasUpperCase, hasLowerCase);
-
-    return isStrong;
-}
-
-// Update Strength Item Classes
-function updateStrengthItems(lengthRequirement, hasNumber, hasSpecialChar, hasUpperCase, hasLowerCase) {
-    const strengthArray = [lengthRequirement, hasNumber, hasSpecialChar, hasUpperCase, hasLowerCase];
-
-    strengthItems.forEach((item, index) => {
-        if (strengthArray[index]) {
-            item.classList.add('active');
-        } else {
-            item.classList.remove('active');
-        }
-    });
-}
-
-// Reset Strength Items
-function resetStrengthItems() {
-    strengthItems.forEach(item => {
-        item.classList.remove('active');
-    });
-}
-
-// Live Password Strength Check
-passwordInput.addEventListener('input', () => {
-    validatePasswordStrength(passwordInput.value);
-});
-
-nameInput.addEventListener('input', () => {
-    validatePasswordStrength(passwordInput.value);
-});
-
-emailInput.addEventListener('input', () => {
-    validatePasswordStrength(passwordInput.value);
-});
-});
 
 
-
-// swiper slider  for logo =====================================
+// swiper slider  for logo ==========================================================
 const swiperLeft = new Swiper(".integrations-logos__slider-left", {
     slidesPerView: 'auto',  
     spaceBetween: 40,  
@@ -405,6 +285,7 @@ const swiperLeft = new Swiper(".integrations-logos__slider-left", {
     }
 
 });
+
 const swiperRight = new Swiper(".integrations-logos__slider-right", {
     slidesPerView: 'auto',  
     spaceBetween: 40,  

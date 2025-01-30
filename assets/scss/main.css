@@ -84,7 +84,7 @@ a {
   font-weight: 800;
   font-style: normal;
 }
-.btn, #ub-auth .auth__form-panel .auth__tabs .auth__tab, .btn-primary, #ub-blog .blog__btn-wrapper .blog__btn, #ub-hero-section-home .hero__container .hero__content-area .hero__content .hero__button-group .hero__button--primary {
+.btn, #ub-auth .auth__form-panel .auth__tab, .btn-primary, #ub-blog .blog__btn-wrapper .blog__btn, #ub-hero-section-home .hero__container .hero__content-area .hero__content .hero__button-group .hero__button--primary {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -95,14 +95,14 @@ a {
   border-radius: 50px;
   cursor: pointer;
 }
-.btn:hover, #ub-auth .auth__form-panel .auth__tabs .auth__tab:hover, .btn-primary:hover, #ub-blog .blog__btn-wrapper .blog__btn:hover, #ub-hero-section-home .hero__container .hero__content-area .hero__content .hero__button-group .hero__button--primary:hover {
+.btn:hover, #ub-auth .auth__form-panel .auth__tab:hover, .btn-primary:hover, #ub-blog .blog__btn-wrapper .blog__btn:hover, #ub-hero-section-home .hero__container .hero__content-area .hero__content .hero__button-group .hero__button--primary:hover {
   color: #7F56D9;
   background-color: transparent;
   border: 1px solid #7F56D9;
   transition: 0.5s ease;
 }
 
-.btn-secondary, #ub-hero-section-home .hero__container .hero__content-area .hero__content .hero__button-group .hero__button--secondary {
+.btn-secondary, #ub-auth .auth__form-panel .auth__form .auth__link, #ub-hero-section-home .hero__container .hero__content-area .hero__content .hero__button-group .hero__button--secondary {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -113,7 +113,7 @@ a {
   border-radius: 50px;
   cursor: pointer;
 }
-.btn-secondary:hover, #ub-hero-section-home .hero__container .hero__content-area .hero__content .hero__button-group .hero__button--secondary:hover {
+.btn-secondary:hover, #ub-auth .auth__form-panel .auth__form .auth__link:hover, #ub-hero-section-home .hero__container .hero__content-area .hero__content .hero__button-group .hero__button--secondary:hover {
   color: #F5FAF7;
   background-color: #7F56D9;
   border: 1px solid #7F56D9;
@@ -3426,47 +3426,47 @@ body.menu-open::before {
   height: 100%;
   padding: 4rem 3rem;
 }
-#ub-auth .auth__welcome .auth__welcome-content {
+#ub-auth .auth__welcome-content {
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
-#ub-auth .auth__welcome .auth__welcome-content .auth__title {
+#ub-auth .auth__welcome-content .auth__title {
   color: #fff;
   text-align: center;
 }
-#ub-auth .auth__welcome .auth__welcome-content .auth__desc {
+#ub-auth .auth__welcome-content .auth__desc {
   color: #FCFAFF;
   text-align: center;
 }
-#ub-auth .auth__welcome .auth__welcome-content .auth__feature-title {
+#ub-auth .auth__welcome-content .auth__feature-title {
   font-size: 2rem;
   line-height: 48px;
   font-weight: 500;
   color: #E9EAEB;
   margin-bottom: 12px;
 }
-#ub-auth .auth__welcome .auth__welcome-content .auth__feature-desc {
+#ub-auth .auth__welcome-content .auth__feature-desc {
   color: #E9EAEB;
   text-align: center;
 }
-#ub-auth .auth__welcome .auth__welcome-content .auth__dots {
+#ub-auth .auth__welcome-content .auth__dots {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   margin-top: 3.5rem;
 }
-#ub-auth .auth__welcome .auth__welcome-content .auth__dots .auth__dot {
+#ub-auth .auth__welcome-content .auth__dots .auth__dot {
   background-color: #fff;
   width: 8px;
   height: 8px;
   border-radius: 50%;
   display: block;
 }
-#ub-auth .auth__welcome .auth__welcome-content .auth__dots .auth__dot--active {
+#ub-auth .auth__welcome-content .auth__dots .auth__dot--active {
   display: block;
   width: 24px;
   height: 8px;
@@ -3484,7 +3484,7 @@ body.menu-open::before {
   margin-bottom: 2rem;
 }
 #ub-auth .auth__form-panel .auth__tabs {
-  background-color: #6941C6;
+  background-color: #E9D7FE;
   border-radius: 8px;
   padding: 5px;
   display: flex;
@@ -3492,20 +3492,20 @@ body.menu-open::before {
   gap: 5px;
   margin-bottom: 1.5rem;
 }
-#ub-auth .auth__form-panel .auth__tabs .auth__tab {
+#ub-auth .auth__form-panel .auth__tab {
   width: 50%;
   border-radius: 8px;
   background-color: transparent;
   border: none;
-  color: #9C9AA5;
+  color: #404040;
   padding: 6px 8px;
 }
-#ub-auth .auth__form-panel .auth__tabs .auth__tab:hover {
+#ub-auth .auth__form-panel .auth__tab:hover {
   border: none !important;
   background-color: #7F56D9;
   color: #FCFAFF;
 }
-#ub-auth .auth__form-panel .auth__tabs .auth__tab--active {
+#ub-auth .auth__form-panel .auth__tab--active {
   background-color: #7F56D9;
   color: #FCFAFF;
 }
@@ -3535,23 +3535,23 @@ body.menu-open::before {
 #ub-auth .auth__form-panel .auth__form input {
   padding: 10px 14px;
   border-radius: 5px;
-  outline: 2px solid #7F56D9;
-  background-color: #6941C6;
+  outline: 1px solid #E9EAEB;
+  background-color: #fff;
 }
 #ub-auth .auth__form-panel .auth__form input::-moz-placeholder {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  color: #EDEDED;
+  color: #404040;
 }
 #ub-auth .auth__form-panel .auth__form input::placeholder {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  color: #EDEDED;
+  color: #404040;
 }
 #ub-auth .auth__form-panel .auth__form input:focus {
-  outline: 2px solid #7F56D9;
+  outline: 1px solid #7F56D9;
   box-shadow: 0px 2px 4px 2px rgba(70, 95, 241, 0.1019607843);
 }
 #ub-auth .auth__form-panel .auth__form .auth__forgot-password {
@@ -3563,40 +3563,15 @@ body.menu-open::before {
   border-radius: 5px;
 }
 #ub-auth .auth__form-panel .auth__form textarea:focus {
-  outline: 2px solid #7F56D9;
-}
-#ub-auth .auth__form-panel .auth__form .auth__strength-list {
-  color: #404040;
-  font-size: 14px;
-  line-height: 21px;
-  list-style: none;
-  padding: 0;
-}
-#ub-auth .auth__form-panel .auth__form .auth__strength-list--active {
-  color: #7F56D9;
-}
-#ub-auth .auth__form-panel .auth__form .auth__strength-list .auth__strength-item {
-  position: relative;
-  padding-left: 20px;
-}
-#ub-auth .auth__form-panel .auth__form .auth__strength-list .auth__strength-item--active {
-  color: #7F56D9;
-}
-#ub-auth .auth__form-panel .auth__form .auth__strength-list .auth__strength-item::before {
-  content: "\f00c";
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  position: absolute;
-  left: 0;
-  top: 0;
+  outline: 2px solid #404040;
 }
 #ub-auth .auth__form-panel .auth__form .auth__btn {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #F5FAF7;
-  background-color: #181D27;
-  border: 1px solid #EBF5EF;
+  background-color: #7F56D9;
+  border: 1px solid #7F56D9;
   padding: 8px 15px;
   border-radius: 50px;
   cursor: pointer;
@@ -3605,31 +3580,16 @@ body.menu-open::before {
   font-weight: 500;
 }
 #ub-auth .auth__form-panel .auth__form .auth__btn:hover {
-  color: #181D27;
-  background-color: #EBF5EF;
-  border: 1px solid #EBF5EF;
+  color: #7F56D9;
+  background-color: transparent;
+  border: 1px solid #7F56D9;
   transition: 0.5s ease;
 }
 #ub-auth .auth__form-panel .auth__form .auth__link {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #181D27;
-  background-color: #EBF5EF;
-  border: 1px solid #EBF5EF;
-  padding: 8px 15px;
-  border-radius: 50px;
-  cursor: pointer;
   width: 100%;
   display: block;
   text-align: center;
   font-weight: 500;
-}
-#ub-auth .auth__form-panel .auth__form .auth__link:hover {
-  color: #F5FAF7;
-  background-color: #181D27;
-  border: 1px solid #181D27;
-  transition: 0.5s ease;
 }
 #ub-auth .auth__form-panel .auth__form .auth__divider {
   display: flex;
@@ -3723,7 +3683,7 @@ body.menu-open::before {
 #footer .footer__content .footer__newsletter .footer__input-wrapper input[type=email] {
   width: 100%;
 }
-#footer .footer__content .footer__newsletter .footer__input-wrapper .btn, #footer .footer__content .footer__newsletter .footer__input-wrapper #ub-auth .auth__form-panel .auth__tabs .auth__tab, #ub-auth .auth__form-panel .auth__tabs #footer .footer__content .footer__newsletter .footer__input-wrapper .auth__tab {
+#footer .footer__content .footer__newsletter .footer__input-wrapper .btn, #footer .footer__content .footer__newsletter .footer__input-wrapper #ub-auth .auth__form-panel .auth__tab, #ub-auth .auth__form-panel #footer .footer__content .footer__newsletter .footer__input-wrapper .auth__tab {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -3735,7 +3695,7 @@ body.menu-open::before {
   cursor: pointer;
   font-weight: 500;
 }
-#footer .footer__content .footer__newsletter .footer__input-wrapper .btn:hover, #footer .footer__content .footer__newsletter .footer__input-wrapper #ub-auth .auth__form-panel .auth__tabs .auth__tab:hover, #ub-auth .auth__form-panel .auth__tabs #footer .footer__content .footer__newsletter .footer__input-wrapper .auth__tab:hover {
+#footer .footer__content .footer__newsletter .footer__input-wrapper .btn:hover, #footer .footer__content .footer__newsletter .footer__input-wrapper #ub-auth .auth__form-panel .auth__tab:hover, #ub-auth .auth__form-panel #footer .footer__content .footer__newsletter .footer__input-wrapper .auth__tab:hover {
   color: #7F56D9;
   background-color: transparent;
   border: 1px solid #7F56D9;
