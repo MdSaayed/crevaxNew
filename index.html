@@ -33,13 +33,13 @@
         <div class="ub-header__container container">
           <nav class="ub-header__navigation">
             <div class="ub-header__branding">
-              <a href="#" class="header__logo">
+             <a href="index.html" class="header__logo">
                 <img src="./assets/img/logo/logo.svg" alt="Website Logo">
               </a>
             </div>
             <div class="ub-header__menu">
               <ul class="menu">
-                <li class="menu__item menu__item--active"><a href="index.html" class="menu__link">Home</a></li>
+                <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
                 <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
                 <li class="menu__item"><a href="feature.html" class="menu__link">Features</a></li>
                 <li class="menu__item menu__item--has-dropdown">
@@ -77,7 +77,9 @@
     <div id="ub-mobile-nav" class="ub-mobile-nav">
         <div class="ub-mobile-nav__header">
             <div class="ub-mobile-nav__branding">
-                <img src="./assets/img/logo/logo.svg" alt="Mobile Logo" class="ub-mobile-nav__logo">
+                <a href="index.html">
+                    <img src="./assets/img/logo/logo.svg" alt="Mobile Logo" class="ub-mobile-nav__logo">
+                </a>
             </div>
             <button class="ub-mobile-nav__close-btn" aria-label="Close Menu">×</button>
         </div>
@@ -91,8 +93,8 @@
                     <li class="ub-mobile-nav__item"><a href="./blog-single.html" class="ub-mobile-nav__link">Blog Details</a></li>
                     <li class="ub-mobile-nav__item"><a href="careers.html" class="ub-mobile-nav__link">Careers</a></li>
                     <li class="ub-mobile-nav__item"><a href="careers-2.html" class="ub-mobile-nav__link">Careers 2</a></li>
-                    <li class="ub-mobile-nav__item"><a href="feature.html" class="ub-mobile-nav__link">Features</a></li>
-                    <li class="ub-mobile-nav__item"><a href="feature-single.html" class="ub-mobile-nav__link">Features Details</a></li>
+                    <li class="mobile-nav__item"><a href="feature.html" class="ub-mobile-nav__link">Features</a></li>
+                    <li class="mobile-nav__item"><a href="feature-single.html" class="mobile-nav__link">Features Details</a></li>
                     <li class="ub-mobile-nav__item"><a href="integrations.html" class="ub-mobile-nav__link">Integrations</a></li>
                     <li class="ub-mobile-nav__item"><a href="integrations-details.html" class="ub-mobile-nav__link">Integrations Details</a></li>
                     <li class="ub-mobile-nav__item"><a href="team-details.html" class="ub-mobile-nav__link">Team Details</a></li>
@@ -112,59 +114,91 @@
     </div>
     <!-- mobile end navigation -->
 
-
+ 
     <main>
         <!-- hero start here -->
-        <section id="ub-hero-section-home" class="ub-hero">
-            <div class="hero__container container">
-                <div class="hero__content-area" >
-                    <div class="hero__content" data-bg-img="./assets/img/hero/heroBg.png">
-                        <div class="hero__subtitle-area">
-                            <div class="hero__subtitle-group">
-                                <img class="hero__icon" src="./assets/icons/fav.svg" alt="Favorite Icon">
-                                <span class="hero__subtitle">Enhance Customer Connections</span>
+        <section id="ub-hero-home" class="ub-hero-home">
+            <div class="ub-hero-home__container container">
+                <div class="ub-hero-home__content-area" >
+                    <div class="ub-hero-home__content" data-bg-img="./assets/img/hero/heroBg.png">
+                        <div class="ub-hero-home__subtitle-area">
+                            <div class="ub-hero-home__subtitle-group">
+                                <img class="ub-hero-home__icon" src="./assets/icons/fav.svg" alt="Favorite Icon">
+                                <span class="ub-hero-home__subtitle">Enhance Customer Connections</span>
                             </div>
                         </div>
-                        <h1 class="hero__title">Revolutionize your CRM experience with Bazarly</h1>
-                        <p class="hero__description">Meet Bazarly your all-in-one CRM for effortless customer management. Enhance workflow and productivity with our easy-to-use platform.</p>
-                        <div class="hero__button-group">
-                            <button class="hero__button hero__button--primary">Get started</button>
-                            <button class="hero__button hero__button--secondary">Learn more</button>
+                        <h1 class="ub-hero-home__title">Revolutionize your CRM experience with Bazarly</h1>
+                        <p class="ub-hero-home__desc">Meet Bazarly your all-in-one CRM for effortless customer management. Enhance workflow and productivity with our easy-to-use platform.</p>
+                        <div class="ub-hero-home__button-group">
+                            <button class="ub-hero-home__button ub-hero-home__button--primary">Get started</button>
+                            <button class="ub-hero-home__button ub-hero-home__button--secondary">Learn more</button>
                         </div>
                     </div> 
                 </div>
                 <!-- Background Image -->
-                <div class="hero__image-wrapper">
-                    <img class="hero__img" src="./assets/img/hero/Application Shell.png" alt="Application Shell">
+                <div class="ub-hero-home__image-wrapper">
+                    <img class="ub-hero-home__img" src="./assets/img/hero/Application Shell.png" alt="Application Shell">
                 </div>
             </div>
         </section>
         <!-- hero end here -->
 
         <!-- Brands Section Start -->
-        <section id="ub-brands" class="brands">
-            <div class="brands__container container">
-                <div class="brands__content">
+        <section id="ub-brands" class="ub-brands">
+            <div class="ub-brands__container container">
+                <div class="ub-brands__content">
                     <!-- Section Heading -->
-                    <div class="brands__heading">
-                        <h2 class="brands__title">  Used by the world's most average companies </h2>
+                    <div class="ub-brands__header">
+                        <h2 class="ub-brands__title">Used by the world's most average companies</h2>
                     </div>
-                    <!-- Brand Logos Grid -->
-                    <div class="brands__grid">
-                        <div class="brands__logo">
-                            <img src="./assets/img/brands/CALIFORNIA-black.png" alt="California Logo">
-                        </div>
-                        <div class="brands__logo">
-                            <img src="./assets/img/brands/Amsterdam-colored.png" alt="Amsterdam Logo">
-                        </div>
-                        <div class="brands__logo">
-                            <img src="./assets/img/brands/Norway-black.png" alt="Norway Logo">
-                        </div>
-                        <div class="brands__logo">
-                            <img src="./assets/img/brands/Springfield-black.png" alt="Springfield Logo">
-                        </div>
-                        <div class="brands__logo">
-                            <img src="./assets/img/brands/delaware-colored.png" alt="Delaware Logo">
+                    <!-- Brand Logos Slider -->
+                    <div class="ub-brands__slider-area swiper-container">
+                        <div class="ub-brands__slider-wrapper swiper-wrapper">
+                            <div class="ub-brands__logo swiper-slide">
+                                <img src="./assets/img/brands/CALIFORNIA-black.png" alt="California Logo">
+                            </div>
+                            <div class="ub-brands__logo swiper-slide">
+                                <img src="./assets/img/brands/Amsterdam-colored.png" alt="Amsterdam Logo">
+                            </div>
+                            <div class="ub-brands__logo swiper-slide">
+                                <img src="./assets/img/brands/Norway-black.png" alt="Norway Logo">
+                            </div>
+                            <div class="ub-brands__logo swiper-slide">
+                                <img src="./assets/img/brands/Springfield-black.png" alt="Springfield Logo">
+                            </div>
+                            <div class="ub-brands__logo swiper-slide">
+                                <img src="./assets/img/brands/delaware-colored.png" alt="Delaware Logo">
+                            </div>
+                            <div class="ub-brands__logo swiper-slide">
+                                <img src="./assets/img/brands/CALIFORNIA-black.png" alt="California Logo">
+                            </div>
+                            <div class="ub-brands__logo swiper-slide">
+                                <img src="./assets/img/brands/Amsterdam-colored.png" alt="Amsterdam Logo">
+                            </div>
+                            <div class="ub-brands__logo swiper-slide">
+                                <img src="./assets/img/brands/Norway-black.png" alt="Norway Logo">
+                            </div>
+                            <div class="ub-brands__logo swiper-slide">
+                                <img src="./assets/img/brands/Springfield-black.png" alt="Springfield Logo">
+                            </div>
+                            <div class="ub-brands__logo swiper-slide">
+                                <img src="./assets/img/brands/delaware-colored.png" alt="Delaware Logo">
+                            </div>
+                            <div class="ub-brands__logo swiper-slide">
+                                <img src="./assets/img/brands/CALIFORNIA-black.png" alt="California Logo">
+                            </div>
+                            <div class="ub-brands__logo swiper-slide">
+                                <img src="./assets/img/brands/Amsterdam-colored.png" alt="Amsterdam Logo">
+                            </div>
+                            <div class="ub-brands__logo swiper-slide">
+                                <img src="./assets/img/brands/Norway-black.png" alt="Norway Logo">
+                            </div>
+                            <div class="ub-brands__logo swiper-slide">
+                                <img src="./assets/img/brands/Springfield-black.png" alt="Springfield Logo">
+                            </div>
+                            <div class="ub-brands__logo swiper-slide">
+                                <img src="./assets/img/brands/delaware-colored.png" alt="Delaware Logo">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -173,47 +207,47 @@
         <!-- Brands Section End -->
 
         <!-- how it works start here -->
-        <section id="ub-how-it-works" class="how-it-works"> 
-            <div class="how-it-works__container container">
-                <div class="how-it-works__content-area">
-                    <div class="how-it-works__header">
-                        <div class="how-it-works__subtitle-area">
-                            <div class="how-it-works__subtitle-group">
-                                <img class="how-it-works__icon" src="./assets/icons/fav.svg" alt="Favorite Icon">
-                                <span class="how-it-works__subtitle">How it Works</span>
+        <section id="ub-how-it-works" class="ub-how-it-works"> 
+            <div class="ub-how-it-works__container container">
+                <div class="ub-how-it-works__content-area">
+                    <div class="ub-how-it-works__header">
+                        <div class="ub-how-it-works__subtitle-area">
+                            <div class="ub-how-it-works__subtitle-group">
+                                <img class="ub-how-it-works__icon" src="./assets/icons/fav.svg" alt="Favorite Icon">
+                                <span class="ub-how-it-works__subtitle">How it Works</span>
                             </div>
                         </div>
-                        <h2 class="how-it-works__title">How it Works</h2>
-                        <p class="how-it-works__desc">Leverage data insights and automated processes to optimize operations and accelerate expansion.</p>
+                        <h2 class="ub-how-it-works__title">How it Works</h2>
+                        <p class="ub-how-it-works__desc">Leverage data insights and automated processes to optimize operations and accelerate expansion.</p>
                     </div>
-                    <div class="how-it-works__content">
-                        <div class="how-it-works__step"> 
-                            <div class="how-it-works__step-icon">
+                    <div class="ub-how-it-works__content">
+                        <div class="ub-how-it-works__step"> 
+                            <div class="ub-how-it-works__step-icon">
                                 <img src="./assets/icons/badge.svg" alt="">
                             </div>
-                            <h3 class="how-it-works__step-title">Sign Up and Set Up</h3>
-                            <p class="how-it-works__step-description">Set up your account and dashboard in minutes.</p>
+                            <h3 class="ub-how-it-works__step-title">Sign Up and Set Up</h3>
+                            <p class="ub-how-it-works__step-description">Set up your account and dashboard in minutes.</p>
                         </div>
-                        <div class="how-it-works__step">
-                            <div class="how-it-works__step-icon">
+                        <div class="ub-how-it-works__step">
+                            <div class="ub-how-it-works__step-icon">
                                 <img src="./assets/icons/network.svg" alt="">
                             </div>
-                            <h3 class="how-it-works__step-title">Connect and Manage</h3>
-                            <p class="how-it-works__step-description">Import contacts and manage everything in one place.</p>
+                            <h3 class="ub-how-it-works__step-title">Connect and Manage</h3>
+                            <p class="ub-how-it-works__step-description">Import contacts and manage everything in one place.</p>
                         </div>
-                        <div class="how-it-works__step">
-                            <div class="how-it-works__step-icon">
+                        <div class="ub-how-it-works__step">
+                            <div class="ub-how-it-works__step-icon">
                                 <img src="./assets/icons/magnifying glass.svg" alt="">
                             </div>
-                            <h3 class="how-it-works__step-title">Analyze and Optimize</h3>
-                            <p class="how-it-works__step-description">Use analytics to refine workflows and boost growth.</p>
+                            <h3 class="ub-how-it-works__step-title">Analyze and Optimize</h3>
+                            <p class="ub-how-it-works__step-description">Use analytics to refine workflows and boost growth.</p>
                         </div>
-                        <div class="how-it-works__step">
-                            <div class="how-it-works__step-icon">
+                        <div class="ub-how-it-works__step">
+                            <div class="ub-how-it-works__step-icon">
                                 <img src="./assets/icons/chat bubble.svg" alt="">
                             </div>
-                            <h3 class="how-it-works__step-title">24/7 Support</h3>
-                            <p class="how-it-works__step-description">Import contacts and manage everything in one place.</p>
+                            <h3 class="ub-how-it-works__step-title">24/7 Support</h3>
+                            <p class="ub-how-it-works__step-description">Import contacts and manage everything in one place.</p>
                         </div>
                     </div>
                 </div>
@@ -222,62 +256,62 @@
         <!-- how it works end here -->
 
         <!-- features start here -->
-        <section id="ub-features" class="features">
-            <div class="features_container container">
-                <div class="features__header">
-                    <div class="features__subtitle-area">
-                        <div class="features__subtitle-group">
-                            <img class="features__icon" src="./assets/icons/fav.svg" alt="Favorite Icon">
-                            <span class="features__subtitle">Boost Engagement with Bazarly</span>
+        <section id="ub-features" class="ub-features">
+            <div class="ub-features_container container">
+                <div class="ub-features__header">
+                    <div class="ub-features__subtitle-area">
+                        <div class="ub-features__subtitle-group">
+                            <img class="ub-features__icon" src="./assets/icons/fav.svg" alt="Favorite Icon">
+                            <span class="ub-features__subtitle">Boost Engagement with Bazarly</span>
                         </div>
                     </div>
-                    <h2 class="features__title">Accelerate sales with advanced closing tools.</h2>
-                    <p class="features__desc">Customize your CRM dashboard to meet your business needs with  essential widgets, reports, and key performance indicators.</p>
+                    <h2 class="ub-features__title">Accelerate sales with advanced closing tools.</h2>
+                    <p class="ub-features__desc">Customize your CRM dashboard to meet your business needs with  essential widgets, reports, and key performance indicators.</p>
                 </div>
 
                <!-- features area -->
-                <div class="features__area">
-                    <div class="features__item feature">
-                        <a href="feature-single.html" class="features__thumbnail feature__link">
-                            <h3 class="features__item-title feature__title">Analytics & Reporting</h3>
+                <div class="ub-features__area">
+                    <div class="ub-features__item feature">
+                        <a href="feature-single.html" class="ub-features__thumbnail feature__link">
+                            <h3 class="ub-features__item-title feature__title">Analytics & Reporting</h3>
                         </a>
-                        <p class="features__item-desc feature__desc">Make data-driven decisions with our advanced reporting features. Track customer trends, monitor sales pipelines, and evaluate team performance to improve your overall strategy</p>
-                        <div class="features__item-thumbnail feature__thumbnail">
-                            <a href="feature-single.html" class="features__thumbnail-link feature__link">
-                                <img src="./assets/img/features/feature-1.png" alt="Analytics & Reporting" class="features__thumbnail-img feature__img">
+                        <p class="ub-features__item-desc feature__desc">Make data-driven decisions with our advanced reporting ub-features. Track customer trends, monitor sales pipelines, and evaluate team performance to improve your overall strategy</p>
+                        <div class="ub-features__item-thumbnail feature__thumbnail">
+                            <a href="feature-single.html" class="ub-features__thumbnail-link feature__link">
+                                <img src="./assets/img/features/feature-1.png" alt="Analytics & Reporting" class="ub-features__thumbnail-img feature__img">
                             </a>
                         </div>
                     </div>
-                    <div class="features__item feature">
-                        <a href="feature-single.html" class="features__thumbnail feature__link">
-                            <h3 class="features__item-title feature__title">Centralized Customer Data</h3>
+                    <div class="ub-features__item feature">
+                        <a href="feature-single.html" class="ub-features__thumbnail feature__link">
+                            <h3 class="ub-features__item-title feature__title">Centralized Customer Data</h3>
                         </a>
-                        <p class="features__item-desc feature__desc">Tailor your CRM dashboard to suit your business needs. Customize your view with widgets, reports, and KPIs that matter most to you and your team.</p>
-                        <div class="features__item-thumbnail feature__thumbnail">
-                            <a href="feature-single.html" class="features__thumbnail-link feature__link">
-                                <img src="./assets/img/features/feature-2.png" alt="Centralized Customer Data" class="features__thumbnail-img feature__img">
+                        <p class="ub-features__item-desc feature__desc">Tailor your CRM dashboard to suit your business needs. Customize your view with widgets, reports, and KPIs that matter most to you and your team.</p>
+                        <div class="ub-features__item-thumbnail feature__thumbnail">
+                            <a href="feature-single.html" class="ub-features__thumbnail-link feature__link">
+                                <img src="./assets/img/features/feature-2.png" alt="Centralized Customer Data" class="ub-features__thumbnail-img feature__img">
                             </a>
                         </div>
                     </div>
-                    <div class="features__item feature">
-                        <a href="feature-single.html" class="features__thumbnail feature__link">
-                            <h3 class="features__item-title feature__title">Task & Workflow Automation</h3>
+                    <div class="ub-features__item feature">
+                        <a href="feature-single.html" class="ub-features__thumbnail feature__link">
+                            <h3 class="ub-features__item-title feature__title">Task & Workflow Automation</h3>
                         </a>
-                        <p class="features__item-desc feature__desc">Easily access customer profiles, communication history, and transaction details in a single, organized dashboard. No more switching between tools or losing track of valuable information</p>
-                        <div class="features__item-thumbnail feature__thumbnail">
-                            <a href="feature-single.html" class="features__thumbnail-link feature__link">
-                                <img src="./assets/img/features/feature-3.png" alt="Task & Workflow Automation" class="features__thumbnail-img feature__img">
+                        <p class="ub-features__item-desc feature__desc">Easily access customer profiles, communication history, and transaction details in a single, organized dashboard. No more switching between tools or losing track of valuable information</p>
+                        <div class="ub-features__item-thumbnail feature__thumbnail">
+                            <a href="feature-single.html" class="ub-features__thumbnail-link feature__link">
+                                <img src="./assets/img/features/feature-3.png" alt="Task & Workflow Automation" class="ub-features__thumbnail-img feature__img">
                             </a>
                         </div>
                     </div>
-                    <div class="features__item feature">
-                        <a href="feature-single.html" class="features__thumbnail feature__link">
-                            <h3 class="features__item-title feature__title">Customizable Dashboards</h3>
+                    <div class="ub-features__item feature">
+                        <a href="feature-single.html" class="ub-features__thumbnail feature__link">
+                            <h3 class="ub-features__item-title feature__title">Customizable Dashboards</h3>
                         </a>
-                        <p class="features__item-desc feature__desc">Automate repetitive tasks like sending follow-up emails, assigning tasks to team members, or setting reminders. Free up time to focus on what matters most—growing your business.</p>
-                        <div class="features__item-thumbnail feature__thumbnail">
-                            <a href="feature-single.html" class="features__thumbnail-link feature__link">
-                                <img src="./assets/img/features/feature-4.png" alt="Customizable Dashboards" class="features__thumbnail-img feature__img">
+                        <p class="ub-features__item-desc feature__desc">Automate repetitive tasks like sending follow-up emails, assigning tasks to team members, or setting reminders. Free up time to focus on what matters most—growing your business.</p>
+                        <div class="ub-features__item-thumbnail feature__thumbnail">
+                            <a href="feature-single.html" class="ub-features__thumbnail-link feature__link">
+                                <img src="./assets/img/features/feature-4.png" alt="Customizable Dashboards" class="ub-features__thumbnail-img feature__img">
                             </a>
                         </div>
                     </div>
@@ -287,83 +321,83 @@
         <!-- features end here -->
 
         <!-- testimonial start here -->
-        <section id="ub-testimonial" class="testimonial">
-            <div class="testimonial__container container">
-                <div class="testimonial__header">
-                    <div class="testimonial__subtitle-area">
-                        <div class="testimonial__subtitle-group">
-                            <img class="testimonial__icon" src="./assets/icons/fav.svg" alt="Favorite Icon">
-                            <span class="testimonial__subtitle">Clients feedback</span>
+        <section id="ub-testimonial" class="ub-testimonial">
+            <div class="ub-testimonial__container container">
+                <div class="ub-testimonial__header">
+                    <div class="ub-testimonial__subtitle-area">
+                        <div class="ub-testimonial__subtitle-group">
+                            <img class="ub-testimonial__icon" src="./assets/icons/fav.svg" alt="Favorite Icon">
+                            <span class="ub-testimonial__subtitle">Clients feedback</span>
                         </div>
                     </div>
-                    <h2 class="testimonial__title">Client Testimonials</h2>
-                    <p class="testimonial__desc">Innovative strategies and methods that empower teams to boost  their business achievements.</p>
+                    <h2 class="ub-testimonial__title">Client Testimonials</h2>
+                    <p class="ub-testimonial__desc">Innovative strategies and methods that empower teams to boost  their business achievements.</p>
                 </div>
 
-                <div class="testimonial__content">
-                    <!-- Testimonial Item 1 -->
-                    <div class="testimonial__item">
-                        <div class="testimonial__rating star-rating">
+                <div class="ub-testimonial__content">
+                    <!-- testimonial Item 1 -->
+                    <div class="ub-testimonial__item">
+                        <div class="ub-testimonial__rating star-rating">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <div class="testimonial__text">
-                            <p>"Connectify is an innovative CRM platform that has transformed the way we handle customer interactions at our business. Its robust features have significantly enhanced our productivity and streamlined our processes. I wholeheartedly endorse SyncMaster!"</p>
+                        <div class="ub-testimonial__text">
+                            <p>"Connectify is an innovative CRM platform that has transformed the way we handle customer interactions at our business. Its robust ub-features have significantly enhanced our productivity and streamlined our processes. I wholeheartedly endorse SyncMaster!"</p>
                         </div>
-                        <div class="testimonial__profile">
-                            <div class="testimonial__avatar">
-                                <img src="./assets/img/testimonials/testimonial-1.png" alt="Justin Bayboro" class="testimonial__image">
+                        <div class="ub-testimonial__profile">
+                            <div class="ub-testimonial__avatar">
+                                <img src="./assets/img/testimonials/testimonial-1.png" alt="Justin Bayboro" class="ub-testimonial__image">
                             </div>
-                            <div class="testimonial__info">
-                                <h3 class="testimonial__name">Justin Bayboro</h3>
-                                <p class="testimonial__position">Position at Acme Innovations</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Testimonial Item 2 -->
-                    <div class="testimonial__item">
-                        <div class="testimonial__rating star-rating">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <div class="testimonial__text">
-                            <p>"BizNest has revolutionized our small business operations. Its CRM features have simplified our daily activities and enhanced our interactions with clients. We're grateful to BizNest for making our work so much smoother!"</p>
-                        </div>
-                        <div class="testimonial__profile">
-                            <div class="testimonial__avatar">
-                                <img src="./assets/img/testimonials/testimonial-2.png" alt="Abraham Linking" class="testimonial__image">
-                            </div>
-                            <div class="testimonial__info">
-                                <h3 class="testimonial__name">Abraham Linking</h3>
-                                <p class="testimonial__position">Senior Developer at Tech Solutions Co.</p>
+                            <div class="ub-testimonial__info">
+                                <h3 class="ub-testimonial__name">Justin Bayboro</h3>
+                                <p class="ub-testimonial__position">Position at Acme Innovations</p>
                             </div>
                         </div>
                     </div>
-                    <!-- Testimonial Item 3 -->
-                    <div class="testimonial__item">
-                        <div class="testimonial__rating star-rating">
+                    <!-- testimonial Item 2 -->
+                    <div class="ub-testimonial__item">
+                        <div class="ub-testimonial__rating star-rating">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <div class="testimonial__text">
+                        <div class="ub-testimonial__text">
+                            <p>"BizNest has revolutionized our small business operations. Its CRM ub-features have simplified our daily activities and enhanced our interactions with clients. We're grateful to BizNest for making our work so much smoother!"</p>
+                        </div>
+                        <div class="ub-testimonial__profile">
+                            <div class="ub-testimonial__avatar">
+                                <img src="./assets/img/testimonials/testimonial-2.png" alt="Abraham Linking" class="ub-testimonial__image">
+                            </div>
+                            <div class="ub-testimonial__info">
+                                <h3 class="ub-testimonial__name">Abraham Linking</h3>
+                                <p class="ub-testimonial__position">Senior Developer at Tech Solutions Co.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- testimonial Item 3 -->
+                    <div class="ub-testimonial__item">
+                        <div class="ub-testimonial__rating star-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="ub-testimonial__text">
                             <p>"Using Connectify to handle our customer relationships has been a game changer. The platform has streamlined our meetings and planning, allowing our startup to operate seamlessly. Highly recommend Connectify!"</p>
                         </div>
-                        <div class="testimonial__profile">
-                            <div class="testimonial__avatar">
-                                <img src="./assets/img/testimonials/testimonial-3.png" alt="Muhammad Abir" class="testimonial__image">
+                        <div class="ub-testimonial__profile">
+                            <div class="ub-testimonial__avatar">
+                                <img src="./assets/img/testimonials/testimonial-3.png" alt="Muhammad Abir" class="ub-testimonial__image">
                             </div>
-                            <div class="testimonial__info">
-                                <h3 class="testimonial__name">Muhammad Abir</h3>
-                                <p class="testimonial__position">Product Manager at Global Enterprises</p>
+                            <div class="ub-testimonial__info">
+                                <h3 class="ub-testimonial__name">Muhammad Abir</h3>
+                                <p class="ub-testimonial__position">Product Manager at Global Enterprises</p>
                             </div>
                         </div>
                     </div>
@@ -373,129 +407,129 @@
         <!-- testimonial end here -->
 
         <!-- Integrations start here -->
-        <section id="ub-integrations" class="integrations">
-            <div class="integrations__container container">
-                <div class="integrations__header">
-                    <div class="integrations__subtitle-area">
-                        <div class="integrations__subtitle-group">
-                            <img class="integrations__icon" src="./assets/icons/fav.svg" alt="Favorite Icon">
-                            <span class="integrations__subtitle">Integrations</span>
+        <section id="ub-integrations" class="ub-integrations">
+            <div class="ub-integrations__container container">
+                <div class="ub-integrations__header">
+                    <div class="ub-integrations__subtitle-area">
+                        <div class="ub-integrations__subtitle-group">
+                            <img class="ub-integrations__icon" src="./assets/icons/fav.svg" alt="Favorite Icon">
+                            <span class="ub-integrations__subtitle">Integrations</span>
                         </div>
                     </div>
-                    <h2 class="integrations__title"> Easy peasy connections <br> with the tools you love! </h2>
-                    <p class="integrations__desc"> Bazarly fits right in with the tools you already use, making it super  easy to streamline your workflows and get more done. </p>
+                    <h2 class="ub-integrations__title"> Easy peasy connections <br> with the tools you love! </h2>
+                    <p class="ub-integrations__desc"> Bazarly fits right in with the tools you already use, making it super  easy to streamline your workflows and get more done. </p>
                 </div>
-                <div class="integrations-logos">
-                    <div class="integrations-logos__slider-left swiper-container">
-                        <div class="integrations-logos__slider-wrapper swiper-wrapper">
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-1.png" alt="Tool 1" class="integrations-logos__logo">
+                <div class="ub-integrations__logos">
+                    <div class="ub-integrations__slider-left swiper-container">
+                        <div class="ub-integrations__slider-wrapper swiper-wrapper">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-1.png" alt="Tool 1" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-2.png" alt="Tool 2" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-2.png" alt="Tool 2" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-3.png" alt="Tool 3" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-3.png" alt="Tool 3" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-4.png" alt="Tool 4" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-4.png" alt="Tool 4" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-5.png" alt="Tool 5" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-5.png" alt="Tool 5" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-6.png" alt="Tool 6" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-6.png" alt="Tool 6" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-7.png" alt="Tool 7" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-7.png" alt="Tool 7" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-9.png" alt="Tool 8" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-9.png" alt="Tool 8" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-1.png" alt="Tool 1" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-1.png" alt="Tool 1" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-2.png" alt="Tool 2" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-2.png" alt="Tool 2" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-3.png" alt="Tool 3" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-3.png" alt="Tool 3" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-4.png" alt="Tool 4" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-4.png" alt="Tool 4" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-5.png" alt="Tool 5" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-5.png" alt="Tool 5" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-6.png" alt="Tool 6" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-6.png" alt="Tool 6" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-7.png" alt="Tool 7" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-7.png" alt="Tool 7" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-8.png" alt="Tool 8" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-8.png" alt="Tool 8" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-9.png" alt="Tool 8" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-9.png" alt="Tool 8" class="ub-integrations__logo">
                             </div>
                         </div>
                     </div>
-                    <div class="integrations-logos__slider-right swiper-container">
-                        <div class="integrations-logos__slider-wrapper swiper-wrapper">
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-10.png" alt="Tool 1" class="integrations-logos__logo">
+                    <div class="ub-integrations__slider-right swiper-container">
+                        <div class="ub-integrations__slider-wrapper swiper-wrapper">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-10.png" alt="Tool 1" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-11.png" alt="Tool 2" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-11.png" alt="Tool 2" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-12.png" alt="Tool 3" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-12.png" alt="Tool 3" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-13.png" alt="Tool 4" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-13.png" alt="Tool 4" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-14.png" alt="Tool 5" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-14.png" alt="Tool 5" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-15.png" alt="Tool 6" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-15.png" alt="Tool 6" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-16.png" alt="Tool 7" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-16.png" alt="Tool 7" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-17.png" alt="Tool 8" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-17.png" alt="Tool 8" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-18.png" alt="Tool 1" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-18.png" alt="Tool 1" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-10.png" alt="Tool 1" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-10.png" alt="Tool 1" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-11.png" alt="Tool 2" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-11.png" alt="Tool 2" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-12.png" alt="Tool 3" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-12.png" alt="Tool 3" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-13.png" alt="Tool 4" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-13.png" alt="Tool 4" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-14.png" alt="Tool 5" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-14.png" alt="Tool 5" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-15.png" alt="Tool 6" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-15.png" alt="Tool 6" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-16.png" alt="Tool 7" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-16.png" alt="Tool 7" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-17.png" alt="Tool 8" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-17.png" alt="Tool 8" class="ub-integrations__logo">
                             </div>
-                            <div class="integrations-logos__slider-item swiper-slide">
-                                <img src="./assets/img/integrations/logo-18.png" alt="Tool 1" class="integrations-logos__logo">
+                            <div class="ub-integrations__slider-item swiper-slide">
+                                <img src="./assets/img/integrations/logo-18.png" alt="Tool 1" class="ub-integrations__logo">
                             </div>
                         </div>
                     </div>
@@ -506,116 +540,116 @@
         <!-- Integrations end here -->
 
         <!-- Pricing Section Start -->
-        <section id="ub-pricing" class="pricing">
-            <div class="pricing__container container">
-              <div class="pricing__header">
-                <div class="pricing__subtitle-area">
-                  <div class="pricing__subtitle-group">
-                    <img class="pricing__icon" src="./assets/icons/fav.svg" alt="Favorite Icon">
-                    <span class="pricing__subtitle">Pricing</span>
+        <section id="ub-pricing" class="ub-pricing">
+            <div class="ub-pricing__container container">
+              <div class="ub-pricing__header">
+                <div class="ub-pricing__subtitle-area">
+                  <div class="ub-pricing__subtitle-group">
+                    <img class="ub-pricing__icon" src="./assets/icons/fav.svg" alt="Favorite Icon">
+                    <span class="ub-pricing__subtitle">Pricing</span>
                   </div>
                 </div>
-                <h2 class="pricing__title">Awesome Tools for<br> Creative Minds</h2>
-                <p class="pricing__desc">Bazarly offers great pricing plans for businesses of all sizes, <br>from startups to large companies!</p>
+                <h2 class="ub-pricing__title">Awesome Tools for<br> Creative Minds</h2>
+                <p class="ub-pricing__desc">Bazarly offers great pricing plans for businesses of all sizes, <br>from startups to large companies!</p>
               </div>
           
                 <!-- Pricing switcher -->
-                <div class="pricing__switcher">
-                    <div class="pricing__switcher-wrapper">
-                    <button class="pricing__switcher-btn pricing__switcher-btn--active" data-target="monthly">Monthly</button>
-                    <button class="pricing__switcher-btn" data-target="annual">Annual (Save 30%)</button>
+                <div class="ub-pricing__switcher">
+                    <div class="ub-pricing__switcher-wrapper">
+                    <button class="ub-pricing__switcher-btn ub-pricing__switcher-btn--active" data-target="monthly">Monthly</button>
+                    <button class="ub-pricing__switcher-btn" data-target="annual">Annual (Save 30%)</button>
                     </div>
                 </div> 
           
                 <!-- Monthly Cards -->
-                <div class="pricing__cards pricing__cards--monthly" data-target="monthly">
-                    <div class="pricing__card">
-                    <h3 class="pricing__plan-title">Basic Plan</h3>
-                    <p class="pricing__plan-description">Bazarly has awesome pricing plans for businesses. We've got your back!</p>
-                    <div class="pricing__price-wrapper">
-                        <span class="pricing__price">$168.00 USD</span>
+                <div class="ub-pricing__cards pricing__cards--monthly" data-target="monthly">
+                    <div class="ub-pricing__card">
+                    <h3 class="ub-pricing__plan-title">Basic Plan</h3>
+                    <p class="ub-pricing__plan-description">Bazarly has awesome pricing plans for businesses. We've got your back!</p>
+                    <div class="ub-pricing__price-wrapper">
+                        <span class="ub-pricing__price">$168.00 USD</span>
                     </div>
-                    <ul class="pricing__features-list">
+                    <ul class="ub-pricing__features-list">
                         <li><i class="fa-solid fa-check"></i> Intuitive Task Creation</li>
                         <li><i class="fa-solid fa-check"></i> Basic Collaboration Tools</li>
                         <li><i class="fa-solid fa-check"></i> Flexible Pricing Options</li>
                         <li><i class="fa-solid fa-check"></i> Various Functionalities</li>
                     </ul>
-                    <a class="pricing__button" href="#">Start 14 days free</a>
+                    <a class="ub-pricing__button" href="#">Start 14 days free</a>
                     </div>
-                    <div class="pricing__card">
-                    <h3 class="pricing__plan-title">Standard Plan</h3>
-                    <p class="pricing__plan-description">Bazarly has awesome pricing plans for businesses. We've got your back!</p>
-                    <div class="pricing__price-wrapper">
-                        <span class="pricing__price">$300.00 USD</span>
+                    <div class="ub-pricing__card">
+                    <h3 class="ub-pricing__plan-title">Standard Plan</h3>
+                    <p class="ub-pricing__plan-description">Bazarly has awesome pricing plans for businesses. We've got your back!</p>
+                    <div class="ub-pricing__price-wrapper">
+                        <span class="ub-pricing__price">$300.00 USD</span>
                     </div>
-                    <ul class="pricing__features-list">
+                    <ul class="ub-pricing__features-list">
                         <li><i class="fa-solid fa-check"></i> 200+ integrations</li>
                         <li><i class="fa-solid fa-check"></i> Up to 20 individual users</li>
                         <li><i class="fa-solid fa-check"></i> 40GB individual storage</li>
-                        <li><i class="fa-solid fa-check"></i> Advanced custom features</li>
+                        <li><i class="fa-solid fa-check"></i> Advanced custom ub-features</li>
                     </ul>
-                    <a class="pricing__button" href="#">Start 14 days free</a>
+                    <a class="ub-pricing__button" href="#">Start 14 days free</a>
                     </div>
-                    <div class="pricing__card">
-                    <h3 class="pricing__plan-title">Enterprise Plan</h3>
-                    <p class="pricing__plan-description">Bazarly offers great pricing options for businesses. Find the best fit for you!</p>
-                    <div class="pricing__price-wrapper">
-                        <span class="pricing__price">$790.00 USD</span>
+                    <div class="ub-pricing__card">
+                    <h3 class="ub-pricing__plan-title">Enterprise Plan</h3>
+                    <p class="ub-pricing__plan-description">Bazarly offers great pricing options for businesses. Find the best fit for you!</p>
+                    <div class="ub-pricing__price-wrapper">
+                        <span class="ub-pricing__price">$790.00 USD</span>
                     </div>
-                    <ul class="pricing__features-list">
+                    <ul class="ub-pricing__features-list">
                         <li><i class="fa-solid fa-check"></i> Audit log and data tracking</li>
                         <li><i class="fa-solid fa-check"></i> Unlimited individual accounts</li>
                         <li><i class="fa-solid fa-check"></i> Basic chat and support services</li>
                         <li><i class="fa-solid fa-check"></i> Personalized Priority Support</li>
                     </ul>
-                    <a class="pricing__button" href="#">Start 14 days free</a>
+                    <a class="ub-pricing__button" href="#">Start 14 days free</a>
                     </div>
                 </div>
                 
                 <!-- Annual Cards -->
-                <div class="pricing__cards pricing__cards--annual pricing__cards--hidden" data-target="annual">
-                    <div class="pricing__card">
-                    <h3 class="pricing__plan-title">Basic Plan</h3>
-                    <p class="pricing__plan-description">Get the best value with our annual plan. Save more and grow your business!</p>
-                    <div class="pricing__price-wrapper">
-                        <span class="pricing__price">$299.00 USD</span>
+                <div class="ub-pricing__cards pricing__cards--annual ub-pricing__cards--hidden" data-target="annual">
+                    <div class="ub-pricing__card">
+                    <h3 class="ub-pricing__plan-title">Basic Plan</h3>
+                    <p class="ub-pricing__plan-description">Get the best value with our annual plan. Save more and grow your business!</p>
+                    <div class="ub-pricing__price-wrapper">
+                        <span class="ub-pricing__price">$299.00 USD</span>
                     </div>
-                    <ul class="pricing__features-list">
+                    <ul class="ub-pricing__features-list">
                         <li><i class="fa-solid fa-check"></i> Intuitive Task Creation</li>
                         <li><i class="fa-solid fa-check"></i> Basic Collaboration Tools</li>
                         <li><i class="fa-solid fa-check"></i> Flexible Pricing Options</li>
                         <li><i class="fa-solid fa-check"></i> Exclusive Annual Discounts</li>
                     </ul>
-                    <a class="pricing__button" href="#">Start 14 days free</a>
+                    <a class="ub-pricing__button" href="#">Start 14 days free</a>
                     </div>
-                    <div class="pricing__card">
-                    <h3 class="pricing__plan-title">Standard Plan</h3>
-                    <p class="pricing__plan-description">Opt for an annual plan and enjoy premium features at a discounted rate.</p>
-                    <div class="pricing__price-wrapper">
-                        <span class="pricing__price">$550.00 USD</span>
+                    <div class="ub-pricing__card">
+                    <h3 class="ub-pricing__plan-title">Standard Plan</h3>
+                    <p class="ub-pricing__plan-description">Opt for an annual plan and enjoy premium ub-features at a discounted rate.</p>
+                    <div class="ub-pricing__price-wrapper">
+                        <span class="ub-pricing__price">$550.00 USD</span>
                     </div>
-                    <ul class="pricing__features-list">
+                    <ul class="ub-pricing__features-list">
                         <li><i class="fa-solid fa-check"></i> 200+ integrations</li>
                         <li><i class="fa-solid fa-check"></i> Up to 20 individual users</li>
                         <li><i class="fa-solid fa-check"></i> 50GB individual storage</li>
                         <li><i class="fa-solid fa-check"></i> Advanced customization tools</li>
                     </ul>
-                    <a class="pricing__button" href="#">Start 14 days free</a>
+                    <a class="ub-pricing__button" href="#">Start 14 days free</a>
                     </div>
-                    <div class="pricing__card">
-                    <h3 class="pricing__plan-title">Enterprise Plan</h3>
-                    <p class="pricing__plan-description">Unlock enterprise-level features with our exclusive annual subscription.</p>
-                    <div class="pricing__price-wrapper">
-                        <span class="pricing__price">$1,200.00 USD</span>
+                    <div class="ub-pricing__card">
+                    <h3 class="ub-pricing__plan-title">Enterprise Plan</h3>
+                    <p class="ub-pricing__plan-description">Unlock enterprise-level ub-features with our exclusive annual subscription.</p>
+                    <div class="ub-pricing__price-wrapper">
+                        <span class="ub-pricing__price">$1,200.00 USD</span>
                     </div>
-                    <ul class="pricing__features-list">
+                    <ul class="ub-pricing__features-list">
                         <li><i class="fa-solid fa-check"></i> Enhanced security & compliance</li>
                         <li><i class="fa-solid fa-check"></i> Unlimited users & storage</li>
                         <li><i class="fa-solid fa-check"></i> 24/7 priority support</li>
                         <li><i class="fa-solid fa-check"></i> Personalized onboarding & training</li>
                     </ul>
-                    <a class="pricing__button" href="#">Start 14 days free</a>
+                    <a class="ub-pricing__button" href="#">Start 14 days free</a>
                     </div>
                 </div>
               </div>
@@ -624,132 +658,132 @@
         <!-- Pricing Section End -->
 
         <!-- blog section start here -->
-        <section id="ub-blog" class="blog" aria-labelledby="blog-title">
-            <div class="blog__container container">
-                <div class="blog__header">
-                    <div class="blog__subtitle-area">
-                        <div class="blog__subtitle-group">
-                            <img class="blog__icon" src="./assets/icons/fav.svg" alt="Favorite Icon">
-                            <span class="blog__subtitle">Our blog</span>
+        <section id="ub-blog" class="ub-blog" aria-labelledby="blog-title">
+            <div class="ub-blog__container container">
+                <div class="ub-blog__header">
+                    <div class="ub-blog__subtitle-area">
+                        <div class="ub-blog__subtitle-group">
+                            <img class="ub-blog__icon" src="./assets/icons/fav.svg" alt="Favorite Icon">
+                            <span class="ub-blog__subtitle">Our blog</span>
                         </div>
                     </div>
-                    <h2 class="blog__title">Unlocking the full potential of your company's data</h2>
-                    <p class="blog__desc"> Innovative tools and strategies that empower teams to  drive company growth. </p>
+                    <h2 class="ub-blog__title">Unlocking the full potential of your company's data</h2>
+                    <p class="ub-blog__description">Innovative tools and strategies that empower teams to drive company growth.</p>
                 </div>
-    
-                <div class="blog__cards">
-                    <article class="blog-card">
-                        <div class="blog-card__image-wrapper">
-                            <img src="./assets/img/blog/blog-1.png" alt="Analytics tool icon" class="blog-card__image" />
+        
+                <div class="ub-blog__cards">
+                    <article class="ub-blog__card">
+                        <div class="ub-blog__card-image-wrapper">
+                            <img src="./assets/img/blog/blog-1.png" alt="Analytics tool icon" class="ub-blog__card-image" />
                         </div>
-                        <div class="blog-card__content">
-                            <h3 class="blog-card__title">How real-time analytics can transform your money strategy!</h3>
-                            <p class="blog-card__text"> Ideal for startups, our Starter Plan provides essential tools for easy financial management. </p>
-                            <div class="blog-card__link-wrapper">
-                                <a href="#" class="blog-card__link"> Read post</a>
-                                <img class="blog-card__link-icon" src="./assets/icons/arrow-up-right.svg" alt="">
+                        <div class="ub-blog__card-content">
+                            <h3 class="ub-blog__card-title">How real-time analytics can transform your money strategy!</h3>
+                            <p class="ub-blog__card-text">Ideal for startups, our Starter Plan provides essential tools for easy financial management.</p>
+                            <div class="ub-blog__card-link-wrapper">
+                                <a href="./blog-single.html" class="ub-blog__card-link">Read post</a>
+                                <img class="ub-blog__card-link-icon" src="./assets/icons/arrow-up-right.svg" alt="Arrow icon">
                             </div>
                         </div>
                     </article>
-    
-                    <article class="blog-card">
-                        <div class="blog-card__image-wrapper">
-                            <img src="./assets/img/blog/blog-2.png" alt="Active users analytics" class="blog-card__image" />
+        
+                    <article class="ub-blog__card">
+                        <div class="ub-blog__card-image-wrapper">
+                            <img src="./assets/img/blog/blog-2.png" alt="Active users analytics" class="ub-blog__card-image" />
                         </div>
-                        <div class="blog-card__content">
-                            <h3 class="blog-card__title"> Simplify and empower your financial management with MezApp v </h3>
-                            <p class="blog-card__text"> Our Launch Package is ideal for providing all the tools to manage finances like a pro. </p>
-                            <div class="blog-card__link-wrapper">
-                                <a href="#" class="blog-card__link"> Read post</a>
-                                <img class="blog-card__link-icon" src="./assets/icons/arrow-up-right.svg" alt="">
+                        <div class="ub-blog__card-content">
+                            <h3 class="ub-blog__card-title">Simplify and empower your financial management with MezApp v</h3>
+                            <p class="ub-blog__card-text">Our Launch Package is ideal for providing all the tools to manage finances like a pro.</p>
+                            <div class="ub-blog__card-link-wrapper">
+                                <a href="./blog-single.html" class="ub-blog__card-link">Read post</a>
+                                <img class="ub-blog__card-link-icon" src="./assets/icons/arrow-up-right.svg" alt="Arrow icon">
                             </div>
                         </div>
                     </article>
-    
-                    <article class="blog-card">
-                        <div class="blog-card__image-wrapper">
-                            <img src="./assets/img/blog/blog-3.png" alt="Money flow chart" class="blog-card__image" />
+        
+                    <article class="ub-blog__card">
+                        <div class="ub-blog__card-image-wrapper">
+                            <img src="./assets/img/blog/blog-3.png" alt="Money flow chart" class="ub-blog__card-image" />
                         </div>
-                        <div class="blog-card__content">
-                            <h3 class="blog-card__title">How real-time analytics can transform your money strategy!</h3>
-                            <p class="blog-card__text"> Ideal for startups, our Starter Plan offers essential tools for easy financial management. </p>
-                            <div class="blog-card__link-wrapper">
-                                <a href="#" class="blog-card__link"> Read post</a>
-                                <img class="blog-card__link-icon" src="./assets/icons/arrow-up-right.svg" alt="">
+                        <div class="ub-blog__card-content">
+                            <h3 class="ub-blog__card-title">How real-time analytics can transform your money strategy!</h3>
+                            <p class="ub-blog__card-text">Ideal for startups, our Starter Plan offers essential tools for easy financial management.</p>
+                            <div class="ub-blog__card-link-wrapper">
+                                <a href="./blog-single.html" class="ub-blog__card-link">Read post</a>
+                                <img class="ub-blog__card-link-icon" src="./assets/icons/arrow-up-right.svg" alt="Arrow icon">
                             </div>
                         </div>
                     </article>
                 </div>
-    
-                <div class="blog__btn-wrapper">
-                    <a href="#" class="blog__btn">See all blogs</a>
+        
+                <div class="ub-blog__btn-wrapper">
+                    <a href="#" class="ub-blog__btn">See all blogs</a>
                 </div>
             </div>
         </section>
         <!-- blog section end here -->
 
         <!-- faq start here -->
-        <section id="ub-faq" class="faq">
-            <div class="faq__container container">
-                <div class="faq__grid">
+        <section id="ub-faq" class="ub-faq">
+            <div class="ub-faq__container container">
+                <div class="ub-faq__grid">
                     <!-- Section Heading -->
-                    <div class="faq__heading">
-                        <div class="faq__subtitle-area">
-                            <div class="faq__subtitle-group">
-                                <img class="faq__icon" src="./assets/icons/fav.svg" alt="Favorite Icon">
-                                <span class="faq__subtitle">Faq</span>
+                    <div class="ub-faq__heading">
+                        <div class="ub-faq__subtitle-area">
+                            <div class="ub-faq__subtitle-group">
+                                <img class="ub-faq__icon" src="./assets/icons/fav.svg" alt="Favorite Icon">
+                                <span class="ub-faq__subtitle">Faq</span>
                             </div>
                         </div>
-                        <h2 class="faq__title">The answers to your questions.</h2>
+                        <h2 class="ub-faq__title">The answers to your questions.</h2>
                     </div>
                     <!-- FAQ Area -->
-                    <div class="faq__list">
+                    <div class="ub-faq__list">
                         <!-- FAQ Item -->
-                        <div class="faq__item active">
-                            <button class="faq__question active">
-                                <span class="faq__question-text">What support options are available for Bazarly users? </span>
+                        <div class="ub-faq__item active">
+                            <button class="ub-faq__question active">
+                                <span class="ub-faq__question-text">What support options are available for Bazarly users? </span>
                             </button>
-                            <div class="faq__answer active">
+                            <div class="ub-faq__answer active">
                                 <p>Bazarly seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.</p>
                             </div>
                         </div>
-                        <div class="faq__item">
-                            <button class="faq__question">
-                                <span class="faq__question-text">What features does Bazarly offer for managing customer data?</span>
+                        <div class="ub-faq__item">
+                            <button class="ub-faq__question">
+                                <span class="ub-faq__question-text">What ub-features does Bazarly offer for managing customer data?</span>
                             </button>
-                            <div class="faq__answer">
+                            <div class="ub-faq__answer">
                                 <p>Bazarly seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.</p>
                             </div>
                         </div>
-                        <div class="faq__item">
-                            <button class="faq__question">
-                                <span class="faq__question-text">How can Bazarly help improve customer relationships?</span>
+                        <div class="ub-faq__item">
+                            <button class="ub-faq__question">
+                                <span class="ub-faq__question-text">How can Bazarly help improve customer relationships?</span>
                             </button>
-                            <div class="faq__answer">
+                            <div class="ub-faq__answer">
                                 <p>Syncs customer data with CRMs, tracks interactions, and manages leads with real-time updates.</p>
                             </div>
                         </div>
-                        <div class="faq__item">
-                            <button class="faq__question">
-                                <span class="faq__question-text">What integrations does Bazarly have with other tools?</span>
+                        <div class="ub-faq__item">
+                            <button class="ub-faq__question">
+                                <span class="ub-faq__question-text">What integrations does Bazarly have with other tools?</span>
                             </button>
-                            <div class="faq__answer">
+                            <div class="ub-faq__answer">
                                 <p>Syncs customer data with CRMs, tracks interactions, and manages leads with real-time updates.</p>
                             </div>
                         </div>
-                        <div class="faq__item">
-                            <button class="faq__question">
-                                <span class="faq__question-text">What features does Bazarly provide for CRM users?</span>
+                        <div class="ub-faq__item">
+                            <button class="ub-faq__question">
+                                <span class="ub-faq__question-text">What ub-features does Bazarly provide for CRM users?</span>
                             </button>
-                            <div class="faq__answer">
+                            <div class="ub-faq__answer">
                                 <p>Syncs customer data with CRMs, tracks interactions, and manages leads with real-time updates.</p>
                             </div>
                         </div>
-                        <div class="faq__item">
-                            <button class="faq__question">
-                                <span class="faq__question-text">What security does Bazarly use for data protection?</span>
+                        <div class="ub-faq__item">
+                            <button class="ub-faq__question">
+                                <span class="ub-faq__question-text">What security does Bazarly use for data protection?</span>
                             </button>
-                            <div class="faq__answer">
+                            <div class="ub-faq__answer">
                                 <p>Syncs customer data with CRMs, tracks interactions, and manages leads with real-time updates.</p>
                             </div>
                         </div>
@@ -761,16 +795,16 @@
         <!-- faq end here -->
 
         <!-- cta start here -->
-        <section id="ub-cta" class="cta">
-            <div class="cta__container container">
-                <div class="cta__area">
-                    <h3 class="cta__title">Get set to take your CRM  game to the next level!</h3>
-                    <p class="cta__desc">Don't miss out on the excitement! Stay tuned for all the thrilling events we have lined up just for you! <p>
-                    <div class="cta__btn-group">
-                        <a class="cta__btn" href="">Started 14 days free</a>
+        <section id="ub-cta" class="ub-cta">
+            <div class="ub-cta__container container">
+                <div class="ub-cta__area">
+                    <h3 class="ub-cta__title">Get set to take your CRM  game to the next level!</h3>
+                    <p class="ub-cta__desc">Don't miss out on the excitement! Stay tuned for all the thrilling events we have lined up just for you! <p>
+                    <div class="ub-cta__btn-group">
+                        <a class="ub-cta__btn" href="">Started 14 days free</a>
                     </div>
-                    <div class="cta__background-left"></div>  
-                    <div class="cta__background-right"></div>  
+                    <div class="ub-cta__background-left"></div>  
+                    <div class="ub-cta__background-right"></div>  
                 </div>
             </div>
         </section>
@@ -816,8 +850,8 @@
                                 <h3 class="footer__navigation-title">Index</h3>
                                 <ul class="footer__links">
                                     <li class="footer__link-item"><a href="index.html" class="footer__link">Home</a></li>
-                                    <li class="footer__link-item"><a href="feature.html" class="footer__link">Features</a></li>
-                                    <li class="footer__link-item"><a href="feature-single.html" class="footer__link">Features Single</a></li>
+                                    <li class="footer__link-item"><a href="feature.html" class="footer__link">ub-features</a></li>
+                                    <li class="footer__link-item"><a href="feature-single.html" class="footer__link">ub-features Single</a></li>
                                     <li class="footer__link-item"><a href="contact.html" class="footer__link">Contact</a></li>
                                 </ul>
                             </div>

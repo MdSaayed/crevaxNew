@@ -16,30 +16,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // FAQ section ===============================================================================
-const faqQuestions = document.querySelectorAll('.faq__question');
-const firstAnswer = document.querySelector('.faq__answer.active');
+const faqQuestions = document.querySelectorAll('.ub-faq__question');
+const firstAnswer = document.querySelector('.ub-faq__answer.active');
 if (firstAnswer) {
     firstAnswer.style.maxHeight = firstAnswer.scrollHeight + 'px';  
 }
 
-// Add click event listeners for toggle========================================================
+// Add click event listeners for toggle
 faqQuestions.forEach(item => {
     item.addEventListener('click', () => {
-        const faqItem = item.closest('.faq__item');  
-        const answer = faqItem.querySelector('.faq__answer');
+        const faqItem = item.closest('.ub-faq__item');  
+        const answer = faqItem.querySelector('.ub-faq__answer');
 
         // Close other answers and remove active class from other questions
-        document.querySelectorAll('.faq__answer').forEach(ans => {
+        document.querySelectorAll('.ub-faq__answer').forEach(ans => {
             if (ans !== answer) {
                 ans.style.maxHeight = '0';
                 ans.classList.remove('active');
             }
         });
 
-        document.querySelectorAll('.faq__question').forEach(question => {
+        document.querySelectorAll('.ub-faq__question').forEach(question => {
             if (question !== item) {
                 question.classList.remove('active'); 
-                question.closest('.faq__item').classList.remove('active'); 
+                question.closest('.ub-faq__item').classList.remove('active'); 
             }
         });
 
@@ -60,20 +60,20 @@ faqQuestions.forEach(item => {
 
 
 // pricing swither pricing section=============================================================
-document.querySelectorAll('.pricing__switcher-btn').forEach(button => {
+document.querySelectorAll('.ub-pricing__switcher-btn').forEach(button => {
     button.addEventListener('click', () => {
         
-        document.querySelectorAll('.pricing__switcher-btn').forEach(btn => 
-            btn.classList.remove('pricing__switcher-btn--active')
+        document.querySelectorAll('.ub-pricing__switcher-btn').forEach(btn => 
+            btn.classList.remove('ub-pricing__switcher-btn--active')
         );
 
-        button.classList.add('pricing__switcher-btn--active');
-        document.querySelectorAll('.pricing__cards').forEach(cards => 
-            cards.classList.add('pricing__cards--hidden')
+        button.classList.add('ub-pricing__switcher-btn--active');
+        document.querySelectorAll('.ub-pricing__cards').forEach(cards => 
+            cards.classList.add('ub-pricing__cards--hidden')
         );
 
         const targetClass = button.getAttribute('data-target');
-        document.querySelector(`.pricing__cards[data-target="${targetClass}"]`).classList.remove('pricing__cards--hidden');
+        document.querySelector(`.ub-pricing__cards[data-target="${targetClass}"]`).classList.remove('ub-pricing__cards--hidden');
     });
 });
 
@@ -259,7 +259,7 @@ once: false
 
 
 // swiper slider  for logo ==========================================================
-const swiperLeft = new Swiper(".integrations-logos__slider-left", {
+const brandSLider = new Swiper(".ub-brands__slider-area", {
     slidesPerView: 'auto',  
     spaceBetween: 40,  
     loop: true, 
@@ -283,7 +283,31 @@ const swiperLeft = new Swiper(".integrations-logos__slider-left", {
 
 });
 
-const swiperRight = new Swiper(".integrations-logos__slider-right", {
+const swiperLeft = new Swiper(".ub-integrations__slider-left", {
+    slidesPerView: 'auto',  
+    spaceBetween: 40,  
+    loop: true, 
+    speed: 3000,  
+    allowTouchMove: false,  
+    autoplay: {
+        delay: 1,  
+        disableOnInteraction: false, 
+    },
+    breakpoints: {
+        1024: { 
+            spaceBetween: 40,  
+        },
+        768: {  
+            spaceBetween: 30,  
+        },
+        480: { 
+            spaceBetween: 20,  
+        }
+    }
+
+});
+
+const swiperRight = new Swiper(".ub-integrations__slider-right", {
     slidesPerView: 'auto',  
     spaceBetween: 40,  
     loop: true,  
@@ -309,7 +333,7 @@ const swiperRight = new Swiper(".integrations-logos__slider-right", {
 });
 
 
-// active menu color on desktop
+// active menu color on desktop========================================
 document.addEventListener("DOMContentLoaded", function () {
     const menuItems = document.querySelectorAll(".menu__item");
     const currentUrl = window.location.pathname.split("/").pop();
@@ -326,7 +350,7 @@ document.addEventListener("DOMContentLoaded", function () {
         this.classList.add("menu__item--active");
       });
     });
-  });
+});
   
   
   

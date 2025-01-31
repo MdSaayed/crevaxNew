@@ -1,46 +1,77 @@
-#ub-brands {
-    .brands__container {
+.ub-brands {
+
+    &__container {
         padding-top: 4rem;
         padding-bottom: 4rem;
     }
 
-    .brands__heading {
+    &__header {
         margin-bottom: 2.5rem;
-
-        h2 {
-            text-align: center;
-            font-weight: 500;
-            font-size: 1.5rem;
-        }
     }
 
-    .brands__grid { 
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-        justify-content: center;
-
-        @media (min-width: 768px) {
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-        }
-
-        @media (min-width: 1024px) {
-            grid-template-columns: repeat(5, 1fr);
-            gap: 3.5rem;
-        }
-
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
+    &__title {
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.5rem;
     }
 
-    .brands__logo{
+    &__slider-area{
+        position: relative;
+    }
+
+    &__content{
+        overflow: hidden;
+    }
+
+    .ub-brands__logo{
+        width: 12.5rem;
         display: flex;
         justify-content: center;
-        
-        img{
+        align-items: center;
+
+        img {
             width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .swiper-wrapper {
+        display: flex;
+        align-items: center;
+        transition-timing-function: linear !important;
+    }
+
+    &__slider-area::after,
+    &__slider-area::before {
+    position: absolute;
+    content: " ";
+    bottom: 0;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    background: $soft-lilac;
+    filter: blur(56.8px); 
+    z-index: 99;
+    }
+
+    &__slider-area::after {
+        left: -170px;
+
+        @media (max-width: 768px) {
+        width: 140px;
+        height: 140px;
+        left: -100px;
+        }
+    }
+
+    &__slider-area::before {
+        right: -170px;
+        
+        @media (max-width: 768px) {
+        width: 140px;
+        height: 140px;
+        right: -100px;
         }
     }
 }
+ 

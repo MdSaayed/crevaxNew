@@ -1,138 +1,147 @@
 // pricing section 
-#ub-pricing {
-    &.pricing--padded{
+.ub-pricing {
+    &.ub-pricing--padded{
       padding: 0 1rem;
     }
-    .pricing__header {
+
+    &.hero__subtitle-group{
+      padding: 0 1rem;
+    }
+
+    &__header {
       margin-bottom: 3rem;
-  
-      .pricing__subtitle-area {
-        @extend .hero__subtitle-area;
-  
-        .pricing__subtitle-group {
-          @extend .hero__subtitle-group;
-  
-          .pricing__subtitle {
-            @extend .hero__subtitle;
-          }
-        }
-      }
-  
-      .pricing__title {
-        @extend .section-title;
-      }
-  
-      .pricing__desc {
-        @extend .section-desc;
-      }
+    }
+
+    &__subtitle-area {
+      @extend .hero__subtitle-area;
+    }
+
+    &__subtitle-group {
+      @extend .hero__subtitle-group;
+    }
+
+    &__subtitle {
+      @extend .hero__subtitle;
+    }
+
+    &__title {
+      @extend .section-title;
+    }
+
+    &__desc {
+      @extend .section-desc; 
     }
   
-    .pricing__cards {
+    &__cards {
       display: grid;
       grid-template-columns: 1fr;
       gap: 1.5rem;
       margin-top: 4rem;
-  
-      .pricing__card {
-        background-color: $light-lavender;
-        border: 1px solid rgba(64, 64, 64, 0.12);
-        padding: 2.5rem;
-        border-radius: 1rem;
-  
-        &:hover {
-          background-color: $dark-purple;
-          transition: 0.5s ease;
-  
-          .pricing__price {
-            color: $light-gray !important;
-          }
-  
-          .pricing__plan-title,
-          .pricing__plan-description,
-          .pricing__features-list li,
-          .fa-check {
-            color: $white !important;
-          }
-  
-          .pricing__button {
-            background-color: $soft-lilac;
-          }
-        }
-  
-        .pricing__plan-title {
-          font-weight: 500;
-          font-size: 1rem;
-          line-height: 24px;
-          text-align: center;
-        }
-  
-        .pricing__plan-description {
-          font-size: 1rem;
-          text-align: center;
-          margin-top: 1rem;
-          color: $dark-slate-gray;
-          line-height: 24px;
-        }
-  
-        .pricing__price-wrapper {
-          margin-top: 1.5rem;
-          margin-bottom: 1.5rem;
-  
-          .pricing__price {
-            color: $dark-neutral;
-            font-size: 2.25rem;
-            font-weight: 500;
-            text-align: center;
-            display: block;
-          }
-        }
-  
-        .pricing__features-list {
-          margin-top: 2.5rem;
+    } 
 
-          li {
-            margin-bottom: 0.75rem;
-            text-align: center;
-            color: $dark-slate-gray;
-  
-            i {
-              width: 21px;
-              height: 21px;
-              color: $soft-purple;
-              margin-right: 0.5rem;
-            }
-          }
+    &__card {
+      background-color: $light-lavender;
+      border: 1px solid rgba(64, 64, 64, 0.12);
+      padding: 2.5rem;
+      border-radius: 1rem;
+
+      &:hover {
+        background-color: $dark-purple;
+        transition: 0.5s ease;
+
+        .ub-pricing__price {
+          color: $light-gray !important;
         }
-  
-            
-        .pricing__button {
-            margin-top: 4rem;
-            display: block;
-            text-decoration: none;
-            font-size: 1rem;
-            font-weight: 500;
-            line-height: 24px;
-            background-color: $light-purple;
-            color: $dark-gray;
-            padding: 8px 5px;
-            border-radius: 32px;
-            text-align: center;
-            width: 100%;
-            }
+
+        .ub-pricing__plan-title,
+        .ub-pricing__plan-description,
+        .ub-pricing__features-list li,
+        .fa-check {
+          color: $white !important;
+        }
+
+        .ub-pricing__button {
+          background-color: $soft-lilac;
+        }
       }
+    }
+
+    &__plan-title {
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 24px;
+      text-align: center;
+    }
+
+    &__plan-description {
+      font-size: 1rem;
+      text-align: center;
+      margin-top: 1rem;
+      color: $dark-slate-gray;
+      line-height: 24px;
+    }
+
+    &__price-wrapper {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__price {
+      color: $dark-neutral;
+      font-size: 2.25rem;
+      font-weight: 500;
+      text-align: center;
+      display: block;
+    }
+
+    &__features-list {
+      margin-top: 2.5rem;
+
+      li {
+        margin-bottom: 0.75rem;
+        text-align: center;
+        color: $dark-slate-gray;
+
+        i {
+          width: 21px;
+          height: 21px;
+          color: $soft-purple;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+        
+    &__button {
+        margin-top: 4rem;
+        display: block;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 24px;
+        background-color: $light-purple;
+        color: $dark-gray;
+        padding: 8px 5px;
+        border-radius: 32px;
+        text-align: center;
+        width: 100%;
+    }
   
-      @media (min-width: 768px) {
+    &__cards--hidden {
+      display: none;
+    }
+
+    // responsive
+    @media (min-width: 768px) {
+      &__cards {
         grid-template-columns: repeat(2, 1fr);
       }
-  
-      @media (min-width: 1024px) {
+    }
+
+    @media (min-width: 1024px) {
+      &__cards {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
       }
-    }
-  
-    .pricing__cards--hidden {
-      display: none;
     }
   }
 

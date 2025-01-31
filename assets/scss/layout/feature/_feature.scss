@@ -65,81 +65,87 @@
 }
 
 // feature section
-#ub-features {
+.ub-features {
 
-    .features_container {
+    &_container {
         padding-top: 7rem;
         padding-bottom: 7rem;
+    }
 
-        .features__subtitle-area {
-            @extend .hero__subtitle-area;
-        }
+    &__subtitle-area {
+        @extend .hero__subtitle-area;
+    }
 
-        .features__subtitle-group {
-            @extend .hero__subtitle-group;
-        }
-        .features__subtitle{
-            @extend .hero__subtitle;
-        }
+    &__subtitle-group {
+        @extend .hero__subtitle-group;
+    }
+    &__subtitle{
+        @extend .hero__subtitle;
+    }
 
-        .features__title {
-            @extend .section-title;
-            font-size: 2.8rem;
-            max-width: 640px;
-        }
+    &__title {
+        @extend .section-title;
+        font-size: 2.8rem;
+        max-width: 640px;
+    }
 
-        .features__desc {
-            @extend .section-desc;
-            max-width: 520px;
-        } 
+    &__desc {
+        @extend .section-desc;
+        max-width: 520px;
+    } 
 
-        .features__area {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 2rem;
-            margin-top: 5rem;
+    &__area {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-top: 5rem;
+    }
 
-            .features__item {
-                background: $soft-lilac;
-                padding: 1.5rem;
-                border-radius: 1.5rem;
-                background-color: $white;
+    &__item {
+        background: $soft-lilac;
+        padding: 1.5rem;
+        border-radius: 1.5rem;
+        background-color: $white;
+    }
 
-                .features__item-title {
-                    font-size: 2.5rem;
-                    font-weight: 500;
-                    margin-bottom: 1.5rem;
-                    color: $dark-neutral;
-                    line-height: 48px;
+    &__item-title {
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+        color: $dark-neutral;
+        line-height: 48px;
+    }
 
-                    @media (max-width: 768px) {
-                        font-size: 2.25rem !important;
-                        line-height: 48px !important;
-                    }
-                }
+    &__item-desc {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: $dark-gray;
+    }
 
-                .features__item-desc {
-                    font-weight: normal;
-                    font-size: 16px;
-                    line-height: 24px;
-                    color: $dark-gray;
-                }
+    &__item-thumbnail {
+        margin-top: 2rem;
 
-                .features__item-thumbnail {
-                    margin-top: 2rem;
-
-                    img {
-                        width: 100%;
-                        border-radius: 1rem;
-                    }
-                }
-            }
-
-            @media (min-width: 768px) {
-                grid-template-columns: repeat(2, 1fr);
-            }
+        img {
+            width: 100%;
+            border-radius: 1rem;
         }
     }
+
+    
+    @media (max-width: 768px) {
+        &__item-title {
+            font-size: 2.25rem !important;
+            line-height: 48px !important;
+        }
+    }
+
+    @media (min-width: 768px) {
+        &__area{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
 }
 
 // feature details

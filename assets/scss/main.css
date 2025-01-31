@@ -84,7 +84,7 @@ a {
   font-weight: 800;
   font-style: normal;
 }
-.btn, #ub-auth .auth__form-panel .auth__tab, .btn-primary, #ub-blog .blog__btn-wrapper .blog__btn, #ub-hero-section-home .hero__container .hero__content-area .hero__content .hero__button-group .hero__button--primary {
+.btn, #ub-auth .auth__form-panel .auth__tab, .btn-primary, .ub-blog__btn, .ub-hero-home__button--primary {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -95,14 +95,14 @@ a {
   border-radius: 50px;
   cursor: pointer;
 }
-.btn:hover, #ub-auth .auth__form-panel .auth__tab:hover, .btn-primary:hover, #ub-blog .blog__btn-wrapper .blog__btn:hover, #ub-hero-section-home .hero__container .hero__content-area .hero__content .hero__button-group .hero__button--primary:hover {
+.btn:hover, #ub-auth .auth__form-panel .auth__tab:hover, .btn-primary:hover, .ub-blog__btn:hover, .ub-hero-home__button--primary:hover {
   color: #7F56D9;
   background-color: transparent;
   border: 1px solid #7F56D9;
   transition: 0.5s ease;
 }
 
-.btn-secondary, #ub-auth .auth__form-panel .auth__form .auth__link, #ub-hero-section-home .hero__container .hero__content-area .hero__content .hero__button-group .hero__button--secondary {
+.btn-secondary, #ub-auth .auth__form-panel .auth__form .auth__link, .ub-hero-home__button--secondary {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -113,14 +113,14 @@ a {
   border-radius: 50px;
   cursor: pointer;
 }
-.btn-secondary:hover, #ub-auth .auth__form-panel .auth__form .auth__link:hover, #ub-hero-section-home .hero__container .hero__content-area .hero__content .hero__button-group .hero__button--secondary:hover {
+.btn-secondary:hover, #ub-auth .auth__form-panel .auth__form .auth__link:hover, .ub-hero-home__button--secondary:hover {
   color: #F5FAF7;
   background-color: #7F56D9;
   border: 1px solid #7F56D9;
   transition: 0.5s ease;
 }
 
-.button-group, #ub-careers-hero__btn-wrapper, .careers-hero__btn-wrapper, #ub-feature-hero .feature-hero__content .feature-hero__button-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content .hero__button-group {
+.button-group, #ub-careers-hero__btn-wrapper, .careers-hero__btn-wrapper, #ub-feature-hero .feature-hero__content .feature-hero__button-group, .ub-hero-home__button-group {
   display: flex;
   gap: 1rem;
   justify-content: center;
@@ -128,7 +128,7 @@ a {
   margin-bottom: 2rem;
 }
 
-.section-title, #ub-careers-hero__title, .careers-hero__title, #ub-contact .contact__title, #ub-license .license__container .license__header .license__title, .about-hero__title, .team-details__title, #ub-team .team__container .team__title, #ub-integrations .integrations__header .integrations__title, #ub-hero-integrations .hero-integrations__title, #ub-testimonial .testimonial__title, .pricing-hero__title, #ub-pricing .pricing__header .pricing__title, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__title, #ub-latest-posts .latest-posts__header .latest-posts__section-title, #ub-blog-details .blog-details__container .blog-details__header .blog-details__title, #ub-blog .blog__header .blog__title, #ub-cta .cta__area .cta__title, #ub-faq .faq__heading .faq__title, #ub-feature-details .feature-details__container .feature-details__header .feature-details__title, #ub-features .features_container .features__title, #ub-feature-hero .feature-hero__content .feature-hero__title {
+.section-title, #ub-careers-hero__title, .careers-hero__title, #ub-contact .contact__title, #ub-license .license__container .license__header .license__title, .about-hero__title, .team-details__title, #ub-team .team__container .team__title, .ub-integrations__title, #ub-hero-integrations .hero-integrations__title, .ub-testimonial__title, .pricing-hero__title, .ub-pricing__title, .ub-how-it-works__title, #ub-latest-posts .latest-posts__header .latest-posts__section-title, #ub-blog-details .blog-details__container .blog-details__header .blog-details__title, .ub-blog__title, .ub-cta__title, .ub-faq__title, #ub-feature-details .feature-details__container .feature-details__header .feature-details__title, .ub-features__title, #ub-feature-hero .feature-hero__content .feature-hero__title {
   font-size: 3rem;
   font-weight: 500;
   line-height: 57px;
@@ -140,13 +140,13 @@ a {
   margin: 1.5rem auto;
 }
 @media (max-width: 768px) {
-  .section-title, #ub-careers-hero__title, .careers-hero__title, #ub-contact .contact__title, #ub-license .license__container .license__header .license__title, .about-hero__title, .team-details__title, #ub-team .team__container .team__title, #ub-integrations .integrations__header .integrations__title, #ub-hero-integrations .hero-integrations__title, #ub-testimonial .testimonial__title, .pricing-hero__title, #ub-pricing .pricing__header .pricing__title, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__title, #ub-latest-posts .latest-posts__header .latest-posts__section-title, #ub-blog-details .blog-details__container .blog-details__header .blog-details__title, #ub-blog .blog__header .blog__title, #ub-cta .cta__area .cta__title, #ub-faq .faq__heading .faq__title, #ub-feature-details .feature-details__container .feature-details__header .feature-details__title, #ub-features .features_container .features__title, #ub-feature-hero .feature-hero__content .feature-hero__title {
+  .section-title, #ub-careers-hero__title, .careers-hero__title, #ub-contact .contact__title, #ub-license .license__container .license__header .license__title, .about-hero__title, .team-details__title, #ub-team .team__container .team__title, .ub-integrations__title, #ub-hero-integrations .hero-integrations__title, .ub-testimonial__title, .pricing-hero__title, .ub-pricing__title, .ub-how-it-works__title, #ub-latest-posts .latest-posts__header .latest-posts__section-title, #ub-blog-details .blog-details__container .blog-details__header .blog-details__title, .ub-blog__title, .ub-cta__title, .ub-faq__title, #ub-feature-details .feature-details__container .feature-details__header .feature-details__title, .ub-features__title, #ub-feature-hero .feature-hero__content .feature-hero__title {
     font-size: 2.8rem !important;
     line-height: 48px !important;
   }
 }
 
-.section-desc, #ub-careers-hero__desc, .careers-hero__desc, #ub-terms .terms__desc, #ub-privacy-policy .privacy-policy__desc, #ub-license .license__container .license__header .license__desc, .about-hero__desc, .team-details__desc, #ub-integrations .integrations__header .integrations__desc, #ub-hero-integrations .hero-integrations__desc, #ub-testimonial .testimonial__desc, .pricing-hero__desc, #ub-pricing .pricing__header .pricing__desc, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__desc, #ub-blog-details .blog-details__container .blog-details__header .blog-details__desc, #ub-blog .blog__header .blog__desc, #ub-feature-details .feature-details__container .feature-details__header .feature-details__desc, #ub-features .features_container .features__desc, #ub-feature-hero .feature-hero__content .feature-hero__desc, .hero__description {
+.section-desc, #ub-careers-hero__desc, .careers-hero__desc, #ub-terms .terms__desc, #ub-privacy-policy .privacy-policy__desc, #ub-license .license__container .license__header .license__desc, .about-hero__desc, .team-details__desc, .ub-integrations__desc, #ub-hero-integrations .hero-integrations__desc, .ub-testimonial__desc, .pricing-hero__desc, .ub-pricing__desc, .ub-how-it-works__desc, #ub-blog-details .blog-details__container .blog-details__header .blog-details__desc, .ub-blog__description, #ub-feature-details .feature-details__container .feature-details__header .feature-details__desc, .ub-features__desc, #ub-feature-hero .feature-hero__content .feature-hero__desc, .hero__desc, .ub-hero-home__desc {
   margin-top: 1rem;
   font-size: 18px;
   line-height: 27px;
@@ -157,7 +157,7 @@ a {
   margin: 0 auto;
 }
 
-.hero__title, #ub-terms .terms__title, #ub-privacy-policy .privacy-policy__title, #ub-pricing-details .pricing-details__title {
+.hero__title, #ub-terms .terms__title, #ub-privacy-policy .privacy-policy__title, #ub-pricing-details .pricing-details__title, .ub-hero-home__title {
   font-size: 3.5rem;
   font-weight: 500;
   line-height: 72px;
@@ -169,19 +169,19 @@ a {
   margin: 0 auto;
 }
 @media (max-width: 768px) {
-  .hero__title, #ub-terms .terms__title, #ub-privacy-policy .privacy-policy__title, #ub-pricing-details .pricing-details__title {
+  .hero__title, #ub-terms .terms__title, #ub-privacy-policy .privacy-policy__title, #ub-pricing-details .pricing-details__title, .ub-hero-home__title {
     font-size: 3rem !important;
     line-height: 60px !important;
   }
 }
 
-.hero__subtitle-area, #ub-careers-hero__subtitle-area, .careers-hero__subtitle-area, .about-hero__subtitle-area, #ub-integrations .integrations__header .integrations__subtitle-area, #ub-hero-integrations .hero-integrations__subtitle-area, #ub-testimonial .testimonial__subtitle-area, .pricing-hero__subtitle-area, #ub-pricing .pricing__header .pricing__subtitle-area, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area, #ub-blog .blog__header .blog__subtitle-area, #ub-faq .faq__heading .faq__subtitle-area, #ub-feature-details .feature-details__container .feature-details__header .feature-details__subtitle-area, #ub-features .features_container .features__subtitle-area, #ub-feature-hero .feature-hero__content .feature-hero__subtitle-area, .hero__subtitle-group, #ub-careers-hero__subtitle-group, .careers-hero__subtitle-group, .about-hero__subtitle-group, #ub-integrations .integrations__header .integrations__subtitle-area .integrations__subtitle-group, #ub-hero-integrations .hero-integrations__subtitle-group, #ub-testimonial .testimonial__subtitle-group, .pricing-hero__subtitle-group, #ub-pricing .pricing__header .pricing__subtitle-area .pricing__subtitle-group, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area .how-it-works__subtitle-group, #ub-blog .blog__header .blog__subtitle-area .blog__subtitle-group, #ub-faq .faq__heading .faq__subtitle-group, #ub-feature-details .feature-details__container .feature-details__header .feature-details__subtitle-group, #ub-features .features_container .features__subtitle-group, #ub-feature-hero .feature-hero__content .feature-hero__subtitle-group {
+.hero__subtitle-area, #ub-careers-hero__subtitle-area, .careers-hero__subtitle-area, .about-hero__subtitle-area, .ub-integrations__subtitle-area, #ub-hero-integrations .hero-integrations__subtitle-area, .ub-testimonial__subtitle-area, .pricing-hero__subtitle-area, .ub-pricing__subtitle-area, .ub-how-it-works__subtitle-area, .ub-blog__subtitle-area, .ub-faq__subtitle-area, #ub-feature-details .feature-details__container .feature-details__header .feature-details__subtitle-area, .ub-features__subtitle-area, #ub-feature-hero .feature-hero__content .feature-hero__subtitle-area, .ub-hero-home__subtitle-area, .hero__subtitle-group, #ub-careers-hero__subtitle-group, .careers-hero__subtitle-group, .about-hero__subtitle-group, .ub-integrations__subtitle-group, #ub-hero-integrations .hero-integrations__subtitle-group, .ub-testimonial__subtitle-group, .pricing-hero__subtitle-group, .ub-pricing__subtitle-group, .ub-how-it-works__subtitle-group, .ub-blog__subtitle-group, .ub-faq__subtitle-group, #ub-feature-details .feature-details__container .feature-details__header .feature-details__subtitle-group, .ub-features__subtitle-group, #ub-feature-hero .feature-hero__content .feature-hero__subtitle-group, .ub-hero-home__subtitle-group {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.hero__subtitle-group, #ub-careers-hero__subtitle-group, .careers-hero__subtitle-group, .about-hero__subtitle-group, #ub-integrations .integrations__header .integrations__subtitle-area .integrations__subtitle-group, #ub-hero-integrations .hero-integrations__subtitle-group, #ub-testimonial .testimonial__subtitle-group, .pricing-hero__subtitle-group, #ub-pricing .pricing__header .pricing__subtitle-area .pricing__subtitle-group, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area .how-it-works__subtitle-group, #ub-blog .blog__header .blog__subtitle-area .blog__subtitle-group, #ub-faq .faq__heading .faq__subtitle-group, #ub-feature-details .feature-details__container .feature-details__header .feature-details__subtitle-group, #ub-features .features_container .features__subtitle-group, #ub-feature-hero .feature-hero__content .feature-hero__subtitle-group {
+.hero__subtitle-group, #ub-careers-hero__subtitle-group, .careers-hero__subtitle-group, .about-hero__subtitle-group, .ub-integrations__subtitle-group, #ub-hero-integrations .hero-integrations__subtitle-group, .ub-testimonial__subtitle-group, .pricing-hero__subtitle-group, .ub-pricing__subtitle-group, .ub-how-it-works__subtitle-group, .ub-blog__subtitle-group, .ub-faq__subtitle-group, #ub-feature-details .feature-details__container .feature-details__header .feature-details__subtitle-group, .ub-features__subtitle-group, #ub-feature-hero .feature-hero__content .feature-hero__subtitle-group, .ub-hero-home__subtitle-group {
   background: #F4EBFF;
   border: 1px solid #E9EAEB;
   padding: 4px 16px;
@@ -189,7 +189,7 @@ a {
   gap: 5px;
 }
 
-.hero__subtitle, #ub-careers-hero__subtitle, .careers-hero__subtitle, .about-hero__subtitle, #ub-integrations .integrations__header .integrations__subtitle-area .integrations__subtitle-group .integrations__subtitle, #ub-hero-integrations .hero-integrations__subtitle, #ub-testimonial .testimonial__subtitle, .pricing-hero__pricing-hero__subtitle, #ub-pricing .pricing__header .pricing__subtitle-area .pricing__subtitle-group .pricing__subtitle, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area .how-it-works__subtitle, #ub-blog .blog__header .blog__subtitle-area .blog__subtitle-group .blog__subtitle, #ub-faq .faq__heading .faq__subtitle, #ub-feature-details .feature-details__container .feature-details__header .feature-details__subtitle, #ub-features .features_container .features__subtitle {
+.hero__subtitle, #ub-careers-hero__subtitle, .careers-hero__subtitle, .about-hero__subtitle, .ub-integrations__subtitle, #ub-hero-integrations .hero-integrations__subtitle, .ub-testimonial__subtitle, .pricing-hero__pricing-hero__subtitle, .ub-pricing__subtitle, .ub-how-it-works__subtitle, .ub-blog__subtitle, .ub-faq__subtitle, #ub-feature-details .feature-details__container .feature-details__header .feature-details__subtitle, .ub-features__subtitle, .ub-hero-home__subtitle {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -220,12 +220,12 @@ body {
   line-height: 1;
 }
 
-.pricing__switcher {
+.ub-pricing__switcher {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.pricing__switcher .pricing__switcher-wrapper {
+.ub-pricing__switcher .ub-pricing__switcher-wrapper {
   background-color: #F4EBFF;
   padding: 0.5rem;
   display: inline-flex;
@@ -234,7 +234,7 @@ body {
   gap: 1rem;
   border-radius: 9999px;
 }
-.pricing__switcher .pricing__switcher-wrapper .pricing__switcher-btn {
+.ub-pricing__switcher .ub-pricing__switcher-wrapper .ub-pricing__switcher-btn {
   border: none;
   background: none;
   color: #404040;
@@ -246,18 +246,18 @@ body {
   border-radius: 50px;
   cursor: pointer;
 }
-.pricing__switcher .pricing__switcher-wrapper .pricing__switcher-btn.pricing__switcher-btn--active {
+.ub-pricing__switcher .ub-pricing__switcher-wrapper .ub-pricing__switcher-btn.ub-pricing__switcher-btn--active {
   background-color: #7F56D9;
   color: #FCFAFF;
   font-weight: 500;
 }
-.pricing__switcher .pricing__switcher-wrapper .pricing__switcher-btn:hover {
+.ub-pricing__switcher .ub-pricing__switcher-wrapper .ub-pricing__switcher-btn:hover {
   background-color: #7F56D9;
   color: #FCFAFF;
   font-weight: 500;
 }
 @media (max-width: 310px) {
-  .pricing__switcher .pricing__switcher-wrapper .pricing__switcher-btn {
+  .ub-pricing__switcher .ub-pricing__switcher-wrapper .ub-pricing__switcher-btn {
     padding: 4px 12px;
   }
 }
@@ -386,12 +386,12 @@ body {
   line-height: 1;
 }
 
-.pricing__switcher {
+.ub-pricing__switcher {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.pricing__switcher .pricing__switcher-wrapper {
+.ub-pricing__switcher .ub-pricing__switcher-wrapper {
   background-color: #F4EBFF;
   padding: 0.5rem;
   display: inline-flex;
@@ -400,7 +400,7 @@ body {
   gap: 1rem;
   border-radius: 9999px;
 }
-.pricing__switcher .pricing__switcher-wrapper .pricing__switcher-btn {
+.ub-pricing__switcher .ub-pricing__switcher-wrapper .ub-pricing__switcher-btn {
   border: none;
   background: none;
   color: #404040;
@@ -412,18 +412,18 @@ body {
   border-radius: 50px;
   cursor: pointer;
 }
-.pricing__switcher .pricing__switcher-wrapper .pricing__switcher-btn.pricing__switcher-btn--active {
+.ub-pricing__switcher .ub-pricing__switcher-wrapper .ub-pricing__switcher-btn.ub-pricing__switcher-btn--active {
   background-color: #7F56D9;
   color: #FCFAFF;
   font-weight: 500;
 }
-.pricing__switcher .pricing__switcher-wrapper .pricing__switcher-btn:hover {
+.ub-pricing__switcher .ub-pricing__switcher-wrapper .ub-pricing__switcher-btn:hover {
   background-color: #7F56D9;
   color: #FCFAFF;
   font-weight: 500;
 }
 @media (max-width: 310px) {
-  .pricing__switcher .pricing__switcher-wrapper .pricing__switcher-btn {
+  .ub-pricing__switcher .ub-pricing__switcher-wrapper .ub-pricing__switcher-btn {
     padding: 4px 12px;
   }
 }
@@ -759,83 +759,108 @@ body.menu-open::before {
   }
 }
 
-#ub-hero-section-home .hero__container {
+.ub-hero-home__container {
   padding-top: 0;
   padding-bottom: 0;
 }
-#ub-hero-section-home .hero__container .hero__content-area {
+.ub-hero-home__content-area {
   border-radius: 1.5rem;
 }
-#ub-hero-section-home .hero__container .hero__content-area .hero__content {
+.ub-hero-home__content {
   border-radius: 1.5rem;
   max-height: 800px;
   min-height: 600px;
   padding: 7rem 1.5rem;
 }
-#ub-hero-section-home .hero__container .hero__content-area .hero__content .hero__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-careers-hero__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content .careers-hero__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content .about-hero__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-integrations .integrations__header .integrations__subtitle-area .integrations__subtitle-group, #ub-integrations .integrations__header .integrations__subtitle-area #ub-hero-section-home .hero__container .hero__content-area .hero__content .integrations__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-hero-integrations .hero-integrations__subtitle-group, #ub-hero-integrations #ub-hero-section-home .hero__container .hero__content-area .hero__content .hero-integrations__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-testimonial .testimonial__subtitle-group, #ub-testimonial #ub-hero-section-home .hero__container .hero__content-area .hero__content .testimonial__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content .pricing-hero__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-pricing .pricing__header .pricing__subtitle-area .pricing__subtitle-group, #ub-pricing .pricing__header .pricing__subtitle-area #ub-hero-section-home .hero__container .hero__content-area .hero__content .pricing__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area .how-it-works__subtitle-group, #ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__subtitle-area #ub-hero-section-home .hero__container .hero__content-area .hero__content .how-it-works__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-blog .blog__header .blog__subtitle-area .blog__subtitle-group, #ub-blog .blog__header .blog__subtitle-area #ub-hero-section-home .hero__container .hero__content-area .hero__content .blog__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-faq .faq__heading .faq__subtitle-group, #ub-faq .faq__heading #ub-hero-section-home .hero__container .hero__content-area .hero__content .faq__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-feature-details .feature-details__container .feature-details__header .feature-details__subtitle-group, #ub-feature-details .feature-details__container .feature-details__header #ub-hero-section-home .hero__container .hero__content-area .hero__content .feature-details__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-features .features_container .features__subtitle-group, #ub-features .features_container #ub-hero-section-home .hero__container .hero__content-area .hero__content .features__subtitle-group, #ub-hero-section-home .hero__container .hero__content-area .hero__content #ub-feature-hero .feature-hero__content .feature-hero__subtitle-group, #ub-feature-hero .feature-hero__content #ub-hero-section-home .hero__container .hero__content-area .hero__content .feature-hero__subtitle-group {
+.ub-hero-home__subtitle-group {
   background-color: #FCFAFF;
   margin-bottom: 1rem;
 }
-#ub-hero-section-home .hero__container .hero__content-area .hero__content .hero__description {
+.ub-hero-home__desc {
   margin-top: 1.5rem;
 }
-#ub-hero-section-home .hero__container .hero__image-wrapper {
+.ub-hero-home__image-wrapper {
   padding: 0 1rem;
   margin-top: -10rem;
 }
-#ub-hero-section-home .hero__container .hero__image-wrapper .hero__img {
+.ub-hero-home__img {
   width: 100%;
 }
 @media (min-width: 550px) {
-  #ub-hero-section-home .hero__container .hero__image-wrapper {
+  .ub-hero-home__image-wrapper {
     margin-top: -16rem;
   }
 }
 @media (min-width: 500px) and (max-width: 550px) {
-  #ub-hero-section-home .hero__container .hero__image-wrapper {
+  .ub-hero-home__image-wrapper {
     margin-top: -14rem;
   }
 }
 
-#ub-brands .brands__container {
+.ub-brands__container {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
-#ub-brands .brands__heading {
+.ub-brands__header {
   margin-bottom: 2.5rem;
 }
-#ub-brands .brands__heading h2 {
+.ub-brands__title {
   text-align: center;
   font-weight: 500;
   font-size: 1.5rem;
 }
-#ub-brands .brands__grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+.ub-brands__slider-area {
+  position: relative;
 }
-@media (min-width: 768px) {
-  #ub-brands .brands__grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-  }
+.ub-brands__content {
+  overflow: hidden;
 }
-@media (min-width: 1024px) {
-  #ub-brands .brands__grid {
-    grid-template-columns: repeat(5, 1fr);
-    gap: 3.5rem;
-  }
-}
-#ub-brands .brands__logo {
+.ub-brands .ub-brands__logo {
+  width: 12.5rem;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-#ub-brands .brands__logo img {
+.ub-brands .ub-brands__logo img {
   width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.ub-brands .swiper-wrapper {
+  display: flex;
+  align-items: center;
+  transition-timing-function: linear !important;
+}
+.ub-brands__slider-area::after, .ub-brands__slider-area::before {
+  position: absolute;
+  content: " ";
+  bottom: 0;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background: #FCFAFF;
+  filter: blur(56.8px);
+  z-index: 99;
+}
+.ub-brands__slider-area::after {
+  left: -170px;
+}
+@media (max-width: 768px) {
+  .ub-brands__slider-area::after {
+    width: 140px;
+    height: 140px;
+    left: -100px;
+  }
+}
+.ub-brands__slider-area::before {
+  right: -170px;
+}
+@media (max-width: 768px) {
+  .ub-brands__slider-area::before {
+    width: 140px;
+    height: 140px;
+    right: -100px;
+  }
 }
 
 #ub-feature-hero .feature-hero__container {
@@ -898,57 +923,57 @@ body.menu-open::before {
   }
 }
 
-#ub-features .features_container {
+.ub-features_container {
   padding-top: 7rem;
   padding-bottom: 7rem;
 }
-#ub-features .features_container .features__title {
+.ub-features__title {
   font-size: 2.8rem;
   max-width: 640px;
 }
-#ub-features .features_container .features__desc {
+.ub-features__desc {
   max-width: 520px;
 }
-#ub-features .features_container .features__area {
+.ub-features__area {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
   margin-top: 5rem;
 }
-#ub-features .features_container .features__area .features__item {
+.ub-features__item {
   background: #FCFAFF;
   padding: 1.5rem;
   border-radius: 1.5rem;
   background-color: #fff;
 }
-#ub-features .features_container .features__area .features__item .features__item-title {
+.ub-features__item-title {
   font-size: 2.5rem;
   font-weight: 500;
   margin-bottom: 1.5rem;
   color: #171717;
   line-height: 48px;
 }
-@media (max-width: 768px) {
-  #ub-features .features_container .features__area .features__item .features__item-title {
-    font-size: 2.25rem !important;
-    line-height: 48px !important;
-  }
-}
-#ub-features .features_container .features__area .features__item .features__item-desc {
+.ub-features__item-desc {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   color: #404040;
 }
-#ub-features .features_container .features__area .features__item .features__item-thumbnail {
+.ub-features__item-thumbnail {
   margin-top: 2rem;
 }
-#ub-features .features_container .features__area .features__item .features__item-thumbnail img {
+.ub-features__item-thumbnail img {
   width: 100%;
   border-radius: 1rem;
 }
+@media (max-width: 768px) {
+  .ub-features__item-title {
+    font-size: 2.25rem !important;
+    line-height: 48px !important;
+  }
+}
 @media (min-width: 768px) {
-  #ub-features .features_container .features__area {
+  .ub-features__area {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -1000,56 +1025,45 @@ body.menu-open::before {
   }
 }
 
-#ub-faq {
+.ub-faq {
   overflow-x: hidden;
 }
-#ub-faq .faq__container {
+.ub-faq__container {
   padding-top: 7rem;
   padding-bottom: 7rem;
 }
-#ub-faq .faq__grid {
+.ub-faq__grid {
   display: grid;
   gap: 5rem;
   grid-template-columns: repeat(1, 1fr);
 }
-@media (min-width: 1024px) {
-  #ub-faq .faq__grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-#ub-faq .faq__heading {
+.ub-faq__heading {
   grid-column: span 1;
 }
-#ub-faq .faq__heading .faq__subtitle-area {
+.ub-faq__subtitle-area {
   justify-content: flex-start;
 }
-#ub-faq .faq__heading .faq__title {
+.ub-faq__title {
   text-align: left;
 }
-#ub-faq .faq__list {
+.ub-faq__list {
   grid-column: span 2;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding-left: 0;
 }
-@media (min-width: 1024px) {
-  #ub-faq .faq__list {
-    grid-template-columns: repeat(3, 1fr);
-    padding-left: 4rem;
-  }
-}
-#ub-faq .faq__item {
+.ub-faq__item {
   background-color: #FCFAFF;
   border: 1px solid #E9D7FE;
   border-radius: 0.5rem;
   padding: 1.5rem;
   transition: 0.3s ease-in-out;
 }
-#ub-faq .faq__item.active {
+.ub-faq__item.active {
   background-color: #F9F5FF;
 }
-#ub-faq .faq__item .faq__question {
+.ub-faq__question {
   width: 100%;
   border: none;
   background: transparent;
@@ -1061,7 +1075,7 @@ body.menu-open::before {
   padding: 0;
   padding-right: 25px;
 }
-#ub-faq .faq__item .faq__question::after {
+.ub-faq__question::after {
   content: "\f067";
   font-family: "Font Awesome 6 Free";
   color: #7F56D9;
@@ -1072,46 +1086,55 @@ body.menu-open::before {
   transform: translateY(-50%) rotate(0deg);
   transition: transform 0.3s ease-in-out;
 }
-#ub-faq .faq__item .faq__question.active::after {
+.ub-faq__question.active::after {
   content: "\f068";
   transform: translateY(-50%) rotate(180deg);
 }
-#ub-faq .faq__item .faq__question .faq__question-text {
+.ub-faq__question-text {
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 1.75;
   color: #171717;
 }
-#ub-faq .faq__item .faq__answer {
+.ub-faq__answer {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
   font-size: 1rem;
   transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
-#ub-faq .faq__item .faq__answer.active {
+.ub-faq__answer.active {
   max-height: 200px;
   opacity: 1;
 }
-#ub-faq .faq__item .faq__answer p {
+.ub-faq__answer p {
   margin-top: 1rem;
   font-size: 1.125rem;
   font-weight: normal;
   line-height: 1.5;
   color: #737373;
 }
+@media (min-width: 1024px) {
+  .ub-faq__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .ub-faq__list {
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 4rem;
+  }
+}
 @media (max-width: 768px) {
-  #ub-faq .faq__item {
+  .ub-faq__item {
     padding: 1rem;
   }
 }
 @media (max-width: 640px) {
-  #ub-faq .faq__item {
+  .ub-faq__item {
     padding: 1rem;
   }
 }
 
-#ub-cta .cta__area {
+.ub-cta__area {
   margin: 0 auto;
   padding: 6rem 1.5rem;
   background-color: #2C1C5F;
@@ -1123,12 +1146,12 @@ body.menu-open::before {
   position: relative;
   overflow: hidden;
 }
-#ub-cta .cta__area .cta__title {
+.ub-cta__title {
   color: #fff;
   z-index: 2;
   max-width: 640px;
 }
-#ub-cta .cta__area .cta__desc {
+.ub-cta__desc {
   color: #fff;
   z-index: 2;
   max-width: 620px;
@@ -1137,11 +1160,11 @@ body.menu-open::before {
   line-height: 1.5;
   max-width: 470px;
 }
-#ub-cta .cta__area .cta__btn-group {
+.ub-cta__btn-group {
   margin: 2rem auto 0;
   z-index: 2;
 }
-#ub-cta .cta__area .cta__btn-group .cta__btn {
+.ub-cta__btn {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -1153,14 +1176,13 @@ body.menu-open::before {
   cursor: pointer;
   display: inline-block;
 }
-#ub-cta .cta__area .cta__btn-group .cta__btn:hover {
+.ub-cta__btn:hover {
   color: #fff;
   background-color: #7F56D9;
   border: 1px solid #7F56D9;
   transition: 0.5s ease;
 }
-#ub-cta .cta__area .cta__background-right,
-#ub-cta .cta__area .cta__background-left {
+.ub-cta__background-right, .ub-cta__background-left {
   position: absolute;
   bottom: 40px;
   width: 307px;
@@ -1170,70 +1192,69 @@ body.menu-open::before {
   z-index: 1;
 }
 @media screen and (max-width: 1024px) {
-  #ub-cta .cta__area .cta__background-right,
-  #ub-cta .cta__area .cta__background-left {
+  .ub-cta__background-right, .ub-cta__background-left {
     display: none;
   }
 }
-#ub-cta .cta__area .cta__background-right {
+.ub-cta__background-right {
   right: 40px;
   background-image: url("../../assets/img/shape/bg-shape-right.png");
 }
-#ub-cta .cta__area .cta__background-left {
+.ub-cta__background-left {
   left: 40px;
   background-image: url("../../assets/img/shape/bg-shape-left.png");
 }
 
-#ub-blog .blog__header .blog__title {
+.ub-blog__title {
   max-width: 640px;
 }
-#ub-blog .blog__header .blog__desc {
+.ub-blog__description {
   max-width: 480px;
 }
-#ub-blog .blog__cards {
+.ub-blog__cards {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
   margin-top: 5rem;
 }
-#ub-blog .blog__cards .blog-card {
+.ub-blog__card {
   padding: 24px 16px;
   border-radius: 16px;
   border: 1px solid #EDEDED;
 }
-#ub-blog .blog__cards .blog-card .blog-card__image-wrapper {
+.ub-blog__card-image-wrapper {
   border-radius: 16px;
 }
-#ub-blog .blog__cards .blog-card .blog-card__image-wrapper img {
+.ub-blog__card-image-wrapper img {
   width: 100%;
   height: auto;
 }
-#ub-blog .blog__cards .blog-card .blog-card__content {
+.ub-blog__card-content {
   padding: 20px 0px;
 }
-#ub-blog .blog__cards .blog-card .blog-card__content .blog-card__title {
+.ub-blog__card-title {
   font-size: 20px;
   font-weight: 500;
   line-height: 28px;
   color: #181D27;
 }
-#ub-blog .blog__cards .blog-card .blog-card__content .blog-card__text {
+.ub-blog__card-text {
   font-size: 16px;
   font-weight: normal;
   line-height: 24px;
   color: #414651;
   margin-top: 16px;
 }
-#ub-blog .blog__cards .blog-card .blog-card__content .blog-card__link-wrapper {
+.ub-blog__card-link-wrapper {
   display: inline-flex;
   align-items: center;
   margin-top: 24px;
 }
-#ub-blog .blog__cards .blog-card .blog-card__content .blog-card__link-wrapper:hover > .blog-card__link-icon {
+.ub-blog__card-link-wrapper:hover > .ub-blog__card-link-icon {
   transform: rotate(45deg);
   transition: transform 0.5s ease;
 }
-#ub-blog .blog__cards .blog-card .blog-card__content .blog-card__link-wrapper .blog-card__link {
+.ub-blog__card-link {
   color: #9E77ED;
   font-size: 16px;
   font-weight: normal;
@@ -1243,22 +1264,22 @@ body.menu-open::before {
   align-items: center;
   transition: all 0.3s ease;
 }
-#ub-blog .blog__cards .blog-card .blog-card__content .blog-card__link-wrapper .blog-card__link-icon {
+.ub-blog__card-link-icon {
   width: 25px;
   margin-left: 5px;
 }
-#ub-blog .blog__btn-wrapper {
+.ub-blog__btn-wrapper {
   display: flex;
   justify-content: center;
   margin-top: 44px;
 }
 @media (min-width: 768px) {
-  #ub-blog .blog__cards {
+  .ub-blog__cards {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 1024px) {
-  #ub-blog .blog__cards {
+  .ub-blog__cards {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -1442,24 +1463,24 @@ body.menu-open::before {
   line-height: 1.4;
 }
 
-#ub-how-it-works .how-it-works__content-area {
+.ub-how-it-works__content-area {
   background-color: #F9F5FF;
   padding: 4rem 2rem;
   border-radius: 2rem;
 }
-#ub-how-it-works .how-it-works__content-area .how-it-works__header {
+.ub-how-it-works__header {
   margin-bottom: 30px;
 }
-#ub-how-it-works .how-it-works__content-area .how-it-works__header .how-it-works__desc {
+.ub-how-it-works__desc {
   max-width: 555px;
 }
-#ub-how-it-works .how-it-works__content-area .how-it-works__content {
+.ub-how-it-works__content {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
   margin-top: 5rem;
 }
-#ub-how-it-works .how-it-works__content-area .how-it-works__content .how-it-works__step {
+.ub-how-it-works__step {
   padding: 2.5rem 1rem;
   display: flex;
   flex-direction: column;
@@ -1469,7 +1490,7 @@ body.menu-open::before {
   border-radius: 16px;
   box-shadow: 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
 }
-#ub-how-it-works .how-it-works__content-area .how-it-works__content .how-it-works__step .how-it-works__step-icon {
+.ub-how-it-works__step-icon {
   background-color: #F4EBFF;
   padding: 14px;
   border-radius: 50%;
@@ -1479,7 +1500,7 @@ body.menu-open::before {
   align-items: center;
   justify-content: center;
 }
-#ub-how-it-works .how-it-works__content-area .how-it-works__content .how-it-works__step .how-it-works__step-title {
+.ub-how-it-works__step-title {
   font-size: 20px;
   font-weight: 500;
   line-height: 28px;
@@ -1487,7 +1508,7 @@ body.menu-open::before {
   text-align: center;
   margin-top: 20px;
 }
-#ub-how-it-works .how-it-works__content-area .how-it-works__content .how-it-works__step .how-it-works__step-description {
+.ub-how-it-works__step-description {
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
@@ -1496,94 +1517,97 @@ body.menu-open::before {
   text-align: center;
 }
 @media (min-width: 768px) {
-  #ub-how-it-works .how-it-works__content-area .how-it-works__content {
+  .ub-how-it-works__content {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 1024px) {
-  #ub-how-it-works .how-it-works__content-area .how-it-works__content {
+  .ub-how-it-works__content {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (min-width: 1265px) {
-  #ub-how-it-works .how-it-works__content-area .how-it-works__content {
+  .ub-how-it-works__content {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-#ub-pricing.pricing--padded {
+.ub-pricing.ub-pricing--padded {
   padding: 0 1rem;
 }
-#ub-pricing .pricing__header {
+.ub-pricing.hero__subtitle-group, .ub-pricing#ub-careers-hero__subtitle-group, .ub-pricing.careers-hero__subtitle-group, .ub-pricing.about-hero__subtitle-group, .ub-pricing.ub-integrations__subtitle-group, #ub-hero-integrations .ub-pricing.hero-integrations__subtitle-group, .ub-pricing.ub-testimonial__subtitle-group, .ub-pricing.pricing-hero__subtitle-group, .ub-pricing.ub-pricing__subtitle-group, .ub-pricing.ub-hero-home__subtitle-group, #ub-feature-hero .feature-hero__content .ub-pricing.feature-hero__subtitle-group, .ub-pricing.ub-features__subtitle-group, #ub-feature-details .feature-details__container .feature-details__header .ub-pricing.feature-details__subtitle-group, .ub-pricing.ub-faq__subtitle-group, .ub-pricing.ub-blog__subtitle-group, .ub-pricing.ub-how-it-works__subtitle-group {
+  padding: 0 1rem;
+}
+.ub-pricing__header {
   margin-bottom: 3rem;
 }
-#ub-pricing .pricing__cards {
+.ub-pricing__cards {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
   margin-top: 4rem;
 }
-#ub-pricing .pricing__cards .pricing__card {
+.ub-pricing__card {
   background-color: #F9F5FF;
   border: 1px solid rgba(64, 64, 64, 0.12);
   padding: 2.5rem;
   border-radius: 1rem;
 }
-#ub-pricing .pricing__cards .pricing__card:hover {
+.ub-pricing__card:hover {
   background-color: #2C1C5F;
   transition: 0.5s ease;
 }
-#ub-pricing .pricing__cards .pricing__card:hover .pricing__price {
+.ub-pricing__card:hover .ub-pricing__price {
   color: #EDEDED !important;
 }
-#ub-pricing .pricing__cards .pricing__card:hover .pricing__plan-title,
-#ub-pricing .pricing__cards .pricing__card:hover .pricing__plan-description,
-#ub-pricing .pricing__cards .pricing__card:hover .pricing__features-list li,
-#ub-pricing .pricing__cards .pricing__card:hover .fa-check {
+.ub-pricing__card:hover .ub-pricing__plan-title,
+.ub-pricing__card:hover .ub-pricing__plan-description,
+.ub-pricing__card:hover .ub-pricing__features-list li,
+.ub-pricing__card:hover .fa-check {
   color: #fff !important;
 }
-#ub-pricing .pricing__cards .pricing__card:hover .pricing__button {
+.ub-pricing__card:hover .ub-pricing__button {
   background-color: #FCFAFF;
 }
-#ub-pricing .pricing__cards .pricing__card .pricing__plan-title {
+.ub-pricing__plan-title {
   font-weight: 500;
   font-size: 1rem;
   line-height: 24px;
   text-align: center;
 }
-#ub-pricing .pricing__cards .pricing__card .pricing__plan-description {
+.ub-pricing__plan-description {
   font-size: 1rem;
   text-align: center;
   margin-top: 1rem;
   color: #414651;
   line-height: 24px;
 }
-#ub-pricing .pricing__cards .pricing__card .pricing__price-wrapper {
+.ub-pricing__price-wrapper {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
-#ub-pricing .pricing__cards .pricing__card .pricing__price-wrapper .pricing__price {
+.ub-pricing__price {
   color: #171717;
   font-size: 2.25rem;
   font-weight: 500;
   text-align: center;
   display: block;
 }
-#ub-pricing .pricing__cards .pricing__card .pricing__features-list {
+.ub-pricing__features-list {
   margin-top: 2.5rem;
 }
-#ub-pricing .pricing__cards .pricing__card .pricing__features-list li {
+.ub-pricing__features-list li {
   margin-bottom: 0.75rem;
   text-align: center;
   color: #414651;
 }
-#ub-pricing .pricing__cards .pricing__card .pricing__features-list li i {
+.ub-pricing__features-list li i {
   width: 21px;
   height: 21px;
   color: #9E77ED;
   margin-right: 0.5rem;
 }
-#ub-pricing .pricing__cards .pricing__card .pricing__button {
+.ub-pricing__button {
   margin-top: 4rem;
   display: block;
   text-decoration: none;
@@ -1597,19 +1621,19 @@ body.menu-open::before {
   text-align: center;
   width: 100%;
 }
+.ub-pricing__cards--hidden {
+  display: none;
+}
 @media (min-width: 768px) {
-  #ub-pricing .pricing__cards {
+  .ub-pricing__cards {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 1024px) {
-  #ub-pricing .pricing__cards {
+  .ub-pricing__cards {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
-}
-#ub-pricing .pricing__cards--hidden {
-  display: none;
 }
 
 .pricing-hero__container {
@@ -1857,77 +1881,76 @@ body.menu-open::before {
   transition: 0.5s ease;
 }
 
-#ub-testimonial .testimonial__subtitle-group {
+.ub-testimonial__subtitle-group {
   display: inline-flex;
   margin: 0 auto;
 }
-#ub-testimonial .testimonial__content {
+.ub-testimonial__content {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
   margin-top: 3rem;
 }
-#ub-testimonial .testimonial__content .testimonial__item {
+.ub-testimonial__item {
   background-color: #fff;
   padding: 2rem;
   border-radius: 1rem;
   border: 1px solid #E9D7FE;
 }
-#ub-testimonial .testimonial__content .testimonial__item .testimonial__rating {
+.ub-testimonial__rating {
   display: flex;
   gap: 0.25rem;
   margin-bottom: 1.5rem;
 }
-#ub-testimonial .testimonial__content .testimonial__item .testimonial__rating i {
+.ub-testimonial__rating i {
   color: #9E77ED;
 }
-#ub-testimonial .testimonial__content .testimonial__item .testimonial__text {
+.ub-testimonial__text {
   color: #535862;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
 }
-#ub-testimonial .testimonial__content .testimonial__item .testimonial__profile {
+.ub-testimonial__profile {
   display: flex;
   gap: 1rem;
   align-items: flex-start;
   margin-top: 20px;
 }
-#ub-testimonial .testimonial__content .testimonial__item .testimonial__profile .testimonial__name,
-#ub-testimonial .testimonial__content .testimonial__item .testimonial__profile .testimonial__position {
+.ub-testimonial__name, .ub-testimonial__position {
   color: #404040;
 }
-#ub-testimonial .testimonial__content .testimonial__item .testimonial__profile .testimonial__avatar {
+.ub-testimonial__avatar {
   width: 56px;
   height: 56px;
   overflow: hidden;
   border-radius: 50%;
   flex-shrink: 0;
 }
-#ub-testimonial .testimonial__content .testimonial__item .testimonial__profile .testimonial__avatar img {
+.ub-testimonial__avatar img {
   width: 100%;
   height: 56px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#ub-testimonial .testimonial__content .testimonial__item .testimonial__profile .testimonial__info .testimonial__name {
+.ub-testimonial__name {
   font-size: 20px;
   font-weight: 500;
   line-height: 28px;
 }
-#ub-testimonial .testimonial__content .testimonial__item .testimonial__profile .testimonial__info .testimonial__position {
+.ub-testimonial__position {
   line-height: 24px;
   color: #4b5563;
   font-size: 16px;
   font-weight: normal;
 }
 @media (min-width: 768px) {
-  #ub-testimonial .testimonial__content {
+  .ub-testimonial__content {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 1024px) {
-  #ub-testimonial .testimonial__content {
+  .ub-testimonial__content {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -1942,54 +1965,6 @@ body.menu-open::before {
 #ub-hero-integrations .hero-integrations__desc {
   margin-top: 1.5rem;
   max-width: 550px;
-}
-
-#ub-integrations .integrations__container {
-  padding-top: 0;
-}
-#ub-integrations .integrations__container .integrations__card-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 1.5rem;
-}
-#ub-integrations .integrations__container .integrations__card-grid .integrations__card {
-  background-color: #9E77ED;
-  padding: 32px;
-  border-radius: 20px;
-}
-#ub-integrations .integrations__container .integrations__card-grid .integrations__card .integrations__icon-wrapper {
-  margin-bottom: 1rem;
-  color: #012C16;
-}
-#ub-integrations .integrations__container .integrations__card-grid .integrations__card .integrations__card-title {
-  font-weight: 500;
-  font-size: 2rem;
-  line-height: 48px;
-  color: #171717;
-  margin: 18px 0;
-}
-#ub-integrations .integrations__container .integrations__card-grid .integrations__card .integrations__card-desc {
-  color: #404040;
-  font-weight: normal;
-  font-size: 18;
-  line-height: 27px;
-  margin-top: -4px;
-}
-@media (max-width: 768px) {
-  #ub-integrations .integrations__container .integrations__card-grid .integrations__card {
-    padding: 24px;
-  }
-}
-@media (min-width: 640px) {
-  #ub-integrations .integrations__container .integrations__card-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 1024px) {
-  #ub-integrations .integrations__container .integrations__card-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-  }
 }
 
 #integrations-details .integration__header {
@@ -2109,35 +2084,32 @@ body.menu-open::before {
   }
 }
 
-#ub-integrations .integrations-logos {
+.ub-integrations__logos {
   max-width: 1024px;
   overflow: hidden;
   position: relative;
   margin: 0 auto;
   margin-top: 4rem;
 }
-#ub-integrations .integrations-logos .integrations-logos__slider-right {
+.ub-integrations__slider-right {
   margin-top: 2.5rem;
 }
-#ub-integrations .integrations-logos .swiper-wrapper {
-  width: 80px !important;
-  height: 80px !important;
+.ub-integrations .swiper-wrapper {
   transition-timing-function: linear !important;
 }
-#ub-integrations .integrations-logos .swiper-wrapper .integrations-logos__slider-item {
-  width: 80px;
-  height: 80px;
+.ub-integrations__slider-item {
+  width: 80px !important;
+  height: 80px !important;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#ub-integrations .integrations-logos .swiper-wrapper .integrations-logos__slider-item .integrations-logos__logo {
+.ub-integrations__logo {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-#ub-integrations .integrations-logos::after,
-#ub-integrations .integrations-logos::before {
+.ub-integrations__logos::after, .ub-integrations__logos::before {
   position: absolute;
   content: " ";
   bottom: 0;
@@ -2148,21 +2120,21 @@ body.menu-open::before {
   filter: blur(56.8px);
   z-index: 99;
 }
-#ub-integrations .integrations-logos::after {
+.ub-integrations__logos::after {
   left: -170px;
 }
 @media (max-width: 768px) {
-  #ub-integrations .integrations-logos::after {
+  .ub-integrations__logos::after {
     width: 140px;
     height: 140px;
     left: -100px;
   }
 }
-#ub-integrations .integrations-logos::before {
+.ub-integrations__logos::before {
   right: -170px;
 }
 @media (max-width: 768px) {
-  #ub-integrations .integrations-logos::before {
+  .ub-integrations__logos::before {
     width: 140px;
     height: 140px;
     right: -100px;
@@ -2229,57 +2201,57 @@ body.menu-open::before {
   }
 }
 
-#ub-features .features_container {
+.ub-features_container {
   padding-top: 7rem;
   padding-bottom: 7rem;
 }
-#ub-features .features_container .features__title {
+.ub-features__title {
   font-size: 2.8rem;
   max-width: 640px;
 }
-#ub-features .features_container .features__desc {
+.ub-features__desc {
   max-width: 520px;
 }
-#ub-features .features_container .features__area {
+.ub-features__area {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
   margin-top: 5rem;
 }
-#ub-features .features_container .features__area .features__item {
+.ub-features__item {
   background: #FCFAFF;
   padding: 1.5rem;
   border-radius: 1.5rem;
   background-color: #fff;
 }
-#ub-features .features_container .features__area .features__item .features__item-title {
+.ub-features__item-title {
   font-size: 2.5rem;
   font-weight: 500;
   margin-bottom: 1.5rem;
   color: #171717;
   line-height: 48px;
 }
-@media (max-width: 768px) {
-  #ub-features .features_container .features__area .features__item .features__item-title {
-    font-size: 2.25rem !important;
-    line-height: 48px !important;
-  }
-}
-#ub-features .features_container .features__area .features__item .features__item-desc {
+.ub-features__item-desc {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   color: #404040;
 }
-#ub-features .features_container .features__area .features__item .features__item-thumbnail {
+.ub-features__item-thumbnail {
   margin-top: 2rem;
 }
-#ub-features .features_container .features__area .features__item .features__item-thumbnail img {
+.ub-features__item-thumbnail img {
   width: 100%;
   border-radius: 1rem;
 }
+@media (max-width: 768px) {
+  .ub-features__item-title {
+    font-size: 2.25rem !important;
+    line-height: 48px !important;
+  }
+}
 @media (min-width: 768px) {
-  #ub-features .features_container .features__area {
+  .ub-features__area {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -3196,54 +3168,6 @@ body.menu-open::before {
   max-width: 550px;
 }
 
-#ub-integrations .integrations__container {
-  padding-top: 0;
-}
-#ub-integrations .integrations__container .integrations__card-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 1.5rem;
-}
-#ub-integrations .integrations__container .integrations__card-grid .integrations__card {
-  background-color: #9E77ED;
-  padding: 32px;
-  border-radius: 20px;
-}
-#ub-integrations .integrations__container .integrations__card-grid .integrations__card .integrations__icon-wrapper {
-  margin-bottom: 1rem;
-  color: #012C16;
-}
-#ub-integrations .integrations__container .integrations__card-grid .integrations__card .integrations__card-title {
-  font-weight: 500;
-  font-size: 2rem;
-  line-height: 48px;
-  color: #171717;
-  margin: 18px 0;
-}
-#ub-integrations .integrations__container .integrations__card-grid .integrations__card .integrations__card-desc {
-  color: #404040;
-  font-weight: normal;
-  font-size: 18;
-  line-height: 27px;
-  margin-top: -4px;
-}
-@media (max-width: 768px) {
-  #ub-integrations .integrations__container .integrations__card-grid .integrations__card {
-    padding: 24px;
-  }
-}
-@media (min-width: 640px) {
-  #ub-integrations .integrations__container .integrations__card-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 1024px) {
-  #ub-integrations .integrations__container .integrations__card-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-  }
-}
-
 #integrations-details .integration__header {
   background-color: #9E77ED;
   display: flex;
@@ -3361,35 +3285,32 @@ body.menu-open::before {
   }
 }
 
-#ub-integrations .integrations-logos {
+.ub-integrations__logos {
   max-width: 1024px;
   overflow: hidden;
   position: relative;
   margin: 0 auto;
   margin-top: 4rem;
 }
-#ub-integrations .integrations-logos .integrations-logos__slider-right {
+.ub-integrations__slider-right {
   margin-top: 2.5rem;
 }
-#ub-integrations .integrations-logos .swiper-wrapper {
-  width: 80px !important;
-  height: 80px !important;
+.ub-integrations .swiper-wrapper {
   transition-timing-function: linear !important;
 }
-#ub-integrations .integrations-logos .swiper-wrapper .integrations-logos__slider-item {
-  width: 80px;
-  height: 80px;
+.ub-integrations__slider-item {
+  width: 80px !important;
+  height: 80px !important;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#ub-integrations .integrations-logos .swiper-wrapper .integrations-logos__slider-item .integrations-logos__logo {
+.ub-integrations__logo {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-#ub-integrations .integrations-logos::after,
-#ub-integrations .integrations-logos::before {
+.ub-integrations__logos::after, .ub-integrations__logos::before {
   position: absolute;
   content: " ";
   bottom: 0;
@@ -3400,21 +3321,21 @@ body.menu-open::before {
   filter: blur(56.8px);
   z-index: 99;
 }
-#ub-integrations .integrations-logos::after {
+.ub-integrations__logos::after {
   left: -170px;
 }
 @media (max-width: 768px) {
-  #ub-integrations .integrations-logos::after {
+  .ub-integrations__logos::after {
     width: 140px;
     height: 140px;
     left: -100px;
   }
 }
-#ub-integrations .integrations-logos::before {
+.ub-integrations__logos::before {
   right: -170px;
 }
 @media (max-width: 768px) {
-  #ub-integrations .integrations-logos::before {
+  .ub-integrations__logos::before {
     width: 140px;
     height: 140px;
     right: -100px;

@@ -7,12 +7,12 @@ body {
 
 
 // pricing switcher
-.pricing__switcher {
+.ub-pricing__switcher {
     display: flex;  
     align-items: center;  
     justify-content: center; 
 
-    .pricing__switcher-wrapper{
+    .ub-pricing__switcher-wrapper{
         background-color: $purple-haze;
         padding: 0.5rem;  
         display: inline-flex;  
@@ -21,7 +21,7 @@ body {
         gap: 1rem;  
         border-radius: 9999px;    
 
-        .pricing__switcher-btn {
+        .ub-pricing__switcher-btn {
             border: none;
             background: none;
             color: $dark-gray;
@@ -33,7 +33,7 @@ body {
             border-radius: 50px;
             cursor: pointer;
     
-            &.pricing__switcher-btn--active {
+            &.ub-pricing__switcher-btn--active {
                 background-color: $primary-color; 
                 color:$soft-lilac;
                 font-weight:500;   
