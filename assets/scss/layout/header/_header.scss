@@ -1,19 +1,19 @@
-// ===========================mobile menu============================
+// =========================== Mobile Menu Styles ============================
 
-.mobile-nav {
-  background-color:$white;
+.ub-mobile-nav {
+  background-color: $white;
   width: 300px;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
-  transform: translateX(-100%);  
-  transition: transform 0.3s ease-in-out;  
-  z-index: 1000;  
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
   overflow-y: scroll;
 
   &.active {
-    transform: translateX(0); 
+    transform: translateX(0); // Opens the menu when active
   }
 
   &__header {
@@ -41,8 +41,8 @@
     padding: 0;
     margin: 0;
 
-    > .mobile-nav__item {
-      border-bottom: 1px solid $light-gray;  
+    > .ub-mobile-nav__item {
+      border-bottom: 1px solid $light-gray;  // Each menu item gets a border
     }
   }
 
@@ -55,7 +55,7 @@
     font-size: 1.2rem;
   }
 
-  &__submenu {
+  &__list {
     list-style: none;
     padding-left: 20px;
     margin: 0;
@@ -63,61 +63,71 @@
     max-height: 0;
     transition: max-height 0.3s ease-out;
 
-    .mobile-nav__item {
-      border-bottom: none;  
+    .ub-mobile-nav__item {
+      border-bottom: none;   
     }
   }
 
   &__item--has-dropdown {
-    > .mobile-nav__link::after {
-      content: "\f054";  
+    > .ub-mobile-nav__link::after {
+      content: "\f054";   
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
       position: absolute;
-      top: 50%;  
-      transform: translateY(-50%); 
+      top: 50%;
       right: 10px;
+      transform: translateY(-50%); 
       font-size: 12px;
       transition: transform 0.3s ease;
     }
 
     &.active {
-      > .mobile-nav__link::after {
+      > .ub-mobile-nav__link::after {
         transform: rotate(90deg);  
       }
 
-      > .mobile-nav__submenu {
-        max-height: 1000px;   
+      > .ub-mobile-nav__list {
+        max-height: 1000px;
         transition: max-height 0.5s ease-in;
         overflow-y: scroll;
       }
     }
   }
 
-  &__button-wrapper{
+  // Actions section (Login and Get Started buttons)
+  &__actions {
     display: flex;
     flex-direction: column;
-    margin-top: 2rem; 
-    margin-bottom: 8rem; 
+    margin-top: 2rem;
+    margin-bottom: 8rem;
     padding: 0 10px;
     gap: 0.5rem;
 
-    .mobile-nav__button--login{
-      @include btn($bgColor:transparent , $hoverBgColor: $primary-color, $color:$primary-color, $hoverColor:$light-color, $border:$primary-color ,$hoverBorder:$primary-color); 
+    .ub-mobile-nav__button--login {
+      @include btn(
+        $bgColor: transparent,
+        $hoverBgColor: $primary-color,
+        $color: $primary-color,
+        $hoverColor: $light-color,
+        $border: $primary-color,
+        $hoverBorder: $primary-color
+      );
       display: block;
       text-align: center;
     }
-    .mobile-nav__button--get-started{
-      @include btn; 
+
+    .ub-mobile-nav__button--get-started {
+      @include btn;
       display: block;
       text-align: center;
     }
   }
 }
 
-// desktop overlay
+// =========================== Desktop Overlay ============================
+
 body.menu-open {
-  overflow: hidden;   
+  overflow: hidden;  // Prevent scrolling when menu is open
 
   &::before {
     content: '';
@@ -126,14 +136,15 @@ body.menu-open {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba($text-primary, 0.5);  
-    z-index: 999; 
+    background-color: rgba($text-primary, 0.5);  // Semi-transparent overlay
+    z-index: 999;
   }
 }
 
 
+
 // ========================== Desktop Menu ==========================
-.header {
+.ub-header {
   height: 7.5rem;
   display: flex;
   align-items: center;
@@ -180,9 +191,9 @@ body.menu-open {
     display: flex;
     gap: 1.5rem;
 
-    &__item {
+      &__item {
       position: relative;
-
+ 
       &:hover > .menu__submenu {
         display: block;
       }
@@ -197,11 +208,39 @@ body.menu-open {
         transition: color $transition-duration ease;
 
         &:hover {
-          color: $primary-color;
+          color: $primary-color; 
         }
+      }
+
+      &--active a {  
+        color: $primary-color;
       }
     }
 
+    .menu__item--has-dropdown {
+      position: relative;
+      margin-right: 20px;
+    
+      &::after {
+        content: "\f078";  
+        color: $gray-medium;
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 600;
+        font-size: 1rem !important;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -20px;
+        font-size: 12px;
+        transition: transform 0.3s ease;
+      }
+
+      &:hover::after {
+        color: $primary-color;  
+      }
+    
+    }
+  
     &__submenu {
       display: none;
       position: absolute;

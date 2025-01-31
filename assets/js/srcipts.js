@@ -181,14 +181,14 @@ tabButtons.forEach(button => {
 
 // ===================menu=========================================
 // Toggle mobile menu
-const menuToggle = document.querySelector('.header__menu-toggle');
-const mobileNav = document.querySelector('.mobile-nav');
-const closeBtn = document.querySelector('.mobile-nav__close-btn');
+const menuToggle = document.querySelector('.ub-header__menu-toggle');
+const mobileNav = document.querySelector('.ub-mobile-nav');
+const closeBtn = document.querySelector('.ub-mobile-nav__close-btn');
 const body = document.body;
 
 // Function to close all dropdowns
 const closeAllDropdowns = () => {
-  document.querySelectorAll('.mobile-nav__item--has-dropdown').forEach(item => {
+  document.querySelectorAll('.ub-mobile-nav__item--has-dropdown').forEach(item => { 
     item.classList.remove('active');  
   });
 };
@@ -218,21 +218,21 @@ document.addEventListener('click', (e) => {
 });
 
 // Dropdown functionality
-document.querySelectorAll('.mobile-nav__item--has-dropdown').forEach(item => {
-  const link = item.querySelector('.mobile-nav__link');
+document.querySelectorAll('.ub-mobile-nav__item--has-dropdown').forEach(item => {
+  const link = item.querySelector('.ub-mobile-nav__link');
   link.addEventListener('click', (e) => {
     e.preventDefault(); 
     e.stopPropagation();  
     item.classList.toggle('active');
-    const parentItem = item.closest('.mobile-nav__item--has-dropdown');
+    const parentItem = item.closest('.ub-mobile-nav__item--has-dropdown');
     if (parentItem) {
-      parentItem.querySelectorAll('.mobile-nav__item--has-dropdown').forEach(otherItem => {
+      parentItem.querySelectorAll('.ub-mobile-nav__item--has-dropdown').forEach(otherItem => {
         if (otherItem !== item) {
           otherItem.classList.remove('active');
         }
       });
     } else {
-      document.querySelectorAll('.mobile-nav__item--has-dropdown').forEach(otherItem => {
+      document.querySelectorAll('.ub-mobile-nav__item--has-dropdown').forEach(otherItem => {
         if (otherItem !== item) {
           otherItem.classList.remove('active');
         }
@@ -242,12 +242,11 @@ document.querySelectorAll('.mobile-nav__item--has-dropdown').forEach(item => {
 });
 
 // Prevent clicks on non-dropdown links from closing the dropdown
-document.querySelectorAll('.mobile-nav__item:not(.mobile-nav__item--has-dropdown) .mobile-nav__link').forEach(link => {
+document.querySelectorAll('.ub-mobile-nav__item:not(.ub-mobile-nav__item--has-dropdown) .ub-mobile-nav__link').forEach(link => {
   link.addEventListener('click', (e) => {
     e.stopPropagation(); // Stop event from bubbling to parent dropdown items
   });
 });
-
 
 
 // ==========================ANIMATION===============================================
@@ -257,8 +256,6 @@ offset: 200,
 easing: 'ease-in-out',  
 once: false  
 });
-
-
 
 
 // swiper slider  for logo ==========================================================
@@ -310,4 +307,27 @@ const swiperRight = new Swiper(".integrations-logos__slider-right", {
     }
 
 });
+
+
+// active menu color on desktop
+document.addEventListener("DOMContentLoaded", function () {
+    const menuItems = document.querySelectorAll(".menu__item");
+    const currentUrl = window.location.pathname.split("/").pop();
+    menuItems.forEach((item) => {
+      const link = item.querySelector("a");
+      if (!link) return;
+      const linkHref = link.getAttribute("href");
+      if (linkHref === "#" || linkHref === "" || linkHref === null) return;
+      if (linkHref === currentUrl) {
+        item.classList.add("menu__item--active");
+      }
+      item.addEventListener("click", function () {
+        menuItems.forEach((el) => el.classList.remove("menu__item--active"));
+        this.classList.add("menu__item--active");
+      });
+    });
+  });
+  
+  
+  
 
