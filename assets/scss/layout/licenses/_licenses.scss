@@ -2,183 +2,186 @@
    License Section Styles
 ======================== */
 
-#ub-license {
-    // background-color: $mint-white;    
-    font-family: 'Inter', sans-serif;
+.ub-license {
+    
+    &__header { 
+        max-width: 1000px;
+        text-align: left;
+        margin: 0 auto;
+        border-bottom: 1px solid #6155C852;
+        padding-bottom:4rem;
+    }
 
-    .license__container {
-        .license__header { 
-            max-width: 1000px;
-            text-align: left;
-            margin: 0 auto;
-            border-bottom: 1px solid #6155C852;
-            padding-bottom:4rem;
+    &__title {
+        @extend .section-title;
+        color: $dark-neutral;
+        margin-bottom: 10px;
+        text-align: left;
+        margin-left: 0;
+    }
 
-            .license__title {
-                @extend .section-title;
-                color: $dark-neutral;
-                margin-bottom: 10px;
-                text-align: left;
-                margin-left: 0;
-            }
+    &__desc{
+        @extend .section-desc;
+        text-align: left;
+        margin-left: 0;
+    }
 
-            .license__desc{
-                @extend .section-desc;
-                text-align: left;
-                margin-left: 0;
-            }
+    // Illustration Section
+    &__illustration {
+       padding: 4rem 0;
+
+    }
+
+    &__illustration-item{
+        display: flex;
+        justify-content: space-between;
+        gap:2rem;
+    
+        @media (max-width:946px) {
+            flex-direction: column;      
         }
+    }
 
-        // Illustration Section
-        .license__illustration {
-           padding: 4rem 0;
-            .license__illustration-item{
-                display: flex;
-                justify-content: space-between;
-                gap:2rem;
-                .license__illustration-image{
-                    max-width: 100%;
-                    height: auto;
-                    border-radius: 8px;
-                }
+    &__illustration-image{
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
 
-                .license__illustration-caption{
-                    font-size: 1.5rem;
-                    color: $dark-neutral;
-                    font-weight: 500;
+    &__illustration-caption{
+        font-size: 1.5rem;
+        color: $dark-neutral;
+        font-weight: 500;
 
-                    .license__illustration-credit {
-                        font-size: 18px;
-                        color: $dark-gray;
-                        font-weight: normal;
-                    }
-                }
-                @media (max-width:946px) {
-                    flex-direction: column;      
-                }
-            }
+    }
+    
+    &__illustration-credit {
+        font-size: 18px;
+        color: $dark-gray;
+        font-weight: normal;
+    }
+
+    // Typography Section
+    &__typography{
+        margin-bottom: 40px;
+    }
+
+    &__typography-title {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $dark-neutral;
+        line-height:30px;
+        margin-bottom: 10px; 
+    }
+
+    &__typography-info{
+        font-size: 18px;
+        color: $dark-gray;
+        font-weight: normal;
+        line-height: 1.5;
+    }
+
+    &__typography-link{
+        color: $primary-color;
+        text-decoration: underline;
+
+        &:hover {
+            color: darken($primary-color, 10%);
         }
+    }
 
-        // Typography Section
-        .license__typography{
-            margin-bottom: 40px;
+    &__typography-download {
+        color: $primary-color;
+        font-weight: 500;
+        margin-top: 10px;
+        display: inline-block;
 
-            .license__typography-title {
-                font-size: 1.5rem;
-                font-weight: 500;
-                color: $dark-neutral;
-                line-height:30px;
-                margin-bottom: 10px; 
-            }
-
-            .license__typography-info{
-                font-size: 18px;
-                color: $dark-gray;
-                font-weight: normal;
-                line-height: 1.5;
-
-                .license__typography-link{
-                    color: $primary-color;
-                    text-decoration: underline;
-
-                    &:hover {
-                        color: darken($primary-color, 10%);
-                    }
-                }
-
-            }
-            .license__typography-download {
-                color: $primary-color;
-                font-weight: 500;
-                margin-top: 10px;
-                display: inline-block;
-
-                &:hover {
-                    text-decoration: underline; 
-                }
-            }
+        &:hover {
+            text-decoration: underline; 
         }
+    }
 
-        // Iconography Section
-        .license__iconography{
-            margin-bottom: 40px;
-            display: flex;
-            justify-content:space-between;
-            gap:2rem;
-            border-bottom: 1px solid #6155C852;
-            padding:5rem 0;
+    // Iconography Section
+    &__iconography{
+        margin-bottom: 40px;
+        display: flex;
+        justify-content:space-between;
+        gap:2rem;
+        border-bottom: 1px solid #6155C852;
+        padding:5rem 0;
+    }
 
-            .license__iconography-title {
-                font-size: 1.5rem;
-                font-weight: 500;
-                color: $dark-neutral;
-                line-height:30px;
-                margin-bottom: 10px;
-            }
+    &__iconography-title {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $dark-neutral;
+        line-height:30px;
+        margin-bottom: 10px;
+    }
 
-            .license__iconography-info {
-                font-size: 18px;
-                color: $dark-gray;
-                font-weight: normal;
-                line-height: 1.5;
+    &__iconography-info {
+        font-size: 18px;
+        color: $dark-gray;
+        font-weight: normal;
+        line-height: 1.5;
+    }
 
-                .license__iconography-link{
-                    color: $primary-color;
-                    text-decoration: underline;
+    &__iconography-image {
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
-                    &:hover {
-                        color: darken($primary-color, 10%);
-                    }
-                }
-            }
+    &__iconography-link{
+        color: $primary-color;
+        text-decoration: underline;
 
-            .license__iconography-image {
-                max-width: 100%;
-                border-radius: 8px;
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            }
-            @media (max-width:946px) {
-                flex-direction: column;       
-            }
+        &:hover {
+            color: darken($primary-color, 10%);
         }
+    }
 
-        // Photography Section
-        .license__photography {
-            .license__photography-title {
-                font-size: 1.5rem;
-                font-weight: 500;
-                color: $dark-neutral;
-                line-height:30px;
-                margin-bottom: 10px;
-            }
+    // Photography Section
+    &__photography-title {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $dark-neutral;
+        line-height:30px;
+        margin-bottom: 10px;
+    }
 
-            .license__photography-list {
-                margin-bottom: 10px;
-                color:$dark-gray;
-                font-size: 18px;
-                font-weight: normal;
+    &__photography-list {
+        margin-bottom: 10px;
+        color:$dark-gray;
+        font-size: 18px;
+        font-weight: normal;
+    }
 
-                .license__photography-link {
-                    color: $primary-color;
-                    text-decoration: underline;
-                    margin-bottom: 10px;
-                    line-height: 1.5;
-                    display: inline-block;
+    &__photography-link {
+        color: $primary-color;
+        text-decoration: underline;
+        margin-bottom: 10px;
+        line-height: 1.5;
+        display: inline-block;
 
-                    &:hover {
-                        color: darken($primary-color, 10%);
-                    }
-                }
-            }
-
-            .license__photography-note{
-                font-size: 18px;
-                color: $dark-gray;
-                font-weight: normal;
-                line-height: 1.5;
-                margin-top: 3rem;
-            }
+        &:hover {
+            color: darken($primary-color, 10%);
         }
+    }
+
+    &__photography-note{
+        font-size: 18px;
+        color: $dark-gray;
+        font-weight: normal;
+        line-height: 1.5;
+        margin-top: 3rem;
+    }
+
+    // responsive
+    @media (max-width:946px) {
+        &__iconography{
+            flex-direction: column;   
+        }    
     }
 }
  

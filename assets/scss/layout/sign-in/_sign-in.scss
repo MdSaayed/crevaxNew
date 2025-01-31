@@ -1,246 +1,251 @@
-#ub-auth{
-    .auth__container{
+.ub-auth{
+    &__container{
         padding: 0;
     }
 
-    .auth__panel{
+    &__panel{
         display: grid;
         grid-template-columns: 1fr; 
         gap: 3rem;  
         align-items: center;  
         padding: 2rem;
-        min-height: 100lvh;
-
-        @media (max-width:768px) {
-            padding: 1rem;
-        }
-
-        @media (min-width: 1024px) {  
-            grid-template-columns: repeat(2, 1fr);  
-            gap: 0;  
-        }
-        
+        min-height: 100lvh;        
     }
 
-    .auth__welcome{
+    &__welcome{
         background-color: $deep-violet;  
         border-radius: 20px;
         height: 100%;
         padding: 4rem 3rem;       
     }
 
-    .auth__welcome-content{
+    &__welcome-content{
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+    }
 
-        .auth__title{
-            color: $white;
-            text-align: center;
-        }
+    &__title{
+        color: $white;
+        text-align: center;
+    }
 
-        .auth__desc{
-            color:$soft-lilac;
-            text-align: center;
-        }
+    &__desc{
+        color:$soft-lilac;
+        text-align: center;
+    }
 
-        .auth__feature-title{
-            font-size: 2rem;
-            line-height: 48px;
-            font-weight: 500;
-            color: $light-gray-blue;  
-            margin-bottom: 12px;
-        }
+    &__feature-title{
+        font-size: 2rem;
+        line-height: 48px;
+        font-weight: 500;
+        color: $light-gray-blue;  
+        margin-bottom: 12px;
+    }
 
-        .auth__feature-desc{
-            color: $light-gray-blue;
-            text-align: center;
-        }
-        
-        .auth__dots {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            margin-top:  3.5rem ;
-          
-            .auth__dot {
-              background-color: $white;
-              width: 8px;
-              height: 8px;
-              border-radius: 50%;
-              display: block;
-          
-              &--active { 
-                display: block;
-                width: 24px;
-                height: 8px;
-                border-radius: 50px;
-              }
-            }
+    &__feature-desc{
+        color: $light-gray-blue;
+        text-align: center;
+    }
+    
+    &__dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top:  3.5rem ;
+    }
+
+    &__dot {
+        background-color: $white;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        display: block;
+    
+        &--active { 
+          display: block;
+          width: 24px;
+          height: 8px;
+          border-radius: 50px;
         }
     }
 
     // form panel
-    .auth__form-panel{
+    &__form-panel{
         display: flex;    
         flex-direction: column;  
         justify-content: center;
         padding: 2rem 7rem;
         position: relative;
-        height: 100vh;
- 
-        .auth__brand{
-            margin-bottom: 2rem;  
-        }
-            
-        .auth__tabs{
-            background-color: $light-purple; 
-            border-radius: 8px;
-            padding: 5px;
-            display: flex;
-            justify-content: space-between;
-            gap: 5px;
-            margin-bottom: 1.5rem;
-        }
+        height: 100vh;        
+    }
 
-        .auth__tab{
-            @extend .btn; 
-            width: 50%;
-            border-radius: 8px;
-            background-color: transparent;
-            border: none;
-            color: $dark-gray;
-            padding: 6px 8px;
-
-            &:hover{
-                border: none !important;
-                background-color:  $primary-color;
-                color:$soft-lilac;
-
-            }
-            &--active{
-                background-color:  $primary-color;
-                color:$soft-lilac;
-            }
-        }
-
-        .auth__input-group {
-            display: flex;         
-            flex-direction: column;  
-            margin-bottom: 1rem;    
-        }
+    &__brand{
+        margin-bottom: 2rem;  
+    }
         
-        .auth__password-header{
-            display: flex;            
-            justify-content: space-between;  
-            align-items: center;     
+    &__tabs{
+        background-color: $light-purple; 
+        border-radius: 8px;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+        margin-bottom: 1.5rem;
+    }
+
+    &__tab{
+        @extend .btn; 
+        width: 50%;
+        border-radius: 8px;
+        background-color: transparent;
+        border: none;
+        color: $dark-gray;
+        padding: 6px 8px;
+
+        &:hover{
+            border: none !important;
+            background-color:  $primary-color;
+            color:$soft-lilac;
+
         }
+        &--active{
+            background-color:  $primary-color;
+            color:$soft-lilac;
+        }
+    }
 
-        .auth__form{
-            display: none;
-
-            &--active {
-                display: block; 
-            }
-
-            label {
-                font-weight: 500;
-                font-size: 20px;
-                line-height: 28px;
-                color: $dark-neutral;
-                margin-bottom: 10px;
-            }
-
-            input {
-                padding: 10px 14px;
-                border-radius: 5px;
-                outline: 1px solid $light-gray-blue;
-                background-color: $white;
-                &::placeholder{
-                    font-size: 16px;
-                    font-weight: 400;
-                    line-height: 24px;
-                    color: $dark-gray;
-                }
+    &__input-group {
+        display: flex;         
+        flex-direction: column;  
+        margin-bottom: 1rem;    
+    }
     
-                &:focus {
-                    outline: 1px solid $primary-color;  
-                    box-shadow: 0px 2px 4px 2px #465FF11A; 
-                }
+    &__password-header{
+        display: flex;            
+        justify-content: space-between;  
+        align-items: center;     
+    }
+
+    &__form{
+        display: none;
+
+        &--active {
+            display: block; 
+        }
+
+        label {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 28px;
+            color: $dark-neutral;
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 10px 14px;
+            border-radius: 5px;
+            outline: 1px solid $light-gray-blue;
+            background-color: $white;
+            &::placeholder{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                color: $dark-gray;
             }
 
-            .auth__forgot-password{
-                font-size: 12px;
-                line-height: 18px; 
+            &:focus {
+                outline: 1px solid $primary-color;  
+                box-shadow: 0px 2px 4px 2px #465FF11A; 
             }
+        }
 
-            textarea {
-                padding: 10px;
-                border-radius: 5px;
+        &__forgot-password{
+            font-size: 12px;
+            line-height: 18px; 
+        }
+
+        textarea {
+            padding: 10px;
+            border-radius: 5px;
+
+            &:focus {
+                outline: 2px solid $dark-gray; // Focus outline color
+            }
+        }
+    }
+
+    &__btn{
+        @include btn();
+
+        width: 100%;
+        margin-top: 25px;
+        font-weight: 500;
+    }
+
+    &__link {
+        @extend .btn-secondary;
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    &__divider{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #6c757d; 
+        font-size: 14px;
+        font-weight: 500;
+        margin: 20px 20px;  
     
-                &:focus {
-                    outline: 2px solid $dark-gray; // Focus outline color
-                }
-            }
+        &::before, 
+        &::after {
+            content: "";  
+            flex: 1;
+            border-top: 1px solid $light-gray-blue;  
+            margin: 0 10px;  
+        }
+    }  
 
-            .auth__btn{
-                @include btn();
+    &__terms{
+        margin-top: 2rem;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 21px;
+        text-align: center;
+        color: $dark-gray;
+        a{
+            color:$dark-neutral;
+        }
+    }
 
-                width: 100%;
-                margin-top: 25px;
-                font-weight: 500;
-            }
-
-            .auth__link {
-                @extend .btn-secondary;
-                width: 100%;
-                display: block;
-                text-align: center;
-                font-weight: 500;
-            }
-
-            .auth__divider{
-                display: flex;
-                align-items: center;
-                text-align: center;
-                color: #6c757d; 
-                font-size: 14px;
-                font-weight: 500;
-                margin: 20px 20px;  
-            
-                &::before, 
-                &::after {
-                    content: "";  
-                    flex: 1;
-                    border-top: 1px solid $light-gray-blue;  
-                    margin: 0 10px;  
-                }
-            }    
+    // responsive
+    @media (max-width:768px) {
+        &__panel{
+            padding: 1rem;
         }
 
-        .auth__terms{
-            margin-top: 2rem;
-            font-size: 14px;
-            font-weight: normal;
-            line-height: 21px;
-            text-align: center;
-            color: $dark-gray;
-            a{
-                color:$dark-neutral;
-            }
-        }
-
-        @media (max-width: 1024px) { 
-            padding: 4rem 2rem;
-        }
-
-        @media (max-width: 768px) {
+        &__form-panel{
             padding: 4rem 1rem; 
         }
-        
+    }
+
+    @media (min-width: 1024px) {  
+        &__panel{
+            grid-template-columns: repeat(2, 1fr);  
+            gap: 0; 
+        } 
+    }
+
+    @media (max-width: 1024px) { 
+        &__form-panel{
+        padding: 4rem 2rem;
+        }
     }
 }
 

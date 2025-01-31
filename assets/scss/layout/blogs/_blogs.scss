@@ -115,109 +115,108 @@
 }
 
 // blog details
-#ub-blog-details{
-    .blog-details__container {
+.ub-blog-details{
+    
+    &__container {
         padding-top: 7rem; 
         padding-bottom: 7rem; 
-    
-        .blog-details__header{
-            .blog-details__meta {
-                display: flex;
-                gap: 1.5rem;
-                align-items: center;
-                justify-content: center;
-                margin: 1.5rem 0 1rem;
-    
-                .blog-details__category {
-                    background-color: $purple-haze;
-                    padding: 8px 12px;
-                    border-radius: 0.5rem;
-                    font-weight: 500;
-                    color: $dark-gray;
-                }
-    
-                .blog-details__date {
-                    display: flex;
-                    gap: 0.5rem;
-                    align-items: center;
-                    background-color:$purple-haze;
-                    padding: 6px 12px;
-                    border-radius: 4px;
-    
-                    img {
-                        width: 18px;
-                        height: 18px;
-                    }
-    
-                    span {
-                        font-weight: 500;
-                        color: $dark-gray;
-                    }
-                }
-            }
+    }
 
-            .blog-details__title{
-                @extend .section-title;
-                font-size: 2.5rem !important;
-                line-height:  1.2 !important;
-            }
+    &__meta {
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+        justify-content: center;
+        margin: 1.5rem 0 1rem;
+    }
 
-            .blog-details__desc {
-               @extend .section-desc; 
-            }
-              
+    &__category {
+        background-color: $purple-haze;
+        padding: 8px 12px;
+        border-radius: 0.5rem;
+        font-weight: 500;
+        color: $dark-gray;
+    }
+
+    &__date {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        background-color:$purple-haze;
+        padding: 6px 12px;
+        border-radius: 4px;
+
+        img {
+            width: 18px;
+            height: 18px;
         }
- 
-        .blog-details__thumbnail {
-            padding: 1.5rem; 
-            border-radius: 1.5rem; 
-            margin-top: 2.5rem;
 
-            .blog-details__image{
-                width:100%;
-            }
+        span {
+            font-weight: 500;
+            color: $dark-gray;
         }
-              
+    }
+
+    &__title{
+        @extend .section-title;
+        font-size: 2.5rem !important;
+        line-height:  1.2 !important;
+    }
+
+    &__desc {
+        @extend .section-desc; 
+    }
           
-        .blog-details__content{
-            display: flex;
-            flex-direction: column;  
-            gap: 1.5rem; 
+    &__thumbnail {
+        padding: 1.5rem; 
+        border-radius: 1.5rem; 
+        margin-top: 2.5rem;
+    }
 
-            .blog-details__content-wrapper {
-                display: flex;
-                flex-direction: column;  
-                gap: 1.5rem; 
+    &__image{
+        width:100%;
+    }
+      
+    &__content{
+        display: flex;
+        flex-direction: column;  
+        gap: 1.5rem; 
+    } 
 
-                .blog-details__content-title {
-                    color:$text-primary;           
-                    font-weight: 500;  
-                    font-size: 1.875rem; 
-                  }
-                  
-                .blog-details__content-text,.blog-details__list--dash,.blog-details__list{
-                    color: $dark-grayish-green;  
-                    font-weight: 400;
-                    font-size: 1.12rem;
-                    line-height: 1.6;     
-                } 
-                .blog-details__list--dash {
-                     @extend .list-dash;
-                    
-                  }
-              }
+    &__content-wrapper {
+        display: flex;
+        flex-direction: column;  
+        gap: 1.5rem; 
+    }
 
-            @media (min-width: 768px) {   
-                padding-left: 6rem; 
-                padding-right: 6rem; 
-            }
-        } 
-    
-        @media (min-width: 768px) { 
+    &__content-title {
+        color:$text-primary;           
+        font-weight: 500;  
+        font-size: 1.875rem; 
+    }
+      
+    &__content-text,&__list--dash,&__list{
+        color: $dark-grayish-green;  
+        font-weight: 400;
+        font-size: 1.12rem;
+        line-height: 1.6;     
+    } 
+
+    &__list--dash {
+        @extend .list-dash;
+    }
+
+    @media (min-width: 768px) { 
+        &__container {
             padding-left: 7rem;  
             padding-right: 7rem;   
         }
+
+        &__content{
+            padding-left: 6rem; 
+            padding-right: 6rem; 
         }
+    }
 }
  
  

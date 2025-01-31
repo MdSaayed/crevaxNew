@@ -1,5 +1,5 @@
-#ub-contact {
-    .contact__content{
+.ub-contact {
+    &__content{
         background-color: $light-purple;
         max-width: 800px;
         padding: 3rem;
@@ -9,19 +9,19 @@
         margin-top: 4rem;
     } 
 
-    .contact__title{
+    &__title{
         @extend .section-title; 
         font-size: 3rem;
         margin-bottom: 3.5rem;
     }
 
-    .contact__input-group {
+    &__input-group {
         display: flex;
         flex-direction: column;
         margin-bottom: 1rem;
     }
 
-    .contact__label {
+    &__label {
         font-weight: 500;
         font-size: 20px;
         line-height: 28px;
@@ -29,7 +29,7 @@
         margin-bottom: 10px;
     }
 
-    .contact__input {
+    &__input {
         padding: 12px 14px;
         border-radius: 5px; 
         border: none;
@@ -48,7 +48,7 @@
         }
     }
 
-    .contact__textarea {
+    &__textarea {
         padding: 10px;
         border-radius: 5px;
         border: none;
@@ -66,13 +66,13 @@
         }
     }
 
-    .contact__btn {
+    &__btn {
         @include btn();
         margin-top: 20px;
     }
 
     @media (max-width: 768px) { 
-        .contact__content{
+        &__content{
             padding:3rem 1rem ;
         }
     } 

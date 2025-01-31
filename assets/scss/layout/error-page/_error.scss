@@ -1,6 +1,6 @@
 
 
-.error-page {
+.ub-error-page {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,36 +8,48 @@
   height: 100vh;
   padding: 1rem;
 
-  .error-title {
+  &__title {
     font-size: 3.5rem;
     font-weight: bold;
     line-height: 72px;
     color: $dark-neutral;
+    text-align: center;
   }
 
-  .error-subtitle {
+  &__subtitle {
     font-size: 1rem;
     color:$dark-gray;
     line-height: 24px;
     margin: 0.5rem 0;
+    text-align: center;
   }
 
-  .error-content {
+  &__content {
     margin: 2rem 0;
+  }
+  
+  &__image {
+    width: 300px;
+    height: auto;
+  }
 
-    .error-image {
-      width: 300px;
-      height: auto;
-    }
+  &__message {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 28px;
+    color: $dark-neutral;
+    text-align: center;
+  }
 
-    .error-message {
-      margin-top: 1rem;
-      font-size: 1rem;
-      font-weight: 700;
-      line-height: 28px;
-      color: $dark-neutral;
-      text-align: center;
-    }
+  &__btn-wrappe{
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn{
+    @extend .btn-primary;
+    margin: 0 auto;
   }
 
 }

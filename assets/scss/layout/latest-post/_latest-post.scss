@@ -1,52 +1,47 @@
-#ub-latest-posts {
-    .latest-posts__container{
+.ub-latest-posts {
+    
+    &__container{
         padding-top: 7rem;
         padding-bottom: 7rem;
     }
-    .latest-posts__header {
+
+    &__header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         text-align: left;
+    }
 
-        .latest-posts__section-title {
-            @extend .section-title;
-            text-align: left; 
-            margin-left: 0;
-        }
+    &__section-title {
+        @extend .section-title;
+        text-align: left; 
+        margin-left: 0;
+    }
 
-        .latest-posts__filter-list {
-            display: flex;
-            align-items: center;
-            gap: 2rem 1rem;
-            flex-wrap: wrap;
+    &__filter-list {
+        display: flex;
+        align-items: center;
+        gap: 2rem 1rem;
+        flex-wrap: wrap;
+    }
 
-            .latest-posts__filter-btn {
-                color: $dark-neutral;
-                font-size: 1rem;
-                font-weight: normal;
-                line-height: 1.5;
-                padding: 12px 1.5rem;
-                border-radius: 2rem;
-                transition: background-color 0.3s, color 0.3s;
+    &__filter-btn {
+        color: $dark-neutral;
+        font-size: 1rem;
+        font-weight: normal;
+        line-height: 1.5;
+        padding: 12px 1.5rem;
+        border-radius: 2rem;
+        transition: background-color 0.3s, color 0.3s;
 
-                &:hover,
-                &--active {
-                    background-color: $primary-color;
-                    color: $white;
-                }
-            }
-        }
-
-        @media (max-width: 1024px) {
-            flex-direction: column;  
-            align-items: end;
-            margin-bottom: 5rem;
-            gap: 2rem;
+        &:hover,
+        &--active {
+            background-color: $primary-color;
+            color: $white;
         }
     }
 
-    .latest-posts__grid {
+    &__grid {
         display: grid;
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -60,55 +55,62 @@
         }
     }
 
-    .latest-posts__card {
-        .latest-posts__thumbnail {
-            border-radius: 32px;
+    &__thumbnail {
+        border-radius: 32px;
 
-            img {
-                width: 100%;
-                border-radius: inherit;
-            }
+        img {
+            width: 100%;
+            border-radius: inherit;
+        }
+    }
+
+    &__meta {
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+        margin: 1.5rem 0 1rem;
+    }
+
+    &__category {
+        background-color: $light-color;
+        padding: 8px 12px;
+        border-radius: 0.5rem;
+        font-weight: 500;
+        color: $dark-gray;
+    }
+
+    &__date {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        background-color: $light-color;
+        padding: 6px 12px;
+        border-radius: 4px;
+
+        img {
+            width: 18px;
+            height: 18px;
         }
 
-        .latest-posts__meta {
-            display: flex;
-            gap: 1.5rem;
-            align-items: center;
-            margin: 1.5rem 0 1rem;
-
-            .latest-posts__category {
-                background-color: $light-color;
-                padding: 8px 12px;
-                border-radius: 0.5rem;
-                font-weight: 500;
-                color: $dark-gray;
-            }
-
-            .latest-posts__date {
-                display: flex;
-                gap: 0.5rem;
-                align-items: center;
-                background-color: $light-color;
-                padding: 6px 12px;
-                border-radius: 4px;
-
-                img {
-                    width: 18px;
-                    height: 18px;
-                }
-
-                span {
-                    font-weight: 500;
-                    color: $dark-gray;
-                }
-            }
-        }
-
-        .latest-posts__article-title {
-            color: $dark-neutral;
+        span {
             font-weight: 500;
-            font-size: 1.25rem;
-            line-height: 1.4; // Matches 28px line height for 20px font size
+            color: $dark-gray;
+        }
+    }
+
+    &__article-title {
+        color: $dark-neutral;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 1.4; // Matches 28px line height for 20px font size
+    }
+
+    @media (max-width: 1024px) {
+        &__header {
+            flex-direction: column;  
+            align-items: end;
+            margin-bottom: 5rem;
+            gap: 2rem;
         }
     }
 }

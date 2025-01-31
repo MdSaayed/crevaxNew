@@ -79,19 +79,19 @@ document.querySelectorAll('.ub-pricing__switcher-btn').forEach(button => {
 
 
 // pricing swither pricing signle page=========================================================
-document.querySelectorAll('.pricing-details__switcher-btn').forEach(button => {
+document.querySelectorAll('.ub-pricing-details__switcher-btn').forEach(button => {
     button.addEventListener('click', () => {
 
-        document.querySelectorAll('.pricing-details__switcher-btn').forEach(btn => 
-            btn.classList.remove('pricing-details__switcher-btn--active')
+        document.querySelectorAll('.ub-pricing-details__switcher-btn').forEach(btn => 
+            btn.classList.remove('ub-pricing-details__switcher-btn--active')
         );
         
-        button.classList.add('pricing-details__switcher-btn--active');
-        document.querySelectorAll('.pricing-details__card').forEach(card => 
-            card.classList.add('pricing-details__card--hidden')
+        button.classList.add('ub-pricing-details__switcher-btn--active');
+        document.querySelectorAll('.ub-pricing-details__card').forEach(card => 
+            card.classList.add('ub-pricing-details__card--hidden')
         );
         const targetClass = button.getAttribute('data-target');
-        document.querySelector(`.pricing-details__card[data-target="${targetClass}"]`).classList.remove('pricing-details__card--hidden');
+        document.querySelector(`.ub-pricing-details__card[data-target="${targetClass}"]`).classList.remove('ub-pricing-details__card--hidden');
     });
 });
 
@@ -109,7 +109,7 @@ filterButtons.forEach(button => {
   
 // Countdown Section ==========================================================================
 function startCounter() {
-  const counters = document.querySelectorAll('#ub-stats .stats__animated-text');
+  const counters = document.querySelectorAll('#ub-stats .ub-stats__animated-text');
 
   counters.forEach(counter => {
       const target = +counter.getAttribute('data-target'); // Get the target number
@@ -161,18 +161,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // signin page tab==============================================================================
-const tabButtons = document.querySelectorAll('.auth__tab');
-const forms = document.querySelectorAll('.auth__form');
+const tabButtons = document.querySelectorAll('.ub-auth__tab');
+const forms = document.querySelectorAll('.ub-auth__form');
 
 // Loop through each tab button
 tabButtons.forEach(button => {
     button.addEventListener('click', function (event) {
         event.preventDefault();
-        tabButtons.forEach(btn => btn.classList.remove('auth__tab--active'));
-        button.classList.add('auth__tab--active');
+        tabButtons.forEach(btn => btn.classList.remove('ub-auth__tab--active'));
+        button.classList.add('ub-auth__tab--active');
         const targetForm = button.getAttribute('data-target');
         forms.forEach(form => {
-            form.classList.toggle('auth__form--active', form.id === targetForm);
+            form.classList.toggle('ub-auth__form--active', form.id === targetForm);
         });
     });
 });

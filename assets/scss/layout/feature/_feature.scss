@@ -1,11 +1,11 @@
 
-#ub-feature-hero {
-    .feature-hero__container {
+.ub-feature-hero {
+    &__container {
         padding-top: 0;
         padding-bottom: 0;
     }
 
-    .feature-hero__content {
+    &__content {
         min-height: 500px;
         margin: 0 auto;
         padding: 4rem 2rem;
@@ -14,51 +14,58 @@
         align-items: center;
         justify-content: center;
         border-radius: 2.5rem;
-        .feature-hero__subtitle-area{
-            @extend .hero__subtitle-area;
-        }
+    }
 
-        .feature-hero__subtitle-group {
-            @extend .hero__subtitle-group;
-            background-color: $soft-lilac;
-        }
+    &__subtitle-area{
+        @extend .hero__subtitle-area;
+    }
 
-        .feature-hero__title {
-            @extend .section-title;
-        }
+    &__subtitle-group {
+        @extend .hero__subtitle-group;
+        background-color: $soft-lilac;
+    }
 
-        .feature-hero__desc {
-            @extend .section-desc;
-        }
+    &__title {
+        @extend .section-title;
+    }
 
-        .feature-hero__button-group {
-            @extend .button-group;
-            margin-top: 2rem;
+    &__subtitle{
+        @extend .hero__subtitle;  
+    }
 
-            .feature-hero__button--primary {
-                @include btn(
-                    $bgColor: $text-primary, 
-                    $hoverBgColor: $background-light-green, 
-                    $color: $light-color, 
-                    $hoverColor: $text-primary, 
-                    $border: $background-light-green, 
-                    $hoverBorder: $background-light-green
-                );
-            }
+    &__desc {
+        @extend .section-desc;
+    }
 
-            .feature-hero__button--secondary {
-                @include btn(
-                    $bgColor: $background-light-green, 
-                    $hoverBgColor: $text-primary, 
-                    $color: $text-primary, 
-                    $hoverColor: $light-color, 
-                    $border: $background-light-green, 
-                    $hoverBorder: $text-primary
-                );
-            }
-        }
+    &__button-group {
+        @extend .button-group;
+        margin-top: 2rem;
+    }
 
-        @media (min-width: 768px) { 
+    &__button--primary {
+        @include btn(
+            $bgColor: $text-primary, 
+            $hoverBgColor: $background-light-green, 
+            $color: $light-color, 
+            $hoverColor: $text-primary, 
+            $border: $background-light-green, 
+            $hoverBorder: $background-light-green
+        );
+    }
+
+    &__button--secondary {
+        @include btn(
+            $bgColor: $background-light-green, 
+            $hoverBgColor: $text-primary, 
+            $color: $text-primary, 
+            $hoverColor: $light-color, 
+            $border: $background-light-green, 
+            $hoverBorder: $text-primary
+        );
+    } 
+
+    @media (min-width: 768px) { 
+        &__content {
             padding: 2rem 2rem;   
         }
     }
@@ -149,82 +156,89 @@
 }
 
 // feature details
-#ub-feature-details{
-    .feature-details__container {
+.ub-feature-details{
+    &__container {
         padding-top: 7rem; 
         padding-bottom: 7rem; 
-    
-        .feature-details__header{
-            .feature-details__title{
-                @extend .section-title;
-            }
-            .feature-details__subtitle-area{
-                @extend .hero__subtitle-area;
-            }
-            .feature-details__subtitle-group{
-                @extend .hero__subtitle-group;
-            }
-            .feature-details__subtitle{
-                @extend .hero__subtitle;
-            }
-            .feature-details__desc {
-               @extend .section-desc; 
-            }
-              
+    }
+
+    &__title{
+        @extend .section-title;
+    }
+
+    &__subtitle-area{
+        @extend .hero__subtitle-area;
+    }
+
+    &__subtitle-group{
+        @extend .hero__subtitle-group;
+    }
+
+    &__subtitle{
+        @extend .hero__subtitle;
+    }
+
+    &__desc {
+       @extend .section-desc; 
+    }
+
+    &__thumbnail {
+        padding: 1.5rem; 
+        border-radius: 1.5rem; 
+        margin-top: 2.5rem;
+    }
+
+    &__image{
+        width:100%;
+    }
+      
+    &__content{
+        display: flex;
+        flex-direction: column;  
+        gap: 1.5rem; 
+    } 
+
+    &__content-wrapper {
+        display: flex;
+        flex-direction: column;  
+        gap: 1.5rem; 
+
+
+    }
+
+    &__content-title {
+        color:$text-primary;           
+        font-weight: 500;  
+        font-size: 1.875rem; 
+    }
+      
+    &__content-text,&__list--dash,&__list--bulet{
+        color: $dark-grayish-green;  
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 24px;   
+        line-height: 1.6;    
+    } 
+
+    &__list--dash {
+         @extend .list-dash;
+    }
+
+    &__list--bulet {
+         @extend .list-bulet;
+    } 
+
+    // responsive
+    @media (min-width: 768px) {   
+        &__content{
+            padding-left: 6rem; 
+            padding-right: 6rem; 
         }
- 
-        .feature-details__thumbnail {
-            padding: 1.5rem; 
-            border-radius: 1.5rem; 
-            margin-top: 2.5rem;
 
-            .feature-details__image{
-                width:100%;
-            }
-        }
-              
-          
-        .feature-details__content{
-            display: flex;
-            flex-direction: column;  
-            gap: 1.5rem; 
-
-            .feature-details__content-wrapper {
-                display: flex;
-                flex-direction: column;  
-                gap: 1.5rem; 
-
-                .feature-details__content-title {
-                    color:$text-primary;           
-                    font-weight: 500;  
-                    font-size: 1.875rem; 
-                  }
-                  
-                .feature-details__content-text,.feature-details__list--dash,.feature-details__list--bulet{
-                    color: $dark-grayish-green;  
-                    font-size: 1rem;
-                    font-weight: 400;
-                    line-height: 24px;   
-                    line-height: 1.6;    
-                } 
-                .feature-details__list--dash {
-                     @extend .list-dash;
-                  }
-                .feature-details__list--bulet {
-                     @extend .list-bulet;
-                  } 
-              }
-
-            @media (min-width: 768px) {   
-                padding-left: 6rem; 
-                padding-right: 6rem; 
-            }
-        } 
-    
-        @media (min-width: 768px) { 
+        &__container {
             padding-left: 7rem;  
             padding-right: 7rem;  
         }
-        }
+    }
 }
-
+ 
