@@ -35,7 +35,7 @@
         margin: 2rem 0;
     }
 
-    &__btn--primary {
+    &__btn--primary { 
         @include btn(
             $bgColor: $text-primary,
             $hoverBgColor: $background-light-green,
