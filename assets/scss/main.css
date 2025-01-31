@@ -1967,6 +1967,54 @@ body.menu-open::before {
   max-width: 550px;
 }
 
+.ub-integrations-page__container {
+  padding-top: 0;
+}
+.ub-integrations-page__card-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+.ub-integrations-page__card {
+  background-color: #9E77ED;
+  padding: 32px;
+  border-radius: 20px;
+}
+.ub-integrations-page__icon-wrapper {
+  margin-bottom: 1rem;
+  color: #012C16;
+}
+.ub-integrations-page__card-title {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 48px;
+  color: #171717;
+  margin: 18px 0;
+}
+.ub-integrations-page__card-desc {
+  color: #404040;
+  font-weight: normal;
+  font-size: 18;
+  line-height: 27px;
+  margin-top: -4px;
+}
+@media (max-width: 768px) {
+  .ub-integrations-page__card {
+    padding: 24px;
+  }
+}
+@media (min-width: 640px) {
+  .ub-integrations-page__card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .ub-integrations-page__card-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
 #integrations-details .integration__header {
   background-color: #9E77ED;
   display: flex;
@@ -3166,6 +3214,54 @@ body.menu-open::before {
 #ub-hero-integrations .hero-integrations__desc {
   margin-top: 1.5rem;
   max-width: 550px;
+}
+
+.ub-integrations-page__container {
+  padding-top: 0;
+}
+.ub-integrations-page__card-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+.ub-integrations-page__card {
+  background-color: #9E77ED;
+  padding: 32px;
+  border-radius: 20px;
+}
+.ub-integrations-page__icon-wrapper {
+  margin-bottom: 1rem;
+  color: #012C16;
+}
+.ub-integrations-page__card-title {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 48px;
+  color: #171717;
+  margin: 18px 0;
+}
+.ub-integrations-page__card-desc {
+  color: #404040;
+  font-weight: normal;
+  font-size: 18;
+  line-height: 27px;
+  margin-top: -4px;
+}
+@media (max-width: 768px) {
+  .ub-integrations-page__card {
+    padding: 24px;
+  }
+}
+@media (min-width: 640px) {
+  .ub-integrations-page__card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .ub-integrations-page__card-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
 }
 
 #integrations-details .integration__header {

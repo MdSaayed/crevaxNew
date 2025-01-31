@@ -32,55 +32,64 @@
 }
 
 // integrations section
-// #ub-integrations{ 
-//   &__container{
-//       padding-top:0;
+.ub-integrations-page{ 
+    &__container{
+        padding-top:0;
+    }
 
-//       &__card-grid{
-//           display: grid;
-//           grid-template-columns: repeat(1, 1fr);  
-//           gap: 1.5rem;  
- 
-//           &__card{
-//               background-color: $soft-purple;      
-//               padding: 32px;
-//               border-radius: 20px;
+    &__card-grid{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);  
+      gap: 1.5rem;  
+    }
 
-//               &__icon-wrapper {
-//                   margin-bottom: 1rem;  
-//                   color: #012C16;  
-//                 }
-                
-//                 &__card-title{
-//                   font-weight: 500;
-//                   font-size: 2rem;
-//                   line-height: 48px;
-//                   color: $dark-neutral;
-//                   margin: 18px 0;
-//               }
-//               &__card-desc{
-//                   color: $dark-gray;
-//                   font-weight: normal;
-//                   font-size: 18;
-//                   line-height: 27px;
-//                   margin-top: -4px;
-//               }
-//               @media (max-width: 768px) { 
-//                   padding: 24px;
-//               }
-//           }
+    &__card{
+      background-color: $soft-purple;      
+      padding: 32px;
+      border-radius: 20px;
+    }
 
-//           @media (min-width: 640px) {  
-//               grid-template-columns: repeat(2, 1fr);  
-//             }
-          
-//           @media (min-width: 1024px) {  
-//           grid-template-columns: repeat(3, 1fr);  
-//           gap: 2rem; 
-//           }
-//       }
-//   }
-// }
+
+    &__icon-wrapper {
+      margin-bottom: 1rem;  
+      color: #012C16;  
+    }
+
+    &__card-title{
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 48px;
+      color: $dark-neutral;
+      margin: 18px 0;
+    }
+
+    &__card-desc{
+      color: $dark-gray;
+      font-weight: normal;
+      font-size: 18;
+      line-height: 27px;
+      margin-top: -4px;
+    }
+
+    @media (max-width: 768px) { 
+      &__card{
+        padding: 24px;
+      }
+    }
+
+    @media (min-width: 640px) {  
+      &__card-grid{
+        grid-template-columns: repeat(2, 1fr);  
+      }
+    }
+
+    @media (min-width: 1024px) {  
+      &__card-grid{
+        grid-template-columns: repeat(3, 1fr);  
+        gap: 2rem; 
+      }
+    }
+}
 
 
 // details page here
