@@ -196,7 +196,7 @@
 .ub-pricing-table {
 
   overflow-x: auto;
-  scrollbar-color: #aef5c7 transparent;
+  scrollbar-color: $deep-violet; 
   scrollbar-width: thin;
 
   &::-webkit-scrollbar {

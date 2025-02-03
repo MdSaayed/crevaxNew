@@ -84,7 +84,7 @@ a {
   font-weight: 800;
   font-style: normal;
 }
-.btn, .ub-auth__tab, .btn-primary, .ub-error-page__btn, .ub-blog__btn, .ub-hero-home__button--primary {
+.btn, .ub-auth__tab, .btn-primary, .ub-error-page__btn, .ub-blog__btn, .ub-feature-hero__button--primary, .ub-hero-home__button--primary {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -95,14 +95,14 @@ a {
   border-radius: 50px;
   cursor: pointer;
 }
-.btn:hover, .ub-auth__tab:hover, .btn-primary:hover, .ub-error-page__btn:hover, .ub-blog__btn:hover, .ub-hero-home__button--primary:hover {
+.btn:hover, .ub-auth__tab:hover, .btn-primary:hover, .ub-error-page__btn:hover, .ub-blog__btn:hover, .ub-feature-hero__button--primary:hover, .ub-hero-home__button--primary:hover {
   color: #7F56D9;
   background-color: transparent;
   border: 1px solid #7F56D9;
   transition: 0.5s ease;
 }
 
-.btn-secondary, .ub-auth__link, .ub-hero-home__button--secondary {
+.btn-secondary, .ub-auth__link, .ub-feature-hero__button--secondary, .ub-hero-home__button--secondary {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -113,7 +113,7 @@ a {
   border-radius: 50px;
   cursor: pointer;
 }
-.btn-secondary:hover, .ub-auth__link:hover, .ub-hero-home__button--secondary:hover {
+.btn-secondary:hover, .ub-auth__link:hover, .ub-feature-hero__button--secondary:hover, .ub-hero-home__button--secondary:hover {
   color: #F5FAF7;
   background-color: #7F56D9;
   border: 1px solid #7F56D9;
@@ -883,40 +883,6 @@ body.menu-open::before {
 .ub-feature-hero__button-group {
   margin-top: 2rem;
 }
-.ub-feature-hero__button--primary {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #F5FAF7;
-  background-color: #181D27;
-  border: 1px solid #EBF5EF;
-  padding: 8px 15px;
-  border-radius: 50px;
-  cursor: pointer;
-}
-.ub-feature-hero__button--primary:hover {
-  color: #181D27;
-  background-color: #EBF5EF;
-  border: 1px solid #EBF5EF;
-  transition: 0.5s ease;
-}
-.ub-feature-hero__button--secondary {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #181D27;
-  background-color: #EBF5EF;
-  border: 1px solid #EBF5EF;
-  padding: 8px 15px;
-  border-radius: 50px;
-  cursor: pointer;
-}
-.ub-feature-hero__button--secondary:hover {
-  color: #F5FAF7;
-  background-color: #181D27;
-  border: 1px solid #181D27;
-  transition: 0.5s ease;
-}
 @media (min-width: 768px) {
   .ub-feature-hero__content {
     padding: 2rem 2rem;
@@ -970,6 +936,10 @@ body.menu-open::before {
   .ub-features__item-title {
     font-size: 2.25rem !important;
     line-height: 48px !important;
+  }
+  .ub-features_container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }
 @media (min-width: 768px) {
@@ -1043,6 +1013,7 @@ body.menu-open::before {
 }
 .ub-faq__title {
   text-align: left;
+  margin-left: 0;
 }
 .ub-faq__list {
   grid-column: span 2;
@@ -1112,6 +1083,20 @@ body.menu-open::before {
   line-height: 1.5;
   color: #737373;
 }
+@media (max-width: 640px) {
+  .ub-faq__item {
+    padding: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .ub-faq__item {
+    padding: 1rem;
+  }
+  .ub-faq__grid {
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+}
 @media (min-width: 1024px) {
   .ub-faq__grid {
     grid-template-columns: repeat(3, 1fr);
@@ -1119,16 +1104,6 @@ body.menu-open::before {
   .ub-faq__list {
     grid-template-columns: repeat(3, 1fr);
     padding-left: 4rem;
-  }
-}
-@media (max-width: 768px) {
-  .ub-faq__item {
-    padding: 1rem;
-  }
-}
-@media (max-width: 640px) {
-  .ub-faq__item {
-    padding: 1rem;
   }
 }
 
@@ -1450,6 +1425,16 @@ body.menu-open::before {
   font-size: 1.25rem;
   line-height: 1.4;
 }
+.ub-latest-posts__no-posts {
+  text-align: left;
+  font-size: 18px;
+  color: #fff;
+  background-color: #9E77ED;
+  margin-top: 20px;
+  padding: 8px;
+  border-radius: 2px;
+  display: none;
+}
 @media (max-width: 1024px) {
   .ub-latest-posts__header {
     flex-direction: column;
@@ -1474,7 +1459,7 @@ body.menu-open::before {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 .ub-how-it-works__step {
   padding: 2.5rem 1rem;
@@ -1515,16 +1500,19 @@ body.menu-open::before {
 @media (min-width: 768px) {
   .ub-how-it-works__content {
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 3rem;
   }
 }
 @media (min-width: 1024px) {
   .ub-how-it-works__content {
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 4rem;
   }
 }
 @media (min-width: 1265px) {
   .ub-how-it-works__content {
     grid-template-columns: repeat(4, 1fr);
+    margin-top: 5rem;
   }
 }
 
@@ -1666,7 +1654,7 @@ body.menu-open::before {
 /* Pricing Table Styles */
 .ub-pricing-table {
   overflow-x: auto;
-  scrollbar-color: #aef5c7 transparent;
+  scrollbar-color: #6941C6;
   scrollbar-width: thin;
 }
 .ub-pricing-table::-webkit-scrollbar {
@@ -2205,40 +2193,6 @@ body.menu-open::before {
 .ub-feature-hero__button-group {
   margin-top: 2rem;
 }
-.ub-feature-hero__button--primary {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #F5FAF7;
-  background-color: #181D27;
-  border: 1px solid #EBF5EF;
-  padding: 8px 15px;
-  border-radius: 50px;
-  cursor: pointer;
-}
-.ub-feature-hero__button--primary:hover {
-  color: #181D27;
-  background-color: #EBF5EF;
-  border: 1px solid #EBF5EF;
-  transition: 0.5s ease;
-}
-.ub-feature-hero__button--secondary {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #181D27;
-  background-color: #EBF5EF;
-  border: 1px solid #EBF5EF;
-  padding: 8px 15px;
-  border-radius: 50px;
-  cursor: pointer;
-}
-.ub-feature-hero__button--secondary:hover {
-  color: #F5FAF7;
-  background-color: #181D27;
-  border: 1px solid #181D27;
-  transition: 0.5s ease;
-}
 @media (min-width: 768px) {
   .ub-feature-hero__content {
     padding: 2rem 2rem;
@@ -2292,6 +2246,10 @@ body.menu-open::before {
   .ub-features__item-title {
     font-size: 2.25rem !important;
     line-height: 48px !important;
+  }
+  .ub-features_container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }
 @media (min-width: 768px) {

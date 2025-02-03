@@ -1,4 +1,5 @@
 
+// feature page hero
 .ub-feature-hero {
     &__container {
         padding-top: 0;
@@ -43,25 +44,11 @@
     }
 
     &__button--primary {
-        @include btn(
-            $bgColor: $text-primary, 
-            $hoverBgColor: $background-light-green, 
-            $color: $light-color, 
-            $hoverColor: $text-primary, 
-            $border: $background-light-green, 
-            $hoverBorder: $background-light-green
-        );
+       @extend .btn-primary;
     }
 
     &__button--secondary {
-        @include btn(
-            $bgColor: $background-light-green, 
-            $hoverBgColor: $text-primary, 
-            $color: $text-primary, 
-            $hoverColor: $light-color, 
-            $border: $background-light-green, 
-            $hoverBorder: $text-primary
-        );
+        @extend .btn-secondary;
     } 
 
     @media (min-width: 768px) { 
@@ -144,6 +131,11 @@
         &__item-title {
             font-size: 2.25rem !important;
             line-height: 48px !important;
+        }
+
+        &_container {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
         }
     }
 

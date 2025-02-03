@@ -353,5 +353,40 @@ document.addEventListener("DOMContentLoaded", function () {
 });
   
   
-  
+// latest post filter ==================================================================
+document.addEventListener("DOMContentLoaded", function () {
+    const filterButtons = document.querySelectorAll(".ub-latest-posts__filter-btn");
+    const posts = document.querySelectorAll(".ub-latest-posts__card");
+    const noPostsMessage = document.querySelector(".ub-latest-posts__no-posts");
+
+    filterButtons.forEach(button => {
+        button.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove("ub-latest-posts__filter-btn--active"));
+            this.classList.add("ub-latest-posts__filter-btn--active");
+
+            // Get the selected category
+            const selectedCategory = this.getAttribute("data-category");
+            let hasVisiblePost = false;
+
+            posts.forEach(post => {
+                const postCategory = post.getAttribute("data-category");
+
+                if (selectedCategory === "all" || postCategory === selectedCategory) {
+                    post.style.display = "block";
+                    hasVisiblePost = true;
+                } else {
+                    post.style.display = "none";
+                }
+            });
+
+            // Show or hide the "No Posts Available" message
+            noPostsMessage.style.display = hasVisiblePost ? "none" : "block";
+        });
+    });
+});
+
+
 

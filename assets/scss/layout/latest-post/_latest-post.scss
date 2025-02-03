@@ -105,6 +105,17 @@
         line-height: 1.4; // Matches 28px line height for 20px font size
     }
 
+    &__no-posts {
+        text-align: left;
+        font-size: 18px;
+        color: $white;
+        background-color: $soft-purple;
+        margin-top: 20px;
+        padding: 8px;
+        border-radius: 2px;
+        display: none;
+    }
+    
     @media (max-width: 1024px) {
         &__header {
             flex-direction: column;  

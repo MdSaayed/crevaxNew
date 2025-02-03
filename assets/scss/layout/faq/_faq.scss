@@ -32,6 +32,7 @@
     &__title {
         @extend .section-title;
         text-align: left;
+        margin-left: 0;
     }
 
     &__list {
@@ -111,7 +112,24 @@
             color: $gray-medium;
         }
     }
- 
+
+    // responsive
+    @media (max-width: 640px) {
+        &__item {
+            padding: 1rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        &__item {
+            padding: 1rem;
+        }
+
+        &__grid{
+            column-gap: 0;
+        }
+    }
+
     @media (min-width: 1024px) {
         &__grid {
             grid-template-columns: repeat(3, 1fr);
@@ -121,17 +139,5 @@
             grid-template-columns: repeat(3, 1fr);
             padding-left: 4rem;
         }
-    }
-
-    @media (max-width: 768px) {
-        &__item {
-        padding: 1rem;
-        }
-    }
-
-    @media (max-width: 640px) {
-        &__item {
-        padding: 1rem;
-        }
-    }
+    } 
 }
