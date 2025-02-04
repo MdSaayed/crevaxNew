@@ -3295,7 +3295,7 @@ body.menu-open::before {
 
 .ub-contact__content {
   background-color: #E9D7FE;
-  max-width: 800px;
+  max-width: 600px;
   padding: 3rem;
   border-radius: 20px;
   margin-left: auto;
