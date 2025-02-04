@@ -253,11 +253,11 @@
     justify-content: space-between;
 
     &:nth-child(odd) {
-        background-color: var(--light-purple, #f3e8ff);
+        background-color: $soft-lilac;
     }
 
     &:nth-child(even) {
-        background-color: var(--white, #fff);
+        background-color: $white;
     }
 
     td:last-child {
@@ -326,64 +326,16 @@
       padding: 1rem 0;
     }
 
-    // pricing switcher
-    &__switcher {
-        display: flex;  
-        align-items: center;  
-        justify-content: center;         
-    }
-
-    &__switcher-wrapper{
-      background-color: $purple-haze;
-      padding: 0.5rem;  
-      display: inline-flex;  
-      align-items: center;  
-      justify-content: center;  
-      gap: 1rem;  
-      border-radius: 9999px;    
-    }
-
-    &__switcher-btn {
-      border: none;
-      background: none;
-      color: $dark-gray;
-      font-weight:normal;
-      font-size:18px;
-      line-height:27px;
-      transition: color 0.3s, background-color 0.3s; 
-      padding: 8px 15px;
-      border-radius: 50px;
-      cursor: pointer;
-
-      &--active {
-          background-color: $primary-color; 
-          color:$soft-lilac;
-          font-weight:500;   
-      }
-
-      &:hover {
-          background-color:$primary-color;
-          color:$soft-lilac;
-          font-weight:500;
-      }
-    }
 
     // pricing card
     &__card{
         border: 1px solid $purple-haze;
         border-radius: 10px;
-        padding: 2rem 1rem;
+        padding: 4rem 2rem;
         display: block;
         margin-top: 2rem;
         max-width: 496px; 
-
-        &--hidden{
-          display: none; 
-        }
-
-        &--active{
-          display: block; 
-        }
+        background-color:$purple-haze; 
     }
     
     &__options {
@@ -411,16 +363,19 @@
     }
 
     &__card-desc{
-        margin: 20px 0px;
+        margin-top: 1.5rem;
         color:$gray-medium;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 1rem;
+        line-height: 1.5;
+
     }
 
     &__card-btn{
         @include btn; 
         display: block;
         text-align: center; 
+        margin-top: 2rem;
     }
 
     // responsive
