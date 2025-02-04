@@ -1086,6 +1086,9 @@ body.menu-open::before {
   padding-top: 7rem;
   padding-bottom: 7rem;
 }
+.ub-feature-details__desc {
+  max-width: 540px;
+}
 .ub-feature-details__thumbnail {
   padding: 1.5rem;
   border-radius: 1.5rem;
@@ -1619,7 +1622,7 @@ body.menu-open::before {
   margin: 1.5rem 0 1rem;
 }
 .ub-latest-posts__category {
-  background-color: #F5FAF7;
+  background-color: #F4EBFF;
   padding: 8px 12px;
   border-radius: 0.5rem;
   font-weight: 500;
@@ -1633,7 +1636,7 @@ body.menu-open::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #F5FAF7;
+  background-color: #F4EBFF;
   padding: 6px 12px;
   border-radius: 4px;
 }
@@ -2602,6 +2605,9 @@ body.menu-open::before {
 .ub-feature-details__container {
   padding-top: 7rem;
   padding-bottom: 7rem;
+}
+.ub-feature-details__desc {
+  max-width: 540px;
 }
 .ub-feature-details__thumbnail {
   padding: 1.5rem;
