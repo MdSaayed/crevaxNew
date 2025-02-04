@@ -1011,6 +1011,9 @@ body.menu-open::before {
 .ub-feature-hero__subtitle-group {
   background-color: #FCFAFF;
 }
+.ub-feature-hero__desc {
+  max-width: 651px;
+}
 .ub-feature-hero__button-group {
   margin-top: 2rem;
 }
@@ -1026,7 +1029,7 @@ body.menu-open::before {
 }
 .ub-features__title {
   font-size: 2.8rem;
-  max-width: 640px;
+  max-width: 600px;
 }
 .ub-features__desc {
   max-width: 520px;
@@ -1345,7 +1348,7 @@ body.menu-open::before {
 }
 
 .ub-blog__title {
-  max-width: 640px;
+  max-width: 600px;
 }
 .ub-blog__description {
   max-width: 480px;
@@ -1769,6 +1772,12 @@ body.menu-open::before {
 .ub-pricing__header {
   margin-bottom: 3rem;
 }
+.ub-pricing__title {
+  max-width: 566px;
+}
+.ub-pricing__desc {
+  max-width: 506px;
+}
 .ub-pricing__cards {
   display: grid;
   grid-template-columns: 1fr;
@@ -1802,11 +1811,11 @@ body.menu-open::before {
   font-weight: 500;
   font-size: 1rem;
   line-height: 24px;
-  text-align: center;
+  text-align: left;
 }
 .ub-pricing__plan-description {
   font-size: 1rem;
-  text-align: center;
+  text-align: left;
   margin-top: 1rem;
   color: #414651;
   line-height: 24px;
@@ -1819,7 +1828,7 @@ body.menu-open::before {
   color: #171717;
   font-size: 2.25rem;
   font-weight: 500;
-  text-align: center;
+  text-align: left;
   display: block;
 }
 .ub-pricing__features-list {
@@ -1827,7 +1836,7 @@ body.menu-open::before {
 }
 .ub-pricing__features-list li {
   margin-bottom: 0.75rem;
-  text-align: center;
+  text-align: left;
   color: #414651;
 }
 .ub-pricing__features-list li i {
@@ -2519,6 +2528,9 @@ body.menu-open::before {
 .ub-feature-hero__subtitle-group {
   background-color: #FCFAFF;
 }
+.ub-feature-hero__desc {
+  max-width: 651px;
+}
 .ub-feature-hero__button-group {
   margin-top: 2rem;
 }
@@ -2534,7 +2546,7 @@ body.menu-open::before {
 }
 .ub-features__title {
   font-size: 2.8rem;
-  max-width: 640px;
+  max-width: 600px;
 }
 .ub-features__desc {
   max-width: 520px;

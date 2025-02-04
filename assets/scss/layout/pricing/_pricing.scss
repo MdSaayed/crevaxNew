@@ -26,10 +26,12 @@
 
     &__title {
       @extend .section-title;
+      max-width: 566px;
     }
 
     &__desc {
       @extend .section-desc; 
+      max-width: 506px;
     }
   
     &__cards {
@@ -70,12 +72,12 @@
       font-weight: 500;
       font-size: 1rem;
       line-height: 24px;
-      text-align: center;
+      text-align: left;
     }
 
     &__plan-description {
       font-size: 1rem;
-      text-align: center;
+      text-align: left;
       margin-top: 1rem;
       color: $dark-slate-gray;
       line-height: 24px;
@@ -90,7 +92,7 @@
       color: $dark-neutral;
       font-size: 2.25rem;
       font-weight: 500;
-      text-align: center;
+      text-align: left;
       display: block;
     }
 
@@ -99,7 +101,7 @@
 
       li {
         margin-bottom: 0.75rem;
-        text-align: center;
+        text-align: left;
         color: $dark-slate-gray;
 
         i {

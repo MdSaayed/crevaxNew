@@ -36,6 +36,7 @@
 
     &__desc {
         @extend .section-desc;
+        max-width: 651px;
     }
 
     &__button-group {
@@ -80,7 +81,7 @@
     &__title {
         @extend .section-title;
         font-size: 2.8rem;
-        max-width: 640px;
+        max-width: 600px;
     }
 
     &__desc {
