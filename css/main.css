@@ -1090,7 +1090,7 @@ body.menu-open::before {
   max-width: 540px;
 }
 .ub-feature-details__thumbnail {
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   border-radius: 1.5rem;
   margin-top: 2.5rem;
 }
@@ -1130,10 +1130,6 @@ body.menu-open::before {
   line-height: 1.6;
 }
 @media (min-width: 768px) {
-  .ub-feature-details__content {
-    padding-left: 6rem;
-    padding-right: 6rem;
-  }
   .ub-feature-details__container {
     padding-left: 7rem;
     padding-right: 7rem;
@@ -2558,7 +2554,7 @@ body.menu-open::before {
   max-width: 540px;
 }
 .ub-feature-details__thumbnail {
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   border-radius: 1.5rem;
   margin-top: 2.5rem;
 }
@@ -2598,10 +2594,6 @@ body.menu-open::before {
   line-height: 1.6;
 }
 @media (min-width: 768px) {
-  .ub-feature-details__content {
-    padding-left: 6rem;
-    padding-right: 6rem;
-  }
   .ub-feature-details__container {
     padding-left: 7rem;
     padding-right: 7rem;
