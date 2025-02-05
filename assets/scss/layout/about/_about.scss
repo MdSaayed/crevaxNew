@@ -24,6 +24,7 @@
     &__title {
         @extend .section-title;
         margin-top: 1.5rem; 
+        max-width: 600px;
     }
 
     &__desc {

@@ -2971,6 +2971,7 @@ body.menu-open::before {
 }
 .ub-about-hero__title {
   margin-top: 1.5rem;
+  max-width: 600px;
 }
 .ub-about-hero__image {
   padding: 0 1rem;
