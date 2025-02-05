@@ -1491,7 +1491,7 @@ body.menu-open::before {
   line-height: 1.2 !important;
 }
 .ub-blog-details__thumbnail {
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   border-radius: 1.5rem;
   margin-top: 2.5rem;
 }
@@ -1533,10 +1533,6 @@ body.menu-open::before {
   .ub-blog-details__container {
     padding-left: 7rem;
     padding-right: 7rem;
-  }
-  .ub-blog-details__content {
-    padding-left: 6rem;
-    padding-right: 6rem;
   }
 }
 
