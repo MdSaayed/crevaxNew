@@ -4159,32 +4159,37 @@ body.menu-open::before {
   height: 100vh;
   padding: 1rem;
 }
-.ub-error-page__title {
-  font-size: 3.5rem;
-  font-weight: bold;
-  line-height: 72px;
-  color: #171717;
-  text-align: center;
-}
 .ub-error-page__subtitle {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #404040;
-  line-height: 24px;
+  line-height: 1.5;
   margin: 0.5rem 0;
   text-align: center;
+  max-width: 680px;
 }
 .ub-error-page__content {
   margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .ub-error-page__image {
-  width: 300px;
+  margin: 0 auto;
   height: auto;
 }
 .ub-error-page__message {
-  margin-top: 1rem;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 28px;
+  margin-top: 3.5rem;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.5;
   color: #171717;
   text-align: center;
 }
@@ -4198,6 +4203,12 @@ body.menu-open::before {
 }
 .ub-error-page__btn {
   margin: 0 auto;
+  background-color: #2C1C5F;
+  border: 1px solid #2C1C5F;
+}
+.ub-error-page__btn:hover {
+  border: 1px solid #2C1C5F;
+  color: #2C1C5F;
 }
 
 #footer .footer__content {
