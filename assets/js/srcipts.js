@@ -394,3 +394,59 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+// open positions======================================================================
+document.addEventListener('DOMContentLoaded', function() {
+    const filters = document.querySelectorAll('.ub-open-positions__filter');
+    const items = document.querySelectorAll('.ub-open-positions__item');
+  
+    filters.forEach(filter => {
+      filter.addEventListener('click', function() {
+        const filterValue = this.getAttribute('data-filter');
+  
+        filters.forEach(f => f.classList.remove('ub-open-positions__filter--active'));
+        this.classList.add('ub-open-positions__filter--active');
+  
+        items.forEach(item => {
+          const category = item.getAttribute('data-category');
+          if (filterValue === 'all' || category === filterValue) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  }); 
+
+
+//   open positions item toggle==================
+document.addEventListener('DOMContentLoaded', function () {
+    const items = document.querySelectorAll('.ub-open-positions__item');
+
+    items.forEach(item => {
+        item.addEventListener('click', function () {
+            const contentWrapper = this.querySelector('.ub-open-positions__content-wrapper');
+            const isActive = this.classList.contains('ub-open-positions__item--active');
+
+            // Close all items
+            document.querySelectorAll('.ub-open-positions__item').forEach(el => {
+                el.classList.remove('ub-open-positions__item--active');
+                const wrapper = el.querySelector('.ub-open-positions__content-wrapper');
+                wrapper.style.maxHeight = '0px';
+                wrapper.classList.remove('ub-open-positions__content-wrapper--active');
+            });
+
+            // If not already active, open it
+            if (!isActive) {
+                this.classList.add('ub-open-positions__item--active');
+                contentWrapper.style.maxHeight = contentWrapper.scrollHeight + 'px';
+                contentWrapper.classList.add('ub-open-positions__content-wrapper--active');
+            }
+        });
+    });
+});
+
+
+
+
+

@@ -134,7 +134,7 @@ a {
   margin-bottom: 2rem;
 }
 
-.section-title, .ub-careers-hero__title, .ub-contact__title, .ub-license__title, .ub-about-hero__title, .ub-stats__title, .ub-team-details__title, .ub-team__title, .ub-integrations__title, .ub-hero-integrations__title, .ub-testimonial__title, .ub-hero-pricing__title, .ub-pricing__title, .ub-how-it-works__title, .ub-latest-posts__section-title, .ub-blog-details__title, .ub-blog__title, .ub-cta__title, .ub-faq__title, .ub-feature-details__title, .ub-features__title, .ub-feature-hero__title {
+.section-title, .ub-open-positions__title, .ub-careers-hero__title, .ub-contact__title, .ub-license__title, .ub-about-hero__title, .ub-stats__title, .ub-team-details__title, .ub-team__title, .ub-integrations__title, .ub-hero-integrations__title, .ub-testimonial__title, .ub-hero-pricing__title, .ub-pricing__title, .ub-how-it-works__title, .ub-latest-posts__section-title, .ub-blog-details__title, .ub-blog__title, .ub-cta__title, .ub-faq__title, .ub-feature-details__title, .ub-features__title, .ub-feature-hero__title {
   font-size: 3rem;
   font-weight: 500;
   line-height: 57px;
@@ -146,13 +146,13 @@ a {
   margin: 1.5rem auto;
 }
 @media (max-width: 768px) {
-  .section-title, .ub-careers-hero__title, .ub-contact__title, .ub-license__title, .ub-about-hero__title, .ub-stats__title, .ub-team-details__title, .ub-team__title, .ub-integrations__title, .ub-hero-integrations__title, .ub-testimonial__title, .ub-hero-pricing__title, .ub-pricing__title, .ub-how-it-works__title, .ub-latest-posts__section-title, .ub-blog-details__title, .ub-blog__title, .ub-cta__title, .ub-faq__title, .ub-feature-details__title, .ub-features__title, .ub-feature-hero__title {
+  .section-title, .ub-open-positions__title, .ub-careers-hero__title, .ub-contact__title, .ub-license__title, .ub-about-hero__title, .ub-stats__title, .ub-team-details__title, .ub-team__title, .ub-integrations__title, .ub-hero-integrations__title, .ub-testimonial__title, .ub-hero-pricing__title, .ub-pricing__title, .ub-how-it-works__title, .ub-latest-posts__section-title, .ub-blog-details__title, .ub-blog__title, .ub-cta__title, .ub-faq__title, .ub-feature-details__title, .ub-features__title, .ub-feature-hero__title {
     font-size: 2.8rem !important;
     line-height: 48px !important;
   }
 }
 
-.section-desc, .ub-careers-hero__desc, .ub-terms__desc, .ub-privacy-policy__desc, .ub-license__desc, .ub-about-hero__desc, .ub-team-details__desc, .ub-integrations__desc, .ub-hero-integrations__desc, .ub-testimonial__desc, .ub-hero-pricing__desc, .ub-pricing__desc, .ub-how-it-works__desc, .ub-blog-details__desc, .ub-blog__description, .ub-feature-details__desc, .ub-features__desc, .ub-feature-hero__desc, .hero__desc, .ub-hero-home__desc {
+.section-desc, .ub-open-positions__desc, .ub-careers-hero__desc, .ub-terms__desc, .ub-privacy-policy__desc, .ub-license__desc, .ub-about-hero__desc, .ub-team-details__desc, .ub-integrations__desc, .ub-hero-integrations__desc, .ub-testimonial__desc, .ub-hero-pricing__desc, .ub-pricing__desc, .ub-how-it-works__desc, .ub-blog-details__desc, .ub-blog__description, .ub-feature-details__desc, .ub-features__desc, .ub-feature-hero__desc, .hero__desc, .ub-hero-home__desc {
   margin-top: 1rem;
   font-size: 18px;
   line-height: 27px;
@@ -3573,6 +3573,125 @@ body.menu-open::before {
   .ub-career-details__content {
     grid-column: span 2;
   }
+}
+
+.ub-open-positions {
+  background-color: #fff;
+}
+.ub-open-positions__desc {
+  max-width: 400px;
+}
+.ub-open-positions__filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 2rem;
+}
+.ub-open-positions__filters-wrapper {
+  background-color: #F9F5FF;
+  padding: 8px 4px;
+  border-radius: 8px;
+}
+.ub-open-positions__filter {
+  padding: 4px 16px;
+  margin: 0 10px;
+  color: #404040;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  border-radius: 4px;
+  font-weight: normal;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border: none;
+  background-color: transparent;
+}
+.ub-open-positions__filter--active, .ub-open-positions__filter:hover {
+  background-color: #7F56D9;
+  color: #fff;
+  border: none;
+}
+.ub-open-positions__list {
+  margin-top: 5rem;
+  max-width: 900px;
+  background-color: #F9F5FF;
+  padding: 1.5rem;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+.ub-open-positions__item {
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  background-color: #fff;
+  border-top: 1px solid #F4EBFF;
+  -webkit-transition: background-color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
+  cursor: pointer;
+}
+.ub-open-positions__item--active {
+  background-color: #2C1C5F;
+  color: #FAFAFA;
+}
+.ub-open-positions__item--active .ub-open-positions__item-title,
+.ub-open-positions__item--active .ub-open-positions__item-location,
+.ub-open-positions__item--active .ub-open-positions__item-desc {
+  color: #FAFAFA;
+}
+.ub-open-positions__item-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #171717;
+  -webkit-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+.ub-open-positions__item-location {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: normal;
+  color: #FAFAFA;
+}
+.ub-open-positions__item-desc {
+  font-size: 14px;
+  color: #FAFAFA;
+  margin-top: 1.5rem;
+}
+.ub-open-positions__item-apply {
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 8px 12px;
+  background-color: #7F56D9;
+  color: #fff;
+  margin-top: 1.5rem;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  border-radius: 32px;
+}
+.ub-open-positions__item-apply:hover {
+  background-color: #fff;
+  color: #7F56D9;
+}
+.ub-open-positions__item:not(:last-child) {
+  margin-bottom: -12px;
+}
+.ub-open-positions__content-wrapper {
+  visibility: hidden;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.ub-open-positions__content-wrapper--active {
+  visibility: visible;
+  opacity: 1;
+  max-height: 500px;
 }
 
 .ub-hero-integrations__title {
