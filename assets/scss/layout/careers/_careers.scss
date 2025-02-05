@@ -36,25 +36,11 @@
     }
 
     &__btn--primary { 
-        @include btn(
-            $bgColor: $text-primary,
-            $hoverBgColor: $background-light-green,
-            $color: $light-color,
-            $hoverColor: $text-primary,
-            $border: $background-light-green,
-            $hoverBorder: $background-light-green
-        );
+       @extend .btn-primary;
     }
 
     &__btn--secondary {
-        @include btn(
-            $bgColor: $background-light-green,
-            $hoverBgColor: $text-primary,
-            $color: $text-primary,
-            $hoverColor: $light-color,
-            $border: $background-light-green,
-            $hoverBorder: $text-primary
-        );
+        @extend .btn-secondary;
     }
 }
 

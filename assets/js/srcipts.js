@@ -108,52 +108,56 @@ filterButtons.forEach(button => {
 
   
 // Countdown Section ==========================================================================
+
+// Function to start the counter animation
 function startCounter() {
-  const counters = document.querySelectorAll('#ub-stats .ub-stats__animated-text');
+    const counters = document.querySelectorAll('.count');
 
-  counters.forEach(counter => {
-      const target = +counter.getAttribute('data-target'); // Get the target number
-      let count = 0;
-      const duration = 2000; // Animation duration in milliseconds
-      const startTime = performance.now(); // Get the start time for smooth animation
+    counters.forEach(counter => {
+        const target = parseInt(counter.getAttribute('data-target')); // Get the target number
+        let count = 0;
+        const duration = 2000; // Animation duration in milliseconds
+        const startTime = performance.now(); // Get the start time for smooth animation
 
-      const updateCounter = (currentTime) => {
-          const elapsedTime = currentTime - startTime; // Calculate elapsed time
-          const progress = Math.min(elapsedTime / duration, 1); // Ensure progress doesn't exceed 1
-          count = Math.floor(progress * target); // Calculate the current count
+        const updateCounter = (currentTime) => {
+            const elapsedTime = currentTime - startTime; // Calculate elapsed time
+            const progress = Math.min(elapsedTime / duration, 1); // Ensure progress doesn't exceed 1
+            count = Math.floor(progress * target); // Calculate the current count
 
-          counter.textContent = count.toLocaleString(); // Update the counter text with formatted number
+            counter.textContent = count.toLocaleString(); // Update the counter text with formatted number
 
-          if (progress < 1) {
-              requestAnimationFrame(updateCounter); // Continue the animation
-          } else {
-              counter.textContent = target.toLocaleString(); // Ensure it ends at the target
-          }
-      };
+            if (progress < 1) {
+                requestAnimationFrame(updateCounter); // Continue the animation
+            } else {
+                counter.textContent = target.toLocaleString(); // Ensure it ends at the target
+            }
+        };
 
-      requestAnimationFrame(updateCounter); // Start the animation
-  });
+        requestAnimationFrame(updateCounter); // Start the animation
+    });
 }
 
-// Trigger the counter animation when the section comes into view
+// Trigger the counter animation when the section is in view
 document.addEventListener('DOMContentLoaded', () => {
-  const statsSection = document.getElementById('ub-stats');
+    const statsSections = document.querySelectorAll('.counter-view'); // ✅ Selecting by class
 
-  if (statsSection) {
-      const observer = new IntersectionObserver(
-          (entries) => {
-              if (entries[0].isIntersecting) {
-                  startCounter(); // Start the counter when the section is visible
-                  observer.disconnect();  
-              }
-          },
-          { threshold: 0.5 } 
-      );
+    if (statsSections.length > 0) {
+        const observer = new IntersectionObserver(
+            (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        startCounter(); // Start the counter when section is visible
+                        observer.disconnect(); // Stop observing after first trigger
+                    }
+                });
+            },
+            { threshold: 0.5 } // Trigger when 50% of the section is visible
+        );
 
-      observer.observe(statsSection);  
-  } else {
-      console.error('Element with id "ub-stats" not found in the DOM.');
-  }
+        statsSections.forEach(section => observer.observe(section)); // Observe each section
+    } else {
+        console.error('Elements with class "counter-view" not found in the DOM.');
+    }
 });
 
   

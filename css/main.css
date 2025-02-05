@@ -84,7 +84,7 @@ a {
   font-weight: 800;
   font-style: normal;
 }
-.btn, .ub-auth__tab, .btn-primary, .ub-error-page__btn, .ub-blog__btn, .ub-feature-hero__button--primary, .ub-hero-home__button--primary {
+.btn, .ub-auth__tab, .btn-primary, .ub-error-page__btn, .ub-careers-hero__btn--primary, .ub-blog__btn, .ub-feature-hero__button--primary, .ub-hero-home__button--primary {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -95,7 +95,7 @@ a {
   border-radius: 50px;
   cursor: pointer;
 }
-.btn:hover, .ub-auth__tab:hover, .btn-primary:hover, .ub-error-page__btn:hover, .ub-blog__btn:hover, .ub-feature-hero__button--primary:hover, .ub-hero-home__button--primary:hover {
+.btn:hover, .ub-auth__tab:hover, .btn-primary:hover, .ub-error-page__btn:hover, .ub-careers-hero__btn--primary:hover, .ub-blog__btn:hover, .ub-feature-hero__button--primary:hover, .ub-hero-home__button--primary:hover {
   color: #7F56D9;
   background-color: transparent;
   border: 1px solid #7F56D9;
@@ -103,7 +103,7 @@ a {
   transition: 0.5s ease;
 }
 
-.btn-secondary, .ub-auth__link, .ub-feature-hero__button--secondary, .ub-hero-home__button--secondary {
+.btn-secondary, .ub-auth__link, .ub-careers-hero__btn--secondary, .ub-feature-hero__button--secondary, .ub-hero-home__button--secondary {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -114,7 +114,7 @@ a {
   border-radius: 50px;
   cursor: pointer;
 }
-.btn-secondary:hover, .ub-auth__link:hover, .ub-feature-hero__button--secondary:hover, .ub-hero-home__button--secondary:hover {
+.btn-secondary:hover, .ub-auth__link:hover, .ub-careers-hero__btn--secondary:hover, .ub-feature-hero__button--secondary:hover, .ub-hero-home__button--secondary:hover {
   color: #F5FAF7;
   background-color: #7F56D9;
   border: 1px solid #7F56D9;
@@ -134,7 +134,7 @@ a {
   margin-bottom: 2rem;
 }
 
-.section-title, .ub-careers-hero__title, .ub-contact__title, .ub-license__title, .ub-about-hero__title, .ub-team-details__title, .ub-team__title, .ub-integrations__title, .ub-hero-integrations__title, .ub-testimonial__title, .ub-hero-pricing__title, .ub-pricing__title, .ub-how-it-works__title, .ub-latest-posts__section-title, .ub-blog-details__title, .ub-blog__title, .ub-cta__title, .ub-faq__title, .ub-feature-details__title, .ub-features__title, .ub-feature-hero__title {
+.section-title, .ub-careers-hero__title, .ub-contact__title, .ub-license__title, .ub-about-hero__title, .ub-stats__title, .ub-team-details__title, .ub-team__title, .ub-integrations__title, .ub-hero-integrations__title, .ub-testimonial__title, .ub-hero-pricing__title, .ub-pricing__title, .ub-how-it-works__title, .ub-latest-posts__section-title, .ub-blog-details__title, .ub-blog__title, .ub-cta__title, .ub-faq__title, .ub-feature-details__title, .ub-features__title, .ub-feature-hero__title {
   font-size: 3rem;
   font-weight: 500;
   line-height: 57px;
@@ -146,7 +146,7 @@ a {
   margin: 1.5rem auto;
 }
 @media (max-width: 768px) {
-  .section-title, .ub-careers-hero__title, .ub-contact__title, .ub-license__title, .ub-about-hero__title, .ub-team-details__title, .ub-team__title, .ub-integrations__title, .ub-hero-integrations__title, .ub-testimonial__title, .ub-hero-pricing__title, .ub-pricing__title, .ub-how-it-works__title, .ub-latest-posts__section-title, .ub-blog-details__title, .ub-blog__title, .ub-cta__title, .ub-faq__title, .ub-feature-details__title, .ub-features__title, .ub-feature-hero__title {
+  .section-title, .ub-careers-hero__title, .ub-contact__title, .ub-license__title, .ub-about-hero__title, .ub-stats__title, .ub-team-details__title, .ub-team__title, .ub-integrations__title, .ub-hero-integrations__title, .ub-testimonial__title, .ub-hero-pricing__title, .ub-pricing__title, .ub-how-it-works__title, .ub-latest-posts__section-title, .ub-blog-details__title, .ub-blog__title, .ub-cta__title, .ub-faq__title, .ub-feature-details__title, .ub-features__title, .ub-feature-hero__title {
     font-size: 2.8rem !important;
     line-height: 48px !important;
   }
@@ -181,7 +181,7 @@ a {
   }
 }
 
-.hero__subtitle-area, .ub-careers-hero__subtitle-area, .ub-about-hero__subtitle-area, .ub-integrations__subtitle-area, .ub-hero-integrations__subtitle-area, .ub-testimonial__subtitle-area, .ub-hero-pricing__subtitle-area, .ub-pricing__subtitle-area, .ub-how-it-works__subtitle-area, .ub-blog__subtitle-area, .ub-faq__subtitle-area, .ub-feature-details__subtitle-area, .ub-features__subtitle-area, .ub-feature-hero__subtitle-area, .ub-hero-home__subtitle-area, .hero__subtitle-group, .ub-careers-hero__subtitle-group, .ub-about-hero__subtitle-group, .ub-integrations__subtitle-group, .ub-hero-integrations__subtitle-group, .ub-testimonial__subtitle-group, .ub-hero-pricing__subtitle-group, .ub-pricing__subtitle-group, .ub-how-it-works__subtitle-group, .ub-blog__subtitle-group, .ub-faq__subtitle-group, .ub-feature-details__subtitle-group, .ub-features__subtitle-group, .ub-feature-hero__subtitle-group, .ub-hero-home__subtitle-group {
+.hero__subtitle-area, .ub-careers-hero__subtitle-area, .ub-about-hero__subtitle-area, .ub-stats__subtitle-area, .ub-integrations__subtitle-area, .ub-hero-integrations__subtitle-area, .ub-testimonial__subtitle-area, .ub-hero-pricing__subtitle-area, .ub-pricing__subtitle-area, .ub-how-it-works__subtitle-area, .ub-blog__subtitle-area, .ub-faq__subtitle-area, .ub-feature-details__subtitle-area, .ub-features__subtitle-area, .ub-feature-hero__subtitle-area, .ub-hero-home__subtitle-area, .hero__subtitle-group, .ub-careers-hero__subtitle-group, .ub-about-hero__subtitle-group, .ub-stats__subtitle-group, .ub-integrations__subtitle-group, .ub-hero-integrations__subtitle-group, .ub-testimonial__subtitle-group, .ub-hero-pricing__subtitle-group, .ub-pricing__subtitle-group, .ub-how-it-works__subtitle-group, .ub-blog__subtitle-group, .ub-faq__subtitle-group, .ub-feature-details__subtitle-group, .ub-features__subtitle-group, .ub-feature-hero__subtitle-group, .ub-hero-home__subtitle-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,7 +193,7 @@ a {
           align-items: center;
 }
 
-.hero__subtitle-group, .ub-careers-hero__subtitle-group, .ub-about-hero__subtitle-group, .ub-integrations__subtitle-group, .ub-hero-integrations__subtitle-group, .ub-testimonial__subtitle-group, .ub-hero-pricing__subtitle-group, .ub-pricing__subtitle-group, .ub-how-it-works__subtitle-group, .ub-blog__subtitle-group, .ub-faq__subtitle-group, .ub-feature-details__subtitle-group, .ub-features__subtitle-group, .ub-feature-hero__subtitle-group, .ub-hero-home__subtitle-group {
+.hero__subtitle-group, .ub-careers-hero__subtitle-group, .ub-about-hero__subtitle-group, .ub-stats__subtitle-group, .ub-integrations__subtitle-group, .ub-hero-integrations__subtitle-group, .ub-testimonial__subtitle-group, .ub-hero-pricing__subtitle-group, .ub-pricing__subtitle-group, .ub-how-it-works__subtitle-group, .ub-blog__subtitle-group, .ub-faq__subtitle-group, .ub-feature-details__subtitle-group, .ub-features__subtitle-group, .ub-feature-hero__subtitle-group, .ub-hero-home__subtitle-group {
   background: #F4EBFF;
   border: 1px solid #E9EAEB;
   padding: 4px 16px;
@@ -201,7 +201,7 @@ a {
   gap: 5px;
 }
 
-.hero__subtitle, .ub-careers-hero__subtitle, .ub-about-hero__subtitle, .ub-integrations__subtitle, .ub-hero-integrations__subtitle, .ub-testimonial__subtitle, .ub-hero-pricing__pricing-hero__subtitle, .ub-pricing__subtitle, .ub-how-it-works__subtitle, .ub-blog__subtitle, .ub-faq__subtitle, .ub-feature-details__subtitle, .ub-features__subtitle, .ub-feature-hero__subtitle, .ub-hero-home__subtitle {
+.hero__subtitle, .ub-careers-hero__subtitle, .ub-about-hero__subtitle, .ub-stats__subtitle, .ub-integrations__subtitle, .ub-hero-integrations__subtitle, .ub-testimonial__subtitle, .ub-hero-pricing__pricing-hero__subtitle, .ub-pricing__subtitle, .ub-how-it-works__subtitle, .ub-blog__subtitle, .ub-faq__subtitle, .ub-feature-details__subtitle, .ub-features__subtitle, .ub-feature-hero__subtitle, .ub-hero-home__subtitle {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -1769,7 +1769,7 @@ body.menu-open::before {
 .ub-pricing.ub-pricing--padded {
   padding: 0 1rem;
 }
-.ub-pricing.hero__subtitle-group, .ub-pricing.ub-careers-hero__subtitle-group, .ub-pricing.ub-about-hero__subtitle-group, .ub-pricing.ub-integrations__subtitle-group, .ub-pricing.ub-hero-integrations__subtitle-group, .ub-pricing.ub-testimonial__subtitle-group, .ub-pricing.ub-hero-pricing__subtitle-group, .ub-pricing.ub-pricing__subtitle-group, .ub-pricing.ub-hero-home__subtitle-group, .ub-pricing.ub-feature-hero__subtitle-group, .ub-pricing.ub-features__subtitle-group, .ub-pricing.ub-feature-details__subtitle-group, .ub-pricing.ub-faq__subtitle-group, .ub-pricing.ub-blog__subtitle-group, .ub-pricing.ub-how-it-works__subtitle-group {
+.ub-pricing.hero__subtitle-group, .ub-pricing.ub-careers-hero__subtitle-group, .ub-pricing.ub-about-hero__subtitle-group, .ub-pricing.ub-stats__subtitle-group, .ub-pricing.ub-integrations__subtitle-group, .ub-pricing.ub-hero-integrations__subtitle-group, .ub-pricing.ub-testimonial__subtitle-group, .ub-pricing.ub-hero-pricing__subtitle-group, .ub-pricing.ub-pricing__subtitle-group, .ub-pricing.ub-hero-home__subtitle-group, .ub-pricing.ub-feature-hero__subtitle-group, .ub-pricing.ub-features__subtitle-group, .ub-pricing.ub-feature-details__subtitle-group, .ub-pricing.ub-faq__subtitle-group, .ub-pricing.ub-blog__subtitle-group, .ub-pricing.ub-how-it-works__subtitle-group {
   padding: 0 1rem;
 }
 .ub-pricing__header {
@@ -2608,22 +2608,22 @@ body.menu-open::before {
   }
 }
 
+.ub-team__container {
+  padding-top: 0;
+  padding-bottom: 4rem;
+}
 .ub-team__title {
-  margin-bottom: 5rem;
-  max-width: 37rem;
+  margin-bottom: 4rem;
+  max-width: 1000px;
 }
 .ub-team__members {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 3rem;
+  gap: 1.5rem;
 }
 .ub-team__member {
   border-radius: 12px;
   overflow: hidden;
-}
-.ub-team__member-info {
-  padding-bottom: 4px;
-  border-bottom: 1px solid #6941C6;
 }
 .ub-team__member-image {
   display: -webkit-box;
@@ -2635,86 +2635,64 @@ body.menu-open::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 320px;
+  height: auto;
   width: 100%;
-  background-color: #7F56D9;
-  border-radius: 12px;
+  border-radius: 1rem;
   position: relative;
   overflow: hidden;
-  z-index: -1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .ub-team__member-image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
+  z-index: -1;
 }
-.ub-team__member-details {
+.ub-team__member-info {
+  padding-bottom: 4px;
   background-color: #fff;
-  border-radius: 8px;
-  padding: 1rem 1.5rem;
-  margin: -20px 12px 12px;
-  -webkit-box-shadow: 0px 6px 15px -10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 6px 15px -10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-top: 8px;
+}
+.ub-team__member-link {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
   z-index: 9999;
 }
 .ub-team__member-name {
   color: #171717;
   font-size: 1.25rem;
   font-weight: 500;
-  text-align: center;
+  text-align: left;
   margin-bottom: 4px;
 }
-.ub-team__member-role {
+.ub-team__member-position {
   font-size: 14px;
   font-weight: 400;
   color: #404040;
-  text-align: center;
+  text-align: left;
   line-height: 1.5;
-}
-.ub-team__member-social {
-  margin-top: 21px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 8px;
-}
-.ub-team__social-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #7F56D9;
-  width: 21px;
-  height: 21px;
-  border-radius: 50%;
 }
 @media (min-width: 768px) {
   .ub-team__members {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-}
-@media (min-width: 1024px) {
-  .ub-team__members {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
   }
 }
 @media (min-width: 1280px) {
   .ub-team__members {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -2792,6 +2770,7 @@ body.menu-open::before {
   font-weight: 700;
 }
 .ub-team-details__member {
+  border-radius: 12px;
   overflow: hidden;
 }
 .ub-team-details__member-image {
@@ -2804,65 +2783,55 @@ body.menu-open::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 320px;
+  height: auto;
   width: 100%;
-  background-color: #7F56D9;
-  border-radius: 12px;
+  border-radius: 1rem;
   position: relative;
   overflow: hidden;
-  z-index: -1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-.ub-team-details__member-details {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 1rem 1.5rem;
-  margin: -20px 12px 12px;
-  -webkit-box-shadow: 0px 6px 15px -10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 6px 15px -10px rgba(0, 0, 0, 0.1);
-  z-index: 9999;
+.ub-team-details__member-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
 }
 .ub-team-details__member-info {
   padding-bottom: 4px;
-  border-bottom: 1px solid #6941C6;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-top: 8px;
+}
+.ub-team-details__member-link {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 9999;
 }
 .ub-team-details__member-name {
   color: #171717;
   font-size: 1.25rem;
   font-weight: 500;
-  text-align: center;
+  text-align: left;
   margin-bottom: 4px;
 }
-.ub-team-details__member-role {
+.ub-team-details__member-position {
   font-size: 14px;
   font-weight: 400;
   color: #404040;
-  text-align: center;
+  text-align: left;
   line-height: 1.5;
-}
-.ub-team-details__member-social {
-  margin-top: 21px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 8px;
-}
-.ub-team-details__social-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #7F56D9;
-  width: 21px;
-  height: 21px;
-  border-radius: 50%;
 }
 
 #ub-mission .container .mission-vision__content {
@@ -2918,27 +2887,28 @@ body.menu-open::before {
   padding-bottom: 2.5rem;
 }
 .ub-stats__title {
-  color: #171717;
-  font-weight: 500;
-  font-size: 2.5rem;
-  line-height: 1.5;
-  text-align: center;
-  margin-bottom: 3.5rem;
+  max-width: 658px;
+  margin-bottom: 5rem;
 }
 .ub-stats__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.25rem;
 }
+.ub-stats__grid--primary {
+  background-color: #42307D;
+  border-radius: 2rem;
+  padding: 2.5rem;
+}
 .ub-stats__card {
   border-radius: 12px;
   padding: 2rem 1rem;
   text-align: left;
-  border: 1px solid #F4EBFF;
   border-radius: 1rem;
 }
 .ub-stats__card--bg-white {
   background-color: #fff;
+  border: 1px solid #F4EBFF;
 }
 .ub-stats__card-title {
   font-size: 1rem;
@@ -2962,6 +2932,17 @@ body.menu-open::before {
 .ub-stats__animated-text {
   display: inline-block;
 }
+.ub-stats__animated-text--white {
+  color: #fff;
+}
+.ub-stats__description {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-top: 1rem;
+  max-width: 188px;
+}
 .ub-stats__plus-sign {
   font-size: 1.5rem;
   margin-left: 0.25rem;
@@ -2972,6 +2953,9 @@ body.menu-open::before {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 1rem;
+}
+.ub-stats__plus-sign--white {
+  color: #fff;
 }
 @media (max-width: 768px) {
   .ub-stats__card-title {
@@ -3417,43 +3401,6 @@ body.menu-open::before {
 .ub-careers-hero__btn-wrapper {
   margin: 2rem 0;
 }
-.ub-careers-hero__btn--primary {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #F5FAF7;
-  background-color: #181D27;
-  border: 1px solid #EBF5EF;
-  padding: 8px 15px;
-  border-radius: 50px;
-  cursor: pointer;
-}
-.ub-careers-hero__btn--primary:hover {
-  color: #181D27;
-  background-color: #EBF5EF;
-  border: 1px solid #EBF5EF;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-}
-.ub-careers-hero__btn--secondary {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #181D27;
-  background-color: #EBF5EF;
-  border: 1px solid #EBF5EF;
-  padding: 8px 15px;
-  border-radius: 50px;
-  cursor: pointer;
-}
-.ub-careers-hero__btn--secondary:hover {
-  color: #F5FAF7;
-  background-color: #181D27;
-  border: 1px solid #181D27;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-}
-
 .ub-career-details__wrapper {
   display: grid;
   grid-template-columns: 1fr;
@@ -4435,8 +4382,8 @@ body.menu-open::before {
   left: 0;
   width: 100%;
   height: 1px;
-  background: -webkit-gradient(linear, left top, right top, from(#EEEEEE), color-stop(50%, #7F56D9), to(#888888));
-  background: linear-gradient(90deg, #EEEEEE 0%, #7F56D9 50%, #888888 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(238, 238, 238, 0)), color-stop(24.7%, rgba(238, 238, 238, 0)), color-stop(49.61%, #7F56D9), color-stop(87.59%, rgba(136, 136, 136, 0)), to(rgba(136, 136, 136, 0)));
+  background: linear-gradient(90deg, rgba(238, 238, 238, 0) 0%, rgba(238, 238, 238, 0) 24.7%, #7F56D9 49.61%, rgba(136, 136, 136, 0) 87.59%, rgba(136, 136, 136, 0) 100%);
 }
 #footer .footer__content .footer__copyright .footer__copyright-text {
   font-style: 14px;

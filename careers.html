@@ -142,37 +142,47 @@
         <!-- hero end here --> 
 
         <!-- Stats Section Start -->
-        <section id="ub-stats" class="ub-stats">
-            <div class="ub-stats__container container stats__container--padded">
-                <h2 class="ub-stats__title">Key Accomplishments</h2>
-                <div class="ub-stats__grid">
-                    <div class="ub-stats__card stats__card--bg-white">
-                        <h3 class="ub-stats__card-title">Satisfied Customers</h3>
-                        <p class="ub-stats__card-value">
-                            <span class="ub-stats__animated-text count" data-target="10000">10,000</span>
-                            <span class="ub-stats__plus-sign"><i class="fa-solid fa-plus"></i></span>
-                        </p>
+        <section id="ub-stats" class="ub-stats counter-view">
+            <div class="ub-stats__container container ub-stats__container--padded">
+                <div class="ub-stats__header">
+                    <div class="ub-stats__subtitle-area">
+                        <div class="ub-stats__subtitle-group">
+                            <img class="ub-stats__icon" src="./assets/icons/fav.svg" alt="Favorite Icon">
+                            <span class="ub-stats__subtitle">Our Impacts</span>
+                        </div> 
                     </div>
-                    <div class="ub-stats__card stats__card--bg-white">
-                        <h3 class="ub-stats__card-title">Conversion to Velocity</h3>
-                        <p class="ub-stats__card-value">
-                            <span class="ub-stats__animated-text count" data-target="13700">13,700</span>
-                            <span class="ub-stats__plus-sign"><i class="fa-solid fa-plus"></i></span>
-                        </p>
+                    <h2 class="ub-stats__title">Since we started, Kindora has really made a big splash!</h2>
+                </div>
+
+                <!-- Stats grid area -->
+                <div class="ub-stats__grid  ub-stats__grid--primary">
+                    <div class="ub-stats__card ">
+                        <div class="ub-stats__card-value">
+                            <span class="ub-stats__animated-text ub-stats__animated-text--white count" data-target="10000">10,000</span>
+                            <span class="ub-stats__plus-sign ub-stats__plus-sign--white"><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                        <p class="ub-stats__description">Children supported from around the globe</p>
                     </div>
-                    <div class="ub-stats__card stats__card--bg-white">
-                        <h3 class="ub-stats__card-title">Data Processed Monthly</h3>
-                        <p class="ub-stats__card-value">
-                            <span class="ub-stats__animated-text count" data-target="47800">47,800</span>
-                            <span class="ub-stats__plus-sign"><i class="fa-solid fa-plus"></i></span>
-                        </p>
+                    <div class="ub-stats__card ">
+                        <div class="ub-stats__card-value">
+                            <span class="ub-stats__animated-text ub-stats__animated-text--white  count" data-target="3000">3000</span>
+                            <span class="ub-stats__plus-sign ub-stats__plus-sign--white"><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                        <p class="ub-stats__description">Disaster relief missions completed</p>
                     </div>
-                    <div class="ub-stats__card stats__card--bg-white">
-                        <h3 class="ub-stats__card-title">Highest Company Feedbacks</h3>
-                        <p class="ub-stats__card-value">
-                            <span class="ub-stats__animated-text count" data-target="93700">93,700</span>
-                            <span class="ub-stats__plus-sign"><i class="fa-solid fa-plus"></i></span>
-                        </p>
+                    <div class="ub-stats__card ">
+                        <div class="ub-stats__card-value">
+                            <span class="ub-stats__animated-text ub-stats__animated-text--white  count" data-target="20000">20000/span>
+                            <span class="ub-stats__plus-sign ub-stats__plus-sign--white"><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                        <p class="ub-stats__description">Individuals directly impacted through program</p>
+                    </div>
+                    <div class="ub-stats__card ">
+                        <div class="ub-stats__card-value">
+                            <span class="ub-stats__animated-text ub-stats__animated-text--white  count" data-target="12">12 Million</span>
+                            <span class="ub-stats__plus-sign ub-stats__plus-sign--white"><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                        <p class="ub-stats__description">Raised to support education, healthcare, and disaster relief</p>
                     </div>
                 </div>
             </div>
@@ -353,10 +363,12 @@
                 <div class="ub-blog__cards">
                     <article class="ub-blog__card">
                         <div class="ub-blog__card-image-wrapper">
-                            <img src="./assets/img/blog/blog-1.png" alt="Analytics tool icon" class="ub-blog__card-image" >
+                            <img src="./assets/img/blog/blog-1.png" alt="Analytics tool icon" class="ub-blog__card-image">
                         </div>
                         <div class="ub-blog__card-content">
-                            <h3 class="ub-blog__card-title">How real-time analytics can transform your money strategy!</h3>
+                            <a href="./blog-single.html" class="ub-blog__card-link">
+                                <h3 class="ub-blog__card-title">How real-time analytics can transform your money strategy!</h3>
+                            </a>
                             <p class="ub-blog__card-text">Ideal for startups, our Starter Plan provides essential tools for easy financial management.</p>
                             <div class="ub-blog__card-link-wrapper">
                                 <a href="./blog-single.html" class="ub-blog__card-link">Read post</a>
@@ -367,10 +379,12 @@
         
                     <article class="ub-blog__card">
                         <div class="ub-blog__card-image-wrapper">
-                            <img src="./assets/img/blog/blog-2.png" alt="Active users analytics" class="ub-blog__card-image" >
+                            <img src="./assets/img/blog/blog-2.png" alt="Active users analytics" class="ub-blog__card-image">
                         </div>
                         <div class="ub-blog__card-content">
-                            <h3 class="ub-blog__card-title">Simplify and empower your financial management with MezApp v</h3>
+                            <a href="./blog-single.html" class="ub-blog__card-link">
+                                <h3 class="ub-blog__card-title">Simplify and empower your financial management with MezApp</h3>
+                            </a>
                             <p class="ub-blog__card-text">Our Launch Package is ideal for providing all the tools to manage finances like a pro.</p>
                             <div class="ub-blog__card-link-wrapper">
                                 <a href="./blog-single.html" class="ub-blog__card-link">Read post</a>
@@ -381,10 +395,12 @@
         
                     <article class="ub-blog__card">
                         <div class="ub-blog__card-image-wrapper">
-                            <img src="./assets/img/blog/blog-3.png" alt="Money flow chart" class="ub-blog__card-image" >
+                            <img src="./assets/img/blog/blog-3.png" alt="Money flow chart" class="ub-blog__card-image">
                         </div>
                         <div class="ub-blog__card-content">
-                            <h3 class="ub-blog__card-title">How real-time analytics can transform your money strategy!</h3>
+                            <a href="./blog-single.html" class="ub-blog__card-link">
+                                <h3 class="ub-blog__card-title">How real-time analytics can transform your money strategy!</h3>
+                            </a>
                             <p class="ub-blog__card-text">Ideal for startups, our Starter Plan offers essential tools for easy financial management.</p>
                             <div class="ub-blog__card-link-wrapper">
                                 <a href="./blog-single.html" class="ub-blog__card-link">Read post</a>
@@ -395,7 +411,7 @@
                 </div>
         
                 <div class="ub-blog__btn-wrapper">
-                    <a href="#" class="ub-blog__btn">See all blogs</a>
+                    <a href="blog.html" class="ub-blog__btn">See all blogs</a>
                 </div>
             </div>
         </section>
