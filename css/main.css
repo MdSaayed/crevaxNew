@@ -2807,18 +2807,6 @@ body.menu-open::before {
   border-radius: 1rem;
   margin-top: 8px;
 }
-.ub-team-details__member-link {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 50%;
-  width: 25px;
-  height: 25px;
-  cursor: pointer;
-  z-index: 9999;
-}
 .ub-team-details__member-name {
   color: #171717;
   font-size: 1.25rem;
@@ -2965,6 +2953,11 @@ body.menu-open::before {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .ub-stats__description {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 1rem;
   }
 }
 
@@ -3849,6 +3842,15 @@ body.menu-open::before {
   }
 }
 
+.ub-auth {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .ub-auth__container {
   padding: 0;
 }
@@ -3860,16 +3862,14 @@ body.menu-open::before {
       -ms-flex-align: center;
           align-items: center;
   padding: 2rem;
-  min-height: 100lvh;
 }
 .ub-auth__welcome {
-  background-color: #6941C6;
+  background-color: #42307D;
   border-radius: 20px;
-  height: 100%;
   padding: 4rem 3rem;
+  height: calc(100% - 8rem);
 }
 .ub-auth__welcome-content {
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3883,18 +3883,26 @@ body.menu-open::before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 100%;
 }
 .ub-auth__title {
   color: #fff;
   text-align: center;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 500;
 }
 .ub-auth__desc {
+  font-size: 1rem;
   color: #FCFAFF;
   text-align: center;
+  font-weight: 500;
+  line-height: 1.5;
 }
 .ub-auth__feature-title {
-  font-size: 2rem;
-  line-height: 48px;
+  color: #FAFAFA;
+  font-size: 2.5rem;
+  line-height: 1.5;
   font-weight: 500;
   color: #E9EAEB;
   margin-bottom: 12px;
@@ -3942,13 +3950,13 @@ body.menu-open::before {
           justify-content: center;
   padding: 2rem 7rem;
   position: relative;
-  height: 100vh;
+  height: 100%;
 }
 .ub-auth__brand {
   margin-bottom: 2rem;
 }
 .ub-auth__tabs {
-  background-color: #E9D7FE;
+  background-color: #F9F5FF;
   border-radius: 8px;
   padding: 5px;
   display: -webkit-box;
@@ -4016,6 +4024,7 @@ body.menu-open::before {
   border-radius: 5px;
   outline: 1px solid #E9EAEB;
   background-color: #fff;
+  border: 1px solid #FCFAFF;
 }
 .ub-auth__form input::-webkit-input-placeholder {
   font-size: 16px;
@@ -4049,8 +4058,8 @@ body.menu-open::before {
 }
 .ub-auth__form input:focus {
   outline: 1px solid #7F56D9;
-  -webkit-box-shadow: 0px 2px 4px 2px rgba(70, 95, 241, 0.1019607843);
-          box-shadow: 0px 2px 4px 2px rgba(70, 95, 241, 0.1019607843);
+  -webkit-box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 .ub-auth__form__forgot-password {
   font-size: 12px;

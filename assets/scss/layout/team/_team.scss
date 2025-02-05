@@ -196,19 +196,6 @@
     padding: 1.5rem;
     border-radius: 1rem;
     margin-top: 8px;
-}
-
-  &__member-link{
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    background-color: $white;
-    padding: 10px;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-    z-index: 9999;
   }
 
   &__member-name{

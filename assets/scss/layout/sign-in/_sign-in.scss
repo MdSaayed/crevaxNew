@@ -1,4 +1,8 @@
 .ub-auth{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
     &__container{
         padding: 0;
     }
@@ -9,37 +13,43 @@
         gap: 3rem;  
         align-items: center;  
         padding: 2rem;
-        min-height: 100lvh;        
     }
 
     &__welcome{
-        background-color: $deep-violet;  
+        background-color: $primary-dark-purple;  
         border-radius: 20px;
-        height: 100%;
-        padding: 4rem 3rem;       
+        padding: 4rem 3rem; 
+        height: calc(100% - 8rem);      
     }
 
     &__welcome-content{
-        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-between;  
+        height: 100%;      
     }
 
     &__title{
-        color: $white;
+        color: $white;  
         text-align: center;
+        font-size: 3.5rem;
+        line-height: 1.5;
+        font-weight: 500;
     }
 
     &__desc{
+        font-size: 1rem;
         color:$soft-lilac;
         text-align: center;
+        font-weight: 500;
+        line-height: 1.5;
     }
 
     &__feature-title{
-        font-size: 2rem;
-        line-height: 48px;
+        color: #FAFAFA;
+        font-size: 2.5rem;
+        line-height: 1.5;
         font-weight: 500;
         color: $light-gray-blue;  
         margin-bottom: 12px;
@@ -80,7 +90,7 @@
         justify-content: center;
         padding: 2rem 7rem;
         position: relative;
-        height: 100vh;        
+        height: 100%;
     }
 
     &__brand{
@@ -88,7 +98,7 @@
     }
         
     &__tabs{
-        background-color: $light-purple; 
+        background-color: $light-lavender; 
         border-radius: 8px;
         padding: 5px;
         display: flex;
@@ -150,6 +160,7 @@
             border-radius: 5px;
             outline: 1px solid $light-gray-blue;
             background-color: $white;
+            border: 1px solid $soft-lilac;
             &::placeholder{
                 font-size: 16px;
                 font-weight: 400;
@@ -158,8 +169,9 @@
             }
 
             &:focus {
-                outline: 1px solid $primary-color;  
-                box-shadow: 0px 2px 4px 2px #465FF11A; 
+                outline: 1px solid $primary-color; 
+                // border: none; 
+                box-shadow: 0px 2px 4px 2px $shadow-color; 
             }
         }
 
