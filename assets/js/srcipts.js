@@ -238,11 +238,11 @@ if (menuToggle) {
 // Animation Initialization
 if (typeof AOS !== 'undefined') {
     AOS.init({
-        duration: 600,  // Reduce animation duration
-        offset: 10,     // Start animation earlier
-        easing: 'ease-out', // Faster easing function
-        once: true,     // Play animation only once
-        delay: 0        // Remove any delay
+        duration: 600, 
+        offset: 10,     
+        easing: 'ease-out', 
+        once: false,    
+        delay: 0       
     });
 }
 
