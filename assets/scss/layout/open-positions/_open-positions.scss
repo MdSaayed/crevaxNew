@@ -19,6 +19,10 @@
     }
   
     &__filters-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
       background-color: $light-lavender;
       padding: 8px 4px;
       border-radius: 8px;
@@ -26,7 +30,6 @@
   
     &__filter {
       padding: 6px 16px;
-      margin: 8px 10px;
       color: $dark-gray;
       font-size: 1.125rem;
       line-height: 1.5;
