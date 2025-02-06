@@ -7,7 +7,8 @@
   
     &__desc {
       @extend .section-desc;
-      max-width: 400px;
+      max-width: 450px;
+      padding: 2rem;
     }
   
     &__filters {

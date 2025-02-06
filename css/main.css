@@ -3568,7 +3568,8 @@ body.menu-open::before {
   background-color: #fff;
 }
 .ub-open-positions__desc {
-  max-width: 400px;
+  max-width: 450px;
+  padding: 2rem;
 }
 .ub-open-positions__filters {
   display: -webkit-box;
