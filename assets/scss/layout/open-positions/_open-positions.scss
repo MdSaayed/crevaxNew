@@ -25,8 +25,8 @@
     }
   
     &__filter {
-      padding: 4px 16px;
-      margin: 0 10px;
+      padding: 6px 16px;
+      margin: 8px 10px;
       color: $dark-gray;
       font-size: 1.125rem;
       line-height: 1.5;
@@ -76,6 +76,7 @@
         font-weight: 500;
         color: $dark-neutral;
         transition: color 0.4s ease-in-out;  
+        line-height: 1.5;
       }
   
       &-location {
@@ -83,12 +84,14 @@
         line-height: 1.5;
         font-weight: normal;
         color: #FAFAFA;
+        line-height: 1.5;
       }
   
       &-desc {
-        font-size: 14px;
+        font-size: 1rem;
         color: #FAFAFA;
         margin-top: 1.5rem ;
+        line-height: 1.5;
       }
   
       &-apply {

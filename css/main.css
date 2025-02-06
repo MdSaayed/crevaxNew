@@ -1768,7 +1768,7 @@ body.menu-open::before {
   margin-bottom: 3rem;
 }
 .ub-pricing__title {
-  max-width: 566px;
+  max-width: 560px;
 }
 .ub-pricing__desc {
   max-width: 506px;
@@ -1884,7 +1884,7 @@ body.menu-open::before {
   background: #FCFAFF;
 }
 .ub-hero-pricing__title {
-  max-width: 560px;
+  max-width: 400px;
 }
 .ub-hero-pricing__desc {
   max-width: 500px;
@@ -3587,8 +3587,8 @@ body.menu-open::before {
   border-radius: 8px;
 }
 .ub-open-positions__filter {
-  padding: 4px 16px;
-  margin: 0 10px;
+  padding: 6px 16px;
+  margin: 8px 10px;
   color: #404040;
   font-size: 1.125rem;
   line-height: 1.5;
@@ -3637,17 +3637,20 @@ body.menu-open::before {
   color: #171717;
   -webkit-transition: color 0.4s ease-in-out;
   transition: color 0.4s ease-in-out;
+  line-height: 1.5;
 }
 .ub-open-positions__item-location {
   font-size: 1rem;
   line-height: 1.5;
   font-weight: normal;
   color: #FAFAFA;
+  line-height: 1.5;
 }
 .ub-open-positions__item-desc {
-  font-size: 14px;
+  font-size: 1rem;
   color: #FAFAFA;
   margin-top: 1.5rem;
+  line-height: 1.5;
 }
 .ub-open-positions__item-apply {
   display: inline-block;
