@@ -3593,7 +3593,7 @@ body.menu-open::before {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: #F9F5FF;
-  padding: 8px 4px;
+  padding: 8px;
   border-radius: 8px;
 }
 .ub-open-positions__filter {
