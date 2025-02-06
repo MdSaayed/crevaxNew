@@ -238,12 +238,14 @@ if (menuToggle) {
 // Animation Initialization
 if (typeof AOS !== 'undefined') {
     AOS.init({
-        duration: 1000,
-        offset: 50,
-        easing: 'ease-in-out',
-        once: false
+        duration: 600,  // Reduce animation duration
+        offset: 10,     // Start animation earlier
+        easing: 'ease-out', // Faster easing function
+        once: true,     // Play animation only once
+        delay: 0        // Remove any delay
     });
 }
+
 
 // Swiper Sliders
 if (typeof Swiper !== 'undefined') {
