@@ -239,7 +239,7 @@ if (menuToggle) {
 if (typeof AOS !== 'undefined') {
     AOS.init({
         duration: 1000,
-        offset: 150,
+        offset: 100,
         easing: 'ease-in-out',
         once: false
     });
