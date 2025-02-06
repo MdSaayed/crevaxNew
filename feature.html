@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bazarly</title>
-      
-        <!-- main css -->
-        <link rel="stylesheet" href="./css/main.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazarly</title>
+  
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- AOS animation  css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
     
-        <!-- font awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
-    
-        <!-- google font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-        <!-- AOS animation  css-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-        
-        <!--  AOS JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    
-        <!-- swiper js -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    
-    </head>
+
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+
+
+</head>
 <body>
 
-    <!-- header start here -->
+    <!-- Header start here -->
     <header id="ub-header" class="ub-header">
         <div class="ub-header__container container">
           <nav class="ub-header__navigation">
@@ -74,9 +75,9 @@
           </nav>
         </div>
     </header>
-    <!-- header end here -->
+    <!-- Header end here -->
       
-    <!-- mobile start navigation -->
+    <!-- Mobile start navigation -->
     <div id="ub-mobile-nav" class="ub-mobile-nav">
         <div class="ub-mobile-nav__header">
             <div class="ub-mobile-nav__branding">
@@ -104,7 +105,7 @@
                     <li class="ub-mobile-nav__item"><a href="pricing.html" class="ub-mobile-nav__link">Pricing</a></li>
                     <li class="ub-mobile-nav__item"><a href="pricing-details.html" class="ub-mobile-nav__link">Pricing Details</a></li>
                     <li class="ub-mobile-nav__item"><a href="privacy-policy.html" class="ub-mobile-nav__link">Privacy & Policy</a></li>
-                     <li class="ub-mobile-nav__item"><a href="licenses.html" class="ub-mobile-nav__link">Licenses</a></li>
+                    <li class="ub-mobile-nav__item"><a href="licenses.html" class="ub-mobile-nav__link">Licenses</a></li>
                     <li class="ub-mobile-nav__item"><a href="404.html" class="ub-mobile-nav__link">404</a></li>
                     <li class="ub-mobile-nav__item"><a href="terms-and-condition.html" class="ub-mobile-nav__link">Terms & Condition</a></li>
                 </ul>
@@ -116,27 +117,27 @@
             <a href="#" class="ub-mobile-nav__button ub-mobile-nav__button--get-started">Get Started</a>
         </div>
     </div>
-    <!-- mobile end navigation -->
+    <!-- Mobile end navigation -->
 
     <main> 
         <!-- Feature Hero Start -->
-        <section id="ub-feature-hero" class="ub-feature-hero">
+        <section id="ub-feature-hero" class="ub-feature-hero"  data-aos="fade-up" data-aos-delay="100">
             <div class="ub-feature-hero__container container">
                 <div class="ub-feature-hero__content" data-bg-img="./assets/img/hero/heroBg.png">
-                    <div class="ub-feature-hero__header">
-                        <div class="ub-feature-hero__subtitle-area">
+                    <div class="ub-feature-hero__header"  data-aos="fade-up">
+                        <div class="ub-feature-hero__subtitle-area"  data-aos="fade-up" data-aos-delay="200">
                             <div class="ub-feature-hero__subtitle-group">
                                 <img class="ub-feature-hero__icon" src="./assets/icons/fav.svg" alt="Favorite Icon">
                                 <span class="ub-feature-hero__subtitle">Enhance Engagement</span>
                             </div> 
                         </div>
-                        <h1 class="ub-feature-hero__title">Enhance your CRM with Bazarly's features!</h1>
-                        <p class="ub-feature-hero__desc">Discover advanced features designed to streamline your workflows and boost productivity. Our tools enable smarter, faster, and more efficient operations.</p>
+                        <h1 class="ub-feature-hero__title"  data-aos="fade-up" data-aos-delay="300">Enhance your CRM with Bazarly's features!</h1>
+                        <p class="ub-feature-hero__desc"  data-aos="fade-up" data-aos-delay="400">Discover advanced features designed to streamline your workflows and boost productivity. Our tools enable smarter, faster, and more efficient operations.</p>
                     </div>
 
                     <div class="ub-feature-hero__button-group">
-                        <button class="ub-feature-hero__button ub-feature-hero__button--primary">Get Started</button>
-                        <button class="ub-feature-hero__button ub-feature-hero__button--secondary">Learn More</button>
+                        <button class="ub-feature-hero__button ub-feature-hero__button--primary"  data-aos="fade-up" data-aos-delay="500">Get Started</button>
+                        <button class="ub-feature-hero__button ub-feature-hero__button--secondary"  data-aos="fade-up" data-aos-delay="600">Learn More</button>
                     </div>
                 </div>
             </div>
@@ -144,22 +145,22 @@
         <!-- Feature Hero End -->
 
         <!-- features start here -->
-        <section id="ub-features" class="ub-features">
+        <section id="ub-features" class="ub-features"  data-aos="fade-up" data-aos-delay="100">
             <div class="ub-features_container container">
                 <div class="ub-features__header">
-                    <div class="ub-features__subtitle-area">
+                    <div class="ub-features__subtitle-area"  data-aos="fade-up" data-aos-delay="200">
                         <div class="ub-features__subtitle-group">
                             <img class="ub-features__icon" src="./assets/icons/fav.svg" alt="Favorite Icon">
                             <span class="ub-features__subtitle">Boost Engagement with Bazarly</span>
                         </div>
                     </div>
-                    <h2 class="ub-features__title">Boost your sales with some cool closing tools!</h2>
-                    <p class="ub-features__desc">Customize your CRM dashboard to meet your business needs with essential widgets, reports, and key performance indicators.</p>
+                    <h2 class="ub-features__title"  data-aos="fade-up" data-aos-delay="300">Boost your sales with some cool closing tools!</h2>
+                    <p class="ub-features__desc"  data-aos="fade-up" data-aos-delay="400">Customize your CRM dashboard to meet your business needs with essential widgets, reports, and key performance indicators.</p>
                 </div>
 
                <!-- features area -->
                 <div class="ub-features__area">
-                    <div class="ub-features__item feature">
+                    <div class="ub-features__item feature"  data-aos="fade-up" data-aos-delay="500">
                         <a href="feature-single.html" class="ub-features__thumbnail feature__link">
                             <h3 class="ub-features__item-title feature__title">Analytics & Reporting</h3>
                         </a>
@@ -170,7 +171,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="ub-features__item feature">
+                    <div class="ub-features__item feature"  data-aos="fade-up" data-aos-delay="600">
                         <a href="feature-single.html" class="ub-features__thumbnail feature__link">
                             <h3 class="ub-features__item-title feature__title">Centralized Customer Data</h3>
                         </a>
@@ -181,7 +182,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="ub-features__item feature">
+                    <div class="ub-features__item feature"  data-aos="fade-up" data-aos-delay="700">
                         <a href="feature-single.html" class="ub-features__thumbnail feature__link">
                             <h3 class="ub-features__item-title feature__title">Task & Workflow Automation</h3>
                         </a>
@@ -192,7 +193,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="ub-features__item feature">
+                    <div class="ub-features__item feature"  data-aos="fade-up" data-aos-delay="800">
                         <a href="feature-single.html" class="ub-features__thumbnail feature__link">
                             <h3 class="ub-features__item-title feature__title">Customizable Dashboards</h3>
                         </a>
@@ -208,23 +209,23 @@
         </section>
         <!-- features end here -->
 
-        <!-- testimonial start here -->
-        <section id="ub-testimonial" class="ub-testimonial">
+        <!-- Testimonial start here -->
+        <section id="ub-testimonial" class="ub-testimonial" data-aos="fade-up" data-aos-delay="100">
             <div class="ub-testimonial__container container">
-                <div class="ub-testimonial__header">
-                    <div class="ub-testimonial__subtitle-area">
+                <div class="ub-testimonial__header" data-aos="fade-up">
+                    <div class="ub-testimonial__subtitle-area" data-aos="fade-up" data-aos-delay="200">
                         <div class="ub-testimonial__subtitle-group">
                             <img class="ub-testimonial__icon" src="./assets/icons/fav.svg" alt="Favorite Icon">
                             <span class="ub-testimonial__subtitle">Clients feedback</span>
                         </div>
                     </div>
-                    <h2 class="ub-testimonial__title">Client Testimonials</h2>
-                    <p class="ub-testimonial__desc">Innovative strategies and methods that empower teams to boost their business achievements.</p>
+                    <h2 class="ub-testimonial__title" data-aos="fade-up" data-aos-delay="300">Client Testimonials</h2>
+                    <p class="ub-testimonial__desc" data-aos="fade-up" data-aos-delay="400">Innovative strategies and methods that empower teams to boost their business achievements.</p>
                 </div>
-
+        
                 <div class="ub-testimonial__content">
                     <!-- testimonial Item 1 -->
-                    <div class="ub-testimonial__item">
+                    <div class="ub-testimonial__item" data-aos="fade-up" data-aos-delay="500">
                         <div class="ub-testimonial__rating star-rating">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -233,7 +234,7 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <div class="ub-testimonial__text">
-                            <p>"Connectify is an innovative CRM platform that has transformed the way we handle customer interactions at our business. Its robust ub-features have significantly enhanced our productivity and streamlined our processes. I wholeheartedly endorse SyncMaster!"</p>
+                            <p>"Connectify is an innovative CRM platform that has transformed the way we handle customer interactions at our business..."</p>
                         </div>
                         <div class="ub-testimonial__profile">
                             <div class="ub-testimonial__avatar">
@@ -246,7 +247,7 @@
                         </div>
                     </div>
                     <!-- testimonial Item 2 -->
-                    <div class="ub-testimonial__item">
+                    <div class="ub-testimonial__item" data-aos="fade-up" data-aos-delay="600">
                         <div class="ub-testimonial__rating star-rating">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -255,7 +256,7 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <div class="ub-testimonial__text">
-                            <p>"BizNest has revolutionized our small business operations. Its CRM ub-features have simplified our daily activities and enhanced our interactions with clients. We're grateful to BizNest for making our work so much smoother!"</p>
+                            <p>"BizNest has revolutionized our small business operations. Its CRM ub-features have simplified our daily activities..."</p>
                         </div>
                         <div class="ub-testimonial__profile">
                             <div class="ub-testimonial__avatar">
@@ -268,7 +269,7 @@
                         </div>
                     </div>
                     <!-- testimonial Item 3 -->
-                    <div class="ub-testimonial__item">
+                    <div class="ub-testimonial__item" data-aos="fade-up" data-aos-delay="700">
                         <div class="ub-testimonial__rating star-rating">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -277,7 +278,7 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <div class="ub-testimonial__text">
-                            <p>"Using Connectify to handle our customer relationships has been a game changer. The platform has streamlined our meetings and planning, allowing our startup to operate seamlessly. Highly recommend Connectify!"</p>
+                            <p>"Using Connectify to handle our customer relationships has been a game changer. The platform has streamlined our meetings..."</p>
                         </div>
                         <div class="ub-testimonial__profile">
                             <div class="ub-testimonial__avatar">
@@ -292,96 +293,104 @@
                 </div>
             </div>
         </section>
-        <!-- testimonial end here -->
+        <!-- Testimonial end here -->
 
-        <!-- blog section start here -->
-        <section id="ub-blog" class="ub-blog">
+        <!-- Blog section start here -->
+        <section id="ub-blog" class="ub-blog" data-aos="fade-up" data-aos-delay="100">
             <div class="ub-blog__container container">
-                <div class="ub-blog__header">
-                    <div class="ub-blog__subtitle-area">
+                <div class="ub-blog__header" data-aos="fade-up">
+                    <div class="ub-blog__subtitle-area" data-aos="fade-up" data-aos-delay="200">
                         <div class="ub-blog__subtitle-group">
                             <img class="ub-blog__icon" src="./assets/icons/fav.svg" alt="Favorite Icon">
                             <span class="ub-blog__subtitle">Our blog</span>
                         </div>
                     </div>
-                    <h2 class="ub-blog__title">Unlocking the full potential of your company's data</h2>
-                    <p class="ub-blog__description">Innovative tools and strategies that empower teams to drive company growth.</p>
+                    <h2 class="ub-blog__title" data-aos="fade-up" data-aos-delay="300">Unlocking the full potential of your company's data</h2>
+                    <p class="ub-blog__description" data-aos="fade-up" data-aos-delay="400">Innovative tools and strategies that empower teams to drive company growth.</p>
                 </div>
         
-                <div class="ub-blog__cards">
-                    <article class="ub-blog__card">
-                        <div class="ub-blog__card-image-wrapper">
-                            <img src="./assets/img/blog/blog-1.png" alt="Analytics tool icon" class="ub-blog__card-image">
-                        </div>
-                        <div class="ub-blog__card-content">
-                            <a href="./blog-single.html" class="ub-blog__card-link">
-                                <h3 class="ub-blog__card-title">How real-time analytics can transform your money strategy!</h3>
-                            </a>
-                            <p class="ub-blog__card-text">Ideal for startups, our Starter Plan provides essential tools for easy financial management.</p>
-                            <div class="ub-blog__card-link-wrapper">
-                                <a href="./blog-single.html" class="ub-blog__card-link">Read post</a>
-                                <img class="ub-blog__card-link-icon" src="./assets/icons/arrow-up-right.svg" alt="Arrow icon">
+                <div class="ub-blog__cards" data-aos="fade-up" data-aos-delay="500">
+                    <article class="ub-blog__card" data-aos="fade-up" data-aos-delay="600">
+                        <a href="./blog-single.html">
+                            <div class="ub-blog__card-image-wrapper">
+                                <img src="./assets/img/blog/blog-1.png" alt="Analytics tool icon" class="ub-blog__card-image">
                             </div>
-                        </div>
+                            <div class="ub-blog__card-content">
+                                <a href="./blog-single.html" class="ub-blog__card-link">
+                                    <h3 class="ub-blog__card-title">How real-time analytics can transform your money strategy!</h3>
+                                </a>
+                                <p class="ub-blog__card-text">Ideal for startups, our Starter Plan provides essential tools for easy financial management.</p>
+                                <div class="ub-blog__card-link-wrapper">
+                                    <a href="./blog-single.html" class="ub-blog__card-link">Read post</a>
+                                    <img class="ub-blog__card-link-icon" src="./assets/icons/arrow-up-right.svg" alt="Arrow icon">
+                                </div>
+                            </div>
+                        </a>
                     </article>
         
-                    <article class="ub-blog__card">
-                        <div class="ub-blog__card-image-wrapper">
-                            <img src="./assets/img/blog/blog-2.png" alt="Active users analytics" class="ub-blog__card-image">
-                        </div>
-                        <div class="ub-blog__card-content">
-                            <a href="./blog-single.html" class="ub-blog__card-link">
-                                <h3 class="ub-blog__card-title">Simplify and empower your financial management with MezApp</h3>
-                            </a>
-                            <p class="ub-blog__card-text">Our Launch Package is ideal for providing all the tools to manage finances like a pro.</p>
-                            <div class="ub-blog__card-link-wrapper">
-                                <a href="./blog-single.html" class="ub-blog__card-link">Read post</a>
-                                <img class="ub-blog__card-link-icon" src="./assets/icons/arrow-up-right.svg" alt="Arrow icon">
+                    <article class="ub-blog__card" data-aos="fade-up" data-aos-delay="700">
+                       <a href="./blog-single.html">
+                            <div class="ub-blog__card-image-wrapper">
+                                <img src="./assets/img/blog/blog-2.png" alt="Active users analytics" class="ub-blog__card-image">
                             </div>
-                        </div>
+                            <div class="ub-blog__card-content">
+                                <a href="./blog-single.html" class="ub-blog__card-link">
+                                    <h3 class="ub-blog__card-title">Simplify and empower your financial management with MezApp</h3>
+                                </a>
+                                <p class="ub-blog__card-text">Our Launch Package is ideal for providing all the tools to manage finances like a pro.</p>
+                                <div class="ub-blog__card-link-wrapper">
+                                    <a href="./blog-single.html" class="ub-blog__card-link">Read post</a>
+                                    <img class="ub-blog__card-link-icon" src="./assets/icons/arrow-up-right.svg" alt="Arrow icon">
+                                </div>
+                            </div>
+                       </a>
                     </article>
         
-                    <article class="ub-blog__card">
-                        <div class="ub-blog__card-image-wrapper">
-                            <img src="./assets/img/blog/blog-3.png" alt="Money flow chart" class="ub-blog__card-image">
-                        </div>
-                        <div class="ub-blog__card-content">
-                            <a href="./blog-single.html" class="ub-blog__card-link">
-                                <h3 class="ub-blog__card-title">How real-time analytics can transform your money strategy!</h3>
-                            </a>
-                            <p class="ub-blog__card-text">Ideal for startups, our Starter Plan offers essential tools for easy financial management.</p>
-                            <div class="ub-blog__card-link-wrapper">
-                                <a href="./blog-single.html" class="ub-blog__card-link">Read post</a>
-                                <img class="ub-blog__card-link-icon" src="./assets/icons/arrow-up-right.svg" alt="Arrow icon">
+                    <article class="ub-blog__card" data-aos="fade-up" data-aos-delay="800">
+                        <a href="./blog-single.html">
+                            <div class="ub-blog__card-image-wrapper">
+                                <img src="./assets/img/blog/blog-3.png" alt="Money flow chart" class="ub-blog__card-image">
                             </div>
-                        </div>
+                            <div class="ub-blog__card-content">
+                                <a href="./blog-single.html" class="ub-blog__card-link">
+                                    <h3 class="ub-blog__card-title">How real-time analytics can transform your money strategy!</h3>
+                                </a>
+                                <p class="ub-blog__card-text">Ideal for startups, our Starter Plan offers essential tools for easy financial management.</p>
+                                <div class="ub-blog__card-link-wrapper">
+                                    <a href="./blog-single.html" class="ub-blog__card-link">Read post</a>
+                                    <img class="ub-blog__card-link-icon" src="./assets/icons/arrow-up-right.svg" alt="Arrow icon">
+                                </div>
+                            </div>
+                        </a>
                     </article>
                 </div>
         
-                <div class="ub-blog__btn-wrapper">
+                <div class="ub-blog__btn-wrapper" data-aos="fade-up" data-aos-delay="900">
                     <a href="blog.html" class="ub-blog__btn">See all blogs</a>
                 </div>
             </div>
         </section>
-        <!-- blog section end here -->
+        <!-- Blog section end here -->
 
-        <!-- cta start here -->
-        <section id="ub-cta" class="ub-cta">
+        <!-- CTA start here -->
+        <section id="ub-cta" class="ub-cta" data-aos="fade-up" data-aos-delay="50">
             <div class="ub-cta__container container">
-                <div class="ub-cta__area">
-                    <h3 class="ub-cta__title">Get set to take your CRM  game to the next level!</h3>
-                    <p class="ub-cta__desc">Don't miss out on the excitement! Stay tuned for all the thrilling events we have lined up just for you! <p>
+                <div class="ub-cta__area" data-aos="fade-up" data-aos-delay="75">
+                    <h3 class="ub-cta__title" data-aos="fade-up" data-aos-delay="100">Get set to take your CRM  game to the next level!</h3>
+                    <p class="ub-cta__desc" data-aos="fade-up" data-aos-delay="125">Don't miss out on the excitement! Stay tuned for all the thrilling events we have lined up just for you! <p>
                     <div class="ub-cta__btn-group">
-                        <a class="ub-cta__btn" href="">Started 14 days free</a>
+                        <a class="ub-cta__btn" href="./pricing-details.html" data-aos="fade-up" data-aos-delay="150">Started 14 days free</a>
                     </div>
                     <div class="ub-cta__background-left"></div>  
                     <div class="ub-cta__background-right"></div>  
                 </div>
             </div>
         </section>
-        <!-- cta end here -->
+        <!-- CTA end here -->
 
+ 
     </main>
+
         <!-- footer start here -->
         <footer id="footer" class="footer"> 
             <div class="footer__container container">
@@ -392,12 +401,13 @@
                             <h3 class="footer__newsletter-title">Join our newsletter</h3>
                             <p class="footer__newsletter-desc">We're here to assist you! Have a question or need support?</p>
                         </div>
-                        <div class="footer__newsletter-form">
-                            <form action="#" class="footer__form">
+                        <div class="footer__form-wrapper">
+                            <form action="#" class="footer__newsletter-form">
                                 <div class="footer__input-wrapper">
                                     <input type="email" class="footer__input" placeholder="Enter your email">
                                     <input class="btn footer__submit-btn" type="submit" value="Subscribe">
                                 </div>
+                                <p id="footer__form-message" class="footer__form-message success-message"></p>
                             </form>
                         </div>
                     </div>
@@ -409,7 +419,7 @@
                                 <a href="index.html" class="footer__logo-link">
                                     <img src="./assets/img/logo/logo.svg" alt="Logo" class="footer__logo-img">
                                 </a>
-                                <p class="footer__description">Bazarly enhances communication, tracks performance, and boosts customer loyalty.</p>
+                                <p class="footer__desc">Bazarly enhances communication, tracks performance, and boosts customer loyalty.</p>
                             </div>
                         </div>
 
@@ -446,11 +456,10 @@
                             <div class="footer__navigation-column">
                                 <h3 class="footer__navigation-title">Utility</h3>
                                 <ul class="footer__links">
-                                    <li class="footer__link-item"><a href="#" class="footer__link">Password Protected</a></li>
-                                    
                                     <li class="footer__link-item"><a href="#" class="footer__link">Licenses</a></li>
                                     <li class="footer__link-item"><a href="privacy-policy.html" class="footer__link">Privacy policy</a></li>
                                     <li class="footer__link-item"><a href="terms-and-condition.html" class="footer__link">Terms of services</a></li>
+                                    <li class="footer__link-item"><a href="404.html" class="footer__link">404</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -459,37 +468,47 @@
                      <!-- Copyright Section -->
                     <div class="footer__copyright">
                         <div class="footer__copyright-text">
-                            <p>Copyright © <span class="footer__company-name">Bazarly</span> 
-                            <span class="footer__divider">|</span> Designed by <a href="www.uibazar.com" class="footer__link">UiBazar</a> 
-                            and Powered by <a href="#" class="footer__link">HTML, CSS, and JavaScript</a></p>
+                            <p>&copy;<span class="footer__company-name">Bazarly</span>. All rights reserved.  
+                            <span class="footer__divider">|</span> Designed by <a href="https://www.uibazar.com" class="footer__link">UiBazar</a>  
+                            <span class="footer__divider">|</span> Built with HTML, CSS & JavaScript</p>
                         </div>
+                        
                         <div class="footer__social-links">
                             <ul class="footer__social-list">
                                 <li class="footer__social-item">
-                                    <a href="#" class="footer__social-link">
-                                        <img src="./assets/icons/LinkedIn.svg" alt="X Icon" class="footer__social-icon">
+                                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                                        <img src="./assets/icons/LinkedIn.svg" alt="LinkedIn Icon" class="footer__social-icon">
                                     </a>
                                 </li>
                                 <li class="footer__social-item">
-                                    <a href="#" class="footer__social-link">
-                                        <img src="./assets/icons/X.svg" alt="X Icon" class="footer__social-icon">
+                                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                                        <img src="./assets/icons/X.svg" alt="Twitter Icon" class="footer__social-icon">
                                     </a>
                                 </li>
                                 <li class="footer__social-item">
-                                    <a href="#" class="footer__social-link">
-                                        <img src="./assets/icons/instagram.svg" alt="LinkedIn Icon" class="footer__social-icon">
+                                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                                        <img src="./assets/icons/instagram.svg" alt="Instagram Icon" class="footer__social-icon">
                                     </a>
                                 </li>
                             </ul>
-                        </div>
+                        </div>                        
                     </div>
                 </div>
             </div>
         </footer>
-        <!-- footer end here -->
-  
+        <!-- footer end here --> 
 
+ 
     <!-- js  -->
-     <script src="./assets/js/srcipts.js"></script>
+    <!--  AOS JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- SweetAlert2 js  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Swiper js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Main js -->
+    <script src="./assets/js/srcipts.js"></script>
+    <!-- Form js -->
+    <script src="./assets/js/form.js"></script>    
 </body>
 </html>

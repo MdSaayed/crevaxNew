@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bazarly</title>
-      
-        <!-- main css -->
-        <link rel="stylesheet" href="./css/main.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazarly</title>
+  
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- AOS animation  css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
     
-        <!-- font awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
-    
-        <!-- google font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-        <!-- AOS animation  css-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-        
-        <!--  AOS JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    
-        <!-- swiper js -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    
-    </head>
+
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+
+
+</head>
 <body>
 
-     <!-- header start here -->
-     <header id="ub-header" class="ub-header">
+    <!-- Header start here -->
+    <header id="ub-header" class="ub-header">
         <div class="ub-header__container container">
           <nav class="ub-header__navigation">
             <div class="ub-header__branding">
@@ -74,9 +75,9 @@
           </nav>
         </div>
     </header>
-    <!-- header end here -->
+    <!-- Header end here -->
       
-    <!-- mobile start navigation -->
+    <!-- Mobile start navigation -->
     <div id="ub-mobile-nav" class="ub-mobile-nav">
         <div class="ub-mobile-nav__header">
             <div class="ub-mobile-nav__branding">
@@ -104,7 +105,7 @@
                     <li class="ub-mobile-nav__item"><a href="pricing.html" class="ub-mobile-nav__link">Pricing</a></li>
                     <li class="ub-mobile-nav__item"><a href="pricing-details.html" class="ub-mobile-nav__link">Pricing Details</a></li>
                     <li class="ub-mobile-nav__item"><a href="privacy-policy.html" class="ub-mobile-nav__link">Privacy & Policy</a></li>
-                     <li class="ub-mobile-nav__item"><a href="licenses.html" class="ub-mobile-nav__link">Licenses</a></li>
+                    <li class="ub-mobile-nav__item"><a href="licenses.html" class="ub-mobile-nav__link">Licenses</a></li>
                     <li class="ub-mobile-nav__item"><a href="404.html" class="ub-mobile-nav__link">404</a></li>
                     <li class="ub-mobile-nav__item"><a href="terms-and-condition.html" class="ub-mobile-nav__link">Terms & Condition</a></li>
                 </ul>
@@ -116,32 +117,32 @@
             <a href="#" class="ub-mobile-nav__button ub-mobile-nav__button--get-started">Get Started</a>
         </div>
     </div>
-    <!-- mobile end navigation --> 
+    <!-- Mobile end navigation -->
 
     <main>
         <!-- hero start here -->
-        <section id="ub-hero-integrations" class="ub-hero-integrations">
+        <section id="ub-hero-integrations" class="ub-hero-integrations" data-aos="fade-up" data-aos-delay="100">
             <div class="ub-hero-integrations__container container">
                 <div class="ub-hero-integrations__content">
-                    <div class="ub-hero-integrations__subtitle-area">
+                    <div class="ub-hero-integrations__subtitle-area" data-aos="fade-up" data-aos-delay="200">
                         <div class="ub-hero-integrations__subtitle-group">
                             <img class="ub-hero-integrations__icon" src="./assets/icons/fav.svg" alt="Favorite Icon">
                             <span class="ub-hero-integrations__subtitle">Boost Your CRM with Integrations!</span>
                         </div>
                     </div>
-                    <h1 class="ub-hero-integrations__title"> Cooler CRM Integrations for Improved Performance</h1>
-                    <p class="ub-hero-integrations__desc">Link up Krypton with your favorite tools and teams! We’ve got over 100 apps ready for you in our directory, so your go-to tools are just a click away.</p>
+                    <h1 class="ub-hero-integrations__title" data-aos="fade-up" data-aos-delay="300"> Cooler CRM Integrations for Improved Performance</h1>
+                    <p class="ub-hero-integrations__desc" data-aos="fade-up" data-aos-delay="400">Link up Krypton with your favorite tools and teams! We’ve got over 100 apps ready for you in our directory, so your go-to tools are just a click away.</p>
                 </div>
             </div> 
         </section>
         <!-- hero end here -->
 
         <!-- Integrations Section Start -->
-        <section id="ub-integrations" class="ub-integrations-page">
+        <section id="ub-integrations" class="ub-integrations-page" data-aos="fade-up" data-aos-delay="100">
             <div class="ub-integrations-page__container container">
                 <div class="ub-integrations-page__card-grid">
                     <!-- Card -->
-                    <a href="./integrations-details.html">
+                    <a href="./integrations-details.html" data-aos="fade-up" data-aos-delay="100">
                         <div class="ub-integrations-page__card">
                             <div class="ub-integrations-page__icon-wrapper">
                                 <img src="./assets/icons/invision.svg" alt="CollabDesk Icon">
@@ -150,7 +151,7 @@
                             <p class="ub-integrations-page__card-desc"> Make teamwork easier with shared docs and to-do lists.</p>
                         </div>
                     </a>
-                    <a href="./integrations-details.html">
+                    <a href="./integrations-details.html" data-aos="fade-up" data-aos-delay="200">
                         <div class="ub-integrations-page__card">
                             <div class="ub-integrations-page__icon-wrapper">
                                 <img src="./assets/icons/survey-monkey.svg" alt="Syncly Icon">
@@ -159,7 +160,7 @@
                             <p class="ub-integrations-page__card-desc">Boost your team's vibe with shared files and task lists.</p>
                         </div>
                     </a>
-                    <a href="./integrations-details.html">
+                    <a href="./integrations-details.html" data-aos="fade-up" data-aos-delay="300">
                         <div class="ub-integrations-page__card">
                             <div class="ub-integrations-page__icon-wrapper">
                                 <img src="./assets/icons/asana.svg" alt="Flowbase Icon">
@@ -168,7 +169,7 @@
                             <p class="ub-integrations-page__card-desc"> Get your team working together smoothly with shared documents and tasks.</p>
                         </div>
                     </a>
-                    <a href="./integrations-details.html">
+                    <a href="./integrations-details.html" data-aos="fade-up" data-aos-delay="400">
                         <div class="ub-integrations-page__card">
                             <div class="ub-integrations-page__icon-wrapper">
                                 <img src="./assets/icons/clickUp.svg" alt="Cronify Icon">
@@ -177,7 +178,7 @@
                             <p class="ub-integrations-page__card-desc">Help your team collaborate better with shared docs and tasks.</p>
                         </div>
                     </a>
-                    <a href="./integrations-details.html">
+                    <a href="./integrations-details.html" data-aos="fade-up" data-aos-delay="500">
                         <div class="ub-integrations-page__card">
                             <div class="ub-integrations-page__icon-wrapper">
                                 <img src="./assets/icons/grammarly.svg" alt="Chatrack Icon">
@@ -186,7 +187,7 @@
                             <p class="ub-integrations-page__card-desc">Make it simple for your team to work together with shared documents and tasks.</p>
                         </div>
                     </a>
-                    <a href="./integrations-details.html">
+                    <a href="./integrations-details.html" data-aos="fade-up" data-aos-delay="600">
                         <div class="ub-integrations-page__card">
                             <div class="ub-integrations-page__icon-wrapper">
                                 <img src="./assets/icons/podium.svg" alt="DataLoop Icon">
@@ -200,24 +201,24 @@
         </section>
         <!-- Integrations Section End -->
 
-        <!-- faq start here -->
-        <section id="ub-faq" class="ub-faq">
+        <!-- Faq start here -->
+        <section id="ub-faq" class="ub-faq" data-aos="fade-up" data-aos-delay="100">
             <div class="ub-faq__container container">
-                <div class="ub-faq__grid">
+                <div class="ub-faq__grid" data-aos="fade-up" data-aos-delay="200">
                     <!-- Section Heading -->
-                    <div class="ub-faq__heading">
-                        <div class="ub-faq__subtitle-area">
+                    <div class="ub-faq__heading" data-aos="fade-up" data-aos-delay="300">
+                        <div class="ub-faq__subtitle-area" data-aos="fade-up" data-aos-delay="400">
                             <div class="ub-faq__subtitle-group">
                                 <img class="ub-faq__icon" src="./assets/icons/fav.svg" alt="Favorite Icon">
                                 <span class="ub-faq__subtitle">Faq</span>
                             </div>
                         </div>
-                        <h2 class="ub-faq__title">The answers to your questions.</h2>
+                        <h2 class="ub-faq__title" data-aos="fade-up" data-aos-delay="500">The answers to your questions.</h2>
                     </div>
                     <!-- FAQ Area -->
-                    <div class="ub-faq__list">
+                    <div class="ub-faq__list" data-aos="fade-up" data-aos-delay="600">
                         <!-- FAQ Item -->
-                        <div class="ub-faq__item active">
+                        <div class="ub-faq__item active" data-aos="fade-up" data-aos-delay="700">
                             <button class="ub-faq__question active">
                                 <span class="ub-faq__question-text">What support options are available for Bazarly users? </span>
                             </button>
@@ -225,7 +226,7 @@
                                 <p>Keeps customer info in sync with CRMs, tracks chats, and handles leads with live updates.</p>
                             </div>
                         </div>
-                        <div class="ub-faq__item">
+                        <div class="ub-faq__item" data-aos="fade-up" data-aos-delay="800">
                             <button class="ub-faq__question">
                                 <span class="ub-faq__question-text">What features does Bazarly offer for managing customer data?</span>
                             </button>
@@ -233,7 +234,7 @@
                                 <p>Synchronizes customer data with CRM systems, monitors conversations, and manages leads with real-time updates.</p>
                             </div>
                         </div>
-                        <div class="ub-faq__item">
+                        <div class="ub-faq__item" data-aos="fade-up" data-aos-delay="900">
                             <button class="ub-faq__question">
                                 <span class="ub-faq__question-text">What features does Bazarly provide for CRM users?</span>
                             </button>
@@ -241,7 +242,7 @@
                                 <p>Syncs customer data with CRMs, tracks interactions, and manages leads with real-time updates.</p>
                             </div>
                         </div>
-                        <div class="ub-faq__item">
+                        <div class="ub-faq__item" data-aos="fade-up" data-aos-delay="1000">
                             <button class="ub-faq__question">
                                 <span class="ub-faq__question-text">How can Bazarly help improve customer relationships?</span>
                             </button>
@@ -249,7 +250,7 @@
                                 <p>Easily links client info with CRM systems, keeps tabs on interactions, and alerts you about potential customers right away.</p>
                             </div>
                         </div>
-                        <div class="ub-faq__item">
+                        <div class="ub-faq__item" data-aos="fade-up" data-aos-delay="1200">
                             <button class="ub-faq__question">
                                 <span class="ub-faq__question-text">What integrations does Bazarly have with other tools?</span>
                             </button>
@@ -257,7 +258,7 @@
                                 <p>It effortlessly connects client info with your CRM, tracks your interactions, and gives you a heads-up about potential customers in no time!</p>
                             </div>
                         </div>
-                        <div class="ub-faq__item">
+                        <div class="ub-faq__item" data-aos="fade-up" data-aos-delay="1300">
                             <button class="ub-faq__question">
                                 <span class="ub-faq__question-text">What security does Bazarly use for data protection?</span>
                             </button>
@@ -269,24 +270,25 @@
                 </div>
             </div>
         </section>
-        <!-- faq end here -->
+        <!-- Faq end here -->
 
-        <!-- cta start here -->
-        <section id="ub-cta" class="ub-cta">
+        <!-- CTA start here -->
+        <section id="ub-cta" class="ub-cta" data-aos="fade-up" data-aos-delay="50">
             <div class="ub-cta__container container">
-                <div class="ub-cta__area">
-                    <h3 class="ub-cta__title">Get set to take your CRM  game to the next level!</h3>
-                    <p class="ub-cta__desc">Don't miss out on the excitement! Stay tuned for all the thrilling events we have lined up just for you! <p>
+                <div class="ub-cta__area" data-aos="fade-up" data-aos-delay="75">
+                    <h3 class="ub-cta__title" data-aos="fade-up" data-aos-delay="100">Get set to take your CRM  game to the next level!</h3>
+                    <p class="ub-cta__desc" data-aos="fade-up" data-aos-delay="125">Don't miss out on the excitement! Stay tuned for all the thrilling events we have lined up just for you! <p>
                     <div class="ub-cta__btn-group">
-                        <a class="ub-cta__btn" href="">Started 14 days free</a>
+                        <a class="ub-cta__btn" href="./pricing-details.html" data-aos="fade-up" data-aos-delay="150">Started 14 days free</a>
                     </div>
                     <div class="ub-cta__background-left"></div>  
                     <div class="ub-cta__background-right"></div>  
                 </div>
             </div>
         </section>
-        <!-- cta end here -->
-     </main>
+        <!-- CTA end here -->
+
+    </main>
 
         <!-- footer start here -->
         <footer id="footer" class="footer"> 
@@ -298,12 +300,13 @@
                             <h3 class="footer__newsletter-title">Join our newsletter</h3>
                             <p class="footer__newsletter-desc">We're here to assist you! Have a question or need support?</p>
                         </div>
-                        <div class="footer__newsletter-form">
-                            <form action="#" class="footer__form">
+                        <div class="footer__form-wrapper">
+                            <form action="#" class="footer__newsletter-form">
                                 <div class="footer__input-wrapper">
                                     <input type="email" class="footer__input" placeholder="Enter your email">
                                     <input class="btn footer__submit-btn" type="submit" value="Subscribe">
                                 </div>
+                                <p id="footer__form-message" class="footer__form-message success-message"></p>
                             </form>
                         </div>
                     </div>
@@ -315,7 +318,7 @@
                                 <a href="index.html" class="footer__logo-link">
                                     <img src="./assets/img/logo/logo.svg" alt="Logo" class="footer__logo-img">
                                 </a>
-                                <p class="footer__description">Bazarly enhances communication, tracks performance, and boosts customer loyalty.</p>
+                                <p class="footer__desc">Bazarly enhances communication, tracks performance, and boosts customer loyalty.</p>
                             </div>
                         </div>
 
@@ -352,10 +355,10 @@
                             <div class="footer__navigation-column">
                                 <h3 class="footer__navigation-title">Utility</h3>
                                 <ul class="footer__links">
-                                    <li class="footer__link-item"><a href="#" class="footer__link">Password Protected</a></li>
                                     <li class="footer__link-item"><a href="#" class="footer__link">Licenses</a></li>
                                     <li class="footer__link-item"><a href="privacy-policy.html" class="footer__link">Privacy policy</a></li>
                                     <li class="footer__link-item"><a href="terms-and-condition.html" class="footer__link">Terms of services</a></li>
+                                    <li class="footer__link-item"><a href="404.html" class="footer__link">404</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -364,37 +367,48 @@
                      <!-- Copyright Section -->
                     <div class="footer__copyright">
                         <div class="footer__copyright-text">
-                            <p>Copyright © <span class="footer__company-name">Bazarly</span> 
-                            <span class="footer__divider">|</span> Designed by <a href="www.uibazar.com" class="footer__link">UiBazar</a> 
-                            and Powered by <a href="#" class="footer__link">HTML, CSS, and JavaScript</a></p>
+                            <p>&copy;<span class="footer__company-name">Bazarly</span>. All rights reserved.  
+                            <span class="footer__divider">|</span> Designed by <a href="https://www.uibazar.com" class="footer__link">UiBazar</a>  
+                            <span class="footer__divider">|</span> Built with HTML, CSS & JavaScript</p>
                         </div>
+                        
                         <div class="footer__social-links">
                             <ul class="footer__social-list">
                                 <li class="footer__social-item">
-                                    <a href="#" class="footer__social-link">
-                                        <img src="./assets/icons/LinkedIn.svg" alt="X Icon" class="footer__social-icon">
+                                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                                        <img src="./assets/icons/LinkedIn.svg" alt="LinkedIn Icon" class="footer__social-icon">
                                     </a>
                                 </li>
                                 <li class="footer__social-item">
-                                    <a href="#" class="footer__social-link">
-                                        <img src="./assets/icons/X.svg" alt="X Icon" class="footer__social-icon">
+                                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                                        <img src="./assets/icons/X.svg" alt="Twitter Icon" class="footer__social-icon">
                                     </a>
                                 </li>
                                 <li class="footer__social-item">
-                                    <a href="#" class="footer__social-link">
-                                        <img src="./assets/icons/instagram.svg" alt="LinkedIn Icon" class="footer__social-icon">
+                                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                                        <img src="./assets/icons/instagram.svg" alt="Instagram Icon" class="footer__social-icon">
                                     </a>
                                 </li>
                             </ul>
-                        </div>
+                        </div>                        
                     </div>
                 </div>
             </div>
         </footer>
-        <!-- footer end here -->
-  
+        <!-- footer end here --> 
 
+ 
     <!-- js  -->
-     <script src="./assets/js/srcipts.js"></script>
+    <!--  AOS JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- SweetAlert2 js  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Swiper js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Main js -->
+    <script src="./assets/js/srcipts.js"></script>
+    <!-- Form js -->
+    <script src="./assets/js/form.js"></script>    
 </body>
 </html>
+ 
