@@ -25,130 +25,124 @@
         <!-- swiper js -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-        <!-- SweetAlert2 CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-
-        <!-- SweetAlert2 JS -->
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
     
     </head>
 <body>
 
-    <!-- header start here -->
-    <header id="ub-header" class="ub-header">
-        <div class="ub-header__container container">
-          <nav class="ub-header__navigation">
-            <div class="ub-header__branding">
-             <a href="index.html" class="header__logo">
-                <img src="./assets/img/logo/logo.svg" alt="Website Logo">
-              </a>
-            </div>
-            <div class="ub-header__menu">
-              <ul class="menu">
-                <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
-                <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
-                <li class="menu__item"><a href="feature.html" class="menu__link">Features</a></li>
-                <li class="menu__item menu__item--has-dropdown">
-                  <a href="#" class="menu__link" aria-haspopup="true" aria-expanded="false">All Pages</a>
-                  <ul class="menu__submenu">
-                    <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
-                    <li class="menu__item"><a href="blog-single.html" class="menu__link">Blog Details</a></li>
-                    <li class="menu__item"><a href="careers.html" class="menu__link">Careers</a></li>
-                    <li class="menu__item"><a href="careers-details.html" class="menu__link">Careers Details</a></li>
-                    <li class="menu__item"><a href="feature-single.html" class="menu__link">Features Details</a></li>
-                    <li class="menu__item"><a href="integrations.html" class="menu__link">Integrations</a></li>
-                    <li class="menu__item"><a href="integrations-details.html" class="menu__link">Integrations Details</a></li>
-                    <li class="menu__item"><a href="pricing.html" class="menu__link">Pricing</a></li>
-                    <li class="menu__item"><a href="pricing-details.html" class="menu__link">Pricing Details</a></li>
-                    <li class="menu__item"><a href="team-details.html" class="menu__link">Team Details</a></li>
-                    <li class="menu__item"><a href="privacy-policy.html" class="menu__link">Privacy & Policy</a></li>
-                    <li class="menu__item"><a href="licenses.html" class="menu__link">Licenses</a></li>
+        <!-- header start here -->
+        <header id="ub-header" class="ub-header">
+            <div class="ub-header__container container">
+              <nav class="ub-header__navigation">
+                <div class="ub-header__branding">
+                  <a href="#" class="header__logo">
+                    <img src="./assets/img/logo/logo.svg" alt="Website Logo">
+                  </a>
+                </div>
+                <div class="ub-header__menu">
+                  <ul class="menu">
+                    <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+                    <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
+                    <li class="menu__item"><a href="feature.html" class="menu__link">Features</a></li>
+                    <li class="menu__item menu__item--has-dropdown">
+                      <a href="#" class="menu__link" aria-haspopup="true" aria-expanded="false">All Pages</a>
+                      <ul class="menu__submenu">
+                        <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
+                        <li class="menu__item"><a href="blog-single.html" class="menu__link">Blog Details</a></li>
+                        <li class="menu__item"><a href="careers.html" class="menu__link">Careers</a></li>
+                        <li class="menu__item"><a href="careers-details.html" class="menu__link">Careers Details</a></li>
+                        <li class="menu__item"><a href="feature-single.html" class="menu__link">Features Details</a></li>
+                        <li class="menu__item"><a href="integrations.html" class="menu__link">Integrations</a></li>
+                        <li class="menu__item"><a href="integrations-details.html" class="menu__link">Integrations Details</a></li>
+                        <li class="menu__item"><a href="pricing.html" class="menu__link">Pricing</a></li>
+                        <li class="menu__item"><a href="pricing-details.html" class="menu__link">Pricing Details</a></li>
+                        <li class="menu__item"><a href="team-details.html" class="menu__link">Team Details</a></li>
+                        <li class="menu__item"><a href="privacy-policy.html" class="menu__link">Privacy & Policy</a></li>
+                        <li class="menu__item"><a href="licenses.html" class="menu__link">Licenses</a></li>
                     <li class="menu__item"><a href="404.html" class="menu__link">404</a></li>
-                    <li class="menu__item"><a href="terms-and-condition.html" class="menu__link">Terms & Condition</a></li>
+                        <li class="menu__item"><a href="terms-and-condition.html" class="menu__link">Terms & Condition</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li> 
                   </ul>
-                </li>
-                <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li> 
-              </ul>
+                </div>
+                <div class="ub-header__actions">
+                  <a href="sign-in.html" class="header__button header__button--login">Login</a>
+                  <a href="#" class="ub-header__button header__button--get-started">Get Started</a>
+                  <button class="ub-header__menu-toggle" aria-label="Toggle Menu">☰</button>
+                </div>
+              </nav>
             </div>
-            <div class="ub-header__actions">
-              <a href="sign-in.html" class="header__button header__button--login">Login</a>
-              <a href="#" class="ub-header__button header__button--get-started">Get Started</a>
-              <button class="ub-header__menu-toggle" aria-label="Toggle Menu">☰</button>
-            </div>
-          </nav>
-        </div>
-    </header>
-    <!-- header end here -->
-
-    <!-- mobile start navigation -->
-    <div id="ub-mobile-nav" class="ub-mobile-nav">
-        <div class="ub-mobile-nav__header">
-            <div class="ub-mobile-nav__branding">
-                <a href="index.html">
+        </header>
+        <!-- header end here -->
+          
+        <!-- mobile start navigation -->
+        <div id="ub-mobile-nav" class="ub-mobile-nav">
+            <div class="ub-mobile-nav__header">
+                <div class="ub-mobile-nav__branding">
+                    <a href="index.html">
                     <img src="./assets/img/logo/logo.svg" alt="Mobile Logo" class="ub-mobile-nav__logo">
                 </a>
+                </div>
+                <button class="ub-mobile-nav__close-btn" aria-label="Close Menu">×</button>
             </div>
-            <button class="ub-mobile-nav__close-btn" aria-label="Close Menu">×</button>
-        </div>
-        <ul class="ub-mobile-nav__menu">
-            <li class="ub-mobile-nav__item"><a href="index.html" class="ub-mobile-nav__link">Home</a></li>
-            <li class="ub-mobile-nav__item"><a href="./about.html" class="ub-mobile-nav__link">About</a></li>
-            <li class="ub-mobile-nav__item ub-mobile-nav__item--has-dropdown">
-                <a href="#" class="ub-mobile-nav__link" aria-haspopup="true" aria-expanded="false">All Pages</a>
-                <ul class="ub-mobile-nav__list">
-                    <li class="ub-mobile-nav__item"><a href="./blog.html" class="ub-mobile-nav__link">Blog</a></li>
-                    <li class="ub-mobile-nav__item"><a href="./blog-single.html" class="ub-mobile-nav__link">Blog Details</a></li>
-                    <li class="ub-mobile-nav__item"><a href="careers.html" class="ub-mobile-nav__link">Careers</a></li>
-                    <li class="ub-mobile-nav__item"><a href="careers-details.html" class="ub-mobile-nav__link">Careers Details</a></li>
-                    <li class="ub-mobile-nav__item"><a href="feature.html" class="ub-mobile-nav__link">Features</a></li>
-                    <li class="ub-mobile-nav__item"><a href="feature-single.html" class="ub-mobile-nav__link">Features Details</a></li>
-                    <li class="ub-mobile-nav__item"><a href="integrations.html" class="ub-mobile-nav__link">Integrations</a></li>
-                    <li class="ub-mobile-nav__item"><a href="integrations-details.html" class="ub-mobile-nav__link">Integrations Details</a></li>
-                    <li class="ub-mobile-nav__item"><a href="team-details.html" class="ub-mobile-nav__link">Team Details</a></li>
-                    <li class="ub-mobile-nav__item"><a href="pricing.html" class="ub-mobile-nav__link">Pricing</a></li>
-                    <li class="ub-mobile-nav__item"><a href="pricing-details.html" class="ub-mobile-nav__link">Pricing Details</a></li>
-                    <li class="ub-mobile-nav__item"><a href="privacy-policy.html" class="ub-mobile-nav__link">Privacy & Policy</a></li>
-                     <li class="ub-mobile-nav__item"><a href="licenses.html" class="ub-mobile-nav__link">Licenses</a></li>
+            <ul class="ub-mobile-nav__menu">
+                <li class="ub-mobile-nav__item"><a href="index.html" class="ub-mobile-nav__link">Home</a></li>
+                <li class="ub-mobile-nav__item"><a href="./about.html" class="ub-mobile-nav__link">About</a></li>
+                <li class="ub-mobile-nav__item ub-mobile-nav__item--has-dropdown">
+                    <a href="#" class="ub-mobile-nav__link" aria-haspopup="true" aria-expanded="false">All Pages</a>
+                    <ul class="ub-mobile-nav__list">
+                        <li class="ub-mobile-nav__item"><a href="./blog.html" class="ub-mobile-nav__link">Blog</a></li>
+                        <li class="ub-mobile-nav__item"><a href="./blog-single.html" class="ub-mobile-nav__link">Blog Details</a></li>
+                        <li class="ub-mobile-nav__item"><a href="careers.html" class="ub-mobile-nav__link">Careers</a></li>
+                        <li class="ub-mobile-nav__item"><a href="careers-details.html" class="ub-mobile-nav__link">Careers Details</a></li>
+                        <li class="ub-mobile-nav__item"><a href="feature.html" class="ub-mobile-nav__link">Features</a></li>
+                        <li class="ub-mobile-nav__item"><a href="feature-single.html" class="ub-mobile-nav__link">Features Details</a></li>
+                        <li class="ub-mobile-nav__item"><a href="integrations.html" class="ub-mobile-nav__link">Integrations</a></li>
+                        <li class="ub-mobile-nav__item"><a href="integrations-details.html" class="ub-mobile-nav__link">Integrations Details</a></li>
+                        <li class="ub-mobile-nav__item"><a href="team-details.html" class="ub-mobile-nav__link">Team Details</a></li>
+                        <li class="ub-mobile-nav__item"><a href="pricing.html" class="ub-mobile-nav__link">Pricing</a></li>
+                        <li class="ub-mobile-nav__item"><a href="pricing-details.html" class="ub-mobile-nav__link">Pricing Details</a></li>
+                        <li class="ub-mobile-nav__item"><a href="privacy-policy.html" class="ub-mobile-nav__link">Privacy & Policy</a></li>
+                         <li class="ub-mobile-nav__item"><a href="licenses.html" class="ub-mobile-nav__link">Licenses</a></li>
                     <li class="ub-mobile-nav__item"><a href="404.html" class="ub-mobile-nav__link">404</a></li>
-                    <li class="ub-mobile-nav__item"><a href="terms-and-condition.html" class="ub-mobile-nav__link">Terms & Condition</a></li>
-                </ul>
-            </li>
-            <li class="ub-mobile-nav__item"><a href="contact.html" class="ub-mobile-nav__link">Contact</a></li>
-        </ul>
-        <div class="ub-mobile-nav__actions">
-            <a href="sign-in.html" class="ub-mobile-nav__button ub-mobile-nav__button--login">Login</a>
-            <a href="#" class="ub-mobile-nav__button ub-mobile-nav__button--get-started">Get Started</a>
+                        <li class="ub-mobile-nav__item"><a href="terms-and-condition.html" class="ub-mobile-nav__link">Terms & Condition</a></li>
+                    </ul>
+                </li>
+                <li class="ub-mobile-nav__item"><a href="contact.html" class="ub-mobile-nav__link">Contact</a></li>
+            </ul>
+            <div class="ub-mobile-nav__actions">
+                <a href="sign-in.html" class="ub-mobile-nav__button ub-mobile-nav__button--login">Login</a>
+                <a href="#" class="ub-mobile-nav__button ub-mobile-nav__button--get-started">Get Started</a>
+            </div>
         </div>
-    </div>
-    <!-- mobile end navigation --> 
+        <!-- mobile end navigation -->
 
     <main>
         <!-- job details start here -->
-        <section id="ub-career-details" class="ub-career-details">
+        <section id="ub-career-details" class="ub-career-details" data-aos="fade-up" data-aos-delay="100">
             <div class="ub-career-details__container container">
-                <div class="ub-career-details__wrapper"> 
+                <div class="ub-career-details__wrapper" data-aos="fade-up"> 
                     <!-- Content Section -->
                     <div class="ub-career-details__content">
                         <div class="ub-career-details__description">
-                            <h2 class="ub-career-details__title">UI/UX Designer</h2>
-                            <p class="ub-career-details__text">
+                            <h2 class="ub-career-details__title" data-aos="fade-up" data-aos-delay="200">UI/UX Designer</h2>
+                            <p class="ub-career-details__text" data-aos="fade-up" data-aos-delay="300">
                                 We are looking for a creative and detail-oriented UI/UX Designer to craft seamless, user-friendly experiences. You will be responsible for designing engaging interfaces and improving user journeys across web and mobile platforms.
                             </p>
-                            <p class="ub-career-details__text ub-career-details__text--spacing">
+                            <p class="ub-career-details__text ub-career-details__text--spacing" data-aos="fade-up" data-aos-delay="400">
                                 The ideal candidate is passionate about user-centered design, stays updated with industry trends, and can translate ideas into high-quality visuals. You will collaborate with product managers and developers to enhance usability and accessibility, ensuring a flawless experience for our users.
                             </p>
                         </div>
                     
                         <!-- Responsibilities Section -->
                         <div class="ub-career-details__responsibilities">
-                            <h3 class="ub-career-details__subtitle ub-career-details__subtitle--spacing">Job Responsibilities</h3>
-                            <p class="ub-career-details__text">
+                            <h3 class="ub-career-details__subtitle ub-career-details__subtitle--spacing" data-aos="fade-up" data-aos-delay="500">Job Responsibilities</h3>
+                            <p class="ub-career-details__text" data-aos="fade-up" data-aos-delay="600">
                                 As a UI/UX Designer, you will play a key role in shaping digital experiences by focusing on aesthetics and usability.
                             </p>
                     
-                            <ul class="ub-career-details__list">
+                            <ul class="ub-career-details__list" data-aos="fade-up" data-aos-delay="700">
                                 <li class="ub-career-details__list-item">Design intuitive and visually appealing user interfaces for web and mobile applications.</li>
                                 <li class="ub-career-details__list-item">Conduct user research and usability testing to optimize designs.</li>
                                 <li class="ub-career-details__list-item">Collaborate with developers to ensure seamless implementation of designs.</li>
@@ -159,11 +153,11 @@
                     
                         <!-- Qualifications Section -->
                         <div class="ub-career-details__qualifications">
-                            <h3 class="ub-career-details__subtitle ub-career-details__subtitle--spacing">Qualifications</h3>
-                            <p class="ub-career-details__text">
+                            <h3 class="ub-career-details__subtitle ub-career-details__subtitle--spacing" data-aos="fade-up" data-aos-delay="800">Qualifications</h3>
+                            <p class="ub-career-details__text" data-aos="fade-up" data-aos-delay="900">
                                 The ideal candidate should have a strong design background and an understanding of user behavior.
                             </p>
-                            <ul class="ub-career-details__list">
+                            <ul class="ub-career-details__list" data-aos="fade-up" data-aos-delay="1000">
                                 <li class="ub-career-details__list-item">Bachelor’s degree in Design, HCI, or a related field.</li>
                                 <li class="ub-career-details__list-item">Proficiency in design tools like Figma, Adobe XD, or Sketch.</li>
                                 <li class="ub-career-details__list-item">Experience in responsive and mobile-first design.</li>
@@ -171,10 +165,9 @@
                             </ul>
                         </div>
                     </div>
-                    
         
                     <!-- Form Section -->
-                    <div class="ub-career-details__form">
+                    <div class="ub-career-details__form" data-aos="fade-up" data-aos-delay="100">
                         <form id="job-application-form" class="ub-career-details__form-wrapper" method="post">
                             <div class="ub-career-details__form-group">
                                 <label for="first-name" class="ub-career-details__form-label">First Name</label>
@@ -222,23 +215,23 @@
         </section> 
         <!-- job details end here -->
 
-        <!-- testimonial start here -->
-        <section id="ub-testimonial" class="ub-testimonial">
+        <!-- Testimonial start here -->
+        <section id="ub-testimonial" class="ub-testimonial" data-aos="fade-up" data-aos-delay="100">
             <div class="ub-testimonial__container container">
-                <div class="ub-testimonial__header">
-                    <div class="ub-testimonial__subtitle-area">
+                <div class="ub-testimonial__header" data-aos="fade-up">
+                    <div class="ub-testimonial__subtitle-area" data-aos="fade-up" data-aos-delay="200">
                         <div class="ub-testimonial__subtitle-group">
                             <img class="ub-testimonial__icon" src="./assets/icons/fav.svg" alt="Favorite Icon">
                             <span class="ub-testimonial__subtitle">Clients feedback</span>
                         </div>
                     </div>
-                    <h2 class="ub-testimonial__title">Client Testimonials</h2>
-                    <p class="ub-testimonial__desc">Innovative strategies and methods that empower teams to boost their business achievements.</p>
+                    <h2 class="ub-testimonial__title" data-aos="fade-up" data-aos-delay="300">Client Testimonials</h2>
+                    <p class="ub-testimonial__desc" data-aos="fade-up" data-aos-delay="400">Innovative strategies and methods that empower teams to boost their business achievements.</p>
                 </div>
-
+        
                 <div class="ub-testimonial__content">
                     <!-- testimonial Item 1 -->
-                    <div class="ub-testimonial__item">
+                    <div class="ub-testimonial__item" data-aos="fade-up" data-aos-delay="500">
                         <div class="ub-testimonial__rating star-rating">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -247,7 +240,7 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <div class="ub-testimonial__text">
-                            <p>"Connectify is an innovative CRM platform that has transformed the way we handle customer interactions at our business. Its robust ub-features have significantly enhanced our productivity and streamlined our processes. I wholeheartedly endorse SyncMaster!"</p>
+                            <p>"Connectify is an innovative CRM platform that has transformed the way we handle customer interactions at our business..."</p>
                         </div>
                         <div class="ub-testimonial__profile">
                             <div class="ub-testimonial__avatar">
@@ -260,7 +253,7 @@
                         </div>
                     </div>
                     <!-- testimonial Item 2 -->
-                    <div class="ub-testimonial__item">
+                    <div class="ub-testimonial__item" data-aos="fade-up" data-aos-delay="600">
                         <div class="ub-testimonial__rating star-rating">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -269,7 +262,7 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <div class="ub-testimonial__text">
-                            <p>"BizNest has revolutionized our small business operations. Its CRM ub-features have simplified our daily activities and enhanced our interactions with clients. We're grateful to BizNest for making our work so much smoother!"</p>
+                            <p>"BizNest has revolutionized our small business operations. Its CRM ub-features have simplified our daily activities..."</p>
                         </div>
                         <div class="ub-testimonial__profile">
                             <div class="ub-testimonial__avatar">
@@ -282,7 +275,7 @@
                         </div>
                     </div>
                     <!-- testimonial Item 3 -->
-                    <div class="ub-testimonial__item">
+                    <div class="ub-testimonial__item" data-aos="fade-up" data-aos-delay="700">
                         <div class="ub-testimonial__rating star-rating">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -291,7 +284,7 @@
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <div class="ub-testimonial__text">
-                            <p>"Using Connectify to handle our customer relationships has been a game changer. The platform has streamlined our meetings and planning, allowing our startup to operate seamlessly. Highly recommend Connectify!"</p>
+                            <p>"Using Connectify to handle our customer relationships has been a game changer. The platform has streamlined our meetings..."</p>
                         </div>
                         <div class="ub-testimonial__profile">
                             <div class="ub-testimonial__avatar">
@@ -306,26 +299,26 @@
                 </div>
             </div>
         </section>
-        <!-- testimonial end here -->
+        <!-- Testimonial end here -->
 
-        <!-- faq start here -->
-        <section id="ub-faq" class="ub-faq">
+        <!-- Faq start here -->
+        <section id="ub-faq" class="ub-faq" data-aos="fade-up" data-aos-delay="100">
             <div class="ub-faq__container container">
-                <div class="ub-faq__grid">
+                <div class="ub-faq__grid" data-aos="fade-up" data-aos-delay="200">
                     <!-- Section Heading -->
-                    <div class="ub-faq__heading">
-                        <div class="ub-faq__subtitle-area">
+                    <div class="ub-faq__heading" data-aos="fade-up" data-aos-delay="300">
+                        <div class="ub-faq__subtitle-area" data-aos="fade-up" data-aos-delay="400">
                             <div class="ub-faq__subtitle-group">
                                 <img class="ub-faq__icon" src="./assets/icons/fav.svg" alt="Favorite Icon">
                                 <span class="ub-faq__subtitle">Faq</span>
                             </div>
                         </div>
-                        <h2 class="ub-faq__title">The answers to your questions.</h2>
+                        <h2 class="ub-faq__title" data-aos="fade-up" data-aos-delay="500">The answers to your questions.</h2>
                     </div>
                     <!-- FAQ Area -->
-                    <div class="ub-faq__list">
+                    <div class="ub-faq__list" data-aos="fade-up" data-aos-delay="600">
                         <!-- FAQ Item -->
-                        <div class="ub-faq__item active">
+                        <div class="ub-faq__item active" data-aos="fade-up" data-aos-delay="700">
                             <button class="ub-faq__question active">
                                 <span class="ub-faq__question-text">What support options are available for Bazarly users? </span>
                             </button>
@@ -333,7 +326,7 @@
                                 <p>Keeps customer info in sync with CRMs, tracks chats, and handles leads with live updates.</p>
                             </div>
                         </div>
-                        <div class="ub-faq__item">
+                        <div class="ub-faq__item" data-aos="fade-up" data-aos-delay="800">
                             <button class="ub-faq__question">
                                 <span class="ub-faq__question-text">What features does Bazarly offer for managing customer data?</span>
                             </button>
@@ -341,7 +334,7 @@
                                 <p>Synchronizes customer data with CRM systems, monitors conversations, and manages leads with real-time updates.</p>
                             </div>
                         </div>
-                        <div class="ub-faq__item">
+                        <div class="ub-faq__item" data-aos="fade-up" data-aos-delay="900">
                             <button class="ub-faq__question">
                                 <span class="ub-faq__question-text">What features does Bazarly provide for CRM users?</span>
                             </button>
@@ -349,7 +342,7 @@
                                 <p>Syncs customer data with CRMs, tracks interactions, and manages leads with real-time updates.</p>
                             </div>
                         </div>
-                        <div class="ub-faq__item">
+                        <div class="ub-faq__item" data-aos="fade-up" data-aos-delay="1000">
                             <button class="ub-faq__question">
                                 <span class="ub-faq__question-text">How can Bazarly help improve customer relationships?</span>
                             </button>
@@ -357,7 +350,7 @@
                                 <p>Easily links client info with CRM systems, keeps tabs on interactions, and alerts you about potential customers right away.</p>
                             </div>
                         </div>
-                        <div class="ub-faq__item">
+                        <div class="ub-faq__item" data-aos="fade-up" data-aos-delay="1200">
                             <button class="ub-faq__question">
                                 <span class="ub-faq__question-text">What integrations does Bazarly have with other tools?</span>
                             </button>
@@ -365,7 +358,7 @@
                                 <p>It effortlessly connects client info with your CRM, tracks your interactions, and gives you a heads-up about potential customers in no time!</p>
                             </div>
                         </div>
-                        <div class="ub-faq__item">
+                        <div class="ub-faq__item" data-aos="fade-up" data-aos-delay="1300">
                             <button class="ub-faq__question">
                                 <span class="ub-faq__question-text">What security does Bazarly use for data protection?</span>
                             </button>
@@ -377,94 +370,102 @@
                 </div>
             </div>
         </section>
-        <!-- faq end here -->
+        <!-- Faq end here -->
 
-        <!-- blog section start here -->
-        <section id="ub-blog" class="ub-blog">
+        <!-- Blog section start here -->
+        <section id="ub-blog" class="ub-blog" data-aos="fade-up" data-aos-delay="100">
             <div class="ub-blog__container container">
-                <div class="ub-blog__header">
-                    <div class="ub-blog__subtitle-area">
+                <div class="ub-blog__header" data-aos="fade-up">
+                    <div class="ub-blog__subtitle-area" data-aos="fade-up" data-aos-delay="200">
                         <div class="ub-blog__subtitle-group">
                             <img class="ub-blog__icon" src="./assets/icons/fav.svg" alt="Favorite Icon">
                             <span class="ub-blog__subtitle">Our blog</span>
                         </div>
                     </div>
-                    <h2 class="ub-blog__title">Unlocking the full potential of your company's data</h2>
-                    <p class="ub-blog__description">Innovative tools and strategies that empower teams to drive company growth.</p>
+                    <h2 class="ub-blog__title" data-aos="fade-up" data-aos-delay="300">Unlocking the full potential of your company's data</h2>
+                    <p class="ub-blog__description" data-aos="fade-up" data-aos-delay="400">Innovative tools and strategies that empower teams to drive company growth.</p>
                 </div>
         
-                <div class="ub-blog__cards">
-                    <article class="ub-blog__card">
-                        <div class="ub-blog__card-image-wrapper">
-                            <img src="./assets/img/blog/blog-1.png" alt="Analytics tool icon" class="ub-blog__card-image">
-                        </div>
-                        <div class="ub-blog__card-content">
-                            <a href="./blog-single.html" class="ub-blog__card-link">
-                                <h3 class="ub-blog__card-title">How real-time analytics can transform your money strategy!</h3>
-                            </a>
-                            <p class="ub-blog__card-text">Ideal for startups, our Starter Plan provides essential tools for easy financial management.</p>
-                            <div class="ub-blog__card-link-wrapper">
-                                <a href="./blog-single.html" class="ub-blog__card-link">Read post</a>
-                                <img class="ub-blog__card-link-icon" src="./assets/icons/arrow-up-right.svg" alt="Arrow icon">
+                <div class="ub-blog__cards" data-aos="fade-up" data-aos-delay="500">
+                    <article class="ub-blog__card" data-aos="fade-up" data-aos-delay="600">
+                        <a href="./blog-single.html">
+                            <div class="ub-blog__card-image-wrapper">
+                                <img src="./assets/img/blog/blog-1.png" alt="Analytics tool icon" class="ub-blog__card-image">
                             </div>
-                        </div>
+                            <div class="ub-blog__card-content">
+                                <a href="./blog-single.html" class="ub-blog__card-link">
+                                    <h3 class="ub-blog__card-title">How real-time analytics can transform your money strategy!</h3>
+                                </a>
+                                <p class="ub-blog__card-text">Ideal for startups, our Starter Plan provides essential tools for easy financial management.</p>
+                                <div class="ub-blog__card-link-wrapper">
+                                    <a href="./blog-single.html" class="ub-blog__card-link">Read post</a>
+                                    <img class="ub-blog__card-link-icon" src="./assets/icons/arrow-up-right.svg" alt="Arrow icon">
+                                </div>
+                            </div>
+                        </a>
                     </article>
         
-                    <article class="ub-blog__card">
-                        <div class="ub-blog__card-image-wrapper">
-                            <img src="./assets/img/blog/blog-2.png" alt="Active users analytics" class="ub-blog__card-image">
-                        </div>
-                        <div class="ub-blog__card-content">
-                            <a href="./blog-single.html" class="ub-blog__card-link">
-                                <h3 class="ub-blog__card-title">Simplify and empower your financial management with MezApp</h3>
-                            </a>
-                            <p class="ub-blog__card-text">Our Launch Package is ideal for providing all the tools to manage finances like a pro.</p>
-                            <div class="ub-blog__card-link-wrapper">
-                                <a href="./blog-single.html" class="ub-blog__card-link">Read post</a>
-                                <img class="ub-blog__card-link-icon" src="./assets/icons/arrow-up-right.svg" alt="Arrow icon">
+                    <article class="ub-blog__card" data-aos="fade-up" data-aos-delay="700">
+                       <a href="./blog-single.html">
+                            <div class="ub-blog__card-image-wrapper">
+                                <img src="./assets/img/blog/blog-2.png" alt="Active users analytics" class="ub-blog__card-image">
                             </div>
-                        </div>
+                            <div class="ub-blog__card-content">
+                                <a href="./blog-single.html" class="ub-blog__card-link">
+                                    <h3 class="ub-blog__card-title">Simplify and empower your financial management with MezApp</h3>
+                                </a>
+                                <p class="ub-blog__card-text">Our Launch Package is ideal for providing all the tools to manage finances like a pro.</p>
+                                <div class="ub-blog__card-link-wrapper">
+                                    <a href="./blog-single.html" class="ub-blog__card-link">Read post</a>
+                                    <img class="ub-blog__card-link-icon" src="./assets/icons/arrow-up-right.svg" alt="Arrow icon">
+                                </div>
+                            </div>
+                       </a>
                     </article>
         
-                    <article class="ub-blog__card">
-                        <div class="ub-blog__card-image-wrapper">
-                            <img src="./assets/img/blog/blog-3.png" alt="Money flow chart" class="ub-blog__card-image">
-                        </div>
-                        <div class="ub-blog__card-content">
-                            <a href="./blog-single.html" class="ub-blog__card-link">
-                                <h3 class="ub-blog__card-title">How real-time analytics can transform your money strategy!</h3>
-                            </a>
-                            <p class="ub-blog__card-text">Ideal for startups, our Starter Plan offers essential tools for easy financial management.</p>
-                            <div class="ub-blog__card-link-wrapper">
-                                <a href="./blog-single.html" class="ub-blog__card-link">Read post</a>
-                                <img class="ub-blog__card-link-icon" src="./assets/icons/arrow-up-right.svg" alt="Arrow icon">
+                    <article class="ub-blog__card" data-aos="fade-up" data-aos-delay="800">
+                        <a href="./blog-single.html">
+                            <div class="ub-blog__card-image-wrapper">
+                                <img src="./assets/img/blog/blog-3.png" alt="Money flow chart" class="ub-blog__card-image">
                             </div>
-                        </div>
+                            <div class="ub-blog__card-content">
+                                <a href="./blog-single.html" class="ub-blog__card-link">
+                                    <h3 class="ub-blog__card-title">How real-time analytics can transform your money strategy!</h3>
+                                </a>
+                                <p class="ub-blog__card-text">Ideal for startups, our Starter Plan offers essential tools for easy financial management.</p>
+                                <div class="ub-blog__card-link-wrapper">
+                                    <a href="./blog-single.html" class="ub-blog__card-link">Read post</a>
+                                    <img class="ub-blog__card-link-icon" src="./assets/icons/arrow-up-right.svg" alt="Arrow icon">
+                                </div>
+                            </div>
+                        </a>
                     </article>
                 </div>
         
-                <div class="ub-blog__btn-wrapper">
+                <div class="ub-blog__btn-wrapper" data-aos="fade-up" data-aos-delay="900">
                     <a href="blog.html" class="ub-blog__btn">See all blogs</a>
                 </div>
             </div>
         </section>
-        <!-- blog section end here -->
+        <!-- Blog section end here -->
 
-        <!-- cta start here -->
-        <section id="ub-cta" class="ub-cta">
+        <!-- CTA start here -->
+        <section id="ub-cta" class="ub-cta" data-aos="fade-up" data-aos-delay="50">
             <div class="ub-cta__container container">
-                <div class="ub-cta__area">
-                    <h3 class="ub-cta__title">Get set to take your CRM  game to the next level!</h3>
-                    <p class="ub-cta__desc">Don't miss out on the excitement! Stay tuned for all the thrilling events we have lined up just for you! <p>
+                <div class="ub-cta__area" data-aos="fade-up" data-aos-delay="75">
+                    <h3 class="ub-cta__title" data-aos="fade-up" data-aos-delay="100">Get set to take your CRM  game to the next level!</h3>
+                    <p class="ub-cta__desc" data-aos="fade-up" data-aos-delay="125">Don't miss out on the excitement! Stay tuned for all the thrilling events we have lined up just for you! <p>
                     <div class="ub-cta__btn-group">
-                        <a class="ub-cta__btn" href="">Started 14 days free</a>
+                        <a class="ub-cta__btn" href="./pricing-details.html" data-aos="fade-up" data-aos-delay="150">Started 14 days free</a>
                     </div>
                     <div class="ub-cta__background-left"></div>  
                     <div class="ub-cta__background-right"></div>  
                 </div>
             </div>
         </section>
-        <!-- cta end here -->
+        <!-- CTA end here -->
+
+ 
     </main>
 
         <!-- footer start here -->
@@ -477,12 +478,13 @@
                             <h3 class="footer__newsletter-title">Join our newsletter</h3>
                             <p class="footer__newsletter-desc">We're here to assist you! Have a question or need support?</p>
                         </div>
-                        <div class="footer__newsletter-form">
-                            <form action="#" class="footer__form">
+                        <div class="footer__form-wrapper">
+                            <form action="#" class="footer__newsletter-form">
                                 <div class="footer__input-wrapper">
                                     <input type="email" class="footer__input" placeholder="Enter your email">
                                     <input class="btn footer__submit-btn" type="submit" value="Subscribe">
                                 </div>
+                                <p id="footer__form-message" class="footer__form-message success-message"></p>
                             </form>
                         </div>
                     </div>
@@ -494,7 +496,7 @@
                                 <a href="index.html" class="footer__logo-link">
                                     <img src="./assets/img/logo/logo.svg" alt="Logo" class="footer__logo-img">
                                 </a>
-                                <p class="footer__description">Bazarly enhances communication, tracks performance, and boosts customer loyalty.</p>
+                                <p class="footer__desc">Bazarly enhances communication, tracks performance, and boosts customer loyalty.</p>
                             </div>
                         </div>
 
@@ -531,11 +533,10 @@
                             <div class="footer__navigation-column">
                                 <h3 class="footer__navigation-title">Utility</h3>
                                 <ul class="footer__links">
-                                    <li class="footer__link-item"><a href="#" class="footer__link">Password Protected</a></li>
-                                    
                                     <li class="footer__link-item"><a href="#" class="footer__link">Licenses</a></li>
                                     <li class="footer__link-item"><a href="privacy-policy.html" class="footer__link">Privacy policy</a></li>
                                     <li class="footer__link-item"><a href="terms-and-condition.html" class="footer__link">Terms of services</a></li>
+                                    <li class="footer__link-item"><a href="404.html" class="footer__link">404</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -544,38 +545,47 @@
                      <!-- Copyright Section -->
                     <div class="footer__copyright">
                         <div class="footer__copyright-text">
-                            <p>Copyright © <span class="footer__company-name">Bazarly</span> 
-                            <span class="footer__divider">|</span> Designed by <a href="www.uibazar.com" class="footer__link">UiBazar</a> 
-                            and Powered by <a href="#" class="footer__link">HTML, CSS, and JavaScript</a></p>
+                            <p>&copy;<span class="footer__company-name">Bazarly</span>. All rights reserved.  
+                            <span class="footer__divider">|</span> Designed by <a href="https://www.uibazar.com" class="footer__link">UiBazar</a>  
+                            <span class="footer__divider">|</span> Built with HTML, CSS & JavaScript</p>
                         </div>
+                        
                         <div class="footer__social-links">
                             <ul class="footer__social-list">
                                 <li class="footer__social-item">
-                                    <a href="#" class="footer__social-link">
-                                        <img src="./assets/icons/LinkedIn.svg" alt="X Icon" class="footer__social-icon">
+                                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                                        <img src="./assets/icons/LinkedIn.svg" alt="LinkedIn Icon" class="footer__social-icon">
                                     </a>
                                 </li>
                                 <li class="footer__social-item">
-                                    <a href="#" class="footer__social-link">
-                                        <img src="./assets/icons/X.svg" alt="X Icon" class="footer__social-icon">
+                                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                                        <img src="./assets/icons/X.svg" alt="Twitter Icon" class="footer__social-icon">
                                     </a>
                                 </li>
                                 <li class="footer__social-item">
-                                    <a href="#" class="footer__social-link">
-                                        <img src="./assets/icons/instagram.svg" alt="LinkedIn Icon" class="footer__social-icon">
+                                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                                        <img src="./assets/icons/instagram.svg" alt="Instagram Icon" class="footer__social-icon">
                                     </a>
                                 </li>
                             </ul>
-                        </div>
+                        </div>                        
                     </div>
                 </div>
             </div>
         </footer>
         <!-- footer end here --> 
-    
 
+ 
     <!-- js  -->
-        <script src="./assets/js/srcipts.js"></script>
-        <script src="./assets/js/form.js"></script>
+    <!--  AOS JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- SweetAlert2 js  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Swiper js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Main js -->
+    <script src="./assets/js/srcipts.js"></script>
+    <!-- Form js -->
+    <script src="./assets/js/form.js"></script>    
 </body>
 </html>
