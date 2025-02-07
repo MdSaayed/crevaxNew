@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bazarly</title>
-      
-        <!-- main css -->
-        <link rel="stylesheet" href="./css/main.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazarly</title>
+  
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- AOS animation  css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
     
-        <!-- font awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
-    
-        <!-- google font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-        <!-- AOS animation  css-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-        
-        <!--  AOS JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    
-        <!-- swiper js -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    
-    </head>
+
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+
+
+</head>
 <body>
 
-    <!-- header start here -->
+    <!-- Header start here -->
     <header id="ub-header" class="ub-header">
         <div class="ub-header__container container">
           <nav class="ub-header__navigation">
@@ -74,9 +75,9 @@
           </nav>
         </div>
     </header>
-    <!-- header end here -->
+    <!-- Header end here -->
       
-    <!-- mobile start navigation -->
+    <!-- Mobile start navigation -->
     <div id="ub-mobile-nav" class="ub-mobile-nav">
         <div class="ub-mobile-nav__header">
             <div class="ub-mobile-nav__branding">
@@ -104,7 +105,7 @@
                     <li class="ub-mobile-nav__item"><a href="pricing.html" class="ub-mobile-nav__link">Pricing</a></li>
                     <li class="ub-mobile-nav__item"><a href="pricing-details.html" class="ub-mobile-nav__link">Pricing Details</a></li>
                     <li class="ub-mobile-nav__item"><a href="privacy-policy.html" class="ub-mobile-nav__link">Privacy & Policy</a></li>
-                     <li class="ub-mobile-nav__item"><a href="licenses.html" class="ub-mobile-nav__link">Licenses</a></li>
+                    <li class="ub-mobile-nav__item"><a href="licenses.html" class="ub-mobile-nav__link">Licenses</a></li>
                     <li class="ub-mobile-nav__item"><a href="404.html" class="ub-mobile-nav__link">404</a></li>
                     <li class="ub-mobile-nav__item"><a href="terms-and-condition.html" class="ub-mobile-nav__link">Terms & Condition</a></li>
                 </ul>
@@ -116,41 +117,39 @@
             <a href="#" class="ub-mobile-nav__button ub-mobile-nav__button--get-started">Get Started</a>
         </div>
     </div>
-    <!-- mobile end navigation -->
+    <!-- Mobile end navigation -->
 
     <main>
-        <section id="ub-terms" class="ub-terms">
+        <!-- Terms and condition start here -->
+        <section id="ub-terms" class="ub-terms" data-aos="fade-up">
             <div class="ub-terms__container container">
                 <div class="ub-terms__content-area">
-                    <div class="ub-terms__header">
+                    <div class="ub-terms__header" data-aos="fade-up" data-aos-delay="100">
                         <h1 class="ub-terms__title">Terms and Conditions</h1>
-                        <p class="ub-terms__desc">Welcome to Bazarly. These Terms and Conditions govern your use of our platform. By accessing or using Bazarly, you agree to be bound by these terms. Please read them carefully.</p>
+                        <p class="ub-terms__desc">
+                            Welcome to Bazarly. These Terms and Conditions govern your use of our platform.
+                            By accessing or using Bazarly, you agree to be bound by these terms. Please read them carefully.
+                        </p>
                     </div>
                     <div class="ub-terms__list">
                         <ul class="ub-terms__items">
-                            <li class="ub-terms__item">Acceptance of Terms By using Bazarly, you agree to comply with and be bound by these Terms and Conditions. If you do not agree to these terms, please do not use our platform.</li>
-                            <li class="ub-terms__item">Eligibility You must be at least 18 years old and legally able to enter into contracts to use Bazarly. By using our platform, you represent and warrant that you meet these eligibility requirements.</li>
-                            <li class="ub-terms__item">Account Registration To use certain features of Bazarly, you must register for an account. You agree to provide accurate, current, and complete information during the registration process and to update such information to keep it accurate, current, and complete.</li>
-                            <li class="ub-terms__item">User Responsibilities You are responsible for maintaining the confidentiality of your account and password. You agree to accept responsibility for all activities that occur under your account.</li>
-                            <li class="ub-terms__item">Prohibited Activities You agree not to engage in any illegal, fraudulent, or manipulative trading activities on Bazarly. This includes, but is not limited to, market manipulation, insider trading, and money laundering.</li>
-                            <li class="ub-terms__item">Fees and Payments Bazarly charges fees for certain services. You agree to pay all applicable fees as described on our website. We reserve the right to change our fee structure at any time.</li>
-                            <li class="ub-terms__item">Risks Cryptocurrency trading involves significant risk. You acknowledge and agree that you are solely responsible for any losses incurred through trading on our platform.</li>
-                            <li class="ub-terms__item">Intellectual Property All content on Bazarly, including but not limited to text, graphics, logos, and software, is the property of Bazarly and is protected by copyright and other intellectual property laws.</li>
-                            <li class="ub-terms__item">Privacy Policy Your use of Bazarly is also governed by our Privacy Policy, which is incorporated into these Terms and Conditions by reference.</li>
-                            <li class="ub-terms__item">Termination We reserve the right to terminate or suspend your account and access to Bazarly at our sole discretion, without notice, for conduct that we believe violates these Terms and Conditions or is harmful to other users, us, or third parties, or for any other reason.</li>
-                            <li class="ub-terms__item">Disclaimer of Warranties Bazarly is provided "as is" and "as available" without any warranties of any kind, either express or implied.</li>
-                            <li class="ub-terms__item">Limitation of Liability In no event shall Bazarly be liable for any indirect, incidental, special, consequential or punitive damages, or any loss of profits or revenues.</li>
-                            <li class="ub-terms__item">Governing Law These Terms and Conditions shall be governed by and construed in accordance with the laws of [insert applicable jurisdiction], without regard to its conflict of law provisions.</li>
-                            <li class="ub-terms__item">Changes to Terms We reserve the right to modify these Terms and Conditions at any time. We will notify users of any significant changes. Your continued use of Bazarly after such modifications constitutes your acceptance of the updated terms.</li>
-                            <li class="ub-terms__item">Contact Information If you have any questions about these Terms and Conditions, please contact us at contact@bazarly.com</li>
+                            <li class="ub-terms__item" data-aos="fade-up" data-aos-delay="200">Acceptance of Terms...</li>
+                            <li class="ub-terms__item" data-aos="fade-up" data-aos-delay="300">Eligibility...</li>
+                            <li class="ub-terms__item" data-aos="fade-up" data-aos-delay="400">Account Registration...</li>
+                            <li class="ub-terms__item" data-aos="fade-up" data-aos-delay="500">User Responsibilities...</li>
+                            <li class="ub-terms__item" data-aos="fade-up" data-aos-delay="600">Prohibited Activities...</li>
+                            <li class="ub-terms__item" data-aos="fade-up" data-aos-delay="700">Fees and Payments...</li>
+                            <li class="ub-terms__item" data-aos="fade-up" data-aos-delay="800">Risks...</li>
+                            <li class="ub-terms__item" data-aos="fade-up" data-aos-delay="900">Intellectual Property...</li>
                         </ul>
                     </div>
-                    <div class="ub-terms__footer">
-                        <p class="privacy-policy__last-update">Last update: 30 january, 2025</p>
+                    <div class="ub-terms__footer" data-aos="fade-up" data-aos-delay="1000">
+                        <p class="privacy-policy__last-update">Last update: 30 January, 2025</p>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Terms and condition start end -->
     </main>
 
         <!-- footer start here -->
@@ -163,12 +162,13 @@
                             <h3 class="footer__newsletter-title">Join our newsletter</h3>
                             <p class="footer__newsletter-desc">We're here to assist you! Have a question or need support?</p>
                         </div>
-                        <div class="footer__newsletter-form">
-                            <form action="#" class="footer__form">
+                        <div class="footer__form-wrapper">
+                            <form action="#" class="footer__newsletter-form">
                                 <div class="footer__input-wrapper">
                                     <input type="email" class="footer__input" placeholder="Enter your email">
                                     <input class="btn footer__submit-btn" type="submit" value="Subscribe">
                                 </div>
+                                <p id="footer__form-message" class="footer__form-message success-message"></p>
                             </form>
                         </div>
                     </div>
@@ -180,7 +180,7 @@
                                 <a href="index.html" class="footer__logo-link">
                                     <img src="./assets/img/logo/logo.svg" alt="Logo" class="footer__logo-img">
                                 </a>
-                                <p class="footer__description">Bazarly enhances communication, tracks performance, and boosts customer loyalty.</p>
+                                <p class="footer__desc">Bazarly enhances communication, tracks performance, and boosts customer loyalty.</p>
                             </div>
                         </div>
 
@@ -217,11 +217,10 @@
                             <div class="footer__navigation-column">
                                 <h3 class="footer__navigation-title">Utility</h3>
                                 <ul class="footer__links">
-                                    <li class="footer__link-item"><a href="#" class="footer__link">Password Protected</a></li>
-                                    
                                     <li class="footer__link-item"><a href="#" class="footer__link">Licenses</a></li>
                                     <li class="footer__link-item"><a href="privacy-policy.html" class="footer__link">Privacy policy</a></li>
                                     <li class="footer__link-item"><a href="terms-and-condition.html" class="footer__link">Terms of services</a></li>
+                                    <li class="footer__link-item"><a href="404.html" class="footer__link">404</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -230,36 +229,47 @@
                      <!-- Copyright Section -->
                     <div class="footer__copyright">
                         <div class="footer__copyright-text">
-                            <p>Copyright © <span class="footer__company-name">Bazarly</span> 
-                            <span class="footer__divider">|</span> Designed by <a href="www.uibazar.com" class="footer__link">UiBazar</a> 
-                            and Powered by <a href="#" class="footer__link">HTML, CSS, and JavaScript</a></p>
+                            <p>&copy;<span class="footer__company-name">Bazarly</span>. All rights reserved.  
+                            <span class="footer__divider">|</span> Designed by <a href="https://www.uibazar.com" class="footer__link">UiBazar</a>  
+                            <span class="footer__divider">|</span> Built with HTML, CSS & JavaScript</p>
                         </div>
+                        
                         <div class="footer__social-links">
                             <ul class="footer__social-list">
                                 <li class="footer__social-item">
-                                    <a href="#" class="footer__social-link">
-                                        <img src="./assets/icons/LinkedIn.svg" alt="X Icon" class="footer__social-icon">
+                                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                                        <img src="./assets/icons/LinkedIn.svg" alt="LinkedIn Icon" class="footer__social-icon">
                                     </a>
                                 </li>
                                 <li class="footer__social-item">
-                                    <a href="#" class="footer__social-link">
-                                        <img src="./assets/icons/X.svg" alt="X Icon" class="footer__social-icon">
+                                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                                        <img src="./assets/icons/X.svg" alt="Twitter Icon" class="footer__social-icon">
                                     </a>
                                 </li>
                                 <li class="footer__social-item">
-                                    <a href="#" class="footer__social-link">
-                                        <img src="./assets/icons/instagram.svg" alt="LinkedIn Icon" class="footer__social-icon">
+                                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                                        <img src="./assets/icons/instagram.svg" alt="Instagram Icon" class="footer__social-icon">
                                     </a>
                                 </li>
                             </ul>
-                        </div>
+                        </div>                        
                     </div>
                 </div>
             </div>
         </footer>
         <!-- footer end here --> 
 
+ 
     <!-- js  -->
+    <!--  AOS JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- SweetAlert2 js  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Swiper js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Main js -->
     <script src="./assets/js/srcipts.js"></script>
+    <!-- Form js -->
+    <script src="./assets/js/form.js"></script>    
 </body>
 </html>

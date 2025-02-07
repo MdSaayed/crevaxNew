@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bazarly</title>
-      
-        <!-- main css -->
-        <link rel="stylesheet" href="./css/main.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazarly</title>
+  
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- AOS animation  css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
     
-        <!-- font awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
-    
-        <!-- google font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-        <!-- AOS animation  css-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-        
-        <!--  AOS JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    
-        <!-- swiper js -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    
-    </head>
+
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+
+
+</head>
 <body>
 
-    <!-- header start here -->
+    <!-- Header start here -->
     <header id="ub-header" class="ub-header">
         <div class="ub-header__container container">
           <nav class="ub-header__navigation">
@@ -74,9 +75,9 @@
           </nav>
         </div>
     </header>
-    <!-- header end here -->
+    <!-- Header end here -->
       
-    <!-- mobile start navigation -->
+    <!-- Mobile start navigation -->
     <div id="ub-mobile-nav" class="ub-mobile-nav">
         <div class="ub-mobile-nav__header">
             <div class="ub-mobile-nav__branding">
@@ -104,7 +105,7 @@
                     <li class="ub-mobile-nav__item"><a href="pricing.html" class="ub-mobile-nav__link">Pricing</a></li>
                     <li class="ub-mobile-nav__item"><a href="pricing-details.html" class="ub-mobile-nav__link">Pricing Details</a></li>
                     <li class="ub-mobile-nav__item"><a href="privacy-policy.html" class="ub-mobile-nav__link">Privacy & Policy</a></li>
-                     <li class="ub-mobile-nav__item"><a href="licenses.html" class="ub-mobile-nav__link">Licenses</a></li>
+                    <li class="ub-mobile-nav__item"><a href="licenses.html" class="ub-mobile-nav__link">Licenses</a></li>
                     <li class="ub-mobile-nav__item"><a href="404.html" class="ub-mobile-nav__link">404</a></li>
                     <li class="ub-mobile-nav__item"><a href="terms-and-condition.html" class="ub-mobile-nav__link">Terms & Condition</a></li>
                 </ul>
@@ -116,13 +117,13 @@
             <a href="#" class="ub-mobile-nav__button ub-mobile-nav__button--get-started">Get Started</a>
         </div>
     </div>
-    <!-- mobile end navigation -->
+    <!-- Mobile end navigation -->
 
     <main>
         <!-- Privacy Policy Section Start -->
         <section id="ub-privacy-policy" class="ub-privacy-policy">
             <div class="ub-privacy-policy__container container">
-                <div class="ub-privacy-policy__header">
+                <div class="ub-privacy-policy__header" data-aos="fade-up" data-aos-delay="50">
                     <h1 class="ub-privacy-policy__title">Privacy Policy</h1>
                     <p class="ub-privacy-policy__desc">
                         At Bazarly, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our platform.
@@ -132,33 +133,33 @@
                 <!-- Content List -->
                 <div class="ub-privacy-policy__content">
                     <ul class="ub-privacy-policy__list">
-                        <li class="ub-privacy-policy__item">Information We Collect 1.1 Personal Information - Name, email address, phone number - Date of birth, government-issued ID - Bank account or credit card details 1.2 Usage Information - IP address, browser type, device information - Pages visited, time spent on the platform - Trading history and preferences</li>
-                            <li class="ub-privacy-policy__item">How We Use Your Information 2.1 To provide and maintain our services 2.2 To process transactions and send transaction notifications 2.3 To comply with legal and regulatory requirements 2.4 To improve our platform and user experience 2.5 To communicate with you about our services and updates</li>
-                            <li class="ub-privacy-policy__item">Information Sharing and Disclosure 3.1 With service providers and partners 3.2 In response to legal requests or to prevent harm 3.3 In the event of a merger, sale, or asset transfer 3.4 With your consent</li>
-                            <li class="ub-privacy-policy__item">Data Security 4.1 Implementation of industry-standard security measures 4.2 Regular security audits and updates 4.3 Employee training on data protection data (subject to legal requirements) 5.4 Opting out of marketing communications</li>
-                            <li class="ub-privacy-policy__item">Your Rights and Choices 5.1 Access to your personal information 5.2 Correction of inaccurate or incomplete data 5.3 Deletion of your </li>
-                            <li class="ub-privacy-policy__item">Cookies and Tracking Technologies 6.1 Types of cookies we use 6.2 How to manage cookie preferences 6.3 Third-party analytics and advertising</li>
-                            <li class="ub-privacy-policy__item">International Data Transfers 7.1 Data storage locations 7.2 Safeguards for international transfers</li>
-                            <li class="ub-privacy-policy__item">Children's Privacy 8.1 Age restrictions for platform use 8.2 Deletion of information collected from minors</li>
-                            <li class="ub-privacy-policy__item">Changes to This Privacy Policy 9.1 Notification of significant changes 9.2 Effective date of updates</li>
-                            <li class="ub-privacy-policy__item">Contact Us 10.1 Email address for privacy inquiries 10.2 Mailing address for written communications</li>
-                            <li class="ub-privacy-policy__item">Data Retention 11.1 Duration of data storage 11.2 Criteria for determining retention periods</li>
-                            <li class="ub-privacy-policy__item">Third-Party Links 12.1 Disclaimer for external websites 12.2 Recommendation to review third-party privacy policies</li>
-                            <li class="ub-privacy-policy__item">Do Not Track Signals 13.1 Our response to browser "Do Not Track" signals</li>
-                            <li class="ub-privacy-policy__item">California Privacy Rights 14.1 Rights under the California Consumer Privacy Act (CCPA) 14.2 How to exercise these rights</li>
-                            <li class="ub-privacy-policy__item">GDPR Compliance (for EU users) 15.1 Legal basis for processing personal data 15.2 Data Protection Officer contact information</li>
+                        <li class="ub-privacy-policy__item" data-aos="fade-up" data-aos-delay="100">Information We Collect...</li>
+                        <li class="ub-privacy-policy__item" data-aos="fade-up" data-aos-delay="150">How We Use Your Information...</li>
+                        <li class="ub-privacy-policy__item" data-aos="fade-up" data-aos-delay="200">Information Sharing and Disclosure...</li>
+                        <li class="ub-privacy-policy__item" data-aos="fade-up" data-aos-delay="250">Data Security...</li>
+                        <li class="ub-privacy-policy__item" data-aos="fade-up" data-aos-delay="300">Your Rights and Choices...</li>
+                        <li class="ub-privacy-policy__item" data-aos="fade-up" data-aos-delay="350">Cookies and Tracking Technologies...</li>
+                        <li class="ub-privacy-policy__item" data-aos="fade-up" data-aos-delay="400">International Data Transfers...</li>
+                        <li class="ub-privacy-policy__item" data-aos="fade-up" data-aos-delay="450">Children's Privacy...</li>
+                        <li class="ub-privacy-policy__item" data-aos="fade-up" data-aos-delay="500">Changes to This Privacy Policy...</li>
+                        <li class="ub-privacy-policy__item" data-aos="fade-up" data-aos-delay="550">Contact Us...</li>
+                        <li class="ub-privacy-policy__item" data-aos="fade-up" data-aos-delay="600">Data Retention...</li>
+                        <li class="ub-privacy-policy__item" data-aos="fade-up" data-aos-delay="650">Third-Party Links...</li>
+                        <li class="ub-privacy-policy__item" data-aos="fade-up" data-aos-delay="700">Do Not Track Signals...</li>
+                        <li class="ub-privacy-policy__item" data-aos="fade-up" data-aos-delay="750">California Privacy Rights...</li>
+                        <li class="ub-privacy-policy__item" data-aos="fade-up" data-aos-delay="800">GDPR Compliance...</li>
                     </ul>
                 </div>
 
-                <div class="ub-privacy-policy__footer">
-                    <p class="ub-privacy-policy__last-update">Last update: 30 january, 2025</p>
-                    <p class="ub-privacy-policy__note">  Note: This privacy policy should be customized to accurately reflect Bazarly's specific data practices and comply with all applicable laws and regulations in the jurisdictions where Bazarly operates. </p>
+                <div class="ub-privacy-policy__footer" data-aos="fade-up" data-aos-delay="850">
+                    <p class="ub-privacy-policy__last-update">Last update: 30 January, 2025</p>
+                    <p class="ub-privacy-policy__note">
+                        Note: This privacy policy should be customized to accurately reflect Bazarly's specific data practices and comply with all applicable laws and regulations in the jurisdictions where Bazarly operates.
+                    </p>
                 </div>
-
             </div>
         </section>
         <!-- Privacy Policy Section End -->
-
     </main>
 
         <!-- footer start here -->
@@ -171,12 +172,13 @@
                             <h3 class="footer__newsletter-title">Join our newsletter</h3>
                             <p class="footer__newsletter-desc">We're here to assist you! Have a question or need support?</p>
                         </div>
-                        <div class="footer__newsletter-form">
-                            <form action="#" class="footer__form">
+                        <div class="footer__form-wrapper">
+                            <form action="#" class="footer__newsletter-form">
                                 <div class="footer__input-wrapper">
                                     <input type="email" class="footer__input" placeholder="Enter your email">
                                     <input class="btn footer__submit-btn" type="submit" value="Subscribe">
                                 </div>
+                                <p id="footer__form-message" class="footer__form-message success-message"></p>
                             </form>
                         </div>
                     </div>
@@ -188,7 +190,7 @@
                                 <a href="index.html" class="footer__logo-link">
                                     <img src="./assets/img/logo/logo.svg" alt="Logo" class="footer__logo-img">
                                 </a>
-                                <p class="footer__description">Bazarly enhances communication, tracks performance, and boosts customer loyalty.</p>
+                                <p class="footer__desc">Bazarly enhances communication, tracks performance, and boosts customer loyalty.</p>
                             </div>
                         </div>
 
@@ -225,11 +227,10 @@
                             <div class="footer__navigation-column">
                                 <h3 class="footer__navigation-title">Utility</h3>
                                 <ul class="footer__links">
-                                    <li class="footer__link-item"><a href="#" class="footer__link">Password Protected</a></li>
-                                    
                                     <li class="footer__link-item"><a href="#" class="footer__link">Licenses</a></li>
                                     <li class="footer__link-item"><a href="privacy-policy.html" class="footer__link">Privacy policy</a></li>
                                     <li class="footer__link-item"><a href="terms-and-condition.html" class="footer__link">Terms of services</a></li>
+                                    <li class="footer__link-item"><a href="404.html" class="footer__link">404</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -238,36 +239,47 @@
                      <!-- Copyright Section -->
                     <div class="footer__copyright">
                         <div class="footer__copyright-text">
-                            <p>Copyright © <span class="footer__company-name">Bazarly</span> 
-                            <span class="footer__divider">|</span> Designed by <a href="www.uibazar.com" class="footer__link">UiBazar</a> 
-                            and Powered by <a href="#" class="footer__link">HTML, CSS, and JavaScript</a></p>
+                            <p>&copy;<span class="footer__company-name">Bazarly</span>. All rights reserved.  
+                            <span class="footer__divider">|</span> Designed by <a href="https://www.uibazar.com" class="footer__link">UiBazar</a>  
+                            <span class="footer__divider">|</span> Built with HTML, CSS & JavaScript</p>
                         </div>
+                        
                         <div class="footer__social-links">
                             <ul class="footer__social-list">
                                 <li class="footer__social-item">
-                                    <a href="#" class="footer__social-link">
-                                        <img src="./assets/icons/LinkedIn.svg" alt="X Icon" class="footer__social-icon">
+                                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                                        <img src="./assets/icons/LinkedIn.svg" alt="LinkedIn Icon" class="footer__social-icon">
                                     </a>
                                 </li>
                                 <li class="footer__social-item">
-                                    <a href="#" class="footer__social-link">
-                                        <img src="./assets/icons/X.svg" alt="X Icon" class="footer__social-icon">
+                                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                                        <img src="./assets/icons/X.svg" alt="Twitter Icon" class="footer__social-icon">
                                     </a>
                                 </li>
                                 <li class="footer__social-item">
-                                    <a href="#" class="footer__social-link">
-                                        <img src="./assets/icons/instagram.svg" alt="LinkedIn Icon" class="footer__social-icon">
+                                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                                        <img src="./assets/icons/instagram.svg" alt="Instagram Icon" class="footer__social-icon">
                                     </a>
                                 </li>
                             </ul>
-                        </div>
+                        </div>                        
                     </div>
                 </div>
             </div>
         </footer>
         <!-- footer end here --> 
 
+ 
     <!-- js  -->
+    <!--  AOS JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- SweetAlert2 js  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Swiper js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Main js -->
     <script src="./assets/js/srcipts.js"></script>
+    <!-- Form js -->
+    <script src="./assets/js/form.js"></script>    
 </body>
 </html>
