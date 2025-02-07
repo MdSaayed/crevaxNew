@@ -771,6 +771,7 @@ body.menu-open::before {
 }
 .ub-hero-home__img {
   width: 100%;
+  border-radius: 1rem;
 }
 @media (min-width: 550px) {
   .ub-hero-home__image-wrapper {
