@@ -2736,6 +2736,9 @@ body.menu-open::before {
 /* ========================
    License Section Styles
 ======================== */
+.ub-license__container {
+  overflow-x: hidden;
+}
 .ub-license__header {
   max-width: 1000px;
   text-align: left;
@@ -3453,6 +3456,7 @@ body.menu-open::before {
 }
 .ub-auth__container {
   padding: 0;
+  height: 100vh;
 }
 .ub-auth__panel {
   display: grid;
@@ -3506,6 +3510,7 @@ body.menu-open::before {
   font-weight: 500;
   color: #E9EAEB;
   margin-bottom: 12px;
+  text-align: center;
 }
 .ub-auth__feature-desc {
   color: #E9EAEB;
@@ -3694,7 +3699,6 @@ body.menu-open::before {
   transition: 0.5s ease;
 }
 .ub-auth__link {
-  width: 100%;
   display: block;
   text-align: center;
   font-weight: 500;

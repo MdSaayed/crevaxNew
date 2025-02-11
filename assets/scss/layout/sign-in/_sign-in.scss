@@ -5,6 +5,7 @@
 
     &__container{
         padding: 0;
+        height: 100vh; 
     }
 
     &__panel{
@@ -53,6 +54,7 @@
         font-weight: 500;
         color: $light-gray-blue;  
         margin-bottom: 12px;
+        text-align: center;
     }
 
     &__feature-desc{
@@ -188,7 +190,7 @@
                 outline: 2px solid $dark-gray; // Focus outline color
             }
         }
-    }
+    } 
 
     &__btn{
         @include btn();
@@ -200,7 +202,7 @@
 
     &__link {
         @extend .btn-secondary;
-        width: 100%;
+
         display: block;
         text-align: center;
         font-weight: 500;

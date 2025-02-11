@@ -3,6 +3,10 @@
 ======================== */
 
 .ub-license {
+
+    &__container{
+        overflow-x: hidden;
+    }
     
     &__header { 
         max-width: 1000px;
