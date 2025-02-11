@@ -146,7 +146,7 @@ a {
 .section-title, .ub-open-positions__title, .ub-careers-hero__title, .ub-contact__title, .ub-license__title, .ub-about-hero__title, .ub-stats__title, .ub-team-details__title, .ub-team__title, .ub-integrations__title, .ub-hero-integrations__title, .ub-testimonial__title, .ub-hero-pricing__title, .ub-pricing__title, .ub-how-it-works__title, .ub-latest-posts__section-title, .ub-blog-details__title, .ub-blog__title, .ub-cta__title, .ub-faq__title, .ub-feature-details__title, .ub-features__title, .ub-feature-hero__title {
   font-size: 3rem;
   font-weight: 500;
-  line-height: 57px;
+  line-height: 1.1875;
   margin-top: 20px;
   color: #171717;
   text-align: center;
@@ -154,17 +154,11 @@ a {
   max-width: 700px;
   margin: 1.5rem auto;
 }
-@media (max-width: 768px) {
-  .section-title, .ub-open-positions__title, .ub-careers-hero__title, .ub-contact__title, .ub-license__title, .ub-about-hero__title, .ub-stats__title, .ub-team-details__title, .ub-team__title, .ub-integrations__title, .ub-hero-integrations__title, .ub-testimonial__title, .ub-hero-pricing__title, .ub-pricing__title, .ub-how-it-works__title, .ub-latest-posts__section-title, .ub-blog-details__title, .ub-blog__title, .ub-cta__title, .ub-faq__title, .ub-feature-details__title, .ub-features__title, .ub-feature-hero__title {
-    font-size: 2.8rem !important;
-    line-height: 48px !important;
-  }
-}
 
 .section-desc, .ub-open-positions__desc, .ub-careers-hero__desc, .ub-terms__desc, .ub-privacy-policy__desc, .ub-license__desc, .ub-about-hero__desc, .ub-team-details__desc, .ub-integrations__desc, .ub-hero-integrations__desc, .ub-testimonial__desc, .ub-hero-pricing__desc, .ub-pricing__desc, .ub-how-it-works__desc, .ub-blog-details__desc, .ub-blog__description, .ub-feature-details__desc, .ub-features__desc, .ub-feature-hero__desc, .hero__desc, .ub-hero-home__desc {
   margin-top: 1rem;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 1.125rem;
+  line-height: 1.5;
   text-align: center;
   font-weight: normal;
   color: #404040;
@@ -175,19 +169,13 @@ a {
 .hero__title, .ub-terms__title, .ub-privacy-policy__title, .ub-pricing-details__title, .ub-hero-home__title {
   font-size: 3.5rem;
   font-weight: 500;
-  line-height: 72px;
+  line-height: 1.2857;
   margin-top: 20px;
   color: #171717;
   text-align: center;
   color: #171717;
   max-width: 700px;
   margin: 0 auto;
-}
-@media (max-width: 768px) {
-  .hero__title, .ub-terms__title, .ub-privacy-policy__title, .ub-pricing-details__title, .ub-hero-home__title {
-    font-size: 3rem !important;
-    line-height: 60px !important;
-  }
 }
 
 .hero__subtitle-area, .ub-careers-hero__subtitle-area, .ub-about-hero__subtitle-area, .ub-stats__subtitle-area, .ub-integrations__subtitle-area, .ub-hero-integrations__subtitle-area, .ub-testimonial__subtitle-area, .ub-hero-pricing__subtitle-area, .ub-pricing__subtitle-area, .ub-how-it-works__subtitle-area, .ub-blog__subtitle-area, .ub-faq__subtitle-area, .ub-feature-details__subtitle-area, .ub-features__subtitle-area, .ub-feature-hero__subtitle-area, .ub-hero-home__subtitle-area, .hero__subtitle-group, .ub-careers-hero__subtitle-group, .ub-about-hero__subtitle-group, .ub-stats__subtitle-group, .ub-integrations__subtitle-group, .ub-hero-integrations__subtitle-group, .ub-testimonial__subtitle-group, .ub-hero-pricing__subtitle-group, .ub-pricing__subtitle-group, .ub-how-it-works__subtitle-group, .ub-blog__subtitle-group, .ub-faq__subtitle-group, .ub-feature-details__subtitle-group, .ub-features__subtitle-group, .ub-feature-hero__subtitle-group, .ub-hero-home__subtitle-group {
@@ -213,7 +201,7 @@ a {
 .hero__subtitle, .ub-careers-hero__subtitle, .ub-about-hero__subtitle, .ub-stats__subtitle, .ub-integrations__subtitle, .ub-hero-integrations__subtitle, .ub-testimonial__subtitle, .ub-hero-pricing__pricing-hero__subtitle, .ub-pricing__subtitle, .ub-how-it-works__subtitle, .ub-blog__subtitle, .ub-faq__subtitle, .ub-feature-details__subtitle, .ub-features__subtitle, .ub-feature-hero__subtitle, .ub-hero-home__subtitle {
   font-size: 16px;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 1.5;
   text-align: center;
   color: #6941C6;
 }
@@ -223,7 +211,7 @@ input::-webkit-input-placeholder {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5;
 }
 
 input::-moz-placeholder {
@@ -231,7 +219,7 @@ input::-moz-placeholder {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5;
 }
 
 input:-ms-input-placeholder {
@@ -239,7 +227,7 @@ input:-ms-input-placeholder {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5;
 }
 
 input::-ms-input-placeholder {
@@ -247,7 +235,7 @@ input::-ms-input-placeholder {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5;
 }
 
 input::placeholder {
@@ -255,7 +243,7 @@ input::placeholder {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5;
 }
 
 /* SCSS extends for inheritance and reusability */
@@ -755,8 +743,7 @@ body.menu-open::before {
 .ub-hero-home__content {
   border-radius: 1.5rem;
   max-height: 800px;
-  min-height: 600px;
-  padding: 7rem 1.5rem;
+  padding: 7rem 1.5rem 18rem 1.5rem;
 }
 .ub-hero-home__subtitle-group {
   background-color: #FCFAFF;
@@ -767,20 +754,18 @@ body.menu-open::before {
 }
 .ub-hero-home__image-wrapper {
   padding: 0 1rem;
-  margin-top: -10rem;
+  margin-top: -16rem;
 }
 .ub-hero-home__img {
   width: 100%;
   border-radius: 1rem;
 }
-@media (min-width: 550px) {
-  .ub-hero-home__image-wrapper {
-    margin-top: -16rem;
+@media (max-width: 768px) {
+  .ub-hero-home__content {
+    padding-bottom: 8rem;
   }
-}
-@media (min-width: 500px) and (max-width: 550px) {
   .ub-hero-home__image-wrapper {
-    margin-top: -14rem;
+    margin-top: -7rem;
   }
 }
 
@@ -3446,7 +3431,7 @@ body.menu-open::before {
 
 /* Open positions */
 .ub-auth {
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3456,7 +3441,7 @@ body.menu-open::before {
 }
 .ub-auth__container {
   padding: 0;
-  height: 100vh;
+  height: 100%;
 }
 .ub-auth__panel {
   display: grid;
@@ -3467,11 +3452,16 @@ body.menu-open::before {
           align-items: center;
   padding: 2rem;
 }
+.ub-auth__welcome-wrapper {
+  margin-bottom: 5rem;
+}
 .ub-auth__welcome {
   background-color: #42307D;
   border-radius: 20px;
   padding: 4rem 3rem;
-  height: calc(100% - 8rem);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
 }
 .ub-auth__welcome-content {
   display: -webkit-box;

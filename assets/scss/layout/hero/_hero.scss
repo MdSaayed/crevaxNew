@@ -3,6 +3,7 @@
     &__container {
         padding-top: 0;  
         padding-bottom: 0;  
+
     }
 
     &__content-area {
@@ -12,8 +13,7 @@
     &__content {
         border-radius: 1.5rem;
         max-height: 800px;
-        min-height: 600px;
-        padding: 7rem 1.5rem;
+        padding: 7rem 1.5rem 18rem 1.5rem;
     }
 
     &__subtitle-area {
@@ -53,7 +53,8 @@
 
     &__image-wrapper {
         padding: 0 1rem;
-        margin-top: -10rem;
+        margin-top: -16rem;
+
     }
 
     &__img {
@@ -62,15 +63,14 @@
     }
 
     // Media Queries
-    @media (min-width: 550px) {
+    @media (max-width: 768px) {
+        &__content {
+            padding-bottom: 8rem;
+        }
+
         &__image-wrapper {
-            margin-top: -16rem;
+            margin-top: -7rem;
         }
     }
 
-    @media (min-width: 500px) and (max-width: 550px) {
-        &__image-wrapper {
-            margin-top: -14rem;
-        }
-    }
 }

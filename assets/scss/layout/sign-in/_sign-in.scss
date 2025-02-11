@@ -1,11 +1,11 @@
 .ub-auth{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
 
     &__container{
         padding: 0;
-        height: 100vh; 
+        height: 100%; 
     }
 
     &__panel{
@@ -16,11 +16,16 @@
         padding: 2rem;
     }
 
+    &__welcome-wrapper{
+        margin-bottom: 5rem;
+    }
+
     &__welcome{
         background-color: $primary-dark-purple;  
         border-radius: 20px;
         padding: 4rem 3rem; 
-        height: calc(100% - 8rem);      
+        box-sizing: border-box;
+        height: 100%;
     }
 
     &__welcome-content{

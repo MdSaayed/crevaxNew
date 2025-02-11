@@ -15,24 +15,19 @@
 .section-title{
     font-size: 3rem; 
     font-weight: 500;
-    line-height: 57px;
+    line-height: 1.1875;
     margin-top: 20px; 
     color: $dark-neutral;
     text-align:center; 
     color:$text-primary;
     max-width: 700px; 
     margin: 1.5rem auto;
-
-    @media (max-width: 768px) {
-        font-size: 2.8rem !important;  
-        line-height: 48px !important;      
-    }
 }
 
 .section-desc{
     margin-top: 1rem; 
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 1.125rem;
+    line-height: 1.5;
     text-align:center;
     font-weight: normal;
     color:$dark-gray;
@@ -47,18 +42,13 @@
 .hero__title {
     font-size: 3.5rem;
     font-weight: 500;
-    line-height: 72px;
+    line-height: 1.2857;
     margin-top: 20px;
     color: $dark-neutral;
     text-align: center;
     color:$dark-neutral;
     max-width: 700px;
     margin: 0 auto; 
-
-    @media (max-width: 768px) {
-        font-size: 3rem !important;  
-        line-height: 60px !important; 
-    }
 }
 
 .hero__subtitle-area {
@@ -79,7 +69,7 @@
 .hero__subtitle{
     font-size: 16px;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.5;
     text-align: center;
     color:$deep-violet;
 }
@@ -89,6 +79,6 @@ input::placeholder {
     font-size: 16px; 
     font-style: normal; 
     font-weight: 400; 
-    line-height: 24px; 
+    line-height: 1.5; 
 }
   
