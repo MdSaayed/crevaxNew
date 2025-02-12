@@ -49,15 +49,15 @@
     &__text {
       color: $dark-grayish-green;
       font-weight: 500;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 1rem;
+      line-height: 1.5;
     }
 
     &__profile {
       display: flex;
       gap: 1rem;
       align-items: flex-start;
-      margin-top: 20px;
+      margin-top:1.25rem;
     }
 
     &__name,
@@ -80,15 +80,16 @@
     }
 
     &__name {
-      font-size: 20px;
+      font-size: 1.25rem;  
       font-weight: 500;
-      line-height: 28px;
+      line-height: 1.75;  
     }
+  
 
     &__position {
-      line-height: 24px;
+      font-size: 1rem;
+      line-height: 1.5;
       color: #4b5563;
-      font-size: 16px;
       font-weight: normal;
     }
 

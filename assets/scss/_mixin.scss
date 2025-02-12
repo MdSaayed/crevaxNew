@@ -1,18 +1,20 @@
-@mixin btn($bgColor: $primary-color, $hoverBgColor: transparent, $color:$light-color, $hoverColor:$primary-color, $border:$primary-color ,$hoverBorder:$primary-color) {
+@mixin btn($bgColor: $primary-color, $hoverBgColor: transparent, $color: $light-color, $hoverColor: $primary-color, $border: $primary-color, $hoverBorder: $primary-color) {
     font-weight: 400;
-    font-size:16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5;
     color: $color;
     background-color: $bgColor;
     border: 1px solid $border;
-    padding: 8px 15px;
-    border-radius: 50px; 
+    padding: 0.5rem 0.9375rem;
+    border-radius: 50px;
     cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease;
 
-    &:hover {
+    &:hover,
+    &:focus {
         color: $hoverColor;
         background-color: $hoverBgColor;
-        border: 1px solid $hoverBorder;      
-        transition: 0.5s ease; 
+        border: 1px solid $hoverBorder;
     }
-} 
+}
+

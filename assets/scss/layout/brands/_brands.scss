@@ -43,34 +43,37 @@
 
     &__slider-area::after,
     &__slider-area::before {
-    position: absolute;
-    content: " ";
-    bottom: 0;
-    width: 340px;
-    height: 340px;
-    border-radius: 50%;
-    background: $soft-lilac;
-    filter: blur(56.8px); 
-    z-index: 99;
+        position: absolute;
+        content: " ";
+        bottom: 0;
+        width: 340px;
+        height: 340px;
+        border-radius: 50%;
+        background: $soft-lilac;
+        filter: blur(56.8px); 
+        z-index: 99;
     }
 
     &__slider-area::after {
         left: -170px;
-
-        @media (max-width: 768px) {
-        width: 140px;
-        height: 140px;
-        left: -100px;
-        }
     }
 
     &__slider-area::before {
         right: -170px;
-        
-        @media (max-width: 768px) {
-        width: 140px;
-        height: 140px;
-        right: -100px;
+    }
+
+    // responsive
+    @media (max-width: 768px) {
+        &__slider-area::after {
+            width: 140px;
+            height: 140px;
+            left: -100px;
+        }
+
+        &__slider-area::before {
+            width: 140px;
+            height: 140px;
+            right: -100px;
         }
     }
 }

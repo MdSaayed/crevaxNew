@@ -1,22 +1,24 @@
 
 .ub-about-hero {
+
     &__container{
         padding-top: 0;
         padding-bottom: 0;
     }
+
     &__wrapper{
         padding: 7rem 1rem 15rem;
-
         border-radius: 1.125rem;
-        // padding:7rem 15rem 1rem ;
     }
 
     &__subtitle-area{
         @extend .hero__subtitle-area;
     }
+
     &__subtitle-group{
         @extend .hero__subtitle-group;
     }
+    
     &__subtitle{
         @extend .hero__subtitle;
     }

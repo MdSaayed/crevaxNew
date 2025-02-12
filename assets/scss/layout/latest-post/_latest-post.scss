@@ -107,14 +107,15 @@
 
     &__no-posts {
         text-align: left;
-        font-size: 18px;
+        font-size: 1.25rem;
         color: $white;
         background-color: $soft-purple;
-        margin-top: 20px;
-        padding: 8px;
+        margin-top: 1.25rem;  
+        padding: 0.5rem;  
         border-radius: 2px;
         display: none;
     }
+    
     
     @media (max-width: 1024px) {
         &__header {
@@ -124,4 +125,4 @@
             gap: 2rem;
         }
     }
-}
+}    

@@ -18,7 +18,7 @@
         gap: 1.5rem;
         justify-content: space-between;
         align-items: center;
-        padding-bottom: 35px;
+        padding-bottom: 2.1875rem;
         border-bottom: 1px solid $light-gray-blue;
     }
 
@@ -29,17 +29,17 @@
     &__newsletter-title { 
         font-weight: 500;
         font-size: 1.5rem;
-        line-height: 33px;
+        line-height: 1.375;
         margin-bottom: 0.5rem;
         color: $dark-slate-gray; 
     }
 
     &__newsletter-desc {
         color: $dark-slate-gray;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 1rem;
+        line-height: 1.5;
         font-weight: normal;
-        margin-top: 16px; 
+        margin-top: 1rem; 
     }
 
     &__input-wrapper {
@@ -53,7 +53,7 @@
             transition: border-color 0.3s ease;
             border-radius: 100px;
             background-color: transparent;
-            padding: 12px 1rem;
+            padding: 0.75rem 1rem;
 
             &:focus {
                 border: 1px solid $primary-color;
@@ -81,7 +81,7 @@
     }
 
     &__navigation-wrapper {
-        margin-top: 12px;
+        margin-top: 0.75rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
@@ -89,15 +89,15 @@
     }
 
     &__links {
-        margin-top: 12px;
+        margin-top: 0.75rem;
     }
 
     &__link-item > a {
         color: $dark-slate-gray;
-        font-size: 16px;
+        font-size: 1rem;
+        line-height: 1.5;
         font-weight: normal;
-        line-height: 24px;
-        margin-top: 8px;
+        margin-top: 0.5rem;
         display: block;
     }
 
@@ -128,9 +128,9 @@
     }
 
     &__copyright-text {
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: normal;
-        line-height: 21px;
+        line-height: 1.5;
         color: $muted-sage;
         text-align: center;
     }

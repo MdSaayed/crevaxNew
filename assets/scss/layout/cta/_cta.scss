@@ -48,7 +48,7 @@
     &__background-right,
     &__background-left {
         position: absolute;
-        bottom: 40px;
+        bottom: 2.5rem;
         width: 307px;
         height: 186px;
         background-size: contain;
@@ -61,12 +61,12 @@
     }
 
     &__background-right {
-        right: 40px;
+        right: 2.5rem;
         background-image: url('../../assets/img/shape/bg-shape-right.png');
     }
 
     &__background-left {
-        left: 40px;
+        left: 2.5rem;
         background-image: url('../../assets/img/shape/bg-shape-left.png');
     }
 }

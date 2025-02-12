@@ -71,7 +71,7 @@
     &__plan-title {
       font-weight: 500;
       font-size: 1rem;
-      line-height: 24px;
+      line-height: 1.5;
       text-align: left;
     }
 
@@ -80,7 +80,7 @@
       text-align: left;
       margin-top: 1rem;
       color: $dark-slate-gray;
-      line-height: 24px;
+      line-height: 1.5;
     }
 
     &__price-wrapper {
@@ -119,7 +119,7 @@
         text-decoration: none;
         font-size: 1rem;
         font-weight: 500;
-        line-height: 24px;
+        line-height: 1.5;
         background-color: $light-purple;
         color: $dark-gray;
         padding: 8px 5px;
@@ -312,7 +312,7 @@
         color: $gray-medium;  
         font-size: 1rem;
         font-weight: 400;
-        line-height: 24px;   
+        line-height: 1.5;   
         line-height: 1.5;  
 
         li{
@@ -353,12 +353,12 @@
     &__card-price{
         font-size: 2.5rem; 
         font-weight: 500;
-        line-height: 48px;
+        line-height: 1.2;
         color: $dark-neutral;
 
         span{
-            font-size: 20px;
-            line-height: 28px;
+            font-size: 1.25;
+            line-height: 1.5;
         }
     }
 

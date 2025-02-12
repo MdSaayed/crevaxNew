@@ -15,22 +15,22 @@
       display: flex;
       margin: 0 auto;
       justify-content: center;
-      margin-bottom: 30px;
+      margin-bottom: 1.875rem;
       margin-top: 2rem;
     }
   
     &__filters-wrapper {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 0.75rem;
       flex-wrap: wrap;
       background-color: $light-lavender;
-      padding:8px;
+      padding: 0.5px;
       border-radius: 8px;
     }
   
     &__filter {
-      padding: 6px 16px;
+      padding: 0.375rem 1rem;
       color: $dark-gray;
       font-size: 1.125rem;
       line-height: 1.5;
@@ -39,7 +39,7 @@
       cursor: pointer;
       transition: all 0.3s ease;
       border: none;
-      background-color: transparent;
+      background-color: transparent; 
   
       &--active, &:hover {
         background-color: $primary-color;
@@ -64,6 +64,7 @@
         border-top: 1px solid $purple-haze;
         transition: background-color 0.4s ease-in-out;  
         cursor: pointer;
+
         &--active {
             background-color: $dark-purple;
             color: #FAFAFA;  
@@ -76,7 +77,7 @@
         }
     
       &-title {
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 500;
         color: $dark-neutral;
         transition: color 0.4s ease-in-out;  
@@ -102,7 +103,7 @@
         display: inline-block;
         font-size: 1rem;
         line-height: 1.5;
-        padding: 8px 12px;
+        padding: 0.5rem 0.75rem;
         background-color: $primary-color;
         color: $white;
         margin-top: 1.5rem ;
@@ -118,7 +119,7 @@
     }
 
     &__item:not(:last-child) {
-        margin-bottom: -12px;
+        margin-bottom: -0.75rem;
     }
 
     &__content-wrapper {

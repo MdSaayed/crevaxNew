@@ -67,19 +67,19 @@
 
     // Typography Section
     &__typography{
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
     }
 
     &__typography-title {
         font-size: 1.5rem;
         font-weight: 500;
         color: $dark-neutral;
-        line-height:30px;
-        margin-bottom: 10px; 
+        line-height: 2; 
+        margin-bottom: 0.625rem;  
     }
 
     &__typography-info{
-        font-size: 18px;
+        font-size: 1.25rem;
         color: $dark-gray;
         font-weight: normal;
         line-height: 1.5;
@@ -97,7 +97,7 @@
     &__typography-download {
         color: $primary-color;
         font-weight: 500;
-        margin-top: 10px;
+        margin-top: 0.625rem;
         display: inline-block;
 
         &:hover {
@@ -107,7 +107,7 @@
 
     // Iconography Section
     &__iconography{
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
         display: flex;
         justify-content:space-between;
         gap:2rem;
@@ -119,12 +119,13 @@
         font-size: 1.5rem;
         font-weight: 500;
         color: $dark-neutral;
-        line-height:30px;
-        margin-bottom: 10px;
+        line-height: 1.25;  
+        margin-bottom: 0.625rem;
     }
+    
 
     &__iconography-info {
-        font-size: 18px;
+        font-size: 1.25rem;
         color: $dark-gray;
         font-weight: normal;
         line-height: 1.5;
@@ -150,21 +151,21 @@
         font-size: 1.5rem;
         font-weight: 500;
         color: $dark-neutral;
-        line-height:30px;
-        margin-bottom: 10px;
-    }
+        line-height: 1.25;  
+        margin-bottom: 0.625rem;  
+    }    
 
     &__photography-list {
-        margin-bottom: 10px;
+        font-size: 1.25rem;
+        margin-bottom: 0.625rem;
         color:$dark-gray;
-        font-size: 18px;
         font-weight: normal;
     }
 
     &__photography-link {
         color: $primary-color;
         text-decoration: underline;
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
         line-height: 1.5;
         display: inline-block;
 
@@ -174,7 +175,7 @@
     }
 
     &__photography-note{
-        font-size: 18px;
+        font-size: 1.25rem;
         color: $dark-gray;
         font-weight: normal;
         line-height: 1.5;
@@ -187,5 +188,5 @@
             flex-direction: column;   
         }    
     }
-}
+} 
  

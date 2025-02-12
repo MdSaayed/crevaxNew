@@ -30,7 +30,7 @@
     }
     
     &__card {
-        padding: 24px 16px;
+        padding: 1.5rem 1rem;
         border-radius: 16px;
         border: 1px solid $light-gray;
     }
@@ -45,28 +45,28 @@
     }
     
     &__card-content {
-        padding: 20px 0px;
+        padding: 1.25rem 0px;
     }
     
     &__card-title {
-        font-size: 20px;
+        font-size: 1.25rem;
+        line-height: 1.4;
         font-weight: 500;
-        line-height: 28px;
         color: $text-primary; 
     }
     
     &__card-text {
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: normal;
-        line-height: 24px;
+        line-height: 1.5;
         color: $dark-slate-gray;
-        margin-top: 16px;
+        margin-top: 1rem;
     }
     
     &__card-link-wrapper {
         display: inline-flex;
         align-items: center;
-        margin-top: 24px;
+        margin-top: 1.5rem;
     }
     
     &__card-link-wrapper:hover > &__card-link-icon {
@@ -76,9 +76,9 @@
     
     &__card-link {
         color: $soft-purple;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: normal;
-        line-height: 24px;
+        line-height: 1.5;
         margin-right: 5px;
         display: inline-flex;
         align-items: center;
@@ -93,7 +93,7 @@
     &__btn-wrapper {
         display: flex;
         justify-content: center;
-        margin-top: 44px;
+        margin-top: 2.75rem;
     }
     
     &__btn {
@@ -132,7 +132,7 @@
 
     &__category {
         background-color: $purple-haze;
-        padding: 8px 12px;
+        padding: 0.5rem 1.75rem;
         border-radius: 0.5rem;
         font-weight: 500;
         color: $dark-gray;
